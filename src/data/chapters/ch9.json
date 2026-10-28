@@ -1,0 +1,752 @@
+{
+  "id": 9,
+  "partId": 4,
+  "part": "Phase IV: Defensive Architecture & Enterprise Hardening",
+  "title": "Chapter 9: Prevention and Mitigation",
+  "subtitle": "Hardening the Human Firewall, Employee Training, and Enterprise Defense Policies",
+  "quote": {
+    "text": "An ounce of prevention is worth a pound of cure.",
+    "author": "Benjamin Franklin"
+  },
+  "pages": "Pages 404–430",
+  "readTime": "26 min read",
+  "highlights": [
+    "Why traditional security awareness training fails and creates a false sense of security",
+    "Creating an institutional culture where questioning authority is rewarded, not penalized",
+    "Developing multi-party verification scripts and out-of-band call-back procedures",
+    "Executing controlled, non-punitive social engineering penetration audits"
+  ],
+  "totalBlocks": 175,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The preceding chapters show you all the methods and ways that social engineers trick and scam targets into divulging valuable information. They also describe many of the psychological principles that social engineers use to influence and manipulate people."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes after I give a speech or security training, people will look very paranoid and scared and say something like, \"It just seems there is no hope to even attempt security. How do I do it?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "That is a good question. I promote having a good disaster-recovery plan and incident response plan because nowadays it seems that it is not a matter of \"if\" you will get hacked, but \"when.\" You can take precautions to give you at least a fighting chance at security."
+    },
+    {
+      "type": "paragraph",
+      "text": "Social engineering mitigation is not as easy as ensuring hardware security. With traditional defensive security you can throw money into intrusion detection systems, firewalls, antivirus programs, and other solutions to maintain perimeter security. With social engineering no software systems exist that you can attach to your employees or yourself to remain secure."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter I present the top six steps I tell my clients they can take to prevent and mitigate social engineering attempts:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learning to identify social engineering attacks Creating a personal security awareness program Creating awareness of the value of the information that is being sought by social engineers Keeping software updated Developing scripts Learning from social engineering audits These six points all boil down to creating a security awareness culture. Security awareness is not about a 40-, 60-, or 90-minute program once every year. It is about creating a culture or a set of standards that each person is committed to utilizing in his or her entire life. It is not just about work or websites deemed to be \"important,\" but it is the way one approaches being secure as a whole."
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter covers the aforementioned six points and how creating a security awareness culture can be the best defense against a malicious social engineer."
+    },
+    {
+      "type": "heading",
+      "text": "Learning to Identify Social Engineering Attacks"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first stage in social engineering prevention and mitigation is to learn about the attacks. You don't have to dive so deep into these attacks that you know how to recreate malicious PDFs or create the perfect con. But understanding what happens when you click a malicious PDF and what signs to look for to determine whether someone is trying to trick you can help protect you. You need to understand the threats and how they apply to you."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here's an illustration: You value your home and the things in it, but especially the people in your home. You do not wait to have your first fire to figure out how to plan, prevent, and mitigate its danger. Instead you install smoke detectors and plan out an escape route in case of a fire. In addition, you might train your children with the phrase to, \"Stop, drop, and roll\" if they are on fire. You teach them how to feel the door for heat and to stay low to avoid smoke inhalation. All of these methods are ways to prevent or prepare for a fire before you have a real fire and have to deal with the devastation it brings."
+    },
+    {
+      "type": "paragraph",
+      "text": "The same principle applies to protecting yourself and your company from social engineering attacks. Do not wait for the attack to occur to learn about how devastating they can be. Don't think I'm self-serving, but I promote social engineering audits to regularly test your employees' ability to withstand these attacks, and following up with training."
+    },
+    {
+      "type": "paragraph",
+      "text": "Teach yourself and your employees how to \"stop, drop, and roll,\" so to speak, when it comes to these types of attacks. What are the latest news stories on how social engineers are attacking companies? Knowing them can be a first line of defense, the same as knowing what a fire can do to your home. Learn the different methods that modern social engineers and identity thieves use. You can find an archive of news stories and examples of social engineers, con men, identity thieves, and the like at www.social-engineer.org/framework/Social_Engineering_In_The_News."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another good step is reading this book. It is full of all the methods and principles that social engineers use to manipulate their targets. This book is more than just a compilation of stories and wonderful hacks; it offers an analysis of the thinking and tactics used by the malicious social engineer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also check out the videos on the www.social-engineer.org site, in the Resources area, which demonstrate exploits in action. The average user does not need to watch them with the intent of understanding how to perform these attacks himself, but to understand how an SE performs the attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Basically, the more you know about how these attacks occur, the easier you can identify them in the \"wild.\" Being aware of the body language, expressions, and phrases used in an SE attempt will make your ears perk up when you hear or see someone utilizing these methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "You don't need to spend tons of time learning about SE methods. However, spending a few minutes now and then reading the news and reading stories on www.social-engineer.org or other sites can help you see the methods being used now against companies."
+    },
+    {
+      "type": "paragraph",
+      "text": "After you have a good basis of knowledge and an audit under your belt, the next step, creating a security-minded culture, will seem simple to develop."
+    },
+    {
+      "type": "heading",
+      "text": "Creating a Personal Security Awareness Culture"
+    },
+    {
+      "type": "paragraph",
+      "text": "In July of 2010 I was part of a small team of security professionals that held one of the first organized and professional-level social engineering contests at Defcon 18. Some of the best and brightest minds from around the globe come to Las Vegas, Nevada, once a year to speak, teach, and learn."
+    },
+    {
+      "type": "paragraph",
+      "text": "My team and I decided it would be a great opportunity to hold a contest that would showcase whether corporate America is vulnerable to this attack vector (responding to a \"contest\"). We organized the contest by having interested people sign up to take part in two stages of social engineering : information gathering and active attacks."
+    },
+    {
+      "type": "activity-ref",
+      "activityId": "ch9-defense-auditor"
+    },
+    {
+      "type": "paragraph",
+      "text": "To keep the contest legal and moral we did not want any person victimized, and no Social Security numbers, credit cards, and no personal identifying information would be gathered. Our goal was not to get any of these people fired. In addition our goal was not to embarrass any particular company, so we decided also no passwords or other personal security– related information from the companies. Instead we developed a list of about 25–30 \"flags\" that ranged from whether the company had an internal cafeteria, to who handles its trash disposal, to what browser it uses, and to what software it uses to open PDFs. Finally, we chose target companies from all sectors of business in corporate America: gas companies, tech companies, manufacturers, retail, and everything in between."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each contestant was assigned one target company in secret, on which he had two weeks to do passive information gathering. That meant contestants were not allowed to contact the company, send it emails, or in any way try to social engineer information out of it. Instead they had to use the web, Maltego, and other tools to gather as much information as possible and enter all they found into a professional-looking report."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the information gathered we wanted contestants to develop a couple of plausible attack vectors that they thought would work in the real world. Then contestants had to come to Defcon in Las Vegas, sit in a soundproof booth, and make a 25-minute phone call to their target to implement their attack vector and see what information they could obtain."
+    },
+    {
+      "type": "paragraph",
+      "text": "I could spend the next 20–30 pages telling you what happened at that contest and what the outcome was, but one thing we found was this: Every contestant obtained enough information out of the targets that the company would have failed a security audit. Regardless of the experience level of the contestant and the pretext, the contestants were successful in accomplishing their goals. For a full report about the CTF and what occurred, visit www.social-engineer.org/resources/sectf/Social-Engineer_CTF_Report.pdf."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now on to what applies here—security awareness. Corporations that care about security have programs where they train their employees how to be aware of potential security risks via phone, Internet, or in person. What we found was that security awareness in those companies was at failure stage. Why? How could it be that these Fortune 500 companies that spend millions or more on security, training, education, and services designed to protect their employees could be failing at security awareness?"
+    },
+    {
+      "type": "paragraph",
+      "text": "That is my point in the title to this section—security awareness is not personal to employees. Often in my professional practice when I talk with employees about their feelings about an attack they respond with something like, \"It is not my data; what do I care?\" This attitude shows that the security awareness that these companies were trying to instill never hit home; it was not important, effective, and most importantly, not personal."
+    },
+    {
+      "type": "paragraph",
+      "text": "In reviewing much of the material and methods available for so-called security awareness, what I have found is that it is boring, silly, and not geared to make the participant interact or think. Short DVD presentations that cover a ton of things in a shotgun approach that blasts the participant with a lot of tiny little facts are not designed to sink in too deep."
+    },
+    {
+      "type": "paragraph",
+      "text": "What I challenge you to do as a company or even as an individual is to create a program that engages, interacts, and dives deep into security awareness. Instead of just telling your employees why having long and complex passwords is a good idea, show them how quickly one can crack an easy password. When I am asked to help perform security awareness training for a client, sometimes I ask an employee to come up to my computer and type in a password that she feels is secure. I do this before I release any information about passwords. Then as I start my presentation on that section I start a cracker against that password. Usually within a minute or two the password is cracked and I reveal to the room the password that was secretly typed into my computer. The immediate and drastic effect it has on each person has an extreme impact. But after numerous demonstrations like that employees will comment on how they now understand how serious having a good password is."
+    },
+    {
+      "type": "paragraph",
+      "text": "When I discuss the topic of malicious attachments in email, I do not have to show employees how to craft a malicious PDF but I do show them what it looks like from both the victim's and the attacker's computers when a malicious PDF is opened. This helps them understand that a simple crash can lead to devastation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, this teaching method produces a lot of fear, and although that is not the goal, it is not a terrible side product, because employees will remember it better. But the goal is to make them think not just about what they do not only at work and with their office computers, but also their own bank accounts, home computers, and how they treat security on a personal level."
+    },
+    {
+      "type": "paragraph",
+      "text": "I want each person who hears a security presentation or reads this book to review how he interacts with the Internet as a whole and make serious changes to reusing passwords, storing passwords or personal information in non-secure locations, and to where they connect to the Internet. I cannot tell you how many times I have seen a person sitting in the center of Starbucks on her free Wi-Fi checking a bank account or making an online purchase. As much as I want to go up and yell at that person and tell her how quickly her whole life can be turned upside down if the wrong person is sitting on that same network with her, I don't."
+    },
+    {
+      "type": "paragraph",
+      "text": "I want people who read this to also think of how they give out information over the phone. Con men and scam artists use many avenues to steal from the elderly, those having hard economic times, and everyone else. The phone still remains a very powerful way to do this. Being aware of the vendors', banks', or suppliers' policies on what they will and will not ask for over the phone can help you avoid many of the pitfalls. For example, many banks list in their policies that they will never call and ask from a Social Security number or bank account number. Knowing this can safeguard you for falling for a scam that can empty your life savings."
+    },
+    {
+      "type": "paragraph",
+      "text": "Calling security awareness a \"program\" indicates that it is something ongoing. A program means you schedule time to continually educate yourself. After you obtain all this useful information, then you can use it to develop a program that will help you to stay secure."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Cultivating a Security Awareness Culture",
+      "points": [
+        "Traditional once-a-year compliance security training is largely ineffective and creates dangerous complacency.",
+        "Organizations must foster a culture where questioning unfamiliar individuals and verifying identities is rewarded rather than punished.",
+        "Empower front-desk and support staff with polite, standardized identity-verification protocols."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Being Aware of the Value of the Information You Are Being Asked For"
+    },
+    {
+      "type": "paragraph",
+      "text": "Referring to the Defcon 18 social engineering contest again, in it we learned another valuable lesson—when the information is perceived as having no or little value, then little effort is placed on protecting it."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is heavy-duty statement, but was proven true with how many targets willingly handed over information on their cafeterias, waste removal, and so much more. You must realize the value of the data that you have and be aware of a tactic a social engineer might use to reduce the value of this information in your eyes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before giving out information to someone, determine whether the person who is calling or interacting with you deserves it. Humans have this built-in desire to want to help and to be helpful to those whom we perceive need it. It is a major way a social engineer manipulates a target into handing over valuable information. Analyzing the person with whom you are interacting and determining whether she deserves the information she is asking for can save you the embarrassment and damage of falling victim."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, in the social engineering contest at Defcon one contestant had a pretext that he was a customer of a major antivirus company. He called in with a serious problem—his computer couldn't get online and he felt it was due to something the antivirus was doing and wanted the technical support representation to do one simple thing—browse to a website."
+    },
+    {
+      "type": "paragraph",
+      "text": "Malicious SEs often use this attack vector. By driving a victim to a website embedded with malicious code or malicious files they can gain access to a target's computer and network. In the case of the contest, the website was not malicious at all, but it was to show that if this were a malicious attack it would have been successful."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first attempt was laid out like this by the contestant: \"I cannot browse to my website and I think your product is blocking me. Can you check by going to this site so I know for sure whether it is your software or not?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The technical support representative answered well by saying, \"Sir, our product would not block you from going to that site; it wouldn't matter if I can go there or not.\" He declined the request."
+    },
+    {
+      "type": "paragraph",
+      "text": "The contestant did not give up there; after talking a bit more he again tried, \"I know you said your product would not block the site, but it worked until I installed your software, so can you please check for me?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Again he was declined his request: \"Sir, I am sorry for that inconvenience but again our product would not block you and my going to the site will not help you fix the problem.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "It seemed as if the request was going to be rejected for good when the contestant tried one last-ditch effort and said, \"Sir, it would make me feel better if you would just try going to this site for me. Please, can you help me out?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "This simple request put our technical support rep over the edge and he opened his browser and went right to the site. He had the right idea, he even had the right security awareness answer, but in the end he wanted his \"customer\" to \"feel better\" and honored his request. This could have led that company to a major pitfall if it were a malicious attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "The technical support representative knew that this information was not relevant to that particular call. Like him, you must be determined to analyze whether the information being asked for is deserved and relevant to the person with whom you are interacting. Approaching this scenario from the other angle, what if the contestant were a legitimate customer and the rep had declined to go to that website—what is the worst that could have happened?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The customer might have been a little upset at being declined the request he wanted but it still would not have changed the outcome. The product he had was not the cause of his woes."
+    },
+    {
+      "type": "paragraph",
+      "text": "A social engineer often uses charm to start a conversation about the weather, work, the product, anything at all, and uses it to reveal the information sought. This is where a good security awareness policy comes into play—educating your employees about what tactics might be used against them can save them from acting out of fear."
+    },
+    {
+      "type": "paragraph",
+      "text": "In one audit the pretext I used was being the assistant to the CFO. The call center employees had a fear of losing their jobs for rejecting the requests from such a high-level management. Why? They are not given the proper education to know that rejecting that request would not cost them their jobs. At the same time protocols should be in place for the employee to know when a request for information is proper."
+    },
+    {
+      "type": "paragraph",
+      "text": "The perceived value of the information being asked for closely ties in with an educated and aware person knowing that even minor tidbits of data can lead to a massive breach. Knowing that the person on the other end of the phone doesn't really need to know what the name of the food preparation company for the cafeteria can help an employee to answer appropriately. If you are an employer then help your employees develop answers to these requests. In most cases a simple, \"Sorry, I don't have that information; please contact our purchasing department if you want that.\" Or \"I'm sorry I am not allowed to divulge that information but you can send an email to info@company.com to request some of this info,\" can go a long way toward quashing many social engineering efforts."
+    },
+    {
+      "type": "paragraph",
+      "text": "I mentioned earlier that creating an atmosphere that makes information seem less valuable is also a tactic used by social engineers to get people to freely divulge this \"unimportant\" information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the contest example again, one contestant was asked to provide some identifying information. His pretext was a company that was hired to do an internal audit and when the target wanted to verify who he was he asked for something off of the requisition form. Our contestant pretended to lean over to an imaginary co-worker and said, \"Jane, the gentlemen from Your-Target-Company wants the ID number from the requisition, can you do me a favor and grab it from Bill's desk?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "As \"Jane\" went to get the form the contestant engaged the target in idle chitchat. \"How's the weather in Texas?\" and \"Have you ever been to Charlie's Pub?\" escalated into things like, \"Who handles the food for the cafeteria?\" and \"Want to see a cool website we are working on here?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "All this happened while he was \"waiting\" for the ID number. Social engineers use this tactic every day. Diversion and charm are key tools in many pretexts. Information that is asked for during \"chitchat\" is perceived as having less value because of the time in the conversation it is asked for. If the SE had asked that same question when he was \"verifying his audit findings\" it would have been met with a different attitude, but because he asked it during a friendly conversation so much information was given freely."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mitigation for this SE tactic is to ponder the value of the information that you are planning on releasing despite of when in the conversation it is asked for. In the earlier example, the target's simply waiting for that ID number before continuing any conversation would have been very appropriate and saved him from being duped."
+    },
+    {
+      "type": "paragraph",
+      "text": "This particular point is not always easy to implement because employees, especially those facing the customer, must be able to release some information without fear of attack. Simply being aware of the value of information cannot alone stop an attack."
+    },
+    {
+      "type": "heading",
+      "text": "Keeping Software Updated"
+    },
+    {
+      "type": "paragraph",
+      "text": "In most businesses you must be able to release information to the public and to clients. Even in my business I must be able to give out my phone numbers, emails, and web addresses. I must be able to send and receive PDF files and I have to be able to freely talk on the phone with clients, suppliers, and vendors."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, the points discussed so far indicate that releasing any of this information can be the end of one's business and possibly privacy. What can you do to have the freedom to release certain information and not fear the end?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep updated. In our contest, more than 60% of the companies that were called were still using Internet Explorer 6 and Adobe Acrobat 8. Those are staggering statistics."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dozens if not hundreds of public vulnerabilities exist in those two applications alone. Knowing that a target uses those two applications opens them up for an enormous number of attacks that can be so malicious that all the IDs, firewalls, and antivirus systems cannot possibly stop them. But do you know what can stop them?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The answer is updates. The newest versions of software generally have patched their security holes, at least the majority of them. If a particular piece of software has a horrible track record, don't use it; switch to something less vulnerable."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem that comes up is that companies are very slow when it comes to upgrades. IE 6 is very old, almost to the end of its life on Microsoft Support. Adobe 8 has dozens of exploits publicly available. That is just two of the many pieces of information we found out in the contest. The reality of the matter, though, is that you have to be able to release information. You must be able to freely tell people what is going on. To do that with less worry, you must make sure you and your employee use updated software."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the contest calls, if an employee divulged that the company used Firefox, Chrome, or another secure browser, or FoxIt or the most up-to-date Adobe software, contestants would have been shut down. I am not saying those pieces of software do not experience any problems at all. Exploits for certain versions certainly exist, but this software is significantly less vulnerable. The possession of that information is still valuable but if no exploits are available then the next phase of the attack cannot be launched."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keeping software updated is the one tip that seems to get the most flack because it takes the most work and can cause the most overhead. Changing internal policies and methodologies that allow very old software to still be in play can be very difficult and cause all sorts of internal shifts."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, if a company is committed to security and committed to creating a personal security awareness then committing to these changes will become part of the business culture."
+    },
+    {
+      "type": "heading",
+      "text": "Developing Scripts"
+    },
+    {
+      "type": "paragraph",
+      "text": "One more beneficial thing bears mentioning: develop scripts. Don't cringe; I don't mean scripts in the sense that the employee must say X if a situation equals A plus B. I am talking about outlines that help an employee be prepared to use critical thinking when it counts the most. Consider these scenarios:"
+    },
+    {
+      "type": "paragraph",
+      "text": "What is the proper response when someone who claims to work for the CEO calls and demands your password? What do you do when a guy who has no appointment but looks and acts the part of a vendor demands access to a part of the building or property?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Scripts can help an employee determine the proper response during these circumstances and help them feel at ease. For example, a script may look like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "If someone calls and claims to be from the management office and demands compliance of either handing over information or internal data, follow these steps:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Ask for the person's employee ID number and name. Do not answer any questions until you have this information. 2. After getting the identifying information, ask for the project ID number related to the project he or she is managing that requires this information. 3. If the information in steps 1 and 2 is successfully obtained, comply. If it's not, ask the person to have his or her manager send an email to your manager requesting authorization and terminate the call. A simple script like this can help employees know what to say and do in circumstances that can try their security consciousness."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Information Valuation & Verification Scripts",
+      "points": [
+        "Employees must understand that seemingly innocuous data (organizational charts, phone lists, software versions) has immense value to attackers.",
+        "Implement out-of-band callback procedures: never verify an identity using phone numbers or links provided by an incoming caller.",
+        "Keep software and operating systems updated to reduce the success rate of multi-stage client-side exploits."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Learning from Social Engineering Audits"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have ever broken a limb you know that as you recover your doctor may send you for therapy. As therapists rehabilitate you, you may undergo some stress testing. This type of testing enables your doctors to see whether you have weaknesses that need to be strengthened. The same applies for your business, except instead of waiting for the \"break\" to occur before you \"test,\" social engineering audits enable you to stress-test your company before a breach occurs."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following sections answer a few key questions when it comes to social engineering audits and how to choose the best auditor. Before getting into the depth of social engineering audits, you should know what an audit really is."
+    },
+    {
+      "type": "heading",
+      "text": "Understanding What a Social Engineering Audit Is"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the most basic terms a social engineering audit is where a security professional is hired to test the people, policies, and physical perimeter of a company by simulating the same attacks that a malicious social engineer would use. The two main differences between a malicious social engineer and a professional auditor are:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Usually, moral and legal guidelines exist that a professional auditor will follow. The goals of the professional auditor are always to help and not to embarrass, steal, or harm a client. Professional audits generally have scope limitations that are not imposed upon real attackers. The professional auditor will spend a lot of time analyzing and gathering data on a \"target\" or client and will use that information to develop realistic attack vectors. While doing this the professional auditor always keeps in mind the goals that are set forth in writing for each audit. This is an essential piece of the puzzle, because going down a path that can have very bad repercussions on both the SE and the target might be tempting. Clearly defined goals can keep a social engineering auditor from making that mistake."
+    },
+    {
+      "type": "heading",
+      "text": "Setting Audit Goals"
+    },
+    {
+      "type": "paragraph",
+      "text": "The professional social engineer must engage in moral and ethical behavior while still stretching across that line that allows him or her to put on the true \"black hat\" of a malicious social engineer. This means taking note of things that he or she can use to gain access and expose a hole or weakness in a company's defenses, no matter how low it may seem."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finding the security gaps has to be balanced with a concern for the individual employees. Companies who are hacked with a social engineering audit often think that firing the employee(s) who fell for the attack fixes the problem and plugs the \"hole.\" What the client fails to realize is that after an audit, those employees who did fall for the attacks are probably the most secure people in the building at that time."
+    },
+    {
+      "type": "paragraph",
+      "text": "The professional social engineer must take extra precaution to ensure that the employees are not put into the line of fire. Personally I make it a key point to tell clients that the audit is not about the employees and, as far as I can help it, I do not include names of the employees who were used. In cases where that cannot be helped and I need to include those names, I focus the report on the flaws the company has in its training, policies, and defenses that allowed the employee to falter."
+    },
+    {
+      "type": "paragraph",
+      "text": "Throwing an employee under the bus, so to speak, or ruining his or her character or life should never be an option for a routine social engineering audit. When outlining the goals of an audit with an auditor I outline the level of intensity from 0 to 10 for these key areas:"
+    },
+    {
+      "type": "paragraph",
+      "text": "To determine whether employees will click on links in emails or open files from people they do not know well, leading to compromise To determine whether an employee would go to a website and enter personal or business-related information on that site"
+    },
+    {
+      "type": "paragraph",
+      "text": "To determine how much information can be obtained via the phone or in-person visits of employees at work or personal places (that is, bars, gyms, daycares) To determine the level of security in the office perimeter by testing locks, cameras, motion sensors, and security guards To determine the ability of a social engineer to create a malicious USB or DVD that will entice the employee to use it on his or her work computer, compromising the business Of course, more areas will be tested, but what I try to do is outline closely the goals the company has for this audit. What I find is that companies often do not know what they want. The auditor's job is to walk them through different avenues into the company and to determine which of those they want tested."
+    },
+    {
+      "type": "paragraph",
+      "text": "When these goals are clearly defined, you should also include a list of things that are never to be included in an audit."
+    },
+    {
+      "type": "heading",
+      "text": "What Should and Should Not Be Included in an Audit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many different ways exist for testing the outlined goals to see clearly whether a security hole exists in a company. Using all the principles in this book can help outline a good plan for attack. However, avoid some things when planning an attack. Things like:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Attacking a target's family or friends Planting evidence of crimes or infidelity to discredit a target Depending on the laws of the land, impersonating law enforcement can be illegal Breaking into a target's home or apartment Using evidence of a real affair or embarrassing circumstance to blackmail a target into compliance Things like these should be avoided at all costs because they do not accomplish the goal and leave the target feeling violated. However, the question does come up about what to do if in an audit evidence appears of some of these things. Each auditor must personally decide how to handle these circumstances, but consider a couple of examples."
+    },
+    {
+      "type": "paragraph",
+      "text": "In one audit, an auditor found out an employee was using the company's high-speed Internet to download gigabytes worth of porn to external hard drives. Instead of risking the employee's getting fired he went to the employee and told him he knew, but he didn't want him to get fired and just gave him a warning to stop. The employee became embarrassed and upset and figured the auditor was going to still report him. He decided he wanted to preemptively combat this attack and he went to the owners and said the auditor was planting evidence of this offense on his computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, the auditor had logs and screenshots of when the compromise occurred and the employee was fired anyway. But also the auditor was reprimanded for not coming forward when he found an offense of which the company had a strict policy."
+    },
+    {
+      "type": "paragraph",
+      "text": "In another account, the auditor found evidence of a man downloading child pornography to his computer and then distributing it to others on the Internet. The auditor knew from the other images on his computer that he had a wife and children and that reporting this would lead to divorce, probably jail time, and the ruination of his career as well as the family's life."
+    },
+    {
+      "type": "paragraph",
+      "text": "The law of the land was that child pornography was illegal, as well as morally disgusting and vile. The auditor turned the man in to the company as well as the authorities, which cost that man his career, family, and freedom."
+    },
+    {
+      "type": "paragraph",
+      "text": "Having a clearly defined \"do not\" list enhances your audits and keeps you from crossing your own moral and legal guidelines. In one interview I had with Joe Navarro, one of the world's leaders on nonverbal communication, he made a statement about this point. He said that unless you are a law enforcement agent you have to decide what lines you will and will not cross before you enter into an engagement. With that in mind then what things should an auditor include in audits?"
+    },
+    {
+      "type": "labeled-item",
+      "label": "Phishing Attacks:",
+      "text": "Targeted email attacks that allow a company to see whether its employees are susceptible to attacks through email."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Pretexting In-Person Attacks:",
+      "text": "Very precise and controlled pretexts are chosen and then performed over the phone or in-person to determine whether employees will fall for them."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Baiting:",
+      "text": "An in-person attack where access is gained to the target's building or other property by some method, and USBs or DVDs are dropped that contain malicious files on them embedded with malicious code."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Tailgating (or piggybacking):",
+      "text": "An in-person attack where the auditor attempts to approach a group of employees to gain access to the building by just following them in."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Physical Security (Red Team):",
+      "text": "An attempt to gain physical access to an office and take items of value to the company. This short list can help a professional auditor set some guidelines to define what should and should not be included. Still, one of the largest problems many companies have is trying to pick out a good auditor, one who can accomplish these tasks at hand."
+    },
+    {
+      "type": "heading",
+      "text": "Choosing the Best Auditor"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you broke a limb and the damage was bad, and a doctor told you that you have a chance for only 50% recovery, but that going to see a good surgeon could increase those odds, wouldn't you search high and low for a good surgeon to fix your problems? And when you found him, what questions would you ask? Wouldn't you want to see his past work? You would want some proof of his ability to grasp the concepts and perform the tasks that would increase your chances of recovery."
+    },
+    {
+      "type": "paragraph",
+      "text": "You follow a similar process to find the right auditor. Here are some of the basics that you might want to find out as you speak to an auditor:"
+    },
+    {
+      "type": "labeled-item",
+      "label": "Knowledge:",
+      "text": "Has the team released any research, papers, speeches, or other materials that display they are knowledgeable about social engineering? Are they known in the community for being leaders in this field? You do not want to trust your audit and security to a team that is using outdated methods and is not up on the most recent tactics being used. Determining the amount of knowledge an auditor and team has is hard to do without a little research. Asking auditors about any papers, articles, or information they have written on the topics is not a bad idea. Make sure the team you hire is at the top of its game."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Experience:",
+      "text": "Clients often do not want to be identified or named. In my case, many clients do not want to be put on a website or marketing material because they feel this will embarrass them or make them vulnerable. But you can determine the experience of the auditor in other ways. Ask him about the methods he has used and how he implemented solutions in the past. An auditor often does not want to let all the secrets out of the bag in an initial meeting, but ask him for one or two accounts of attacks he launched, which will help you determine his level of skill."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Contract:",
+      "text": "Having the audit completely outlined, documented, and limitations set can go a long way toward a successful audit. Personally, I do not like to work with a ton of limitations because most malicious social engineers do not have any at all. But at least a small subset of rules written out on what is and is not allowed should be agreed upon. A social engineer wants permission to record phone calls; video-record the building and interactions; and especially if an audit includes physical security, to have written permission to remove items from the premises. An auditor doesn't want to finish the audit just to be presented with a warrant or a lawsuit. Also designate an emergency contact person who knows about the audit and can vouch for the auditor and team. If an auditor finds himself in a legal jam he'll want a number to call. No one wants to be performing a late-night dumpster dive to be met by the police and have to sit the night in jail. Having a contact person provides a \"get out of jail free\" card and can save a lot of hassle in the long run."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Rapport:",
+      "text": "Apply the principles in this book to find a good auditor. When you speak with him on the phone or in person how does he make you feel? What do you see? Do you get the sense he is very professional and his goal is to really help you? Does the team portray itself and its business as one you want to be associated with? If you are the project manager who is hiring an auditor, a load of responsibility rests with you. The auditor may not want to meet with a team. The fewer people who know what the SE team looks like, the better for physical security audits. The team, as a result, may only want to meet with one or two people. This means you must ensure the auditor is high quality and can do the work needed."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Time:",
+      "text": "One of the biggest mistakes companies make when seeking auditors to help them is not giving them enough time to perform the job. They figure that a few phone calls or one site visit can all be accomplished in one day. Although that may be true, what about information gathering, planning, and scoping out the targets? These things take time. Time is important but it is also a double-edged sword —allow enough time for the auditor to do a good job, but not so much time that it becomes a cost problem. Manage, but do not micro- manage. These are just a few of the areas to consider when choosing the right auditor for your company. In the end you must feel comfortable and good that the social engineering team will have your best interests at heart, will do their best to remain professional, and stay within the guidelines."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Conducting Meaningful Social Engineering Audits",
+      "points": [
+        "Social engineering penetration tests should be educational and constructive, never designed to embarrass or penalize employees.",
+        "Clearly define rules of engagement, scope boundaries, and emergency contact procedures before running an audit.",
+        "Audit reports must provide actionable remediation roadmaps, not merely lists of compromised passwords."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Concluding Remarks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Knowledge is of no value unless you put it into practice."
+    },
+    {
+      "type": "paragraph",
+      "text": "—Anton Chekhov The information that I provide in this book is not light-hearted. Much of the information shows serious vulnerabilities in the way people think and act. When I teach security classes with my mentor, Mati, he talks about a payload encoder called \"shikata ga nai,\" which is Japanese for \"it cannot be helped\" or roughly translated, \"there is no hope.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "I thought about making that the epigraph, but I thought the phrase \"there is no hope\" is a little more fatalistic than I like to be normally. Instead, I feel the thought about practice and knowledge fits more of the theme of the book. I have stated time and again that perfecting the skills as well as the ability to detect these skills in use takes a lot more than just knowledge. Being too afraid about the things I have mentioned in this book leads to anger at all the ways people get hacked, which only leads down a path that will cause us to close our minds. Instead I suggest a different approach to the information in this book besides fear: A new mindset that encourages you to learn and think and understand the methods the \"bad guys\" use so you can be protected from falling prey to them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now I am not saying that there is no place for fear. There definitely is room to feel some healthy fear. Protecting your data, your personal information, and your identity, but at the same time understanding the \"hacker\" mindset combined with the information in this book, might be more beneficial to you."
+    },
+    {
+      "type": "paragraph",
+      "text": "This section touches on a few things I hope you can take away from this book and use in your life, especially if you are in charge of security for your company, your clients, or reading this for your own personal security.."
+    },
+    {
+      "type": "heading",
+      "text": "Social Engineering Isn't Always Negative"
+    },
+    {
+      "type": "paragraph",
+      "text": "I hope that I impressed upon you that social engineering is not always negative. It is not always the hackers or the con men who use social engineering tactics. Doctors, therapists, social workers, parents, children, bosses, employees—everyone uses social engineering tactics to some extent. The art of persuasion is used often in normal everyday social situations."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learning that social engineering isn't always scary, dark, and evil can go a long way toward uncovering how certain skills are used. After you understand those skills, practice and become skilled or proficient in them; discerning how they are being used against people then becomes much easier."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can find places to analyze these skills that are not in the dark corners of the world. You can read books on psychology, persuasion, and sales, then observe in the field to see how these skills are used."
+    },
+    {
+      "type": "heading",
+      "text": "The Importance of Gathering and Organizing Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "I cannot really reiterate enough how important quality information gathering truly is. The quality, professionalism, and the very success of every social engineering engagement depends on the level of information gathering you do. The Web is a boundless and endless resource of information. Companies post their financial records, employees' names and titles, contact information, pictures of physical location, security policies, contracts, vendors and suppliers' names, people's personal files, and so much more. On a personal level, employees as well as everyday people post personal pictures, their addresses, their purchases, leases, contracts, favorite foods, teams, music, and so on."
+    },
+    {
+      "type": "paragraph",
+      "text": "Armed with all this overwhelming amount of information a social engineer can pick and chose what he wants to use and what kind of attack vector to implement. As the engagement continues the information gathered will give the social engineer the ability to use story lines and pretexts that will have the greatest effect on the target. Without information gathering, as reiterated throughout the book, the engagement will most likely lead to failure."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, if a professional auditor is given three weeks for a job, he should spend half of that time gathering information. However, professional auditors often have a tendency to get excited and approach the target with the old standby pretexts. Do not fall into this habit; spend a lot of time in information gathering."
+    },
+    {
+      "type": "paragraph",
+      "text": "Almost as important as the information gathering itself is how you store and catalogue the information—perhaps by using one of the methods mentioned in Chapter 2 to store and organize this information. Learning to not just efficiently collect the information but how to store the information can go a long way toward making it efficient to use. Not simply dumping things into a massive document but categorizing things, cataloging them, and labeling them will make the information easy to use, especially if you are on a phone engagement."
+    },
+    {
+      "type": "paragraph",
+      "text": "Just remember that a social engineer is only as good as the information he obtains. I personally have seen too many gigs go down the drain because of bad information or lack of information. At the same time I have seen people who might not be the smoothest speakers or the most charming succeed in very difficult situations because of the information they gathered."
+    },
+    {
+      "type": "paragraph",
+      "text": "Information is the crux of social engineering, and if you take anything away from this book, let it be that."
+    },
+    {
+      "type": "heading",
+      "text": "Choose Your Words Carefully"
+    },
+    {
+      "type": "paragraph",
+      "text": "Just like this section's opening epigraph, this topic lends itself to the thought that information has no value unless you put it into practice. You can have all the information gathered and organized and catalogued, but you need to use it efficiently. The first step in this is to organize what words you will use."
+    },
+    {
+      "type": "paragraph",
+      "text": "I discussed the skills of elicitation and preloading. These are two of the most valuable skills, and I hope you practice using them. Use anchors, keywords, and phrases to load the target with emotions and thoughts to make him follow your lead. Preloading is a very powerful technique that cannot be mastered in a short while, but practice will enable you to use this skill. The great thing about preloading is that you can practice this skill at home, at work, with your kids, your parents, your clients, really anywhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "Don't think that practicing this means you will always have to get people to do things against their will. Preloading is used to motivate people's minds to be more open to a suggestion or idea. You don't have to use it maliciously. Kids do it all the time. For example, your daughter says, \"Daddy, I love you...\" and adds a few seconds later, \"Can I have that new doll?\" This is an example of preloading, putting a \"target\" into an agreeable emotional state."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once you master that skill, or at least become proficient in using it, work on the way you use elicitation. Remember that no one loves the feeling of being interrogated. Elicitation should not mimic a police interrogation; it should be a smooth, seamless conversation that is used to gather intelligence on the target or topic you are seeking."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learning the methods and process used to come up with questions that can be used in normal conversation will not only enhance your skills as a social engineer but also as a communicator. People enjoy when they feel others are interested in their lives and their work. Using this skill for the good can enhance your ability as a social engineer."
+    },
+    {
+      "type": "paragraph",
+      "text": "I have a good friend that gets people to tell her anything. It is uncanny. Complete strangers will, at the end of a conversation, say things like, \"I just don't know why I am telling you all these things...\" She is not a social engineer or even in security, but she is a great elicitor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mastering preloading and elicitation can enhance your ability to also plan out what you will say. These skills can put your mind in the frame of seeking and gathering information in a more intelligent and less intrusive way."
+    },
+    {
+      "type": "heading",
+      "text": "Have a Good Pretext"
+    },
+    {
+      "type": "paragraph",
+      "text": "Remember that a good pretext is not a lie or a story. Instead you become and live your pretext for a short time. Every fiber of your being—your thoughts, actions, speech, and motivation—should reflect what the pretext would do. If you can accomplish this then your pretext will be believable to the target."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other thing to remember is that pretexting is used in everyday life, not just in social engineering. Imagine this scenario: You just had an argument with your mate. Now it is time for work. You don't want everyone to know that things at home aren't that good this day, so when you go to work and meet your coworkers who say, \"Hey Jim how's it going?\" Your reply is, \"Awesome. Couldn't be better.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "That is the opposite of the truth but what do you do to make that believable? Shoot someone a smile, or project confidence via your posture or body language. Depending on how private you are and how much you don't want to share with your co-workers you might even have a \"cover story\" to prove how great life is."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is just one scenario, but people use pretexting all the time. Whenever you are trying to portray a difference from what is reality to people the \"cover story\" to make it believable is a pretext. Of course, most people aren't really good at it and are easily detected, but noticing these situations in your life and work will give you a good basis of pretexting to analyze."
+    },
+    {
+      "type": "paragraph",
+      "text": "Analyzing these scenarios can help you identify areas you want to improve in your pretexts and help you master this very useful skill."
+    },
+    {
+      "type": "heading",
+      "text": "Practice Reading Expressions"
+    },
+    {
+      "type": "paragraph",
+      "text": "I think I can talk for weeks about microexpressions. The topic just fascinates me, and it intrigues me to think that people have built-in mechanisms for displaying our deepest darkest feelings, and most of us will have no control over it. How our emotions cause certain muscles to contract and display a certain expression for milliseconds is just an amazing aspect of creation. But learning how to notice them, read them, and use those very same expressions to manipulate others is something that truly astounds me."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice how to recreate the microexpressions discussed in Chapter 5. As you do, notice the emotions the microexpressions conjure up in you. Practicing these expressions will also help you read them when others express them."
+    },
+    {
+      "type": "paragraph",
+      "text": "As you practice, do not focus just on what it takes to read microexpressions in others but on how to control your own microexpressions and prevent someone using their facial-reading reading skills on you. Remember that reading others is a good skill, but having control over your own microexpressions, body language, and vocal tones is far better. This skill can enhance your security practice as well as your personal relationships. After you master many of those skills, you will begin to see how you can utilize one of the main concepts Chapter 5, the human buffer overflow (HBO). The human mind works much like software, just on a higher level. But it can be fuzzed, examined, and overthrown like software. Re-read that section to make sure you fully understand the principles presented."
+    },
+    {
+      "type": "heading",
+      "text": "Manipulation and Influence"
+    },
+    {
+      "type": "paragraph",
+      "text": "Manipulation and influence are two aspects of social interaction that have some dramatic and powerful effects on the people you interact with. For that reason, use the information in Chapter 6 with extreme care. Learning how to persuade and manipulate people can literally make the difference between success or failure in a social engineering endeavor. Every day, people try to manipulate and persuade others to take actions. Some of these actions are very bad and can cost money, personal freedom, and identities."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use those situations as teaching tools. Analyze the methods that marketers, psychologists, counselors, teachers, and even coworkers use to try to manipulate you. Pick out points that you think you can learn from and put them into your arsenal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Remember that persuasion is not always negative: It doesn't always have to mean getting someone to do something they don't want. Persuasion can have very positive effects, and many times, positive persuasion is much more difficult. If you can master those skills and use them to help people stay secure, you will be more readily able to identify when someone is using persuasion tactics in a negative sense."
+    },
+    {
+      "type": "heading",
+      "text": "Be Alert to Malicious Tactics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Being aware of what tactics attackers use will surely keep you from falling victim to them. The professional auditors can use these tactics to educate their customers on what to look for in a possible attack. Be alert to pick out instances of how these are being used."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, one tactic the \"bad guys\" use is to strike during times of trouble. When the planes hit the Twin Towers, the earthquakes hit Haiti, and the tsunami hit Asia, the devastation upon the human population and their lives, psyche, and emotions was insurmountable. During times of people's vulnerability and weakness is exactly when the bad guys strike."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let me illustrate it this way: I once read an article that spoke about how lions hunt in the wild. It said that a lion, when it wants to confuse and disjoint a group of prey to choose a victim, will roar towards the ground— not toward the prey or sky, but the ground. Why? It's because the massive, fear-inspiring roar will reverb off the ground and surround the prey. They become confused by not knowing which direction the lion is coming from. Some will scatter left, some will scatter right, but they will leave their young, old, infirm, and immature herd members open."
+    },
+    {
+      "type": "paragraph",
+      "text": "The preceding is not too far off from how professional malicious social engineers operate. They \"roar\" in such a way as to cause or add to the confusion. They use websites that help find dead loved ones after a natural disaster, or claim themselves to have lost family and friends in the carnage. When the emotions of the \"targets\" are so involved they can't see straight is when an attack occurs."
+    },
+    {
+      "type": "paragraph",
+      "text": "The inexperienced and immature (technologically speaking) fall victim first by giving out little bits of information until the attacker has enough to build a profile. That profile helps launch further attacks, and those attacks get more vicious and heartless."
+    },
+    {
+      "type": "paragraph",
+      "text": "Be alert to these instances, and you will keep your clients and yourself protected from falling victim to them. Also, use these situations as a learning lesson, analyze the methods used, and see whether they worked or failed. Doing so will enhance your ability to be more alert to potential threats."
+    },
+    {
+      "type": "paragraph",
+      "text": "The unfortunate difference in between a lion and a social engineer (besides the obvious) is that a social engineer gives no audible roar. He is not out there yelling, \"I want prey, now run!\" Instead malicious social engineers' sly, subtle attacks trick thousands into their traps each year."
+    },
+    {
+      "type": "heading",
+      "text": "Use Your Fear"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now if this chapter has built any kind of fear in you all I can say is, \"good.\" You need it. Because healthy fear can save your life, or at least in this case your identity and your business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use that fear to motivate change. Don't get angry and upset. Make a decision to change and to educate yourself, your families, and your companies how to observe, notice, and defend against these attacks. Make a decision to not allow your identities and your companies to be hacked, and then do something about it."
+    },
+    {
+      "type": "paragraph",
+      "text": "This whole book boils down to \"security through education.\" Human hacking is an art form. Social engineering is a mixture and blending of sciences, art, and skill. When blended in the right amount and right mixture the results are \"shikata ga nai.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Companies lose millions of dollars per year to breaches, with a large majority of those breaches stemming from social engineering attacks. Yet, more often than not, when we offer clients the chance to add social engineering auditing to their pentesting services they decline."
+    },
+    {
+      "type": "paragraph",
+      "text": "Why? Companies tend to fear change. Countless times in my professional practice I have heard intelligent and successful business owners say things like, \"We don't need a social engineering audit. Our people won't fall for those tricks.\" Then during the pentest we will do a few authorized phone calls to get information and when we present the information in the report they are amazed how easy it was to get the information."
+    },
+    {
+      "type": "paragraph",
+      "text": "At all levels of various companies, security awareness doesn't tend to change much. When speaking to companies after a pentest about a security awareness training program we launched, many told us they do not perform formal intense training for call center or tech support departments. Yet those are the same departments that most often fall for social engineering attacks."
+    },
+    {
+      "type": "paragraph",
+      "text": "This points to the core of the problem that I am speaking about here. Security through education cannot be a simple catch phrase; it has to become a mission statement. Until companies and the people who make up those companies take security personally and seriously, this problem won't be fixed completely. In the meantime, those who were serious enough to read this book and to have a desire to peer into the dark corners of society can enhance their skills enough to keep their families, selves, and companies a little more secure."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the \"lion roars,\" be the one who is at the front of the pack leading the exodus out of the way. Be an example of what to do and how to defend against these attacks."
+    },
+    {
+      "type": "paragraph",
+      "text": "With enough time and enough effort anyone can be social engineered. Those words are true, as scary as they are. That doesn't mean there is no hope; it means your job is to make malicious social engineering so difficult and time consuming that most hackers will give up and go after \"low- hanging fruit\" or the prey that is left behind. I know; it sounds cold. I would love it if everyone would read this book and make some massive changes— then companies would be truly secure. But that is just not the world we live in."
+    },
+    {
+      "type": "paragraph",
+      "text": "That statement, then, raises a very serious question. If there truly is no hope, how can companies, people, families, and everyone protect against this massive vulnerability? Until companies begin to realize their vulnerability to social engineering attacks, individuals will have to educate themselves about attack methods and stay vigilant, as well as spread the word to others. Only then do we have hope of staying if not one step ahead of an attack, then not too far behind."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "As I conclude this book, I hope it has opened your eyes to the world of social engineering. I hope that it will continue to help you take note of the potential for malicious attacks. I hope it has helped you build or maintain a healthy fear of the potential for disaster."
+    },
+    {
+      "type": "paragraph",
+      "text": "I also hope this book helps you to protect your businesses, your families, your children, your investments, and your life. I hope that the information within has showed you that staying completely secure and protected is not impossible."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mati Aharoni, my mentor, says in one of his classes that the reason the bad guys usually win is because they have dedication, time, and motivation on their side. Don't let life get in the way of security. Conversely, don't let too much fear of the bad guys keep you from enjoying life."
+    },
+    {
+      "type": "paragraph",
+      "text": "I hope that applying the principles in this book enhances your ability to read and communicate more effectively with people around you. Using them in many aspects of your life, not just security, can prove to be a life- altering exercise. Social engineering is truly an art form. Enjoy."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Prevention & Mitigation Master Directives",
+      "points": [
+        "Security is not a final product; it is an active, ongoing educational process.",
+        "Maintain situational awareness, verify through independent channels, and never allow social pressure or urgency to bypass verification.",
+        "True enterprise defense is built upon educated, vigilant, and empowered human beings."
+      ]
+    }
+  ]
+}

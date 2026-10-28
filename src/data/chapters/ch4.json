@@ -1,0 +1,598 @@
+{
+  "id": 4,
+  "partId": 2,
+  "part": "Phase II: The Psychological Attack Surface",
+  "title": "Chapter 4: Pretexting: How to Become Anyone",
+  "subtitle": "Architecting Believable Personas, Voice Cadence, and Scenario Execution",
+  "quote": {
+    "text": "Honesty is the key to a relationship. If you can fake that, you're in.",
+    "author": "Richard Jeni"
+  },
+  "pages": "Pages 104–129",
+  "readTime": "29 min read",
+  "highlights": [
+    "What is pretexting? Creating an invented scenario and identity to engage a targeted victim",
+    "The 5 Principles of Pretexting: Research, Plausibility, Self-Knowledge, Dress/Props, and Escape Routes",
+    "Matching your natural energy: Why forcing a role outside your physical baseline always fails",
+    "The golden rule of pretexting: Never pretend to know more than you can realistically defend"
+  ],
+  "totalBlocks": 139,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "At times we probably all wish we could be someone else. Heck, I would love to be a little skinnier and better looking. Even though medical science hasn't come up with a pill that can make that possible, a solution to this dilemma does exist—it's called pretexting."
+    },
+    {
+      "type": "paragraph",
+      "text": "What is pretexting? Some people say it is just a story or lie that you will act out during a social engineering engagement, but that definition is very limiting. Pretexting is better defined as the background story, dress, grooming, personality, and attitude that make up the character you will be for the social engineering audit. Pretexting encompasses everything you would imagine that person to be. The more solid the pretext, the more believable you will be as a social engineer. Often, the simpler your pretext, the better off you are."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pretexting, especially since the advent of the Internet, has seen an increase in malicious uses. I once saw a t-shirt that read, \"The Internet: Where men are men, women are men, and children are FBI agents waiting to get you.\" As slightly humorous as that saying is, it has a lot of truth in it. On the Internet you can be anyone you want to be. Malicious hackers have been using this ability to their advantage for years and not just with the Internet."
+    },
+    {
+      "type": "paragraph",
+      "text": "In social engineering playing a role or being a different person to successfully accomplish the goal is often imperative. Chris Hadnagy might not have as much pull as the tech support guy or the CEO of a major importing organization. When a social engineering situation arises, having the skills needed to become the pretext is important. In a discussion I was having with world-renowned social engineer, Chris Nickerson, on this topic he said something I think really hits home."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nickerson stated that pretexting is not about acting out a role or playing a part. He said it is not about living a lie, but actually becoming that person. You are, in every fiber of your being, the person you are portraying. The way he walks, the way he talks, body language—you become that person. I agree with this philosophy on pretexting. Often when people watch a movie the ones we feel are the \"best we have ever seen\" are where the actors get us so enthralled with their parts we can't separate them from their portrayed characters."
+    },
+    {
+      "type": "paragraph",
+      "text": "This was proven true to me when many years ago my wife and I watched a great movie with Brad Pitt, Legends of the Fall. He was a selfish jerk in this movie, a tormented soul who made a lot of bad decisions. He was so good at playing this part my wife literally hated him as an actor for a few years. That is a good pretexter."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem with using pretexting for many social engineers is that they feel it is just dressing up as a part and that's it. True, the dress can help, but pretexting is a science. In a way, your whole persona is going to portray you in a light that is different than who you are. To do this, you, as a social engineer, must have a clear picture of what pretexting really is. Then you can plan out and perform the pretext perfectly. Finally, you can apply the finishing touches. This chapter will cover those aspects of pretexting. First is a discussion of what pretexting really is. Following that is discussion of how to use pretexting as a social engineer. Finally, to tie it all together, this chapter explores some stories that show how to use pretexting effectively."
+    },
+    {
+      "type": "heading",
+      "text": "What Is Pretexting?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pretexting is defined as the act of creating an invented scenario to persuade a targeted victim to release information or perform some action. It is more than just creating a lie; in some cases it can be creating a whole new identity and then using that identity to manipulate the receipt of information. Social engineers can use pretexting to impersonate people in certain jobs and roles that they never themselves have done. Pretexting is not a one-size-fits-all solution. A social engineer must develop many different pretexts over his or her career. All of them will have one thing in common: research. Good information gathering techniques can make or break a good pretext. For example, mimicking the perfect tech support rep is useless if your target does not use outside support."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pretexting is also used in areas of life other than social engineering. Sales; public speaking; so-called fortune tellers; neurolinguistic programming (NLP) experts; and even doctors, lawyers, therapists, and the like all have to use a form of pretexting. They all have to create a scenario where people are comfortable with releasing information they normally would not. The difference in social engineers using pretexting and others is the goals involved. A social engineer, again, must live that persona for a time, not just act a part."
+    },
+    {
+      "type": "paragraph",
+      "text": "As long as the audit or social engineering gig lasts, you need to be in the persona. I \"get in character\" myself, as do many of my colleagues, some of whom even stay in character \"off the clock.\" Anywhere you need to, you should be the pretext you set out to be. In addition, many professional social engineers have many different online, social media, email, and other accounts to back up a slew of pretexts."
+    },
+    {
+      "type": "paragraph",
+      "text": "I once interviewed radio icon Tom Mischke on this topic for a social engineering podcast I am a part of (hosted at www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers/). Radio hosts must be proficient at pretexting because they constantly have to release only the information they want to the public. Tom was so proficient at this that many listeners felt as if they \"knew\" him as a friend. He would get invitations to weddings, anniversaries, and even births. How was Tom able to accomplish this amazing kind of pretext?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The answer is practice. Lots and lots of practice is what he prescribed. He told me that he would actually plan out his \"acts\" then practice them—use the voice they would have, sit how they would sit, maybe even dress like they would dress. Practice is exactly what makes a good pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "A very important aspect to remember is that the quality of the pretext is directly linked to the quality of the information gathered. The more, the better, and the more relevant the information the easier it will be for the pretext to be developed and be successful. For example, the classic pretext of a tech support guy would utterly fail if you went to a company that either had internal support or outsourced to a very small company of one or two people. As natural as you are when you converse with someone about who you really are is how easy applying your pretext should be."
+    },
+    {
+      "type": "paragraph",
+      "text": "So that you can see how you can utilize this skill, the following section covers the principles of pretexting then shows how you can apply them to actually planning a solid pretext."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: What Is Pretexting?",
+      "points": [
+        "Pretexting is the act of inventing an alternative scenario, identity, and context to persuade a target to release information or grant access.",
+        "Pretexting is not superficial acting; true pretexters mentally embody the role until it is indistinguishable from reality.",
+        "A pretext must be supported by realistic documentation, believable backstories, and appropriate attire."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Principles and Planning Stages of Pretexting"
+    },
+    {
+      "type": "paragraph",
+      "text": "As with every skill, certain principles dictate the steps to performing that task. Pretexting is no different. The following is a list of principles of pretexting that you can use. By no means are these the only principles out there; maybe others can be added, but these principles embody the essence of pretexting:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The more research you do the better the chance of success. Involving your own personal interests will increase success. Practice dialects or expressions. Many times social engineering effort can be reduced if the phone is viewed as less important. But as a social engineer, using the phone should not reduce the effort put into the social engineering gig. The simpler the pretext the better the chance of success. The pretext should appear spontaneous. Provide a logical conclusion or follow through for the target. The following sections discuss each of these principles in detail."
+    },
+    {
+      "type": "heading",
+      "text": "The More Research You Do, the Better the Chance of Success"
+    },
+    {
+      "type": "paragraph",
+      "text": "This principle is self-explanatory, but it can't be said enough—the level of success is directly connected to the level and depth of research. As discussed in Chapter 2, it is the crux of successful social engineering. The more information a social engineer holds the more chances he or she has of developing a pretext that works. Remember the story I told in Chapter 2 about my mentor Mati Aharoni and how he convinced a high-level executive to visit his \"stamp collection\" site online? At first glance, the path inside that company might have seemed to be something to do with financial, banking, fund raising, or something along those lines because it was a banking facility. The more research Mati did, the clearer it became that the pretext could be a person who was selling a stamp collection. Finding out what the executive's interests were allowed Mati to find an easy way into the company, and it worked."
+    },
+    {
+      "type": "activity-ref",
+      "activityId": "ch4-pretext-architect"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes those little details that are what make the difference. Remember, no information is irrelevant. While gathering information, looking for stories, items, or aspects of a personal nature is also a good idea. Using a target's personal or emotional attachments can enable you to get a foot in the door. If the social engineer finds out that every year the CFO donates a sizable sum to a children's cancer research center, then a pretext that involves fund raising for this cause could very likely work, as heartless as it sounds."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem is that malicious social engineers use pretexts that feed on emotions without a second thought. After the attacks on the Twin Towers in New York City on September 11, 2001, many malicious hackers and social engineers used the losses of these people to raise funds for themselves via websites and emails that targeted people's computers and fake fund raisers that obtained funds from those with a giving heart. After the earthquakes in Chile and Haiti in 2010, the same things occurred where many malicious social engineers developed websites that were positioned as giving out information on the seismic activity or the people who were lost. These sites were encoded with malicious code and hacked people's computers."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is even more evident directly after the death of a movie or music star. Search engine optimization (SEO) and marketing geniuses will have the search engines pulling up their stories in a matter of hours. Along with marketers, malicious social engineers will take advantage of the increased search engine attention by launching malicious sites that feed off that SEO. Drawing people to these sites, they harvest information or infect them with viruses."
+    },
+    {
+      "type": "paragraph",
+      "text": "That people will take advantage of others' misfortune is a sad fact about this world, and one of those dark corners I said you would visit in this book. As a social engineering auditor, I can use an employee's emotions to show a company that even people with seemingly good intentions can trick a company's employees into giving access to valuable and business-ruining data."
+    },
+    {
+      "type": "paragraph",
+      "text": "All these examples solidify the point that the better a social engineer's information-gathering and research-gathering process, the better chance he has at finding some detail that will increase the chances of a successful pretext."
+    },
+    {
+      "type": "heading",
+      "text": "Involve Personal Interests to Increase Success"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using your own personal interests to increase the chances of a successful social engineering move seems very simple but it can go a long way in convincing the target that you are credible. Nothing can ruin rapport and trust faster than a person who claims to be knowledgeable about a topic and then falls short. As a social engineer, if you have never seen a server room before and have never taken a computer apart, trying to play the part of a technician can be a quick path to failure. Including topics and activities in your pretext that you are interested in gives you a lot to talk about and gives you the ability to portray intelligence as well as confidence."
+    },
+    {
+      "type": "paragraph",
+      "text": "Confidence can go a long way toward convincing the target you are who you say you are. Certain pretexts require more knowledge than others (for instance, stamp collector versus nuclear researcher) to be convincing, so again research becomes the recurring theme. Sometimes the pretext is simple enough that you can get the knowledge by reading a few websites or a book."
+    },
+    {
+      "type": "paragraph",
+      "text": "However you gain the knowledge, researching topics that personally interest you, as the social engineer, is important. After you pick up on a story, aspect, service, or interest that you have a lot of knowledge in or at least feel comfortable discussing, see whether that angle can work."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dr. Tom G. Stevens, PhD, says, \"It is important to remember that self- confidence is always relative to the task and situation. We have different levels of confidence in different situations.\" This statement is very important, because confidence directly links to how others view you as a social engineer. Confidence (as long as it is not overconfidence) builds trust and rapport and makes people feel at ease. Finding a path to your target that offers you the chance to talk about topics you are comfortable with, and that you can speak about with confidence, is very important."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 1957 psychologist Leon Festinger came up with the theory of cognitive dissonance. This theory states that people have a tendency to seek consistency among their beliefs, opinions, and basically all their cognitions. When an inconsistency exists between attitudes and behaviors, something must change to eliminate the dissonance. Dr. Festinger states two factors affect the strength of the dissonance:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The number of dissonant beliefs The importance of each belief He then stated that three ways exist to eliminate dissonance (which should cause every social engineer's ears to perk up):"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reduce the importance of the dissonant beliefs. Add more consonant beliefs that outweigh the dissonant ones. Change the dissonant beliefs so they are no longer inconsistent. How does a social engineer use this information? Approaching a pretext with lack of confidence when your pretext says that you should be confident automatically creates dissonance. This dissonance raises all sorts of red flags and puts barriers up to rapport, trust, and forward motion. These barriers affect the target's behavior, who is then expected to balance out her feelings of dissonance, and kills any likelihood of your pretext working."
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the methods to counter that is to add more consonant beliefs so that they outweigh the dissonant ones. What would the target expect of your pretext? Knowing that will allow you to feed their minds and emotions with actions, words, and attitudes that will build the belief system and outweigh any beliefs that might bring in doubt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, a skilled social engineer can also change the dissonant beliefs so they are no longer inconsistent. Although this is trickier, it is a powerful skill to have. It is possible that your appearance does not fit what the target might envision for your pretext. You might think back to the show Doogie Howser, M.D. Doogie's problem was that his \"pretext\" of being a top doctor never fit since he was so young. That was a dissonant belief, but his knowledge and actions often brought that into the consonant beliefs of his \"targets.\" Just like the previous example, a social engineer can align his pretext with the target's beliefs by their attitudes, actions, and especially their knowledge of the pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "One example of this I recently saw in real life was at Defcon 18. I was part of the team that brought the Social Engineering CTF to Defcon. We saw many contestants who used the pretext of an internal employee. When presented with an objection like, \"What is your employee badge number?\" an unskilled social engineer would get nervous and either not have an answer or hang up, whereas a skilled social engineer would bring those dissonant beliefs into alignment for the target. Simply stating a badge number they found online or using another method they were able to convince the target that information was not needed, therefore aligning the target to their beliefs."
+    },
+    {
+      "type": "paragraph",
+      "text": "These points are very technical answers to a very simple problem, but you must understand that one can do only so much faking. Choose your path wisely."
+    },
+    {
+      "type": "heading",
+      "text": "Practice Dialects or Expressions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learning to speak in a different dialect cannot be glanced over quickly. Depending on where you live, learning to speak a different dialect or with an accent can take some time. Putting on a southern drawl or an Asian accent can be very difficult, if not impossible. Once I was in a training class with an international sales organization and it had some statistics that said 70% of Americans prefer to listen to people with a British accent. I am not sure if that statistic is true or not, but I can say that I enjoy the accent myself. Now after that class, I heard quite a few people in the class practice their \"cheerios\" and \"Alo Govenors,\" which were horrible. I have a good friend from the UK, Jon, who gets very angry when he hears Americans trying to use lines from Mary Poppins in an imitation British accent. If he had heard this group, he might have blown a fuse."
+    },
+    {
+      "type": "paragraph",
+      "text": "What that class taught me was that although the stats might say one accent is better than another for sales or just because you may be social engineering in the south or in Europe doesn't mean you can easily put on the accent to make you appear local. When in doubt, throw it out. If you can't make the dialect perfect, if you can't be natural, and if you can't be smooth, then just don't try. Actors use vocal coaches and training sessions to learn to speak clearly in the accent they have to portray. Actor Christian Bale is from Wales, but determining that fact from listening to him is very difficult. He doesn't sound British in most of his movies. Actor Gwyneth Paltrow took on a very convincing British accent for the movie Shakespeare in Love."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most actors have dialect coaches who will work with them to perfect the target accent. Because most social engineers cannot afford a dialect coach, there are many publications that can help you learn at least the basics of putting on an accent, such as Dialects for the Stage by Evangeline Machlin. Although this is an older book, it contains a lot of great tips:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Find native examples of the accent you want to learn, to listen to. Books like Dialects for the Stage often come with audiotapes full of accents to listen to. Try speaking along with the recording you have, to practice sounding like that person. After you feel somewhat confident, record yourself speaking in that accent so you can listen to it later on and correct errors. Create a scenario and practice your new accent with a partner. Apply your accent in public to see if people find it believable. There are innumerable dialects and accents, and I personally find it helpful to write out phonetically some of the sentences I will speak. This enables me to practice reading them and get the ideas sunk into my brain to make my accent more natural."
+    },
+    {
+      "type": "paragraph",
+      "text": "These tips can help a social engineer master or at least become proficient at using another dialect."
+    },
+    {
+      "type": "paragraph",
+      "text": "Even if you cannot master another dialect, learning expressions that are used in the area in which you are working can make a difference. One idea is to spend some time listening to people in public talk to one another. A great place for this is a diner or a shopping mall, or any place you might find groups of people sitting and chatting. Listen closely to phrases or key words. If you hear them used in a few conversations you might want to find a way to incorporate these into your pretext to add believability. Again, this exercise takes research and practice."
+    },
+    {
+      "type": "heading",
+      "text": "Using the Phone Should Not Reduce the Effort for the Social Engineer"
+    },
+    {
+      "type": "paragraph",
+      "text": "In recent years, the Internet has come to dominate certain more \"impersonal\" aspects of social engineering, whereas in days past the phone was an integral part of social engineering. Because of this shift, many social engineers do not put the energy or effort into phone usage that can make it truly successful."
+    },
+    {
+      "type": "paragraph",
+      "text": "This topic is here to show that the phone is still one of the most powerful tools of the social engineer and the effort put into using it should not be diminished due to the impersonal nature of the Internet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes when a social engineer plans a phone attack his thinking may differ because using the Internet might appear easier. Note that you should plan to put the same level of effort, the same level and depth of research and information gathering, and most importantly the same level of practice into your phone-based social engineering attacks. I was once with a small group that was going to practice phone presentations. We outlined the proper methods, the tone, the speed, the pitches, and the words to use. We outlined a script (more on this in a minute) and then launched a session. The first person made the call, got on the phone with someone, and messed up the first few lines. Out of complete embarrassment and fear he just hung up on the person. There is a very good lesson there—the person on the other end of the phone has no clue what you are going to say, so you can't really \"mess up.\" Practice sessions can help you learn how to handle the \"unknowns\" caused by your accidentally altering something in your script that throws you off base."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are not as fortunate to have a group to practice or hone these skills with, you will have to get creative. Try calling family or friends to see how far you can get manipulating them. Another way to practice is to record yourself as if you were on the phone and then play it back later to hear how you sound."
+    },
+    {
+      "type": "paragraph",
+      "text": "I personally feel that using an outlined script is very important. Here is an illustration: suppose you had to call your phone company or another utility. Maybe they messed up a bill or you had another service problem and you are going to complain. After you explain yourself to the rep, telling her how upset and disappointed you are, and the rep does absolutely nothing for you, she says something like, \"XY&Z is committed to excellent service; have I answered all your questions today?\" If the drone behind the phone thought for one second about what she was asking she would realize how silly it is, right? This is what happens when you use a written-out script instead of an outline. An outline allows you \"creative artistic freedom\" to move around in the conversation and not be so worried about what must come next."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the phone to solidify your pretext is one of the quickest methods inside your target's door. The phone allows the social engineer to \"spoof,\" or fake, almost anything. Take into consideration this example: If I wanted to call you and pretend I was in a bustling office to add to the pretext I was trying to use, I could simply grab the audio track from Thriving Office (www.thrivingoffice.com/). This site offers a track called \"Busy\" and another called \"Very Busy.\" From the creators: \"This valuable CD, which is filled with the sounds people expect to hear from an established company, provides instant credibility. It's simple, effective, and guaranteed!\""
+    },
+    {
+      "type": "paragraph",
+      "text": "That sentence alone is filled with social engineering goodness—filled with what people expect to hear from an established company. Already you can see that the CD is geared to fill expectations and provide credibility (at least, in the target's mind, after his expectations are met), thereby automatically building trust."
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition, spoofing caller ID information is relatively simple. Services like SpoofCard (www.spoofcard.com) or using homegrown solutions, allows a social engineer to tell the target you are calling from a corporate headquarters, the White House, or the local bank. With these services you can spoof the number to be coming from anywhere in the world."
+    },
+    {
+      "type": "paragraph",
+      "text": "The phone is a deadly tool for social engineers; developing the habits to practice using it and to treat it with utter respect will enhance any social engineer's toolset for pretexting. Because the phone is such a deadly tool and has not lost its effectiveness, you should give it the time and effort it deserves in any social engineering gig."
+    },
+    {
+      "type": "heading",
+      "text": "The Simpler the Pretext, the Better the Chance of Success"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"The simpler, the better\" principle just can't be overstated. If the pretext has so many intricate details that forgetting one will cause a social engineering failure, it is probably going to fail. Keeping the story lines, facts, and details simple can help build credibility."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dr. Paul Ekman, a renowned psychologist and researcher in the field of human deception, cowrote an article in 1993 entitled, \"Lies That Fail.\" In that article he says"
+    },
+    {
+      "type": "paragraph",
+      "text": "[t]here is not always time to prepare the line to be taken, to rehearse and memorize it. Even when there has been ample advance notice, and a false line has been carefully devised, the liar may not be clever enough to anticipate all the questions that may be asked, and to have thought through what his answers must be. Even cleverness may not be enough, for unseen changes in circumstances can betray an otherwise effective line. And, even when a liar is not forced by circumstances to change lines, some liars have trouble recalling the line they have previously committed themselves to, so that new questions cannot be consistently answered quickly. This very salient point explains clearly why simple is better. Trying to remember a pretext can be almost impossible if it is so complex that your cover can be blown by a simple mistake. The pretext should be natural and smooth. It should be easy to remember, and if it feels natural to you, then recalling facts or lines used previously in the pretext will not be a task."
+    },
+    {
+      "type": "paragraph",
+      "text": "To illustrate how important it is to remember the small details I want to share a story with you. Once upon a time I tried my hand at sales. I was placed with a sales manager to learn the ropes. I can recall my first call with him. We drove up to the house, and before we left the car he looked at the info card and told me, \"Remember, Becky Smith sent in a request card for supplemental insurance. We will present the XYZ policy. Watch and learn.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "In the first three minutes of the sales call he called her Beth and Betty. Each time he used the wrong name I saw her demeanor change and then she would say quietly, \"Becky.\" I feel we could have been giving away gold bullion and she would have said no. She was so turned off that he couldn't get her name right that she was not interested in listening to anything."
+    },
+    {
+      "type": "paragraph",
+      "text": "This scenario really drives home the point of keeping the simple facts straight."
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition to remembering the facts, it is equally important to keep the details small. A simple pretext allows for the story to grow and the target to use their imagination to fill the gaps. Do not try to make the pretext elaborate, and above all, remember the tiny details that will make the difference in how people view the pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the other hand, here is an interesting tidbit: A popular tactic used by famous criminals and con men is to purposely make a few mistakes. The thought is that \"no one is perfect,\" and a few mistakes make people feel at home. Be cautious with what types of mistakes you decide to make if you employ this tactic because it does add complexity to your pretext, but it does make the conversation seem more natural. Use this tip sparingly, however you decide to proceed, keep it simple."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let me tie all this together with a few examples that I have used or seen used in audits. After some excellent elicitation on the phone, a nameless social engineer had been given the name of the waste removal company. A few simple Internet searches and he had a usable and printable logo. There are dozens of local and online shops that will print shirts or hats with a logo on it."
+    },
+    {
+      "type": "paragraph",
+      "text": "A few minutes of aligning things on a template and he ordered a shirt and ball cap with the logo of the waste company on it. A couple days later, wearing the logo-laden clothing and carrying a clipboard, the social engineer approached the security booth of the target company."
+    },
+    {
+      "type": "paragraph",
+      "text": "He said, \"Hi, I'm Joe with ABC Waste. We got a call from your purchasing department asking to send someone over to check out a damaged dumpster in the back. The pickup is tomorrow and if the dumpster isn't repairable I will have them bring out a new one. But I need to run back there and inspect it.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Without blinking, the security officer said, \"OK, you will need this badge to get onsite. Just pull through here and drive around the back and you will see the dumpsters there.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The social engineer had a free pass to perform a very long and detailed dumpster dive but wanted to maximize his potential so went in for the kill with this line. While looking at his clipboard he said, \"The note says it is not the food dumpsters but one of the ones where paper or tech trash goes. Which block are those in?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Oh, just drive the same way I told you and they are in the third bay,\" replied the security guard."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Thanks,\" said Joe. A simple pretext, backed up by clothing and \"tools\" (like the clipboard), and the storylines were simple to remember and not complex. The simplicity and lack of detail actually made this pretext more believable, and it worked."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another very widely used pretext is that of the tech support guy. This one only requires a polo shirt, pair of khakis, and small computer tool bag. Many social engineers employ this tactic to get in the front door because the \"tech guy\" is usually given access to everything without supervision. The same rules apply: keeping the storyline simple will help make this particular pretext very real and believable."
+    },
+    {
+      "type": "heading",
+      "text": "The Pretext Should Appear Spontaneous"
+    },
+    {
+      "type": "paragraph",
+      "text": "Making the pretext appear spontaneous goes back to my point on using an outline versus using script. Outlines will always allow the social engineer more freedom and a script will make the social engineer sound too robotic. It also ties in to using items or stories that interest the social engineer personally. If every time someone asks you a question or makes a statement that requires you to think, and you go, \"Ummmm\" and start to think deeply, and you cannot come back with an intelligent answer, it will ruin your credibility. Of course many people think before they speak, so this is not about having the answer in one second, but about having an answer or a reason for not having the answer. For example, in one phone call I was asked for a piece of information I didn't have. I simply said, \"Let me get that.\" I then leaned over and made it sound like I was yelling for a workmate: \"Jill, can you please ask Bill to give me the order form for the XYZ account? Thanks.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Then as \"Jill\" was getting the paper for me I was able to obtain the data I needed and the paper was never brought up again."
+    },
+    {
+      "type": "paragraph",
+      "text": "I have compiled a small list of ways that you can work on being more spontaneous:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Don't think about how you feel. This point is a good one, because often in a pretext if you overthink you will start to add emotion into the mix, which can cause fear, nervousness, or anxiety, all of which lead to failure. On the other hand, you might not experience nervousness or fear, but over-excitement, which can also cause you to make a lot of mistakes. Don't take yourself too seriously. Of course, this is great advice in life, but it applies wonderfully to social engineering. As a security professional you have a serious job; this is a serious matter. But if you're not able to laugh at your mistakes, you may clam up or get too nervous to handle a small bump in the road. I am not suggesting you take security as a joke. In your mind, though, if you view a potential failure as the pinnacle of failure in your life, the pressure you create can cause just what you fear the most. Minor failures can often lead to greater success if you have the ability to roll with it. Learn to identify what is relevant. I like to phrase this concept as, \"Get out of your head and into the world,\" which is more great advice. A social engineer may be trying to plan three steps ahead and in the meantime miss a vital detail that can cause the pretext to fall apart. Be quick to identify the relevant material and information around you, whether it is the target's body language, words spoken, or microexpressions (see Chapter 5 for more on this topic), and assimilate the information into the attack vector. Also keep in mind that people can tell when someone isn't really listening to what they are saying. Getting the feeling that even unimportant sentences are falling on deaf ears can be a massive turnoff for many people. Everyone has experienced being with someone who just didn't seem to care what he or she is saying. Maybe that person even had a legitimate reason to be thinking on a different path, but doing it is still a turnoff. Be sure to listen to what your target is saying. Pay close attention and you will pick up the details that are very important to them and in the meantime, you might hear something to help you in your success."
+    },
+    {
+      "type": "paragraph",
+      "text": "Seek to gain experience. This concept goes back to what you will probably see repeated four million times in this book—practice. Gaining experience through practice can make or break the pretext. Practice spontaneity with family and friends and total strangers with absolutely no goal in mind but to be spontaneous. Strike up conversations with people, but not in a scary stalker kind of way— simple little conversations can go a long way toward making you feel comfortable being spontaneous. These points can definitely give a social engineer the upper hand when it comes to pretexting. Having the ability to appear spontaneous is a gift. Earlier in this chapter I mentioned my interview with Tom Mischke, who had an interesting take on spontaneity. He said he wants to give the illusion of spontaneity wrapped in practice and preparation. He would practice so much that his pretext would come out as a spontaneous generation of humor and talent."
+    },
+    {
+      "type": "heading",
+      "text": "Provide a Logical Conclusion or Follow-through for the Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "Believe it or not people want to be told what to do. Imagine if you went to a doctor and he walked in, checked you over, wrote some things on his chart, and said, \"Okay; see you in a month.\" That would be unacceptable. Even in the event of bad news, people want to be told the next step and what to do."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a social engineer, when you leave the target, you may need him to take or not take an action, or you may have gotten what you came for and just need to leave. Whatever the circumstance, giving the target a conclusion or follow-through fills in the expected gaps for the target."
+    },
+    {
+      "type": "paragraph",
+      "text": "Just as if a doctor checked you over and sent you home with no directions, if you engineer your way into a facility as a tech support guy and just walk out without saying anything to anyone after cloning the database, you leave everyone wondering what happened. Someone may even call the \"tech support company\" and ask whether he needed to do anything, or at worst you just leave the workers wondering. Either way, leaving everyone hanging is not the way to leave. Even a simple, \"I checked over the servers and repaired the file system; you should see a 22% increase in speed over the next couple days,\" leaves the targets feeling as if they \"got their money's worth.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The tricky part for a social engineer is getting the target to take an action after he or she is gone. If the action is vital for completion of the social engineer audit, then you may want to take that role upon yourself. For example, in the account in Chapter 3 of my information-gathering session at the chamber of commerce event, if I wanted that target to follow-up with me through email I could have said, \"Here is my card; will you email me some details on Monday about XYZ?\" He very well may have, or he could have gone to the office, forgotten about me completely, and the whole gig would have failed. What would be better is to say, \"I would love to get some more information from you. On Monday could I perhaps call you or shoot you an email to get some more details?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The requests you make should match the pretext, too. If your pretext is being a tech support guy, you won't \"order\" people around with what they must and must not do; you work for them. If you are a UPS delivery person, you don't demand access to the server room."
+    },
+    {
+      "type": "paragraph",
+      "text": "As mentioned earlier, more steps may exist for perfecting a pretext, but the ones listed in this chapter can give a social engineer a solid foundation to build a perfectly believable pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "You might be asking, \"Okay, so you listed all these principles, but now what?\" How can a social engineer build a well-researched, believable, spontaneous-sounding, simple pretext that can work either on the phone or in person and get the desired results? Read on."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: The Principles of Pretext Planning",
+      "points": [
+        "Research depth directly correlates with pretext success: understand the target's internal acronyms, vendors, and management hierarchy.",
+        "Keep pretexts as simple as possible: intricate, convoluted lies introduce unnecessary points of failure.",
+        "The pretext must appear spontaneous and logical from the victim's everyday point of view."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Successful Pretexting"
+    },
+    {
+      "type": "paragraph",
+      "text": "To learn how to build a successful pretext, take a look at a couple of stories of social engineers who used pretexts that worked and how they developed them. Eventually they did get caught, which is why these stories are now available."
+    },
+    {
+      "type": "heading",
+      "text": "Example 1: Stanley Mark Rifkin"
+    },
+    {
+      "type": "paragraph",
+      "text": "Stanley Mark Rifkin is credited with one of the biggest bank heists in American history (see a great article about him at www.social-engineer.org/wiki/archives/Hackers/hackers-Mark-Rifkin-Social-Engineer-furtherInfo.htm). Rifkin was a computer geek who ran a computer consulting business out of his small apartment. One of his clients was a company that serviced the computers at Security Pacific Bank. The 55-floor Security Pacific National Bank headquarters in Los Angeles looked like a granite-and-glass fortress. Dark-suited guards roamed the lobby and hidden cameras photographed customers as they made deposits and withdrawals."
+    },
+    {
+      "type": "paragraph",
+      "text": "This building seemed impenetrable, so how is it that Rifkin walked away with $10.2 million and never held a gun, never touched a dollar, and never held up anyone?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The bank's wire transfer policies seemed secure. They were authorized by a numerical code that changed daily and was only given out to authorized personnel. It was posted on a wall in a secure room that only \"authorized personnel\" had access to."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the archived article mentioned previously:"
+    },
+    {
+      "type": "paragraph",
+      "text": "In October 1978, he visited Security Pacific, where bank employees easily recognized him as a computer worker. He took an elevator to the D-level, where the bank's wire transfer room was located. A pleasant and friendly young man, he managed to talk his way into the room where the bank's secret code-of-the-day was posted on the wall. Rifkin memorized the code and left without arousing suspicion. Soon, bank employees in the transfer room received a phone call from a man who identified himself as Mike Hansen, an employee of the bank's international division. The man ordered a routine transfer of funds into an account at the Irving Trust Company in New York—and he provided the secret code numbers to authorize the transaction. Nothing about the transfer appeared to be out of the ordinary, and Security Pacific transferred the money to the New York bank. What bank officials did not know was that the man who called himself Mike Hansen was in fact Stanley Rifkin, and he had used the bank's security code to rob the bank of $10.2 million. This scenario offers much to talk about, but for now, focus on the pretext. Think about the details of what he had to do:"
+    },
+    {
+      "type": "paragraph",
+      "text": "He had to be confident and comfortable in order to not raise suspicion for being in that room. He had to have a believable story when he called to do the transfer and have the details to back up his story. He had to be spontaneous enough to go with the flow with questions that might have come up."
+    },
+    {
+      "type": "paragraph",
+      "text": "He had to also be smooth enough to not raise suspicion. This pretext had to be meticulously planned out with the utmost detail being thought through. It wasn't until he visited a former associate that his pretext failed, and he was caught. When he was caught, people who knew him were amazed and some even said things like, \"There is no way he is a thief; everyone loves Mark.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Obviously his pretext was solid. He had a well-thought-out, and one would guess, well-rehearsed plan. He knew what he was there to do and he played the part perfectly. When he was in front of strangers he was able to play the part; his downfall came when he was with a colleague who knew him, and that colleague saw a news story then put two and two together and turned Mark in."
+    },
+    {
+      "type": "paragraph",
+      "text": "Amazingly enough, while out on bail, Rifkin began to target another bank using the same scheme, but a government mole had set him up; he got caught and spent eight years in federal prison. Although Mark is a \"bad guy\" you can learn much about pretexting from reading his story. He kept it very simple and used the things that were familiar to him to build a good storyline."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mark's plan was to steal the money and turn it into an untraceable commodity: diamonds. To do so he would first need to be a bank employee to steal the money, then a major diamond buyer to unload the cash, and finally sell the diamonds to have usable, untraceable cash in his pocket."
+    },
+    {
+      "type": "paragraph",
+      "text": "Although his pretext did not involve elaborate costumes or speech patterns he had to play the part of a bank employee, then major diamond buyer, then play the part of a diamond seller. He changed roles maybe three, four, or five times in this gig and was able to do it well enough to fool almost everyone."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mark knew who his targets were and approached the scenario with all the principles outlined earlier. Of course, one can't condone what he did, but his pretexting talents are admirable. If he put his talents to good use he would probably make a great public figure, salesperson, or actor."
+    },
+    {
+      "type": "heading",
+      "text": "Example 2: Hewlett-Packard"
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2006 Newsweek published a very interesting article (www.social-engineer.org/resources/book/HP_pretext.htm). Basically, HP's chairwoman, Patricia Dunn, hired a team of security specialists who hired a team of private investigators who used pretexting to obtain phone records. These hired professionals actually got in and played the roles of HP board members and parts of the press. All of this was done to uncover a supposed information leak within the ranks at HP."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ms. Dunn wanted to obtain the phone records of board members and reporters (not the records from the HP facilities, but the personal home and cell phone records of these people) to verify where she supposed the leak was. The Newsweek article states:"
+    },
+    {
+      "type": "paragraph",
+      "text": "On May 18, at HP headquarters in Palo Alto, California, Dunn sprung her bombshell on the board: She had found the leaker. According to Tom Perkins, an HP director who was present, Dunn laid out the surveillance scheme and pointed out the offending director, who acknowledged being the CNET leaker. That director, whose identity has not yet been publicly disclosed, apologized. But the director then said to fellow directors, \"I would have told you all about this. Why didn't you just ask?\" That director was then asked to leave the boardroom, and did so, according to Perkins. What is notable about this account is what is next mentioned about the topic of pretexting:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HP case specifically also sheds another spotlight on the questionable tactics used by security consultants to obtain personal information. HP acknowledged in an internal e-mail sent from its outside counsel to Perkins that it got the paper trail it needed to link the director-leaker to CNET through a controversial practice called \"pretexting\"; Newsweek obtained a copy of that e-mail. That practice, according to the Federal Trade Commission, involves using \"false pretenses\" to get another individual's personal nonpublic information: telephone records, bank and credit-card account numbers, Social Security numbers and the like. Typically—say in the case of a phone company—pretexters call up and falsely represent themselves as the customer; since companies rarely require passwords, a pretexter may need no more than a home address, account number, and heartfelt plea to get the details of an account. According to the Federal Trade Commission's Web site, pretexters sell the information to individuals who can range from otherwise legitimate private investigators, financial lenders, potential litigants, and suspicious spouses to those who might attempt to steal assets or fraudulently obtain credit. Pretexting, the FTC site states, \"is against the law.\" The FTC and several state attorneys general have brought enforcement actions against pretexters for allegedly violating federal and state laws on fraud, misrepresentation, and unfair competition. One of HP's directors is Larry Babbio, the president of Verizon, which has filed various actions against pretexters. (If you're interested in exploring it, the Telephone Records and Privacy Protection Act of 2006 can be found at http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=109_cong_bills&docid=f:h4709enr.txt.pdf.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The end result was that criminal charges were brought not only against Dunn, but against the consultants she hired. You may wonder, \"How is that possible considering they were hired and contracted to perform these tests?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Take a look at what avenues they used and what information they obtained to help answer this question. The consultants obtained the names, addresses, Social Security numbers, telephone call logs, telephone billing records, and other information of the HP board members and reporters. They actually used the Social Security number to establish an online account for one reporter and then obtain records of his personal calls."
+    },
+    {
+      "type": "paragraph",
+      "text": "Page 32 of a confidential document from Hewlett-Packard to its lawyer and internal legal staff (www.social-engineer.org/resources/book/20061004hewlett6.pdf) lists a communication from Tom Perkins to the HP board members that offers a little more insight about what pretexts were used. A few tactics used were:"
+    },
+    {
+      "type": "paragraph",
+      "text": "They represented themselves as the carrier company to obtain the records of calls illegally. The identities of the ones being investigated were used and spoofed to obtain their personal call records. Online accounts with carriers were generated using illegally obtained names, Social Security numbers, and other information to access their call records. On September 11, 2006, the United States House of Representatives Committee on Energy and Commerce sent Ms. Dunn a letter (see a copy of this letter at www.social-engineer.org/resources/book/20061004hewlett6.pdf) requesting the information she had obtained. They listed in their requests the obtained information as the following:"
+    },
+    {
+      "type": "paragraph",
+      "text": "All published and non-published telephone numbers Credit card bills Customer name and address info Utility bills Pager numbers Cell numbers Social Security numbers Credit reports Post office box information Bank account information Asset information Other consumer information All of this information was obtained through a very gray area of professional social engineering: is what they did ethical and moral, even though they were hired to do it? Many professional social engineers would not go to these lengths. The lesson to be learned from this very important case is that as a professional social engineer you might mimic the methodologies and the thinking of malicious social engineers, but never should you stoop completely to their levels. The problem with these consultants came in that they were authorized to pretext, social engineer, and audit Hewlett-Packard. They were not authorized to social engineer AT&T, Verizon, utility companies, and so on. When employing pretexting you must have it outlined and planned so you know what legal lines you might get near and what lines you must not cross."
+    },
+    {
+      "type": "paragraph",
+      "text": "HP's story lends itself to a discussion about policy, contracts, and outlining what you will be offering if you are a social engineer auditor, but these topics are not within the context of this chapter. Using the principles outlined so far in this chapter can help you make decisions that will keep you out of trouble."
+    },
+    {
+      "type": "paragraph",
+      "text": "The danger with malicious pretexting is the threat of identity theft, which makes it a very valid part of a social engineer pentest. Testing, checking, and verifying that your client's employees will not fall for the methods used by malicious social engineers can go a long way in safeguarding you from a successful pretexter."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Case Analyses & Operational Lessons",
+      "points": [
+        "Stanley Mark Rifkin executed one of the largest wire-transfer heists by combining social engineering, observation of security codes, and an authoritative pretext.",
+        "The HP scandal demonstrated the grave legal and corporate consequences of unauthorized pretexting to obtain private telephone records.",
+        "Voice cadence, dialect, and confidence are far more persuasive over phone channels than technical jargon."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Staying Legal"
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2005 Private Investigator Magazine was granted an interview with Joel Winston, Associate Director of the Federal Trade Commission (FTC), Division of Financial Practices. His office is in charge of regulating and monitoring the use of pretexting (see a copy of this valuable article at www.social-engineer.org/resources/book/ftc_article.htm)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some of the key points from this interview:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pretexting, according to the FTC, is the obtaining of any information from a bank or consumer, not just financial information, using fraud, deception, or misleading questions to obtain such information. Using already-obtained information to verify that a target is a target, even while using false pretenses, is legal under the FTC's definition of pretexting, unless the social engineer is using this information to obtain information from a financial institution. Acquiring toll phone or cellular records through deceptive business practices is considered illegal pretexting. The FTC website provides some clarity and additional information to this interview:"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is illegal for anyone to use false, fictitious, or fraudulent statements or documents to get customer information from a financial institution or directly from a customer of a financial institution. It is illegal for anyone to use forged, counterfeit, lost, or stolen documents to get customer information from a financial institution or directly from a customer of a financial institution. It is illegal for anyone to ask another person to get someone else's customer information using false, fictitious, or fraudulent statements or using false, fictitious, or fraudulent documents, or forged, counterfeit, lost, or stolen documents. Although the FTC's focus is on financial institutions, the guidelines outlined are a reminder of what is considered illegal in the United States. Looking into their local laws and making sure they are not breaking those laws is a good idea for professional social engineers. In 2006, the Federal Trade Commission moved to expand Section 5 of the FTC Act to specifically include a law banning the use of pretexting to retrieve telephone records."
+    },
+    {
+      "type": "paragraph",
+      "text": "HP's pretexting situation ended in one of the private investigators being charged with conspiracy and federal identity theft—very serious charges."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keeping pretexting legal will entail some research on the part of the professional social engineer as well as a clearly defined and signed-off plan of what pretexts, if any, will be used."
+    },
+    {
+      "type": "paragraph",
+      "text": "Despite the legal matters mentioned earlier, using a solid pretext is one of the quickest ways into a company. Pretexting is a talent all its own and, as you can see from this chapter, is not simply putting on a wig or a pair of fake glasses and pretending you are someone you are not."
+    },
+    {
+      "type": "heading",
+      "text": "Additional Pretexting Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "Other tools exist that can enhance a pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "Props can go a long way in convincing a target of the reality of your pretext; for example, magnetic signs for your vehicle, matching uniforms or outfits, tools or other carry-ons, and the most important—a business card."
+    },
+    {
+      "type": "paragraph",
+      "text": "The power of the business card hit me when I was recently flying to Las Vegas on business. My laptop bag usually gets scanned, rescanned, then swabbed for bomb dust or whatever. I am one of those guys who doesn't really mind the extra security precautions because they keep me from blowing up in the air, and I am happy with that."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yet I realize that 90 percent of the time I am going to get extra attention by Transportation Security Administration (TSA). On this particular trip I had forgotten to take my lock picks, RFID scanner, four extra hard drives, bump keys (see Chapter 7), and plethora of wireless hacking gear out of my carry-on laptop bag. As it goes through the scanner I hear the lady working the x-ray say, \"What the heck?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "She then calls over another gentlemen who stares at the screen and says, \"I have no clue what the heck that stuff is.\" He then looks around, sees my smiling face, and says, \"Is this you?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "I walk over to the table with him as he is emptying my RFID scanner and my large case of lock picks and he says, \"Why do you have all of these items and what are they?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "I had nothing planned but decided at the last second to try this move: I pulled out a business card and said, \"I am security professional who specializes in testing networks, buildings, and people for security holes. These are the tools of my business.\" I said this as I handed him a business card and he looked at it for about five seconds and then said, \"Oh, excellent. Thanks for the explanation.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "He neatly put all my items back in, zipped the bag up, and let me go. Usually I go through the bomb screening, the little dust machine, and then a patdown, but this time all I got was a thank you and a quick release. I began to analyze what I did differently than normal. The only difference was that I had given him a business card. Granted, my business card is not the $9.99 special from an online card printer, but I was amazed that what seemed to have happened was that a business card added a sense of license to my claims."
+    },
+    {
+      "type": "paragraph",
+      "text": "My next four flights I purposely packed every \"hacking\" device into my bags I could find and then kept a business card in my pocket. Each time my bag was examined and I was asked about the contents, I flipped out the card. Each time I was apologized to, had my items packed in neatly, and let go."
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine my experience was a pretext. Little details can add so much weight to what I am saying that I can appear valid, trustworthy, and solid with nothing more than a card that tells people that everything I say is true. Don't underestimate the power of a business card. One word of caution: getting a weak and pathetic-looking business card can actually cause the opposite effect. A business card that was \"free\" with an advertisement on the back will not add weight to a professional pretext. Yet there is no reason to spend $300 on a business card to use once. Many online business card printers can print a small amount of very nice cards for less than $100."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another reason to take this chapter very seriously is that often times pretexting is the very first step used by professional identity thieves. Because identity theft is taking a front row seat in the crime industry of late, knowing what it is and how to identify it is important for consumers, businesses, and security professionals. If you are a security auditor you must help your clients become aware of these threats and test them for possible weaknesses."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition to extensively covering pretexting and providing real-world examples of pretexting in action, this chapter also continually brushed up against the psychological principles that affect different aspects of pretexting. The logical next stop on the framework covers just that—the mental skills that professional social engineers use that make them seem like mind control masters and that give each social engineer a huge leg up in success."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Chapter 4 Key Takeaways",
+      "points": [
+        "Always establish strict rules of engagement (ROE) to keep security penetration tests legal and ethical.",
+        "Never pretend to know more than you can realistically defend if challenged by a subject matter expert.",
+        "Always prepare plausible exit strategies if a pretext begins to unravel during field execution."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1596 @@
+{
+  "id": 8,
+  "partId": 3,
+  "part": "Phase III: Toolkits, Physical Infiltration, & Attack Vectors",
+  "title": "Chapter 8: Case Studies: Dissecting Legendary Attacks",
+  "subtitle": "Mitnick Heists, Hadnagy Red Team Ops, and Top-Secret Government Infiltrations",
+  "quote": {
+    "text": "The best security is through education.",
+    "author": "Mati Aharoni"
+  },
+  "pages": "Pages 359–403",
+  "readTime": "40 min read",
+  "highlights": [
+    "Kevin Mitnick Case Study 1: Bypassing DMV law-enforcement records using authority and pretexting",
+    "Kevin Mitnick Case Study 2: Hacking Social Security Administration records over voice channels",
+    "Christopher Hadnagy Case Study: Infiltrating an overconfident corporate CEO through targeted OSINT",
+    "The Theme Park Infiltration: Penetrating multi-million dollar corporate assets via employee badge recreation"
+  ],
+  "totalBlocks": 387,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Throughout this book I go through each aspect of what makes a great social engineer. Putting the information in these pages into play can make a social engineer a force to be reckoned with."
+    },
+    {
+      "type": "paragraph",
+      "text": "In school, students review history to learn what should or should not be done. History is a great tool for educating us about what things have worked in the past and why. It can tell us where we are going and how we can get there."
+    },
+    {
+      "type": "paragraph",
+      "text": "Social engineering history is not so different. Throughout the history of business, people have been there to scam and steal. People have devoted their lives to helping secure against those bad forces."
+    },
+    {
+      "type": "paragraph",
+      "text": "Discussing the aspects of professional social engineer attacks is often difficult because they were either done illegally or cannot be openly discussed due to client contracts. Fortunately, Kevin Mitnick—world famous social engineer and computer security expert—has published many of his stories for our reading pleasure. I have taken some of these stories from his book The Art of Deception."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter I pick two of Mitnick's most famous stories from his books and give a brief recap of what Kevin did, analyzing what aspects of social engineering he used and discussing what everyone can learn from it."
+    },
+    {
+      "type": "paragraph",
+      "text": "After dissecting those two accounts I do the same with two of my own accounts that demonstrate the ease with which you can obtain information and how easily you can use the information to compromise an entire company. Finally, I will disclose two \"top-secret\" stories whose sources I can't even mention, but as you will see, you will learn a lot from these accounts. What I am aiming to accomplish is to show you how dangerous even little bits of information can be, and how devastating they can be in the hands of a skilled social engineer. At the same time, you will see where a social engineer can learn from past successes and failures to enhance their own skill set."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's get started with the first case study."
+    },
+    {
+      "type": "heading",
+      "text": "Mitnick Case Study 1: Hacking the DMV"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kevin Mitnick is widely known as one of the world's most notorious social engineers. He has performed some of the boldest and most famous exploits in the world—and the exploit examined here is especially so."
+    },
+    {
+      "type": "paragraph",
+      "text": "A driver's license can often come in handy for obtaining information on people. Having the target's driver's license number can allow a social engineer to gain all sorts of personal information. However, no free services exist that allow a person to gain access to this personal information. A social engineer or private investigator must go through some lengths to be able to obtain and then use this information on a target."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kevin Mitnick, in his book The Art of Deception, has a story he called \"The Reverse Sting.\" The following sections provide some background information and analysis of this account."
+    },
+    {
+      "type": "heading",
+      "text": "The Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "In one of Mitnick's greatest stories, he discusses how \"Eric\" wanted to use the non-public Department of Motor Vehicles (DMV) and police systems to obtain people's driver's license numbers. He regularly needed to obtain license information on targets. Eric had a method of obtaining this information but feared repeated social engineering calls would render calling the DMV useless or alert the police to his ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "He needed a different method to access the DMV's network and with some knowledge of the how the DMV works he knew just how to do it. His target was twofold—not only the DMV but also the police would assist him (of course, without knowing it) in accomplishing his goal of obtaining this information."
+    },
+    {
+      "type": "heading",
+      "text": "The Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric knew that the DMV could give privileged information to insurance agencies, private investigators (PIs), and certain other groups. Each industry has access to only certain types of data."
+    },
+    {
+      "type": "paragraph",
+      "text": "An insurance company is privy to different information than a PI, whereas a law enforcement agent can get it all. Eric's goal was to get all the information."
+    },
+    {
+      "type": "heading",
+      "text": "Obtaining an Unpublished DMV Phone Number"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric took a few steps that really proved his excellent social engineering skills. First he called telephone information and asked for the phone number for DMV headquarters. Of course, the number he was given was for the public and what he wanted was something that would get him deeper."
+    },
+    {
+      "type": "paragraph",
+      "text": "He then called the local sheriff's office and asked for Teletype, which is the office where communications are sent to and received by other law enforcement agencies. When he reached the Teletype department, he asked the person for the number that law enforcement would use when calling the DMV headquarters."
+    },
+    {
+      "type": "activity-ref",
+      "activityId": "ch8-case-study-lab"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now I don't know about you, but that seems like it would fail. It just about did:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Who are you?\" he was asked He had to think quickly and responded, \"This is Al. I was calling 503- 555-5753.\" All he did was give a random number with the same area code and base number and made up the last four digits. Then he just shut up. The officer made some assumptions:"
+    },
+    {
+      "type": "paragraph",
+      "text": "He was internal and already had the number for a non-public area (Teletype). He had almost all the number for the DMV. With those two facts firmly in the officer's mind he assumed that Eric was allowed in and gave him the number. Eric wanted more than one number, though; he wanted as many as he could get his hands on."
+    },
+    {
+      "type": "paragraph",
+      "text": "Accomplishing this goal would require an even deeper hack—a multi- level, multi-faceted attack with many different avenues. It would be of epic proportion."
+    },
+    {
+      "type": "heading",
+      "text": "Gaining Access to the State's Phone System"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric called the number he was given to get into the DMV. He told the DMV representative he was from Nortel and needed to speak to a technician because he worked with the DMS-100, a much-used switch."
+    },
+    {
+      "type": "paragraph",
+      "text": "When he was on with the technician he claimed to be with the Texas Nortel Technical Assistance center and explained he was updating all switches. It would be done remotely and the technician wouldn't need to do anything except provide the dial-in number to the switch so Eric could perform the updates directly from the Technical Assistance center."
+    },
+    {
+      "type": "paragraph",
+      "text": "This story sounded completely believable, so the technician complied, giving Eric all the info he requested. Armed with this information he could now dial directly into one of the state's telephone switches."
+    },
+    {
+      "type": "heading",
+      "text": "Getting a Password"
+    },
+    {
+      "type": "paragraph",
+      "text": "The next hurdle was one that could have stopped this whole hack dead in its tracks—getting passwords. The Nortel switches that the DMV used were password protected. From past experience in using Nortel Switches Eric knew that Nortel uses a default user account, NTAS. Eric then dialed in several times trying the standard passwords he has encountered:"
+    },
+    {
+      "type": "paragraph",
+      "text": "NTAS—fail Account name—fail Helper—fail Patch—fail Update—SUCCESS Wow, really? The password was update. He now had full control over the switch and all lines connected to it. He queried the telephone lines that were his target. He quickly found out that 19 phone lines went to the same department."
+    },
+    {
+      "type": "paragraph",
+      "text": "After checking some of the internal setup of the switch he found out that the switch was programmed to hunt through the 19 lines until it found one that was not busy. He picked line 18 and entered the standard forwarding code that added a call forwarding command to that phone line."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric bought a cheap, pre-paid cell phone that could be disposed of easily. He entered that number as the number to forward to when line 18 was rung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Basically, as soon as the DMV got busy enough to have people on 17 lines, the 18th call would not ring to the DMV, but to Eric's cell phone."
+    },
+    {
+      "type": "paragraph",
+      "text": "It wasn't too long until that started happening. Around 8:00 a.m. the next morning the cell phone started to ring. Each time, it was a police officer looking for information on a person of interest. He would field calls from police at his house, at lunch, in the car—no matter where he was he pretended to be the DMV representative."
+    },
+    {
+      "type": "paragraph",
+      "text": "What made me personally get a good laugh was how the calls are reported as going:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cell phone would ring and Eric would say, \"DMV, may I help you?\" \"This is Detective Andrew Cole.\" \"Hi Detective, what can I do for you today?\" \"I need a Soundex on driver's license 005602789.\" \"Sure, let me bring up the record.\" While he simulated working on a computer he asked a couple questions: \"Detective Cole, what is your agency?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Jefferson County.\" Eric would then launch the following questions: \"What is your requestor code?\" \"What is your driver's license number?\" \"What is your date of birth?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "As the officer would give all his personal information, Eric would pretend to be verifying it all. Then he would feign confirmation and ask what details he needed on his call. He would pretend to look up the name and other information then say, \"My computer just went down again. Sorry, detective, my computer has been on the blink all week. Would you mind calling back and getting another clerk to help you?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "This would be a little irritating, I am sure, for the officer, but it would tie up all the loose ends. In the meantime, Eric now owned the identity of that officer. He could use this information for many things, but mostly to obtain information from the DMV whenever he needed."
+    },
+    {
+      "type": "paragraph",
+      "text": "He did his DMV information gathering for a few hours then called back into the switch and disabled call forwarding; he now had a juicy list of information in his possession."
+    },
+    {
+      "type": "paragraph",
+      "text": "For months after this hack, Eric could easily dial back in, enable the call forwarding switch, collect a number of officer information facts, disable call forwarding, and then use those police credentials to obtain valid driver's licenses that he would sell to private investigators or others who would not ask how he obtained this information."
+    },
+    {
+      "type": "heading",
+      "text": "Applying the SE Framework to the DMV Hack"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the story, Kevin identified some things that Eric did and attitudes he had that made him successful, such as not being afraid or uncomfortable talking to police and being able to find his way around unfamiliar areas."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also identify what part of the social engineering framework Eric used and how he used it."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, the first step in any successful social engineering audit or attack is information gathering. In this account you can see that Eric must have really done his homework prior to the attack. He knew a lot about the phone system, the way the DMV operates, and the general workings of the process he wanted to infiltrate. I am not sure how long ago this attack occurred, but nowadays making an attack like it is even easier due to the Internet. It is a goldmine for information gathering. Just a couple of years ago someone figured out a hack for a Tranax ATM, and within a few weeks manuals containing step-by-step processes of how to perform the attack were available on the Internet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also, as mentioned previously in this book, choosing a pretext that mimics what you do in real life or things you did in the past can increase your chance of success. The power lies in the fact that because the pretext is more \"realistic\" to you it helps you gather information as well as breach the target. Eric seemed to have a very intimate knowledge of this field."
+    },
+    {
+      "type": "paragraph",
+      "text": "As you may recall, the next part of the framework is elicitation, or being able to cleverly craft questions to obtain information or access to something you want. Eric elicited information masterfully. When on the phone with the police, Eric's use of elicitation served as the proof that he was who he said he was and knew his \"job\" well. He knew the lingo and asked routine questions that had to be answered. As a matter of fact, not asking those questions would have probably caused more of an alarm than by asking them. That is the power of good elicitation tactics."
+    },
+    {
+      "type": "paragraph",
+      "text": "Early on Eric knew he had to obtain certain phone numbers to perform the attack. Instead of trying to explain why he needed certain information, he used an assumptive close as mentioned in Chapter 3, and asked questions that basically stated, \"I deserve these answers now, so tell me what I am asking.\" This is another example of powerful elicitation; you can learn a lot from analyzing his methods closely."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most good attacks also include a very high amount of pretexting. This account was no exception. Eric had to develop a few pretexts in this attack vector. He had to switch gears many times to accomplish his goals. As impressive as it is that Eric had to impersonate law enforcement (which he did very well), keep in mind that this practice is highly illegal in the United States. You can learn much from the process and methods Eric used, but be cautious how you apply them. Even in a paid social engineering audit, impersonating a law enforcement agent is illegal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Know your local laws—that is the lesson—or don't be afraid to be caught. Despite the fact that it is illegal, you can learn a lot from analyzing Eric's attitude in this hack. He was always collected. When he put on the pretext of the DMV agent he was able to use elicitation that served as the proof. When he put on the police pretext, his demeanor, voice, and phrases all backed up the pretext. Switching gears can be hard for many people, so it is best to practice before you go \"live\" with this."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric's pretexts were solid and he did a masterful job at holding them together, especially when he had to act as a DMV agent and field real calls from police. In many circumstances he could have easily fallen out of character but he seemed to hold it together quite well."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many of the techniques used for the psychological aspects of social engineering, such as eye cues and microexpressions, were not used in this attack because it happened mostly over the phone. Eric did have to utilize certain aspects of the framework, though, such as rapport building, NLP (neurolinguistic programming), and modes of thinking."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric seemed to be a natural at building rapport. He was personable and easygoing, he seemed to not be afraid of the \"what ifs,\" and was able to be and act confident in his abilities. He posed his voice and his conversation in a way that gave the person on the other end of the phone all the reason to trust him and no reason to not believe him."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric used impressive interrogation and interview tactics, even using them on law enforcement agents who are experienced in interview tactics. He used those tactics so successfully that he was undetected in his methods and obtained all the information he wanted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric also seemed to have an excellent grasp of and ability to use influencing tactics. Probably one of the most noticeable in the attack was when he asked the police officer to call back to get a different DMV agent. This was probably annoying for the officer, but what made the tactic successful is that Eric \"gave\" the office something first. That is, he \"verified\" the data the officer needed and when he was supposed to give the officer final piece of info is when the \"computer\" froze."
+    },
+    {
+      "type": "paragraph",
+      "text": "Applying some rules of influence Eric was easily able to get the officers to comply."
+    },
+    {
+      "type": "paragraph",
+      "text": "Closely linked to Eric's pretext was his ability to use framing successfully. To refresh your memory, framing is bringing the target inline with your thinking by positioning yourself and your stories to make them believable. It is an important piece of the pretext puzzle that makes you stand out and prove to the target you certainly are who you say you are. Eric's pretexts were great and believable, but what really sold them were the frames that he used. His frame changed depending on who he was talking to. At one point he had to make sure the officer on the other end would give him the Teletype number; on the other call he had to be a knowledgeable and skilled DMV agent."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric made himself believable using framing by assuming he would get the information he asked, showing no fear in his dealings, and confidently asking for information he \"felt\" he was owed. All these attitudes framed the target to accept his pretext and allow for natural responses."
+    },
+    {
+      "type": "paragraph",
+      "text": "As you can see, you can learn much by analyzing Eric's social engineer attack. One can only assume that Eric either had practiced all these methods or had a few dry runs to know all he did about the internal systems used in the attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eric's methods worked out for him and were successful, but I would have taken a couple extra precautions. For example:"
+    },
+    {
+      "type": "paragraph",
+      "text": "When he was fielding DMV calls, I would have made sure I forwarded the number only when I was in the \"office.\" I would have set up an office area with some background office noises and had the proper supplies to take down all the information I needed to avoid the risk of a waitress or friend blowing my cover. Although a disposable cell phone is a good idea for tracing purposes, another technique is to have that number forward to a Google Voice or Skype number. I tend not to trust cell signals, and nothing could have ruined the gig faster than having the call drop or having a weak, static- filled signal. Besides these items one can't improve much in this hack. Eric did a superb job at making sure it was done right by using many of the talents and skills in the framework to accomplish his goal."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Mitnick Case Study 1 — The DMV Infiltration",
+      "points": [
+        "Kevin Mitnick breached law enforcement vehicle databases without a computer, relying entirely on telephony pretexting and internal acronyms.",
+        "Securing an unlisted phone number provided the crucial anchor of credibility needed to command internal operator assistance.",
+        "Confidence, perceived urgency, and familiarity with internal bureaucracy bypass strict administrative controls."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Mitnick Case Study 2: Hacking the Social Security Administration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mitnick mentions a man he called Keith Carter, a less-than-honorable private investigator hired to do some digging into a man who was hiding funds from his soon-to-be-estranged wife. She had funded his venture, which had grown into a multimillion-dollar company."
+    },
+    {
+      "type": "paragraph",
+      "text": "The divorce was almost settled but the woman's attorneys needed to find the \"hidden assets.\" This attack vector is interesting because, as in the first case study, the story follows a very shady method of gathering intelligence."
+    },
+    {
+      "type": "heading",
+      "text": "The Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "The target was to find the assets of the husband, \"Joe Johnson,\" but that wasn't the target used for the actual social engineering attack. To obtain information on Joe, the private investigator, Keith, had to hack the Social Security Administration (SSA)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many times in a social engineering audit this option will present itself. This section covers some of the methods he used to accomplish this goal, but suffice it to say that hacking the SSA is a very slippery slope. As the story unfolds you will see how dangerous this particular hack was."
+    },
+    {
+      "type": "heading",
+      "text": "The Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Joe Johnson was married to a very wealthy woman. He had knowingly used tens of thousands of her dollars to invest in one of his ideas. That idea grew into a multimillion-dollar organization."
+    },
+    {
+      "type": "paragraph",
+      "text": "As things happen, their marriage was not too solid, so they decided to divorce. During the divorce proceedings, soon to be ex–Mrs. Johnson \"knew\" he was hiding his money, trying to keep it out of the divorce settlement."
+    },
+    {
+      "type": "paragraph",
+      "text": "She hired Keith, the private investigator who was a less-than-ethical guy who didn't mind riding the edge of what was legal and what was not to obtain the information he needed to make the case."
+    },
+    {
+      "type": "paragraph",
+      "text": "As Keith sat down to analyze the case he determined that a good starting point was the Social Security Administration. He thought that if he could just obtain Joe's records he would be able to find some discrepancies and then nail his coffin shut. He wanted to be able to freely call Joe's banks, investment firms, and offshore accounts pretexting as Joe. To do so he needed some detailed information, which is what led him to the path of hacking the Social Security office."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keith began with basic information gathering. He went online and found a guide describing the SSA's internal systems and their internal terminology and jargon. After studying that and having the jargon down pat he called the local public number of the Social Security office. When he got a live person he asked to be connected to the claims office. The conversation went like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hi, this is Gregory Adams, District Office 329. Listen, I am trying to reach a claims adjuster who handles an account number that ends in 6363 and the number I have goes to a fax machine.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Oh, that is Mod 3, the number is...\" Really? That easy? Wow. In a few moments' time he gets the number of the internal office phones that the public normally cannot get. Now comes the hard part."
+    },
+    {
+      "type": "paragraph",
+      "text": "He has to call Mod 3, change his pretext, and obtain useful information on Joe. Thursday morning comes around and it looks like Keith has his plan well laid out. He picks up the phone and dials the Mod 3 number:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Mod 3. This is May Linn Wang.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Ms. Wang, this is Arthur Arondale, in the Office of the Inspector General. Can I call you 'May'?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"It's 'May Linn',\" she says. \"Well, it's like this, May Linn. We have a new guy who doesn't have a computer yet, and right now he has a priority project to do so he's using mine. We're the government of the United States, for crying out loud, and they say they don't have enough money in the budget to buy a computer for this guy to use. And now my boss thinks I'm falling behind and doesn't want to hear any excuses, you know?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"I know what you mean, all right.\" \"Can you help me with a quick inquiry on MCS?\" he asked, using the name of the computer system for looking up taxpayer information."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Sure, what do you need?\" \"The first thing I need you to do is an alphadent on Joseph Johnson, DOB 7/4/69.\" (Alphadent means to have the computer search for an account alphabetically by taxpayer name, further identified by date of birth.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"What do you need to know?\" \"What's his account number?\" Keith asks (this is Joe's Social Security number he is asking for)."
+    },
+    {
+      "type": "paragraph",
+      "text": "She read it off. \"Okay, I need you to do a numident on that account number.\" (Numident is similar to alphadent, only it's a numerical search instead of an alphabetical one.) This was a request for her to read off the basic taxpayer data, and May Linn responded by giving the taxpayer's place of birth, mother's maiden name, and father's name. Keith listened patiently while she also gave him the month and year Joe's Social Security number was issued, and the district office it was issued by."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keith next asked for a DEQY (pronounced \"DECK-wee\"; it's short for \"detailed earnings query.\")"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"For what year?\" \"Year 2001.\" May Linn said, \"The amount was $190,286, and the payer was Johnson MicroTech.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Any other wages?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"No.\" \"Thanks,\" Keith said. \"You've been very kind.\" Keith then tried to arrange to call her whenever he needed information and \"couldn't get to his computer,\" using a favorite trick of social engineers of always trying to establish a connection so that he can keep going back to the same person, avoiding the nuisance of having to find a new mark each time."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Not next week,\" she told him, because she was going to Kentucky for her sister's wedding. Any other time, she'd do whatever she could."
+    },
+    {
+      "type": "paragraph",
+      "text": "At this point it seemed like game over. Keith had all the information he set out to obtain and now it was just a matter of calling the banks and offshore accounts, which, armed with the information he had, had now become a much easier task."
+    },
+    {
+      "type": "paragraph",
+      "text": "A well-executed and truly awe-inspiring attack."
+    },
+    {
+      "type": "heading",
+      "text": "Applying the SE Framework to the SSA Hack"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SSA attack just described leaves your mouth ajar and eyes wide. You can learn much from this particular attack, which used the social engineering framework."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keith started the attack with information gathering. You are probably really tired of hearing me say this over and over again, but having information is truly the crux of every good social engineer attack—the more you have, the better."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keith first found a truly amazing piece of intel on the Web, which dumbfoundingly enough, is still online at https://secure.ssa.gov/apps10/poms.nsf/."
+    },
+    {
+      "type": "paragraph",
+      "text": "This link directs you to an online manual for Program Operations of the Social Security Administration. It contains abbreviations, lingo, and instructions as well as what SSA employees are allowed to tell law enforcement. Armed with this information, Keith knew what to ask, how to ask, and how to sound like he belonged, as well as what information would raise red flags."
+    },
+    {
+      "type": "paragraph",
+      "text": "Although the link provided a wealth of information, he decided to take his information gathering a step further using the pretext of an Inspector"
+    },
+    {
+      "type": "paragraph",
+      "text": "General Office employee and calling his local SSA office. He really thought outside the box, by using his local office to obtain the internal numbers needed to complete his pretext as an internal employee."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keith switched pretexts a couple of times and did so masterfully. He was able to obtain much of the information he needed by using the online SSA manual to develop the right questions. This manual proved to be an elicitation developer's dream. Armed with the right words and language, he sounded like he fit right in. He built rapport and a frame that fed the pretexts perfectly. Building rapport is not an easy task, but Keith did it well and in a way that indicated he was well practiced in this technique. He used many influence tactics to make sure the target felt comfortable and at ease. For example, he mixed obligation and reciprocation artfully. When he was able to get May Linn on his side by describing the lack of good tools and the lack of support from his management, she felt obligated to help him out."
+    },
+    {
+      "type": "paragraph",
+      "text": "He also used keywords and phrases that commanded empathy and yet showed his authority, such as \"my boss is not happy with me,\" which gives an indication that he is in trouble and that the SSA employee, May Linn, can save him. People have a moral obligation to save those in need. Not many can walk away when someone is asking for help, and May Linn couldn't either. She felt compelled to not only help, but to even tell Keith about her personal schedule."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the end, Keith used a number of important skills in the framework that do not involve personal onsite, in-person action."
+    },
+    {
+      "type": "paragraph",
+      "text": "The fact that governmental systems are run by people make them fallible to the hacking methods used in this story. This is not an argument for the invention of robotic or computerized systems to do these jobs; it merely points to the fact that many of these systems rely so much on overworked, underpaid, overstressed people that manipulating them is not a very hard job."
+    },
+    {
+      "type": "paragraph",
+      "text": "To be honest, improving upon this particular attack is difficult because it is not one I would ever perform myself and Keith did a superb job of applying the principles of the framework."
+    },
+    {
+      "type": "paragraph",
+      "text": "So many people are used to being mistreated, abused, and yelled at that a little bit of kindness can make them go to extraordinary heights to help out."
+    },
+    {
+      "type": "paragraph",
+      "text": "This particular attack as relayed in Mitnick's The Art of Deception shows how vulnerable systems that rely on people truly are."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Mitnick Case Study 2 — The Social Security Admin Hack",
+      "points": [
+        "Exploited open-source SSA procedure manuals publicly available online to learn internal verification protocols.",
+        "Used caller ID spoofing and technical jargon to impersonate a field agent needing an immediate database lookup.",
+        "Demonstrated that government databases are only as secure as the phone operators authorized to query them."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Hadnagy Case Study 1: The Overconfident CEO"
+    },
+    {
+      "type": "paragraph",
+      "text": "My experience with an overconfident CEO is interesting because the CEO thought he would be impervious to any social engineering attempt for two reasons: First, he did not utilize technology much in his personal life, and second, he felt that he was too smart and protected to fall for what he called \"silly games.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "With that being said to his internal security team they decided to ask me to focus on him as the goal of the audit. They knew that if he did fail the audit it would be easier to get approval to implement many of the fixes that would help their security."
+    },
+    {
+      "type": "heading",
+      "text": "The Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "The target was a decent-sized printing company in the U.S. that had some proprietary processes and vendors that some of its competitors were after. The IT and security teams realized the company had some weaknesses and convinced the CEO an audit was needed. In a phone meeting with my partner, the CEO arrogantly said that he knew that \"hacking him would be next to impossible because he guarded these secrets with his life.\" Not even some of his core staff knew all the details."
+    },
+    {
+      "type": "paragraph",
+      "text": "My job as the SE auditor was to infiltrate the company to obtain access to one of the company's servers where this proprietary information was held and retrieve it. The difficulty, as the CEO had mentioned on the phone, was that the passwords for the servers were stored on his computer and no one had access to it, not even the security staff, without his permission."
+    },
+    {
+      "type": "heading",
+      "text": "The Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Apparently, the way in would have to involve the CEO, which presented a challenge because he was ready and waiting for an infiltration attempt. I started off as I did with any gig—by information gathering. I researched the company using online resources and other tools such as Maltego. I was able to harvest information such as locations of servers, IP addresses, e-mail addresses, phone numbers, physical addresses, mail servers, employee names and titles, and much more."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, I documented all this information in a fashion that made it easy to use later on. The structure of the e-mail was important because as I searched the website I saw that it was firstname.lastname@company.com. I could not locate the CEO's e-mail address but many articles listed his name (let's call him Charles Jones) and title on their site. This would be information a standard, non-informed attacker would be able to obtain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the firstname.lastname@company.com format, I tried to send an e-mail to him. It didn't work. I was actually disappointed at this moment, because I was sure that the e-mail method would yield a lot of juicy details."
+    },
+    {
+      "type": "paragraph",
+      "text": "I decided to try a nickname for Charles, so I tried chuck.jones@company.com. Sweet success! I had a verified e-mail address. Now I just had to verify it was the CEO's and not some other guy with the same name."
+    },
+    {
+      "type": "paragraph",
+      "text": "I spent some more time on Google and Maltego to harvest as much information I could. Maltego has this great transform that allows me to search a domain for any files that would be visible to a normal search engine."
+    },
+    {
+      "type": "paragraph",
+      "text": "I ran the transform against the company's domain and was greeted with an amazing number of files for my browsing. Maltego doesn't stop with just providing filenames with this transform. Many files contain metadata, which is the information about the dates, creators, and other little juicy tidbits about the file. Running Maltego's metadata transform showed me that the majority of these files were created by a \"Chuck Jones.\" Much of the content in the files talked about him as the CEO."
+    },
+    {
+      "type": "paragraph",
+      "text": "This was the confirmation I needed, but during my browsing one file had caught my eye—InvoiceApril.xls. Upon reading that file I discovered it was an invoice from a local bank for a marketing venture Chuck was involved in. I had the bank name, the date, and the amount, but I didn't have the event the company was a part of."
+    },
+    {
+      "type": "paragraph",
+      "text": "I did a quick search of the bank website but because the event was six months earlier it was not listed on the site. What could I do?"
+    },
+    {
+      "type": "paragraph",
+      "text": "I decided to place a call to the marketing person from the bank:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hi, this is Tom from [CompanyName]. I am trying to organize our books and I see an invoice here from April for $3,500 as a sponsorship package. I don't see the event name—can you please tell me what that invoice was for?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Sure, Tom,\" she said and I heard some clicking noise in the background. \"I see that was the bank's annual Children's Cancer Fund Drive and you were part of the Silver Package.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Thanks a lot; I am new here and I appreciate your help. Talk with you later.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "I was beginning to see a picture of a possible attack vector that I could use, but I needed some more research and I needed to make a very carefully planned phone call."
+    },
+    {
+      "type": "paragraph",
+      "text": "I found a few articles on the Web about this fundraiser and how many companies came from all over the community to support it with money for cancer treatment research. In addition, the more digging I did into the CEO the more I found out about him. I had his parents' names, his sisters' names, pictures of his kids that he has on Facebook, the church he went to when he lived near his parents, a review he wrote of his favorite restaurant, his favorite sporting team, his oldest son's favorite sporting team and where he attended college, where his kids go to school, and the list goes on and on."
+    },
+    {
+      "type": "paragraph",
+      "text": "I wanted to find out why the company donates to the Children's Cancer Fund. Although many malicious social engineers exploit others' emotions, and I realized I might have to go down that path as well, I wanted to know whether the fund was something he was involved in because one of his sons has cancer. I placed a call to the marketing director of the company:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hello, this is Tom from XYZ. I was hired by First National Bank in town to call those who took part in the April Children's Cancer Fund and I was wondering whether I could take a few minutes of your time to get some feedback?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Sure,\" Sue, the marketing director, said. \"Sue, I see that you were part of our Silver Package in April. Did you feel the marketing you received was worth the price you paid?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Well, this is something we do every year and it does get us a lot of press time in the local area. I guess I wouldn't mind seeing a little more on the website for the Silver Package.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Excellent; I will note that. Every year—yes, I can see you do this every year. I am wondering personally, with so many fundraisers out there why did you choose this one?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"I know Chuck has always been particular to this one. He is our CEO and I think someone in his family battled cancer.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Oh my; I am sorry to hear that. It isn't his own children is it?\" \"No, I think a nephew or cousin. We didn't really talk about it.\" \"Well, we certainly appreciate your donations and support.\" I finished up with a few more questions and then left it at that, thanking her for her time, and we parted ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "I got the information I needed—it wasn't one of his kids who had cancer. Again, I knew this wouldn't stop a malicious social engineer, but I was very curious. Armed with this information I was ready to plan my attack vector."
+    },
+    {
+      "type": "paragraph",
+      "text": "I knew the CEO was originally from New York and his favorite restaurant was a place called Domingoes. He would bring his kids in often for a Mets game and then they would go eat at Domingoes."
+    },
+    {
+      "type": "paragraph",
+      "text": "He wrote some ratings on the place and talked about his top three favorite dishes. I knew his parents still lived close by and he visited often from some other things he wrote on Facebook."
+    },
+    {
+      "type": "paragraph",
+      "text": "I planned my attack vector to be a fundraiser for cancer research. It was for the tri-state area and for a small donation one's name would be entered into a raffle. The raffle prize would be two tickets to a Mets game and a choice of three restaurant coupons, one of which was Domingoes."
+    },
+    {
+      "type": "paragraph",
+      "text": "I would pretend to be from New York myself, but relatively new, in case he threw things at me I didn't know."
+    },
+    {
+      "type": "paragraph",
+      "text": "My end goal would be for him to accept a PDF from me that would be maliciously encoded to give me a reverse shell and allow me access to his computer. If he did not use a version of Adobe that would allow me access, then I would try to convince him to download a zip file and execute an enclosed EXE that would have the malicious file embedded."
+    },
+    {
+      "type": "paragraph",
+      "text": "I practiced the phone conversation I would use for my pretext, I tested my PDF and EXE files, and I had Google Maps open to the location of Domingoes so I could talk about that area openly. After I had my computer ready and waiting to receive the malicious payload from the victim, I was ready to place the call."
+    },
+    {
+      "type": "paragraph",
+      "text": "I placed the phone call around 4:00 p.m., because I found out through the company website that the office closes at 4:30 on Fridays. Because I wasn't on the initial meeting phone call to set up this audit, (my partner was), the CEO would not recognize my voice."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hello, is Mr. Charles Jones available?\" \"Sure one second.\" The voice on the other end sounded tired and was ready to transfer me."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hello, Chuck speaking.\" \"Hello, Mr. Jones, my name is Tony from the Cancer Research Institute of America. We are running an annual fund drive to support our research into cancers that plague men, women, and children.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Please, call me Chuck,\" he interrupted. This was a good sign because he didn't give me any excuses or try to end the phone call saying he was busy; he took it upon himself to personalize the conversation. I continued, \"Chuck, thank you. We are running a fund drive for companies who supported cancer funds before and are asking for small donations of $50–$150 dollars. The great part is that everyone who helps us out is being entered into a drawing for two great prizes. If you win you get two tickets to a Mets game in NYC and then a free dinner for two at one of three great restaurants. We are giving out five of those packages.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Mets game, really?\" \"I know, if you don't like the Mets the prize might not appeal to you, but the restaurants are good.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"No, no, I love the Mets, that's why I said that. I was happy.\" \"Well think about this—not only are you helping out a great research fund but you get a good game in and you get to eat at Morton's, Basil's, or Domingoes.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Domingoes! Really! I love that place.\" \"Ha, that is great. You know I just went there the other night for the first time and had their Chicken Portabella. It was awesome.\" This was his third- favorite dish."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Oh, if you think that is good, forget it, you need to try the Fra Diablo. It is really the best dish in there. I eat it all the time.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"I am going there again over the weekend, I will definitely try it out. Thanks for the tip. Look, I know it is getting late. Right now I am not even looking for money, I don't take money over the phone. What I can do is send you the PDF; you can look at it and if you are interested you can just mail the check in with the form.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Heck yeah, send it over.\" \"Okay just a couple questions. What is your e-mail?\" \"chuck.jones@company.com.\" \"If you can, open your PDF reader, click the Help menu and About, and tell me the version number please.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"One minute; it is 8.04.\" \"Excellent; I don't want to send you a version that you can't use. Just one second while we are on the phone I am going to send this to you—okay, it's sent.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Great, thanks. I hope I win; I really love that place.\" \"I know; the food is good. Before I let you go, could you just check to see whether you got the e-mail and let me know if it is working?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Sure, I am logging out in about five minutes, but I can check. Yep, it is here.\" When I heard the sound of double-clicking, I looked over on my BackTrack computer saw my malicious payload collector, Meterpreter (see Chapter 7), reacting. I was holding my breath (because this part never gets boring) and bam, the shell appeared. My Meterpreter scripts changed the ownership to something like Explorer.exe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Chuck then said, \"Hmm, all I got is a blank screen. It's not doing anything.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Really? That's odd. Let me check here.\" What I was really checking was that I had access to his drive and the ability to upload a reverse shell that would run on reboot in case he shut down. I said, \"I am sorry, I don't know what happened. Can you give me a minute or do you need to go?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Well I need to go empty this coffee mug, so I will put the phone down and be back in a minute.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Excellent, thanks.\" That minute was all I needed to make sure I had unlimited and returning access to his computer. He came back."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Back.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Well, Chuck, I'm really embarrassed but I don't know what happened. I don't want to hold you up, so why don't you go and I will e-mail this to you when I make you another PDF. We can touch base Monday.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Okay, no problem. Have a great weekend.\" \"You, too, Chuck.\" We parted ways and to my surprise and extreme joy his computer remained on and active. Yes, he kept everything in a secure drive that only he had access to, but in Word documents. I promptly downloaded those Word documents and within a few hours I had access to the servers and printed out all the internal processes he wanted to protect."
+    },
+    {
+      "type": "paragraph",
+      "text": "We did touch base on Monday morning, not as Tony the fund-raiser, but as his security consultants with printouts of his \"secrets,\" his passwords, and recordings of the phone calls that were made to him and his staff."
+    },
+    {
+      "type": "paragraph",
+      "text": "This first meeting after a successful attack is always filled with the client's initial shock and claims that we used unfair tactics and personal weaknesses to gain access. When we explain that the bad guys will use the exact same tactics, the look of anger turns to fear, and that fear turns to understanding."
+    },
+    {
+      "type": "heading",
+      "text": "Applying the SE Framework to the Overconfident CEO Hack"
+    },
+    {
+      "type": "paragraph",
+      "text": "As in the previous examples, applying the case to the social engineering framework and seeing what was good and what could have been improved upon can be beneficial."
+    },
+    {
+      "type": "paragraph",
+      "text": "As always, information gathering is the key to any social engineering effort, and this particular story shows it. Information gathering from many sources—the Web, Maltego, the phone, and more—is what made this attack successful. Insufficient information would have led to a miserable failure."
+    },
+    {
+      "type": "paragraph",
+      "text": "Proper and plentiful information makes all the difference, even information I never needed, like his church, and his parents' and siblings' names. These things were useful to have in case I needed them, but what proved to be invaluable was the information found about the e-mail naming convention and the files on the servers using Maltego. This was the pathway to getting my foot into door of this company."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keeping the information you find cataloged into BasKet or Dradis, as discussed in Chapter 2, and ready to use is also important; otherwise, you just have a text file with a jumble of information you can't make use of. Organizing the information is just as important as gathering and using it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Thinking like a bad guy—that is, looking for ways to exploit the weaknesses and desires of the target—isn't a great part of the job, but if a professional auditor wants to protect clients, he will show them how vulnerable they are. The more information you gather, the easier finding vulnerabilities becomes. You begin to see pathways that can lead to success."
+    },
+    {
+      "type": "paragraph",
+      "text": "Developing realistic pretexts and themes that will have the maximum effect also contributes to an attack's success. One must develop power questions and keywords to use that will attract the target. By gathering a lot of information I was able to develop good questions and a frame that involved keywords and neurolinguistic (NLP) power words, which I then used in influence tactics that I was fairly sure would work."
+    },
+    {
+      "type": "paragraph",
+      "text": "My pretext had to change often, from calling the company's vendors to calling internal employees for information. I had to plan out each pretext, get into that character, and successfully follow through. This, of course, took a lot of planning to make sure each pretext sounded right, flowed properly, and made sense."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice makes perfect. Before the attack was launched my partner and I practiced everything. I had to make sure the PDFs worked and that the vector made sense. I also had to have good enough knowledge to be believable to whatever target I was speaking to at the time."
+    },
+    {
+      "type": "paragraph",
+      "text": "The importance of practicing cannot be understated. Practice enabled me to figure out what tactics would work and what wouldn't, as well as ensure that I could stick to the plan and go with the flow, even if that flow was in a direction in which I wasn't planning on going."
+    },
+    {
+      "type": "paragraph",
+      "text": "In hindsight, I discovered a couple small improvements that would have made this attack more efficient. For one, it is always a risk to rely solely on a malicious PDF; I should have set up a small website that mimicked the real cancer research website and had the PDF on there. Both the website and the PDF could have been malicious. This would have doubled my chances of success and given me backup in case one avenue failed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another large risk I took was that the CEO would leave his computer on when he left the office. If he did not, I would have had to wait till Monday to try to gain access. To keep him at his computer, I should have had a \"real PDF\" with information in it he could read that I would send after the malicious PDF worked in exploiting his machine. This would have kept him working at his machine long enough to make good use of the exploit."
+    },
+    {
+      "type": "paragraph",
+      "text": "This audit took about a week's worth of time to investigate, gather, and organize information for, practice, and then launch. One week and this company's secrets could have been owned by its competitors or by the highest bidder. Read the story a few times and try to understand the subtle methods used and the way the conversations flowed. Picking up on the voice, tone, and conversation pace is difficult in written form, but try to imagine yourself in this conversation and decide how you would handle it."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Hadnagy Case Study 1 — The Overconfident CEO",
+      "points": [
+        "Overconfident executives who believe they are 'unhackable' are often the easiest targets due to relaxed personal security habits.",
+        "Targeted OSINT uncovered the CEO's personal hobbies, favorite charities, and upcoming travel plans.",
+        "A personalized, high-value pretext completely bypassed administrative gatekeepers and achieved executive credential surrender."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Hadnagy Case Study 2: The Theme Park Scandal"
+    },
+    {
+      "type": "paragraph",
+      "text": "The theme park scandal case was interesting to me because it involved some onsite testing. I used many of the social engineering skills mentioned throughout this book and thoroughly tested them during this case."
+    },
+    {
+      "type": "paragraph",
+      "text": "It was also interesting because of the nature of the business and the potential for a successful scam. If successful, the social engineer could potentially have access to thousands of credit card numbers."
+    },
+    {
+      "type": "heading",
+      "text": "The Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "The target was a theme park that was concerned about having one of its ticketing systems compromised. Where patrons checked in, each computer contained a link to the servers, client information, and financial records. The park wanted to see whether the possibility existed for an attacker to use malicious methods to get an employee to take an action that could lead to a compromise."
+    },
+    {
+      "type": "paragraph",
+      "text": "The goal wasn't to get an employee in trouble, but rather to see what damage would result from an employee check-in computer being compromised. In addition, the goal was not to compromise the computers through hacking but through purely social engineering efforts."
+    },
+    {
+      "type": "paragraph",
+      "text": "If such a compromise could occur, what were the ramifications? What data could be found and what servers could be compromised? They didn't want to go deep, just really find out whether the first stage, a social engineering compromise, could work."
+    },
+    {
+      "type": "paragraph",
+      "text": "To figure out whether a successful SE attack was possible, I had to understand the theme park's processes and methods for checking in customers and what the employees would and wouldn't do at their terminals —or more importantly, could and couldn't do."
+    },
+    {
+      "type": "heading",
+      "text": "The Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "As mentioned earlier, the goal for this particular job wasn't really complex; I just had to find out whether the person behind the counter would allow a \"customer\" to get the employee to do something obviously not allowed. Before I could even think of what that was I had to understand their business."
+    },
+    {
+      "type": "paragraph",
+      "text": "I browsed the park's website and used Maltego and Google to research articles and other information about the organization. I also did some onsite research. I then went to the park and went through the process of buying a ticket at the ticket counter. During this process I started a small conversation with the teller, and spent some time observing the layout, their computer nodes, and other aspects of the \"office\" area."
+    },
+    {
+      "type": "paragraph",
+      "text": "This area was where I started to see a clear picture. During the conversation I mentioned I was from a small town with a huge name. When she asked where, and I told her, she issued the normal response:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Where the heck is that?\" \"Do you have Internet access here?\" \"Yeah, I do.\" \"Oh you'll love this. Go to maps.google.com and type in the zip code 11111, and put it on satellite view. Look how small that town is.\" \"Oh my gosh; that is tiny. I don't think I've ever heard of this place before today.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "In this short amount of time I knew the following:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The layout of the space a teller has to work in How employees check in each patron"
+    },
+    {
+      "type": "paragraph",
+      "text": "That the computers have full web access I went back to the park's website and started browsing with a new enlightenment on their processes. I needed a way in to their computer systems. My pretext was a reasonable one—I was a father who was going to take his family to the theme park for the day."
+    },
+    {
+      "type": "paragraph",
+      "text": "My story was that the family and I didn't have plans to do it, but we came to the hotel and were browsing the web for things to do and saw a great discount for the park. We went down to the lobby and inquired about getting tickets but the price we were given there was substantially more than what we saw on the web."
+    },
+    {
+      "type": "paragraph",
+      "text": "When we double-checked the price we had found, we discovered it was a web-only price. We paid and then realized the tickets needed to be printed so they can be scanned. I tried to get the hotel to print them but the printer was down. I had already paid and was nervous about losing the tickets so I printed them to a PDF and then e-mailed them to myself. Sounds like a reasonable story, doesn't it?"
+    },
+    {
+      "type": "paragraph",
+      "text": "One more step was needed before I could launch my evil plot. I had to make a quick phone call:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hello, is this XYZ Theme Park main office?\" \"Sure is; how can I help you?\" I needed to get to an internal office person to ask my question and make sure I had the right answer. After requesting the purchasing department, I was directed to the right person. I said, \"Hi, my name is Paul from SecuriSoft. We are giving away a free trial of a new software to read and even print PDFs. I would like to send you the URL for the free download, is that okay?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Well, I'm not sure whether we are interested, but you can send me some information.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Okay; excellent. Can I ask what version of Adobe you use now?\" \"I think we are still on 8.\" \"Okay; I will send you out a comparative information packet today.\" Armed with the version information, all I needed to do was create a malicious PDF embedded with a reverse shell (which would give me access to their computer once they opened the PDF), call it Receipt.pdf, and then e-mail it to myself."
+    },
+    {
+      "type": "paragraph",
+      "text": "The next day I roped my family into a little social engineering action. As they stood off in the distance I approached the woman behind the counter and started a friendly conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hi there, how are you...Tina?\" I said, reading her name tag. \"Doing okay, what can I help you with?\" she said with a friendly customer service smile."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"See, we decided to take a little weekend getaway trip and I am at the Hilton over here with my family,\" I say, pointing to my beautiful family a few feet away. \"My daughter saw the ad for your theme park and begged us to come. We told her that we would take her. We found a great deal on tickets on the website...\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Oh, yes, our web-only deal—very popular right now. Can I have your tickets?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Yeah, you see this where I need your help so I don't get the 'Loser Dad of the Year' award.\" My nervous laughter was covered by her smile. I explained, \"Tina, I saw that deal and my wife and I said, let's save the 15% and we bought the tickets at the hotel computer. But after I got done paying, I couldn't print them because the hotel printer was down. But I was able to save it as a PDF and I e-mailed it to myself."
+    },
+    {
+      "type": "paragraph",
+      "text": "I know this is an odd request but would you log into my e-mail account and print it out for me?\" Now this account was a generic one filled with e- mails titled \"Pictures of the kids,\" \"Dad and Mom's Anniversary\" and things like that."
+    },
+    {
+      "type": "paragraph",
+      "text": "I could tell she was really struggling with this decision and I was unsure whether the silence would be to my benefit or if I should help her to think it through. I said, \"I know it is a weird request, but my little girl is just dying to go and I hate to tell her 'no.'\" I point again to my daughter who was doing a great job at being cute but impatient."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Okay, how do I do it?\" \"Go to gmail.com, log in with Paul1234@gmail.com and a password of B-E-S- M-A-R-T.\" (I know, using this password is terrible in a way, but a little last- minute warning never hurt. It went unfollowed.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Moments later Tina was double-clicking on my PDF and getting a blank screen. \"Are you kidding me—did I print it out wrong? Wow, I am definitely getting the Loser Dad award now.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"You know what, sir? I feel so bad for you, what if you just paid for the adult tickets and I will let your daughter in for free today?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Wow, that is so generous of you.\" With a smile I forked over the $50 and thanked her for all her help and asked her to log out of my e-mail. We part ways with me having a happy daughter and the park having been compromised."
+    },
+    {
+      "type": "paragraph",
+      "text": "Moments later my partner text messaged me and told me that he was \"in\" and \"gathering\" data for the report. After enjoying a few hours of relaxation, we left the park to go back to work to compile the report for the Monday meeting."
+    },
+    {
+      "type": "heading",
+      "text": "Applying the SE Framework to the Theme Park Hack"
+    },
+    {
+      "type": "paragraph",
+      "text": "Information gathering, as shown in this case study, is not always majorly Web-based; instead, it can be done in person. The juiciest information in this case was gathered during an in-person visit. Finding out what computer systems were used, feeling out the target to know how he or she would react to certain questions, and knowing how the ticketing system worked were major components of the information gathering stage."
+    },
+    {
+      "type": "paragraph",
+      "text": "The real takeaway from this particular hack is that a good pretext is more than just a story; it's more than just some made-up costume and phony accent. A good pretext is something you can easily \"live\" without too much effort."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this scenario I was easily able to speak, act, and talk the father, because I am one. My concern about being a \"loser\" dad was real, not made up, and comes across as real and then is transferred to the target as genuine. This makes everything that is said more believable."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, having a cute child in the distance looking longingly at the ticket lady helped, and so did a believable storyline about a hotel printer not working. Chapter 2 touched on this, but sometimes a social engineer will promote that pretexting or social engineering in general is just basically being a good liar. I do not believe that is the case."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a professional sense, pretexting involves creating a reality that will manipulate the target's emotions and actions to take a path you desire him to take. People are not often motivated by a simple lie. A social engineer must \"become\" the character in the pretext for a gig, which is why using pretexts that are something you can closely follow, live, and act with ease is a good idea."
+    },
+    {
+      "type": "paragraph",
+      "text": "The pretext of the \"free PDF software giveaway\" had a lot of room for error. The pretext was solid, but a quick rejection would have meant a couple-day lag in the next attack attempt. It was also a \"lucky guess\" that the same version of Adobe would be used companywide and that the particular teller I chose had not updated her particular version of Adobe Reader to the newest edition, which would have in essence nullified my exploit attempts."
+    },
+    {
+      "type": "paragraph",
+      "text": "Banking on inherent human laziness is not a gamble I usually like to take, but in this case it worked out. Sometimes the best bet is to move forward as if what you are asking for is already a done deal. That attitude promotes a feeling of confidence and comes across to the target that what you are saying or doing is legit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using words and phrases such as, \"I really need your help...\" is a powerful tool, as mentioned in Chapter 5. Humans inherently want to help each other, especially when asked."
+    },
+    {
+      "type": "paragraph",
+      "text": "When asked, complete strangers will go to extraordinary lengths to \"help out\" even, as in this case, opening a unknown file from someone else's email account. The plea to help a \"poor dad\" get his cute daughter into the park lead to a compromised system."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once compromised, the software that stores all the credit card information for each guest was wide open to an attacker. The ability to collect that data with very little effort could have left the park open to massive loss, lawsuits, and embarrassment."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Hadnagy Case Study 2 — The Theme Park Infiltration",
+      "points": [
+        "Recreated employee badges and uniforms using publicly available photos and corporate supplier catalogs.",
+        "Tailgated into restricted executive corridors by carrying heavy boxes, prompting employees to hold doors open out of politeness.",
+        "Politeness and social helpfulness are universally exploited by physical social engineering infiltrators."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Top-Secret Case Study 1: Mission Not Impossible"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every now and then my colleague and I are either involved in a situation or hear of a story that we would love to see turned into a movie, but for security reasons we are not allowed to write about or even speak of it. For those reasons, I cannot mention who was involved or what was taken in the story that comes to us from a social engineer named \"Tim.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Tim's goal was to infiltrate a server that housed information that could be devastating if it fell into the wrong hands. The particular high-profile company involved had a lot to protect. When Tim was contracted to get this company's information he knew he would have to pull out all the stops; this job would test the very limits of his social engineering skills."
+    },
+    {
+      "type": "heading",
+      "text": "The Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "The target is a high-profile organization with certain corporate secrets that should never be revealed to its competitors. These secrets had to be guarded on servers that did not have outside access and were only routable from the internal network."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tim was contracted to help the company test its security against a \"rogue person\" being able to infiltrate and walk out with the goods. Tim met one person from the company at an offsite location to sign the deal they worked out over the phone and e-mail."
+    },
+    {
+      "type": "heading",
+      "text": "The Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tim had a huge challenge in front of him. The first stage, as with any social engineering gig, was the information gathering. Not knowing what information he would and wouldn't use, Tim went full-bore, collecting information such as the e-mail layout scheme, open requests for quotes, all employee names he could find, plus any social media sites they belong to, papers they wrote and published, clubs they were part of, as well as service providers they used."
+    },
+    {
+      "type": "paragraph",
+      "text": "He wanted to do a dumpster dive but when he scoped out the place he noticed that security was very strong around the dumpster area. Many of the dumpsters were even enclosed in small walled areas, so he couldn't see the logos on the dumpster unless he breached the perimeter. After finding out the department that handles waste services, he decided to place a well- planned-out phone call to the company:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hello, this is Paul from TMZ Waste Disposal. We are a new waste disposal service in the area and have been working with some of the large corporations in the area. I am part of the sales team that handles your region. Could I send you a quote for our services?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Well, we are pretty happy with our present supplier, but you can submit a quote.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Excellent; may I ask you just a few quick questions?\" \"Sure.\" \"How many dumpsters do you have?\" asked Tim. After asking whether they used special dumpsters for paper and technology such as USB keys and hard drives, he then laid on a few finishing touches."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"What day is your normal pickup?\" \"We have two pickups per week; Set 1 is Wednesdays and Set 2 is Thursdays.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Thank you. I can prepare this quote and have it sent over by tomorrow afternoon. What e-mail should I use?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Send it to me personally at christie.smith@company.com.\" At this point a little friendly chitchat ensued and before you know it they were laughing and exchanging pleasantries."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Thanks a lot. Hey, before we hang up can I ask you who you presently use? I like to do a comparative quote.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Well, you know...\" she hesitated, but then said, \"Sure, we use Wasters Management.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Thanks Christie, I will make sure you are happy with the quote. We will talk later.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Armed with this information, Tim went to the website for the present waste management company and copied the logo to a JPG file. He then visited an online shirt printer and in 72 hours had a shirt with the logo in his hands. Knowing that the garbage is picked up on Wednesday and Thursday he wanted to go Tuesday night."
+    },
+    {
+      "type": "paragraph",
+      "text": "He then placed another call to the security department: \"Hello, this is John from Wasters Management, your dumpster disposal people. I was called by Christie Smith's office stating that you have a damaged dumpster. I know the pickup is on Wednesday so I wanted to come out and check it tomorrow night. If there is a damaged unit I will have the truck bring out a new one. Is it okay if I come out Tuesday night?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Sure, let me check—yes, Joe is on tomorrow. When you pull up just stop in the security booth and he will give you a badge.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Thanks.\" The next day Tim wore his \"company\" polo shirt and had a clipboard. The pretext was genius because he knew the dates and internal names. Now, looking like a company employee, he approached the security booth."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Joe, I'm John from Wasters and I called in yesterday.\" The guard interrupted with, \"Yes, I see your name right here.\" He handed him a badge and a paper map telling him how to get to the dumpsters. \"Do you need one of us to tag along?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Nah, I do this all the time.\" Tim was buzzed in and drove over to the dumpsters. Armed with a perfect pretext and a badge he had the time to do some digging. He knew that Set 2 holds the non-food garbage, so he started his digging there."
+    },
+    {
+      "type": "paragraph",
+      "text": "After just a little while he loaded a few hard drives, USB keys, some DVDs, and some clear bags full of paper in his trunk. After about an hour or so he drove back out, thanked the security guys, and assured them all is good. Back at the office he dug through the \"garbage\" and was greeted with some of the juiciest details he couldn't have found in his wildest dreams."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many times companies will dispose of hard drives and USB media by destroying them completely. They will erase all data and then send them to special disposal units. Every now and then, though, employees who don't think through their disposal procedures will just throw away a USB key they say is broken or a hard drive that no longer boots. What they don't realize is that there are many programs that can strip data off of even non- bootable drives and media. Even if the media has been formatted, data can still be recovered in many situations."
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the bags contained what looked like the contents of an office. As he emptied the bag he noticed some papers that had not passed through the shredder. He sat down to read them and saw one was a contract for some IT services that went out for bid. The job was supposed to start in just a few days, but it looked like this particular copy was used to sop up some spilled coffee and then discarded."
+    },
+    {
+      "type": "paragraph",
+      "text": "This would be an great find, but he had so much more to search through. The DVDs were blank or unreadable, but surprisingly enough he located files on the USB keys. From this information he discovered the names and private lines of the CFO as well as some other key personnel."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of what he gathered was immense but I want to focus on what he did next. The next morning, armed with the contract for the IT services in hand and knowing the type of work that was to be performed, he placed a call to the contract point of contact during the lunch hour and prayed the contact was out to lunch."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hello, is Sebastian available?\" \"No, he is out to lunch. Can I help you?\" \"This is Paul from XYZ Tech. I wanted to confirm that our team will be coming to start the project tomorrow evening.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Yes, just remember we can't have any interruption of service so please do not get here any earlier than 5:30 p.m.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Yes sir, you got it. See you tomorrow.\" The next day Tim knew that he couldn't arrive with the rest of the \"team.\" But if he timed it right he would not be caught by the IT company or the target. Sitting across the dark parking lot he watched the IT contract company arrive. After a good 30 minutes he approached the front door and explained how he just ran out to get some paperwork from his car. He got buzzed in and now had free reign of the office."
+    },
+    {
+      "type": "paragraph",
+      "text": "He needed to do some reconnaissance, and he figured the best way was to approach the IT company as one of the internal employees. He walked around until he heard some talking and found one of the guys in a shirt identifying him as one of the IT team."
+    },
+    {
+      "type": "paragraph",
+      "text": "Armed with the names of the upper-level management from the USB key files and from the point of contacts from the contract, he began, \"Hi there, I'm Paul and I work Mr. Shivaz [the CFO]—did someone explain to you about the prod23 production server ?\" Tim had the server name from his information gathering; Tim knew that was the server he was attacking."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Yes, we know that server is off-limits in this work. The CFO explained to us the encryption and how we are not to mess with that server. No worries.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "After a few more minutes of conversing, Tim had discovered some valuable pieces of information:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The IT team is not to touch the server."
+    },
+    {
+      "type": "paragraph",
+      "text": "The server has full disk encryption. The techs were \"bragged\" to by the in-house IT guy about how the target company use a keyfile on a USB key that only the admins carry. Tim knew this last point would make his task harder, and because the admins were not in, he would not be able to access the server now. In addition, the physical security around this server was very intense and may have been too hardened to take the risk. He did know that the admins would have access to this server so he thought maybe he would try that avenue."
+    },
+    {
+      "type": "paragraph",
+      "text": "He visited the first office of the admin, but it was locked. He checked the second office, then the third. The third one was shut but had not been closed all the way and it merely opened when he pushed a little. He was in."
+    },
+    {
+      "type": "paragraph",
+      "text": "By shutting the blinds and leaving the lights off, he felt he would be protected a bit from the potential of being caught. In his social engineer kit he carried a wide variety of tools and clothing. One of the tools he always had with him on these types of gigs was a USB key that was loaded with a bootable Linux distribution such as BackTrack. In the BackTrack install is a preloaded version of Virtual Box, a free open source virtual machine tool."
+    },
+    {
+      "type": "paragraph",
+      "text": "He loaded the admin's computer, using a rear USB port, into BackTrack. After he was in BackTrack, he connected to his own servers via SSH, set up a listener, then connected back to it using a reverse shell he initiated from the admin machine. Then he started a keysniffer (to log all keystrokes typed on the computer) in BackTrack and set up the log file to be dumped through the SSH connection to his computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then he did something truly pernicious. He opened Virtual Box and created a Windows virtual machine (VM), using the local hard drive as the physical media to boot from, and loaded the VM. Automatically, it loaded the admin's user profile and OS. At the login screen he loaded the VM to be in full screen mode, hid all bars, and made the existing hot key to exit VirtualBox some ridiculously long combo. This protects the user from mistakenly hitting that combo and revealing they are hacked."
+    },
+    {
+      "type": "paragraph",
+      "text": "A risk still existed that he could be caught at any moment using this method of a rear USB key loading a virtual machine using their own hard drive, but if it worked he would get every keystroke the admin typed and a shell on the poor guy's computer, giving Tim access to everything. Even though the shell would be on the virtual machine, he would be logging all his keystrokes and then gain access to the victim's machine using his captured username and password."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tim did a few other things in the office such as set up a connection on another machine, which gave him network access remotely. He also set up a remote listening device, the kind that uses a cell phone SIM card. He could call its number from any phone on earth and listen to conversations from anywhere in a 20-foot radius."
+    },
+    {
+      "type": "paragraph",
+      "text": "After just a few hours Tim left the target's company and went back to his office. He was excited to see whether this all worked, but he still had a few more ideas to try."
+    },
+    {
+      "type": "paragraph",
+      "text": "Early the next morning he made sure his remote connections were still alive and he dialed into his listener to hear the early morning buzz of people coming into the office. The anticipation built as he waited to see whether first computer logs were coming through, capturing the admin's username and password."
+    },
+    {
+      "type": "paragraph",
+      "text": "About one hour later Tim saw some logs coming through. He knew that he didn't want to do anything that would compromise his connection, so he waited. Around 12:15 the logs stopped, so he figured the admin must be at lunch. He quickly checked his reverse shell and began to create a tunnel from the admin's machine to the server back to his machine using the password he captured from the admin for the server"
+    },
+    {
+      "type": "paragraph",
+      "text": "After the tunnel was connected he made a mad dash to copy as much as he could before 1:00 p.m. At that time he didn't notice any logs, so he called into the listener and overheard someone asking, \"Do you know how long this meeting is supposed to last?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Figuring the admin might be at a meeting he made another attempt at a larger transfer. After about 30 minutes he noticed some activity so he stopped data collection and decided to wait until later. He didn't want to alert the admin to anything fishy going on by slowing down his connection through a large transfer. He started to sift through what he grabbed from the server, knowing he hit the jackpot."
+    },
+    {
+      "type": "paragraph",
+      "text": "His job wasn't over yet. That evening he did one more massive transfer, taking as much as he could get and then headed over to the company's office again, social engineering his way in as he did before. Once in he headed over to the admin's office, which was locked this time and pulled shut. He used a shove knife (see Chapter 7) to get in."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once inside he turned off the virtual machine, then rebooted the machine after removing the USB key, and then he left the admin's office the way he found it. He collected his listener and made sure his tracks were covered."
+    },
+    {
+      "type": "paragraph",
+      "text": "He exited the building to go back to his office and compile his findings. Of course, at the report meeting he walked in with a stack of printed documents and a hard drive full of what he was able to copy. This was enough to drop the jaws of every person in the room."
+    },
+    {
+      "type": "heading",
+      "text": "Applying the SE Framework to Top Secret 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "This story offers many lessons. It is an example of a perfect social engineer. It can be summed up as practice, preparation, and, of course, information gathering. All the skills he used we can imagine he practiced, from using a shove knife and creating tunnels to effective pretexting and information gathering."
+    },
+    {
+      "type": "paragraph",
+      "text": "I cannot reiterate enough the importance of information gathering. I know I have said it a thousand times, but this whole deal would have fallen through without Tim having the appropriate information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Being prepared through phone calls and onsite visits, and having the right hardware, led to success. Analyzing this hack, you can see some of the fundamental principles of social engineering at play."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tim was a master at information gathering, using web resources to pull up all sorts of nuggets, expert elicitation skills while on the phone, as well as masterful persuasion skills in person. These techniques allowed him to gather data that probably would have been left behind by an unskilled hacker."
+    },
+    {
+      "type": "paragraph",
+      "text": "Information gathering gave Tim the foundation for what types of pretexts and questions to develop."
+    },
+    {
+      "type": "paragraph",
+      "text": "The dumpster dive was planned with surgical precision. Does a chance exist that he would have been let in without the shirt and appointment? Sure. Yet how much more powerful was the way he did it? He never left a doubt in their minds and he enabled each person he interacted with to go about their business and never think twice. That is a perfect pretext, when a person can interact with you without any red flags or warning signs going up. Tim did that and it gave him freedom to move around as if he belonged."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best part of the story is what happened after he got in the building. Such a large margin for error existed, and he could have been caught so many ways. Sure he could have run in, grabbed the data off the server, and left, and probably no one would have stopped him, but doing it the way he did meant the company never knew how their secrets got out and would never have known they were compromised."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tim took a huge risk when he left the admin's computer running a VM. That particular maneuver could have failed in many ways. If someone had ever rebooted the computer or it had crashed, or if by mistake the admin pressed that crazy key combo, it could have spelled the end to the hack and alerted the company that it had been compromised."
+    },
+    {
+      "type": "paragraph",
+      "text": "I might have taken a different, less-risky route, one where I could have created a reverse tunnel from his computer back to my servers using a custom EXE that would not be detected by antivirus software and in the startup scripts of the computer, something with less chance of failure, but Tim's method had the flair of being a very sexy social engineering hack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Probably more than one lesson can be learned from this particular hack, but if anything, the old hacker adage of \"trust no one\" can be applied to some extent. If someone calls to say that Christine authorized a dumpster inspection and you didn't hear it from her or a memo, call her and ask. Turn your computers off at night and definitely make your important machines not able to boot from USB without a password."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sure, these extra precautions will mean more work and longer load times. Whether they're worth doing depends on how important the data that sits behind those machines is. In this case, the data was able to ruin this company, so the protection should have been extreme. Although the company took many excellent precautions, like using full disk encryption, cameras, biometric locks, and so on around the server area, it did not secure the computers that had access to the most important data, and that is what led to the company's demise."
+    },
+    {
+      "type": "heading",
+      "text": "Top-Secret Case Study 2: Social Engineering a Hacker"
+    },
+    {
+      "type": "paragraph",
+      "text": "Thinking outside the box and having to think fast is standard fare for a social engineer, so it is rare to be in a situation that will challenge the professional social engineer to the point of being stumped. What happens when a penetration tester is called on to put on a social engineering hat without prior warning?"
+    },
+    {
+      "type": "paragraph",
+      "text": "This next account shows exactly what happens when this situation arises. It is a good example of how having certain social engineering skills practiced beforehand can be very useful when called on to use them without warning."
+    },
+    {
+      "type": "heading",
+      "text": "The Target"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"John\" was called on for a standard network penetration test for one of his bigger clients. It was a no-thrills pentest as social engineering and onsite work were not included in the audit outline. Still, he enjoyed the work of testing out the vulnerabilities on his clients' networks."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this particular pentest nothing really exciting was occurring. He was doing his normal routines of scans and logging data and testing out certain ports and services he felt might give him a lead inside."
+    },
+    {
+      "type": "paragraph",
+      "text": "Near the end of a day he ran a scan using Metasploit that revealed an open VNC server, a server that allows the control of other machines in the network. This is a nice find, because overall the network was locked down so this sort of easy-in is especially welcome."
+    },
+    {
+      "type": "paragraph",
+      "text": "John was documenting the find with the VNC session open, when suddenly in the background the mouse started moving across the screen. This was a huge red flag, because with this client at this time of the day, no user would be connected and using the system for a legitimate purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "What could be happening? He noticed that instead of acting like an admin or normal user, this person appeared to be not very knowledgeable about the system. He suspected there was an unwanted intruder in the network. He didn't want to scare the intruder away but he wanted to know whether he was an admin or another hacker who found his way into the very same system."
+    },
+    {
+      "type": "paragraph",
+      "text": "Quickly the target went from being the company he was hired to pentest to a rogue hacker inside the organization."
+    },
+    {
+      "type": "heading",
+      "text": "The Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "John decided quickly that he would have to social engineer this hacker and get as much information as possible to help safeguard his client. He didn't really have time to think through every step and plan out properly. He didn't have time to do the appropriate information gathering."
+    },
+    {
+      "type": "paragraph",
+      "text": "He takes a big risk and opens Notepad. Quickly he develops the pretext that he is a \"n00b\" hacker, a newbie, someone unskilled, and he found this box open and is hacking it, like this guy. He was able to obtain some screenshots of the conversation. Take a look and notice how the pentester had to social engineer the hacker, as shown in Figure 8-1. John starts the conversation and every other line is the hacker."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 8-1:",
+      "text": "An actual screen shot of the event."
+    },
+    {
+      "type": "paragraph",
+      "text": "Following is the verbatim transcript of the conversation that took place. It is long, and all typos and jargon appear in the original, but the transcript shows exactly what transpired in this hack. John speaks first."
+    },
+    {
+      "type": "paragraph",
+      "text": "whats up?"
+    },
+    {
+      "type": "paragraph",
+      "text": "hehe, just looking around yeah, me too. Anything good?"
+    },
+    {
+      "type": "paragraph",
+      "text": "you're a \"hacker\" too? U was just looking for unsecured VNC servers"
+    },
+    {
+      "type": "paragraph",
+      "text": "U=I"
+    },
+    {
+      "type": "paragraph",
+      "text": "I was looking forsomething easy. this was easy. ;) You see anything else on this network? This is the only one I got."
+    },
+    {
+      "type": "paragraph",
+      "text": "Didn't find anything else of interest here, most is secured pretty good. Yeah, easy to gain access, but I want admin priviliges... :D"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah, would be easy from here. Just a priv elev. I am interested inwhat else is here. What is this spreedsheet that is always up?"
+    },
+    {
+      "type": "paragraph",
+      "text": "I have no idea, it was heere when I logged in, I havn't been around much. Found this computer 2 hours ago maybe. What about you?"
+    },
+    {
+      "type": "paragraph",
+      "text": "I had it for about a week. Off and on. Just did not do anything with it. Sort of lazy. What was your test file from rapid share?I just dumped strings on it and don't reconize anything."
+    },
+    {
+      "type": "paragraph",
+      "text": "Cool. Well, the file was just a test i made, was trying to see if I could get a server (trojan) running. But the firewall didn't allow it."
+    },
+    {
+      "type": "paragraph",
+      "text": "lol. I had the same problem. I did metasplit shell and no-go. Thats why I kept using this. You in the us? or out of country? I know some people in denmark."
+    },
+    {
+      "type": "paragraph",
+      "text": "I'm from Norway actually, hehe, I have relatives in Denmark."
+    },
+    {
+      "type": "paragraph",
+      "text": "You hang in any boards? like I used to like some but they have been going away"
+    },
+    {
+      "type": "paragraph",
+      "text": "I mostly hang in some programming boards, but not much else. Have you been into hacking for a long time or what? What's your age btw? I'm 22."
+    },
+    {
+      "type": "paragraph",
+      "text": "I have been on this for like fun for around a  year or so.  Still in school. 16. Just something to do. You ever go to evilzone?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Haven't been there. I too mostly do this for fun, just trying to see what I can do, test my skills. I wrote the \"VNC finder\" myself btw, I have found a lot of servers, but this is the only one where I could actually have some fun"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wow. What did you write it in? Can I dl it? Do you have a handle?"
+    },
+    {
+      "type": "paragraph",
+      "text": "It's written in a  language called PureBasic,  but it's kinda not ready for release yet, it's only for my own use. But maybe I can share it anyway, I could upload the code somewhere and let you compile it. That is if you can find some"
+    },
+    {
+      "type": "paragraph",
+      "text": "PureBasic compiler on some warez site :P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Thats cool.  you can put it in that pastebin site from irc.  That lets you anon post I have not done purebasic before. just python and perl"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let me see,  I'll look for that pastebin site and upload it,  just give me some minutes, I'll be around."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ok cool! do you have a handle?I I go by jack_rooby"
+    },
+    {
+      "type": "paragraph",
+      "text": "Handle,  for what?  I don't chat on irc much or anything like that,  but I  could give you an email you could reah me on."
+    },
+    {
+      "type": "paragraph",
+      "text": "Thats cool.  I mean handle like for irc and boardz and the such.  heay e-mail works too."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah, at the programming board I share my full name, etc. Maybe not too smart to share just yet. My email is: intruder@hotmail.com"
+    },
+    {
+      "type": "paragraph",
+      "text": "Send me a message or whatever and I can add you on msn maybe."
+    },
+    {
+      "type": "paragraph",
+      "text": "I will send you a note. It is good to have someone that can program to know for this sort of stuff for when I get stuck or find something good"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hehe, yeah, we could be a team :P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cool! let me know when you did the pastebin http://pastebin.ca/1273205 btw...  that is kinda very in the  \"alpha\"  stage,  the GUI is not really finished. but it can be configured through some viariables."
+    },
+    {
+      "type": "paragraph",
+      "text": "Cool. I will test it and see what I can do with it. Thanks for sharing. if I do something cool, should I e-mail you?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah,  please do.  If you run this program for some hours you'll find a  lot servers, I even tried to make some code to detect servers that has no security and even some that has a  bug which can let you log in even if it has a password. These servers will show up in the result (the \"found tab\") as \"insecure\". But sometimes it does a mistake and says some are insecure which are not, but that's not many, it's just to test them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wow. I saw some other vnc servers here too, but they all wanted passwords. Does your tool let us in to that?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Just a very few has the bug which can let you in, but you must use the special client for them, more info here btw:"
+    },
+    {
+      "type": "paragraph",
+      "text": "http://intruderurl.co.uk/video/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Download the zip file."
+    },
+    {
+      "type": "paragraph",
+      "text": "Olol, k, soI wrry sorry.  Ok,  I will dl that and have a  look.  Thats cool.  Did you write the backdoor from rapid share too? or did you get that from someplace?"
+    },
+    {
+      "type": "paragraph",
+      "text": "I try to write most of my tools myself,  this way I  learn.  So yes,  I wrote it myself,  but it was not finished,  I was just wanna see if I  could run a server, but it didn't doo anything yet, hehe."
+    },
+    {
+      "type": "paragraph",
+      "text": "I see. I sort of gave up, but I thought I would come back and try some more.I figure there has to be some stuff around but I don't have a botnet of myown to use,  this guy named Zoot54  tried to sell me one,  and some people vouched for him, but I did not trust him at all. And I don't know how to write my own tools at all other then some perl and python which wont work for most windows hosts like this so I have been tryingthe metasploit but getting the firewall error. Do you have plans for this? Like something cool to do? or just moveon to the next?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Perl and python is a good start btw, I haven't been using them myself, but when you know some languages you can easily learn more  :P Maybe you should give"
+    },
+    {
+      "type": "paragraph",
+      "text": "PureBasic a try, it's really easy actually. Hehe, a bot-net would be cool, I was thinking about making one,  but it's kinda hard to make it spread,  at least on"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vista.  But nah,  I can't give up this server just yet,  I have to try some more, there has to be a way to get more priviliges ;D thast cool. You can have the server as I have had it for a while and don't know what to do next. let me know what you are doing if you would so I can learn some more though.  That would be cool.  Do you have a  myspace or facebook or anything? Or just use the e-mail?"
+    },
+    {
+      "type": "paragraph",
+      "text": "E-mail works for now, when I trust you more maybe I can add you on facebook, I don't have myspace. Yeah, I'll keep you updated :)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cool that works for me. Do you have a shell or do you have this same gui? Is it just a multi connection vnc?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah,  I just used ThightVNC or whatever and made it not disconnect other users. I'm not a shell fan really, hehe :S"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cool.  When I  get a  shell a  lot of times I  makes mistake tand dissconnect on accident"
+    },
+    {
+      "type": "paragraph",
+      "text": "Good you didn't dissconnect me :D Btw, when I first saw you messing around I was like \"damn, the administrator is here\", hehehe..."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hah, no I looked up the time zone and they are in the middle of the US so it is the middle of the night for them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah,  I did the same thing.  Even did a  speed test of the internet connection, hehe.They seem to have faster upload speed than download speed, weird... But handy for a DoD attack maybe."
+    },
+    {
+      "type": "paragraph",
+      "text": "DoS, i mean."
+    },
+    {
+      "type": "paragraph",
+      "text": "weird I woner what type of line it is its says it it from co. which I thought was a funny name.. Did you ever get any other systems here? I wonce saw a warez server but that was a long time ago and it is gone now."
+    },
+    {
+      "type": "paragraph",
+      "text": "Haven't found any other systems.  But I  would sure like to access all these network computers they have... damn many, it's some kind of university. Hehe, I printed out \"hello world\" previous today."
+    },
+    {
+      "type": "paragraph",
+      "text": "Haha did you send it to a printer or to the screen? these people would more then likkely freak out if they saw the mouse start mooving on them in the middle of the day whith tht weird spreadsheet"
+    },
+    {
+      "type": "paragraph",
+      "text": "Haha,  they probably woold,  but what silly idiots runds a  VNC server without a password?! I printed to some of the printers, I hope somebody saw it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Haha thats is true,  i bet som..  well they cant run it with out admin privs right? So it cant be just some user that did it, someone with admin would have to do it or else our backdoors should work on it and they are not going at all. Or do you think some one just changed the config?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hmm, well, i think you're right, maybe some admin or prankster.."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do you do this work for a living? I keep hearing you can make money with it, and"
+    },
+    {
+      "type": "paragraph",
+      "text": "I think if I do this for a while and get to be good I might be able to get a job with it. Is that what you did?"
+    },
+    {
+      "type": "paragraph",
+      "text": "I have earned money on programming, but never on hacking or security stuff. But that's a good idea, people would pay to get their security tested and if we get good enough we could probably earn a lot this way."
+    },
+    {
+      "type": "paragraph",
+      "text": "Thats what I  hope.  I bought a  book on the ethical hacker and think that they have some good programs in there.  I don't know what the age is to take the test, but if I do take it that might be a good start to do this work. And there are some good tools in there like the metasploit. You should take a look at it if you have not yet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah,  thanks,  I should check that out  :)  But I'm getting a  little tired now btw, hehe. Can't sit here chatting in bloody notepad all day, hehehehe. So cya later man, cool meeting you, very fun."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeah I was scared when I saw the rapid share up on the screen. Cool to meet you and I will e-maiul you and let you know how the program works. Tht is exciting to try that out and see what happens. You stay safe and don't like the bad guys find you!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hehe, thanks, the same for you btw! :) This was interesting, I think I'll save this notepad log btw, give me a sec,lol..."
+    },
+    {
+      "type": "paragraph",
+      "text": "there, lol, sorry goodbye bye This chat reveals how quickly John had to pretext and become someone else. This is not an easy task, as usually it takes a lot planning, but to secure his client and find out who this intruder was he had to play whatever role the \"hacker\" was going to put him in."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the end, John ended up getting his picture, e-mail, and contact info. He reported this malicious hacker to his client and the problem was fixed to not allow such free reign in and out of its systems."
+    },
+    {
+      "type": "paragraph",
+      "text": "This top-secret case shows just how social engineering used in a professional sense can go a long way toward securing the clients."
+    },
+    {
+      "type": "heading",
+      "text": "Applying the SE Framework to the Top Secret Case Study 2"
+    },
+    {
+      "type": "paragraph",
+      "text": "What I find interesting in this account is how the company wasn't really a target for the hacker. He was merely scanning the Internet for \"low-hanging fruit\" and that is exactly what he found. Open machines with full access are dangerous and this account shows just how much damage could have occurred if the pen tester was not sitting there just at the right time."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is, of course, a lot one can learn about social engineering from this story, too. John did not come into this project with the idea of using his social engineering skills. Instead it was a straight out pentest. Sometimes you are called on to use your skills without being able to plan first."
+    },
+    {
+      "type": "paragraph",
+      "text": "What might have enabled John to be able to do this without having to go home and have a practice session? Most likely these skills were something that John used daily or that he at least practiced often enough to make him agile in his use of them."
+    },
+    {
+      "type": "paragraph",
+      "text": "The main lesson in this case study is probably practice makes perfect. Realistically, John could have confronted the hacker, told him he was an admin and that he was being logged, and that his life was over. All sorts of threats could have flown back and forth and he could have tried to use fear as his main tactic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most likely, the hacker would have fled the scene only to return later and try to format the system or do even more damage to cover his tracks. Instead, thinking very fast, John was able to farm a lot of usable information on his target. John later used the target's e-mail address and name and a good copy of Maltego to get a very clear picture of this individual's activities."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another minor lesson one can learn from analyzing this story is how to be fluid. What I mean by that is learning to go with the flow. When John started \"gathering information\" from the hacker he really didn't know whether this person was a hacker or an admin. John's first line, \"Hey what's up,\" could have been answered by the attacker in many ways. Without knowing exactly the response he would get, John had no time to really prepare. He had to try to use lingo and react the way he imagined a hacker would."
+    },
+    {
+      "type": "paragraph",
+      "text": "John took it even a step farther. Realizing that the best avenue was a submissive one, John put on the pretext of a \"n00b,\" or new hacker who didn't know much and wanted a wonderful and intelligent real hacker to educate him. Feeding into the hacker's ego, John got him to spill his guts about all sorts of things, including all his contact information and even a picture."
+    },
+    {
+      "type": "heading",
+      "text": "Why Case Studies Are Important"
+    },
+    {
+      "type": "paragraph",
+      "text": "These case studies are just a few of the stories that are out there, and these are by far not the scariest. Every day governments, nuclear power plants, multibillion-dollar corporations, utility grids, and even whole countries fall victim to malicious social engineering attacks, and that doesn't even include the personal stories of scams, identity theft, and robbery that are occurring by the minute."
+    },
+    {
+      "type": "paragraph",
+      "text": "As sad as reading all these stories is, one of the best ways to learn is by reviewing case studies. Experts from all fields utilize this methodology. Psychologists and doctors review countless hours of tapes and interviews to study the microexpressions people use when feeling certain emotions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Persuasion experts review, analyze, and study accounts of positive and negative persuasion. Doing so helps them to pick up on the subtle areas that affect people and see how they can be used to learn and to protect their clients."
+    },
+    {
+      "type": "paragraph",
+      "text": "Law enforcement reviews case studies as part of their everyday lives to learn what makes a criminal tick. Along those lines, criminal investigators analyze and dissect every aspect of a malicious person, including what he eats, how he interacts with others, what he thinks about, and what makes him react. All of this information helps them to truly understand the mind of the criminal."
+    },
+    {
+      "type": "paragraph",
+      "text": "These same methods are how professional profilers target and catch the \"bad guys.\" In the same fashion, professional social engineers learn a lot by studying not only their own case studies but also cases in their own practice and malicious accounts they can find in the news. By reviewing case studies a social engineer can truly start to see the weakness of the human psyche and why the tactics in the social engineering framework work so easily. That is why I have been working hard to make sure the framework on www.social-engineer.org will include updated web stories and case studies that you can use to enhance your skills."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the end, all of these exploits worked because people are designed to be trusting, to have levels of compassion, empathy, and a desire to help others. These are qualities that we should not lose as we have to interact with our fellow humans every day. Yet at the same time, these qualities are the very things that are more often than not exploited by malicious social engineers. It may seem that I am promoting each of us to become a hardened, emotionless creature that walks around like a robot. Although that would definitely keep you protected from most social engineering attempts, it would make life dull. What I am promoting is being aware, educated, and prepared."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Security through education is the mantra of this book. Only when you are aware of the dangers that exist, only when you know how the \"criminal\" thinks, and only when you are ready to look that evil in the eye and embrace it can you truly protect yourself. To that end, the final chapter of this book discusses how to prevent and mitigate social engineering attacks."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Chapter 8 Case Study Takeaways",
+      "points": [
+        "Case studies prove that the most catastrophic breaches utilize simple, low-tech human manipulation rather than zero-day software exploits.",
+        "Every real-world attack sequence follows the identical framework: Reconnaissance &rarr; Pretexting &rarr; Elicitation &rarr; Execution.",
+        "Dissecting historical case studies allows defenders to recognize identical attack patterns before unauthorized access occurs."
+      ]
+    }
+  ]
+}

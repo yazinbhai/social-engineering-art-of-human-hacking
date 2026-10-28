@@ -1,0 +1,932 @@
+{
+  "id": 2,
+  "partId": 1,
+  "part": "Phase I: Reconnaissance & Human OSINT",
+  "title": "Chapter 2: Information Gathering",
+  "subtitle": "Open Source Intelligence (OSINT), Footprinting, and Communication Modeling",
+  "quote": {
+    "text": "War is ninety percent information.",
+    "author": "Napoleon Bonaparte"
+  },
+  "pages": "Pages 44–78",
+  "readTime": "32 min read",
+  "highlights": [
+    "The law of intelligence: No piece of data is irrelevant or useless",
+    "Open Source Intelligence (OSINT): Scraping corporate job boards, social media, and annual reports",
+    "Dumpster diving: Recovering internal telephone directories, flight itineraries, and printed memos",
+    "Communication modeling: Mapping how a target organization speaks, categorizes authority, and structures workflows"
+  ],
+  "totalBlocks": 215,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "It has been said that no information is irrelevant. Those words ring true when it comes to this chapter on information gathering. Even the slightest detail can lead to a successful social engineering breach."
+    },
+    {
+      "type": "paragraph",
+      "text": "My good friend and mentor, Mati Aharoni, who has been a professional pentester for more than a decade, tells a story that really drives this point home. He was tasked with gaining access to a company that had an almost nonexistent footprint on the Web. Because the company offered very few avenues to hack into, gaining this access would prove to be very challenging."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mati began scouring the Internet for any details that could lead to a path in. In one of his searches he found a high-ranking company official who used his corporate email on a forum about stamp collecting and who expressed an interest in stamps from the 1950s. Mati quickly registered a URL, something like www.stampcollection.com, and then found a bunch of old-looking 1950 stamp pictures on Google. Creating a quick website to show his \"stamp collection,\" he then crafted an email to the company official:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dear Sir, I saw on www.forum.com you are interested in stamps from the 1950s. Recently my grandfather passed away and left me with a stamp collection that I would like to sell. I have a website set up; if you would like to see it please visit www.stampcollection.com. Thanks, Mati"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before he sent the email to the target, he wanted to ensure there would be maximum impact. He took the office number from the forum post and placed a phone call to the man. \"Good morning, sir, this is Bob. I saw your posting on www.forum.com. My grandfather recently passed and he left me a bunch of stamps from the 1950s and 60s. I took pictures and made a website. If you are interested I can send you the link and you can take a look.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The target was very eager to see this collection and readily accepted the email. Mati sent the man the email and waited for him to click the link. What Mati did was embed a malicious frame on the website. This frame had code in it that would exploit a vulnerability then known in the popular Internet Explorer browser and give control over the target's computer to Mati."
+    },
+    {
+      "type": "paragraph",
+      "text": "The wait was not long: as soon as the man received the email he clicked the link and the company's perimeter was compromised."
+    },
+    {
+      "type": "paragraph",
+      "text": "A tiny piece of information—the corporate email this man used to look for stamps—is what led to this compromise. No piece of information is irrelevant. With that knowledge in mind, here are questions that come up with regard to information gathering:"
+    },
+    {
+      "type": "paragraph",
+      "text": "How can you gather information? What sources exist for social engineers to gather information? What can you glean from this information to profile your targets? How can you locate, store, and catalog all this information for the easiest level of use? These are just a few of the questions that you will need to find answers for in order to accomplish proper and effective information gathering. With the plethora of social networking sites out there, people can easily share every aspect of their lives with anyone they choose, making potentially damaging information more readily available than ever before. This chapter focuses on the principles of information gathering by presenting examples of how it can be used in social engineering and the devastating effects some of the information people release on the Web can have on their personal and business security."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many of the skills or methods that a social engineer may use come from other fields. One field that is superb at gathering information is sales."
+    },
+    {
+      "type": "paragraph",
+      "text": "Salespeople tend to be very talkative, easygoing, and very good at collecting data about those with whom they interact."
+    },
+    {
+      "type": "paragraph",
+      "text": "I once read a book on sales in which the author encouraged salespeople to gather referrals from the buyer—something along these lines: \"Can you tell me one person who you think could benefit from this product as much as you will?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Using simple wording can get a person to open up and refer family, friends, and maybe even coworkers. Harvesting, or gathering this information and then storing it, allows the sales people to have what they call \"warm leads\" to call on. A warm lead is where they have a person with an \"in,\" a way to get in the door without having to cold call."
+    },
+    {
+      "type": "paragraph",
+      "text": "The salesperson can now call on those referrals and say something like, \"I was just at Jane's house two doors down, and she bought our premium policy. After reviewing the benefits and paying for the year upfront she said you might benefit from the same coverage. Do you have a minute for me to show you what Jane purchased?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "These skills used by salespeople are often mirrored by social engineers. Of course a social engineer is not asking for referrals, but think about the flow of information in and out of this conversation. The salesperson gathers information from his present client, then he relays that information in a way that will make the new \"target\" more susceptible to listen and let him in. In addition, by dropping hints on what the first customer bought and using words like \"premium\" and \"in advance\" the salesperson is preloading the new target with the keywords he wants to use on him in just a little while. This technique is effective in that it builds trust, uses familiarity, and allows the target to feel comfortable with the salesperson, or the social engineer, giving their mind a bridge over the gap that normally would exist there. This chapter, as well as the following chapter, will delve deep into these topics."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a social engineer, both angles are of vital importance to understand and then to use effectively. To return to the illustration used in Chapter 1 of being a chef, a good chef knows all about how to spot good quality products, fresh vegetables, and quality meats. They are knowledgeable about what goes into the recipe, but unless the right quantities are used the food may be too bland or too strong or not good enough to eat at all. Simply knowing that a recipe calls for salt doesn't make you a chef, but knowing how to mix the right amount and types of ingredients can help you master the art of cooking. A social engineer needs to master the type and quantity of skills to be used (the \"recipe\"). When that is done they can become a master social engineer."
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter helps identify this balance. The first ingredient in any recipe for a social engineer is information (detailed in the next section). The higher the quality of the information the more likely you are to achieve success. This chapter begins by discussing how to gather information. Then it moves on to discuss what sources can be used to harvest information. This chapter would not be complete without discussing how to tie it all together and utilize these resources as a social engineer."
+    },
+    {
+      "type": "heading",
+      "text": "Gathering Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gathering information is like building a house. If you try to start with the roof your house will surely be a failure. A good house will be built using a solid foundation and from there it will be built literally from the ground up. As you gather information you may be overwhelmed with how to organize and then use this data, so starting a file or an information gathering service to gather this data in is a good idea."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many tools exist to assist in collecting and then using this data. For penetration tests and social engineering audits I use a Linux distribution called BackTrack that is specifically designed for this purpose. BackTrack is like most Linux distributions in that it is free and open source. Perhaps its greatest asset is that it contains more than 300 tools designed to assist in security auditing."
+    },
+    {
+      "type": "activity-ref",
+      "activityId": "ch2-osint-footprint-lab"
+    },
+    {
+      "type": "paragraph",
+      "text": "All of the tools within BackTrack are also open source and free. Especially attractive is the high quality of BackTrack's tools, many of which rival and even surpass tools you would pay an arm and a leg for. Two BackTrack tools that are particularly useful for information gathering and storing are called Dradis and BasKet. The following sections take a quick look at each."
+    },
+    {
+      "type": "heading",
+      "text": "Using BasKet"
+    },
+    {
+      "type": "paragraph",
+      "text": "BasKet is similar in functionality to Notepad, but more like Notepad on steroids. It is presently maintained by Kelvie Wong and can be found for free either in BackTrack or at http://basket.kde.org/. The website has full instructions for how to install BasKet. Once installed BasKet is easy to use and the interface is not difficult to understand."
+    },
+    {
+      "type": "paragraph",
+      "text": "As seen in Figure 2-1, the interface is easy to figure out. Adding a new \"Basket\" to hold data is as simple as right clicking on the left side of the screen and selecting New Basket."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once new Baskets are added the sky is the limit. You can copy and paste data, place screen shots in the Basket, or even tie in OpenOffice or other types of charts, graphs, and other utilities."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-1:",
+      "text": "BasKet allows for easy organization of the data found during information gathering."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding a screenshot can be done in a few ways. The easiest is to copy the image then right mouse click on the new Basket and click Paste. As shown in Figure 2-1, adding images is simple but also shows the image right away. Notes can be typed or pasted around the images by simply clicking in the Basket and starting to type."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a normal security audit, what makes BasKet attractive is the way it catalogs data and shows it on the screen. I usually add a different Basket for each type of data such as Whois, social media, and so on. After that, I will do some recon using Google Maps or Google Earth to capture some images of the client's building or facility, which I can store in BasKet as well. When the audit is complete, being able to pull up and utilize this information quickly is very easy. Figure 2-2 illustrates a nearly complete BasKet that contains a lot of useful information and tabs."
+    },
+    {
+      "type": "paragraph",
+      "text": "As shown in Figure 2-2, BasKet is easy to store the information in an easy-to-read format. I try to include as much information as possible because no information is too small to store. The information I include is items from the client's website, WhoIs information, social media sites, images, employee contact info, resumes found, forums, hobbies, and anything else I find linked to the company."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-2:",
+      "text": "A nearly completed BasKet with lots of useful information."
+    },
+    {
+      "type": "paragraph",
+      "text": "When I am done, I simply click on the menu called Basket then Export and export the whole BasKet as an HTML page. This is great for reporting or sharing this data."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a social engineer, collecting data, as will be discussed in detail later, is the crux of every gig, but if you cannot recall and utilize the data quickly, it becomes useless. A tool like BasKet makes retaining and utilizing data easy. If you give BasKet a try and use it once, you will be hooked."
+    },
+    {
+      "type": "heading",
+      "text": "Using Dradis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Although BasKet is a great tool, if you do a lot of information gathering, or if you work on team that needs to collect, store, and utilize data, then a tool that allows for multi-user sharing of this data is important. Enter Dradis. According to the creators of the open-source Dradis, the program is a \"self- contained web application that provides a centralized repository of information\" you have gathered, and a means by which to plan for what's to come."
+    },
+    {
+      "type": "paragraph",
+      "text": "Like BasKet, Dradis is a free, open-source tool that can be found at http://dradisframework.org/. Whether you are using Linux, Windows, or a Mac, Dradis has easy-to-use set up and installation instructions found at http://dradisframework.org/install.html."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once Dradis is installed and set up, you simply browse to the localhost and port you assigned, or use the standard 3004. You can do this by opening a browser and typing https://localhost:3004/."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once logged in, you're greeted with the screen shown in Figure 2-3. Notice the Add Branch button at the top left. Adding a branch allows you to add similar details as you can in BasKet: notes, images, and more, and you can even import notes."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-3:",
+      "text": "Dradis has a nice, easy-to-use interface."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dradis and BasKet are just two tools that I have used to collect and store data. The websites for both Dradis and BasKet have very nice tutorials on setting up and using these powerful tools."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whatever operating system you use—Mac, Windows, or Linux—there are choices out there for you. What is important is to use a tool that you are comfortable with and that can handle large amounts of data."
+    },
+    {
+      "type": "paragraph",
+      "text": "For that reason I suggest staying away from things like Notepad in Windows or Smultron or TextEdit in Mac. You want to be able to format and highlight certain areas to make them stand out. In my Dradis server, pictured in Figure 2-3, I have a section for phone scripts. This functionality is handy for transcribing ideas that might work based on the information I gathered."
+    },
+    {
+      "type": "paragraph",
+      "text": "These tools suggest how a social engineer begins to utilize the information he collects. The first stage in utilizing the information you gather is thinking like a social engineer."
+    },
+    {
+      "type": "heading",
+      "text": "Thinking Like a Social Engineer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Having a few hundred megabytes of data and pictures is great, but when you start reviewing it, how do you train yourself to review and then think of the data in a way that has maximum impact?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course you could just open a browser and type in long-winded random searches that may lead to some form of information, some of which may even be useful. If you are hungry you probably don't just run to the kitchen and start to throw whatever ingredients you see into a bowl and start digging in. Planning, preparation, and thought all cause the meal to be good. Similar to a real meal, a social engineer needs to plan, prepare, and think about what information he will try to obtain and how he will obtain it."
+    },
+    {
+      "type": "paragraph",
+      "text": "When it comes to this vital step of information gathering many people will have to change the way they think. You have to approach the world of information in front of you with a different opinion and mindset than what you normally may have. You have to learn to question everything, and, when you see a piece of information, learn to think of it as a social engineer would. The way you ask questions of the web or other sources must change. The way you view the answers that come back must also change. Overhearing a conversation, reading what seems like a meaningless forum post, seeing a bag of trash—you should assimilate this information in a different way than you did before. My mentor Mati gets excited when he sees a program crash. Why? Because he is a penetration tester and exploit writer. A crash is the first step to finding a vulnerability in software, so instead of being irritated at losing data he gets excited at the crash. A social engineer must approach information in much the same way. When finding a target that utilizes many different social media sites, look for the links between them and the information that can create a whole profile."
+    },
+    {
+      "type": "paragraph",
+      "text": "As an example, one time I rented a car to drive a few states away for business. My companion and I loaded all of our luggage in the trunk; as we were entering the car we noticed a small bag of trash in the back seat. The other person said something like, \"Service today just stinks. You figure for what you pay they would at least clean out the car.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "True, you would expect that, but I stopped that bag from just being chucked into the nearest can, and I said, \"Let me just look at that really quick.\" As I opened the bag and pushed aside the Taco Bell wrappers, what was lying in plain sight was a shock to me—half of a ripped-up check. I quickly dumped out the bag and found a bank receipt and the other half of the check. The check was written out for a couple thousand dollars, then just ripped up—not into tiny little pieces, but just into four large chunks, then thrown into a small bag with a Taco Bell wrapper. Taping it back together revealed this person's name, company name, address, phone number, bank account number, and bank routing number. Together with the bank receipt I now had the balance of his account. Thankfully for him I am not a malicious person because only a couple more steps are needed to commit identity theft."
+    },
+    {
+      "type": "paragraph",
+      "text": "This story personifies how people view their valuable information. This guy rented the car before me and then because he threw the check away he felt it was gone, disposed of safely. Or so he thought; but this is not an isolated case. At this URL you can find a recent story about very valuable things people just threw away or sold for next to nothing at a garage sale: www.social-engineer.org/wiki/archives/BlogPosts/LookWhatIFound.html."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Things like:",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "text": "A painting that a museum bought for $1.2 million 1937 Bugatti Type 57S Atalante with a mere 24,000 miles sold for $3 million"
+    },
+    {
+      "type": "paragraph",
+      "text": "A copy of the Declaration of Independence If people throw away a painting with a hidden copy of the Declaration of Independence in it, then throwing away bills, medical records, old invoices, or credit card statements probably isn't such a huge deal."
+    },
+    {
+      "type": "paragraph",
+      "text": "How you interact with people in public can have devastating effects. In the following scenario I was asked to audit a company and before I could proceed I needed to gather some data. Take a look at how simple, seemingly meaningless information can lead to a breach."
+    },
+    {
+      "type": "paragraph",
+      "text": "Simply following one of the higher ups of the target company for a day or two showed me that he stopped for coffee every morning at the same time. Since I was aware of his 7:30 a.m. coffee stop at the local coffee shop I could plan a \"meeting.\" He would sit for 30–35 minutes, read the paper, and drink a medium cafe latte. I enter the shop about 3–5 minutes after he sits down. I order the same drink as him and sit down next to him in the shop. I look over as he places one section of the paper down and ask whether I can read the paper he is done with. Having already picked up a paper on the way I knew that page three contained an article about a recent murder in the area. After acting as if I just read it, I say out loud, \"Even in these small towns things are scary nowadays. You live around here?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Now at this point the target can blow me off, or if I played my cards right, my body language, vocal tone, and appearance will put him at ease. He says, \"Yeah, I moved in a few years back for a job. I like small towns, but you hear this more and more.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "I continue, \"I am just traveling through the area. I sell high-end business consulting services to large companies and always enjoy traveling through the smaller towns but I seem to hear more and more of these stories even in the rural areas.\" Then in a very joking tone I say, \"You don't happen to be a bigwig in a large company that needs some consulting do you?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "He laughs it off and then as if I just challenged him to prove his worth says, \"Well I am a VP of finance at XYZ Corp. here locally, but I don't handle that department.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Hey, look, I am not trying to sell you something, just enjoy coffee, but if you think I can stop by and leave you some information tomorrow or Wednesday?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "This is where the story gets interesting, as he says, \"Well I would but I am heading out for a much-needed vacation on Wednesday. But why don't you mail it to me and I will call you.\" He then hands me a card."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Going somewhere warm and sunny, I hope?\" I ask this knowing that I am probably getting close to my point where I need to cut it off."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Taking the wife on a cruise south.\" I can tell he doesn't want to tell me where, which is fine, so we shake hands and part ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now could he have been blowing me off? Probably, but I have some valuable information:"
+    },
+    {
+      "type": "paragraph",
+      "text": "His direct number When he is leaving for vacation What type of vacation That he is local The name of his company His title in his company That he recently relocated Of course, some of this information I already had from previous information gathering, but I was able to add a substantial amount to it after this meeting. Now to launch the next part of the attack, I call his direct line the day after he is supposed to be gone and ask for him, only to be told by his receptionist, \"Sorry, Mr. Smith is on vacation—can I take a message?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Excellent. The information is verified and now all I need to do is launch the final phase, which means dressing up in a suit and taking my $9 business cards to his office. I enter, sign in, and tell the receptionist I have an appointment with Mr. Smith at 10:00 a.m. To which she replies, \"He is on vacation, are you sure it is today?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Using my practice sessions on microexpressions, a topic addressed in Chapter 5, I show true surprise: \"Wait, his cruise was this week? I thought he left next week.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Now this statement is vital—why? I want the appointment to be believable and I want the receptionist to trust me by proxy. By stating I know about his cruise this must mean Mr. Smith and I have had intimate conversation—enough so that I know his itinerary. But my helplessness elicits pity and right away the secretary comes to my aid. \"Oh, honey, I am sorry, do want me to call his assistant?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Ah, no.\" I reply. \"I really wanted to leave some information with him. How about this—I will just leave it with you and you can give it to him when he gets back? I am terribly embarrassed; maybe you can avoid even telling him I did this?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"My lips are sealed.\" \"Thank you. Look I am going to crawl out of here, but before I do can I just use your bathroom?\" I know that I normally would not be buzzed in, but I hope the combination of my rapport, my helplessness, and their pity will lead to success—and it does."
+    },
+    {
+      "type": "paragraph",
+      "text": "While in the bathroom, I place an envelope in one stall. On the cover of the envelope I put a sticker that says PRIVATE. Inside the \"private\" envelope is a USB key with a malicious payload on it. I do this in one stall and also in the hallway by a break room to increase my chances and hope that the person that finds one of them is curious enough to insert it into their computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sure enough, this method seems to always work. The scary thing is that this attack probably wouldn't work if it weren't for a useless little conversation in a coffee shop."
+    },
+    {
+      "type": "paragraph",
+      "text": "The point is not only about how small data can still lead to a breach, but also how you collect this data. The sources that you can use to collect data are important to understand and test until you are proficient with each method and each source of collection. There are many different types of sources for collecting data. A good social engineer must be prepared to spend some time learning the strengths and weaknesses of each as well as the best way to utilize each source. Thus the topic of the next section."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: The Law of Intelligence",
+      "points": [
+        "The First Law of Intelligence: No piece of data is irrelevant or useless; disconnected fragments synthesize into decisive attack vectors.",
+        "Pre-engagement reconnaissance determines the entire success rate of a social engineering audit.",
+        "Target profiling must encompass corporate hierarchies, employee hobbies, vendor relationships, and communication vernacular."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Sources for Information Gathering"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many different sources exist for information gathering. The following list cannot possibly cover every source out there, but it does outline the major choices you have."
+    },
+    {
+      "type": "heading",
+      "text": "Gathering Information from Websites"
+    },
+    {
+      "type": "paragraph",
+      "text": "Corporate and/or personal websites can provide a bounty of information. The first thing a good social engineer will often do is gather as much data as he can from the company's or person's website. Spending some quality time with the site can lead to clearly understanding:"
+    },
+    {
+      "type": "paragraph",
+      "text": "What they do The products and services they provide Physical locations Job openings Contact numbers Biographies on the executives or board of directors Support forum Email naming conventions Special words or phrases that can help in password profiling Seeing people's personal websites is also amazing because they will link to almost every intimate detail about their lives—kids, houses, jobs, and more. This information should be cataloged into sections because it will often be something from this list that is used in the attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many times company employees will be part of the same forums, hobby lists, or social media sites. If you find one employee on LinkedIn or Facebook, chances are that many more are there as well. Trying to gather all that data can really help a social engineer profile the company as well as the employees. Many employees will talk about their job title in their social media outlets. This can help a social engineer to profile how many people may be in a department and how the departments are structured."
+    },
+    {
+      "type": "heading",
+      "text": "Search Engines"
+    },
+    {
+      "type": "paragraph",
+      "text": "Johnny Long wrote a famous book called Google Hacking for Penetration Testers and really opened up many people's eyes to the amazing amount of information that Google holds."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google forgives but it never forgets, and it has been compared to the Oracle. As long as you know how to ask, it can tell you most anything you want to know."
+    },
+    {
+      "type": "paragraph",
+      "text": "Johnny developed a list of what he calls \"Google Dorks,\" or a string that can be used to search in Google to find out information about a company. For example if you were to type in: site:microsoft.com filetype:pdf you be given a list of every file with the extension of PDF that is on the microsoft.com domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Being familiar with search terms that can help you locate files on your target is a very important part of information gathering. I make a habit of searching for filetype:pdf, filetype:doc, filetype:xls, and filetype:txt. It is also a good idea to see if employees actually leave files like DAT, CFG, or other database or configuration files open on their servers to be harvested."
+    },
+    {
+      "type": "paragraph",
+      "text": "Entire books are dedicated to the topic of using Google to find data, but the main thing to remember is learning about Google's operands will help you develop your own."
+    },
+    {
+      "type": "paragraph",
+      "text": "A website like www.googleguide.com/advanced_operators.html has a very nice list of both the operands and how to use them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google is not the only search engine that reveals amazing information. A researcher named John Matherly created a search engine he called Shodan (www.shodanhq.com)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shodan is unique in that it searches the net for servers, routers, specific software, and so much more. For example, a search of microsoft-iis os:\"windows 2003\" reveals the following number of servers running Windows 2003 with Microsoft IIS:"
+    },
+    {
+      "type": "paragraph",
+      "text": "United States 59,140 China 5,361 Canada 4,424 United Kingdom 3,406 Taiwan 3,027 This search is not target-specific, but it does demonstrate one vital lesson: the web contains an amazing wealth of information that needs to be tapped by a social engineer seeking to become proficient at information gathering."
+    },
+    {
+      "type": "heading",
+      "text": "Whois Reconnaissance"
+    },
+    {
+      "type": "paragraph",
+      "text": "Whois is a name for a service and a database. Whois databases contain a wealth of information that in some cases can even contain full contact information of the website administrators."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a Linux command prompt or using a website like www.whois.net can lead you to surprisingly specific results like such as a person's email address, telephone number, or even DNS server IP address."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whois information can be very helpful in profiling a company and finding out details about their servers. All of this information can be used for further information gathering or to launch social engineering attacks."
+    },
+    {
+      "type": "heading",
+      "text": "Public Servers"
+    },
+    {
+      "type": "paragraph",
+      "text": "A company's publicly reachable servers are also great sources for what its websites don't say. Fingerprinting a server for its OS, installed applications, and IP information can say a great deal about a company's infrastructure. After you determine the platform and applications in use, you could combine this data with a search on the corporate domain name to find entries on public support forums."
+    },
+    {
+      "type": "paragraph",
+      "text": "IP addresses may tell you whether the servers are hosted locally or with a provider; with DNS records you can determine server names and functions, as well as IPs."
+    },
+    {
+      "type": "paragraph",
+      "text": "In one audit after searching the web using the tool called Matelgo (discussed in Chapter 7), I was able to uncover a publicly facing server that housed literally hundreds of documents with key pieces of information about projects, clients, and the creators of those documents. This information was devastating to the company."
+    },
+    {
+      "type": "paragraph",
+      "text": "An important note to keep in mind is that performing a port scan—using a tool like NMAP or another scanner to locate open ports, software, and operating systems used on a public server—can lead to problems with the law in some areas."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, in June 2003, an Israeli, Avi Mizrahi, was accused by the Israeli police of the offense of attempting the unauthorized access of computer material. He had port scanned the Mossad website. About eight months later, he was acquitted of all charges. The judge even ruled that these kinds of actions should not be discouraged when they are performed in a positive way (www.law.co.il/media/computer-law/mizrachi_en.pdf)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In December 1999, Scott Moulton was arrested by the FBI and accused of attempted computer trespassing under Georgia's Computer Systems Protection Act and Computer Fraud and Abuse Act of America. At the time, his IT service company had an ongoing contract with the Cherokee County of Georgia to maintain and upgrade the 911 center security (www.securityfocus.com/news/126)."
+    },
+    {
+      "type": "paragraph",
+      "text": "As part of his work, Moulton performed several port scans on Cherokee County servers to check their security and eventually port scanned a web server monitored by another IT company. This provoked a lawsuit, although he was acquitted in 2000. The judge ruled that no damage occurred that would impair the integrity and availability of the network."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2007 and 2008, England, France, and Germany passed laws that make unlawful the creation, distribution, and possession of materials that allow someone to break any computer law. Port scanners fall under this description."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, if you are involved in a paid audit of a company most of this will be in the contract, but it is important to state that it is up to the social engineer auditor to be aware of the local laws and make sure you are not breaking them."
+    },
+    {
+      "type": "heading",
+      "text": "Social Media"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many companies have recently embraced social media. It's cheap marketing that touches a large number of potential customers. It's also another stream of information from a company that can provide breadcrumbs of viable information. Companies publish news on events, new products, press releases, and stories that may relate them to current events."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lately, social networks have taken on a mind of their own. When one becomes successful it seems that a few more pop up that utilize similar technology. With sites like Twitter, Blippy, PleaseRobMe, ICanStalkU, Facebook, LinkedIn, MySpace, and others, you can find information about people's lives and whereabouts in the wide open. Later, this book will discuss this topic in much more depth and you will see that social networks are amazing sources of information."
+    },
+    {
+      "type": "heading",
+      "text": "User Sites, Blogs, and So On"
+    },
+    {
+      "type": "paragraph",
+      "text": "User sites such as blogs, wikis, and online videos may provide not only information about the target company, but also offer a more personal connection through the user(s) posting the content. A disgruntled employee who's blogging about his company's problems may be susceptible to a sympathetic ear from someone with similar opinions or problems. Either way, users are always posting amazing amounts of data on the web for anyone to see and read."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Case in point:",
+      "text": "Take a look at a new site that has popped up— www.icanstalku.com (see Figure 2-4). Contrary to its name, it does not encourage people to actually stalk others. This site points to the complete thoughtlessness of many Twitter users. It scrapes the Twitter site and looks for users who are silly enough to post pictures using their smart phones. Many people do not realize that most smart phones embed GPS location data in their photos. When a user posts a picture to the web with this data embedded it can lead a person right to their location."
+    },
+    {
+      "type": "paragraph",
+      "text": "Displaying location-based information is a scary aspect of social media websites. Not only do they allow you to post pictures of yourself, they also implicitly reveal your location—possibly without your knowledge."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sites like ICanStalkU underscore the danger of this information. Check out a story (one of many) that shows how this data is used for home break- ins, robberies, and sometimes more at www.social-engineer.org/wiki/archives/BlogPosts/TwitterHomeRobbery.html."
+    },
+    {
+      "type": "paragraph",
+      "text": "This type of information can give you a very detailed profile of your target. People love to tweet about where they are, what they are doing, and who they are with. Blippy allows a person to connect their bank accounts and in essence it will \"tweet\" with each purchase, where it was from, and how much it costs. With pictures including embedded location data and then sites like Facebook, which many use to put personal pictures, stories, and other related info, it is a social engineer's dream. In a short while a whole profile can be developed with a person's address, job, pictures, hobbies, and more."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another aspect of social media sites that makes them excellent sources of information gathering is the ability to be anonymous. If the target is a recently divorced middle-aged man who loves his Facebook page, you can be a young woman who is looking for a new friend. Many times, while flirting, people divulge valuable pieces of information. Combine the ability to be anyone or anything you want on the web with the fact that most people believe everything they read as gospel fact and what you have is one of the greatest risks to security."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-4:",
+      "text": "A typical scene on the homepage of ICanStalkU.com."
+    },
+    {
+      "type": "heading",
+      "text": "Public Reports"
+    },
+    {
+      "type": "paragraph",
+      "text": "Public data may be generated by entities inside and outside the target company. This data can consist of quarterly reports, government reports, analyst reports, earnings posted for publicly traded companies, and so on. An example of these are Dunn and Bradstreet reports or other sales reports that are sold for very little money and contain a lot of details on the target company."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another avenue discussed in more detail later is using background checkers such as those found at www.USSearch.com and www.intelius.com. These sites, along with many others, can offer background check services for as little as $1 for one limited report to a $49 per month fee that lets you run as many checks as you want. You can get much of this information for free using search engines, but some of the detailed financial data and personal information can only be obtained easily and legally through a paid-for service. Perhaps most shocking is that many of these companies may even provide data like a person's Social Security Number to some customers."
+    },
+    {
+      "type": "heading",
+      "text": "Using the Power of Observation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Though not used enough as a social engineering tool, , simple observation can tell you much about your target. Does the target's employees use keys, RFID cards, or other methods to enter the building? Is there a designated area for smoking? Are dumpsters locked, and does the building have external cameras? External devices such as power supplies or air conditioning units usually reveal who the service company is, and that can allow the social engineer another vector to gain access."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are just a few of the questions that you can get answers for through observation. Taking some time to watch the target, film using a covert camera, and then studying and analyzing the information later can teach you a lot and give your information file a major boost."
+    },
+    {
+      "type": "heading",
+      "text": "Going through the Garbage"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes, as hard as it is to imagine enjoying jumping through the trash, it can yield one of the most lucrative payoffs for information gathering. People often throw away invoices, notices, letters, CDs, computers, USB keys, and a plethora of other devices and reports that can truly give amazing amounts of information. As mentioned previously, if people are willing to throw away art that is worth millions, then things they view as trash will often go without a second thought, right into the garbage."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes companies shred documents they deem as too important to just throw out, but they use an inefficient shredder that leaves paper too easy to put back together, as shown in Figure 2-5."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-5:",
+      "text": "Large one-way shreds leave some words still readable."
+    },
+    {
+      "type": "paragraph",
+      "text": "This image shows a few documents after shredding, but some whole words are still discernable. This type of shredding can be thwarted with a little time and patience and some tape, as seen in Figure 2-6. Documents that can be even partially taped back together can reveal some very devastating information."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-6:",
+      "text": "Putting documents back together only takes time and patience."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, using a shredder that shreds both directions into a fine minced mess makes taping documents back together nearly impossible, as shown in Figure 2-7."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-7:",
+      "text": "You can hardly tell this was once money."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many companies use commercial services that take their shredded documents away for incineration. Some companies even leave the shredding to a third party, which, as you probably guessed, leaves them open to another attack vector. A social engineer who finds out the name of their vendor for this can easily mimic the pickup person and be handed all their documents. Nevertheless, dumpster diving can offer a quick way to find all the information you want. Remember some key pointers when performing a dumpster dive:"
+    },
+    {
+      "type": "labeled-item",
+      "label": "Wear good shoes or boots:",
+      "text": "Nothing will ruin your day faster than jumping in a dumpster and having a nail go through your foot. Make sure your shoes tie on nice and tight as well as offer protection from sharp objects."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Wear dark clothing:",
+      "text": "This doesn't need much explanation. You probably want to wear clothes you don't mind having to get rid of, and dark clothes to avoid being detected. Bring a flashlight"
+    },
+    {
+      "type": "labeled-item",
+      "label": "Grab and run:",
+      "text": "Unless you are in such a secluded area that you have no chance of being caught, grabbing some bags and going elsewhere to rummage through them might be best. Dumpster diving almost always leads to some very useful information. Sometimes a social engineer doesn't even have to dive into a dumpster to find the goods. Already mentioned in Chapter 1 is the article found at www.social-engineer.org/resources/book/TopSecretStolen.htm, but it solidifies this thought. The Canadian CTU (Counter-Terrorism Unit) had plans for a new building that outlined its security cameras, fences, and other top-secret items. These blueprints were just thrown away—yes, just tossed in the trash, not even shredded, and fortunately found by a friendly person."
+    },
+    {
+      "type": "paragraph",
+      "text": "This story is just one of many that show \"the height of stupidity,\" as the article stated, but from a social engineer's point of view, trash diving is one of the best information gathering tools out there."
+    },
+    {
+      "type": "heading",
+      "text": "Using Profiling Software"
+    },
+    {
+      "type": "paragraph",
+      "text": "Chapter 7 discusses the tools that make up some of the professional toolsets of social engineers, but this section offers a quick overview."
+    },
+    {
+      "type": "paragraph",
+      "text": "Password profilers such as Common User Passwords Profiler (CUPP) and Who's Your Daddy (WYD) can help a social engineer profile the potential passwords a company or person may use."
+    },
+    {
+      "type": "paragraph",
+      "text": "How to use these tools is discussed in Chapter 7, but a tool like WYD will scrape a person or company's website and create a password list from the words mentioned on that site. It is not uncommon for people to use words, names, or dates as passwords. These types of software make it easy to create lists to try."
+    },
+    {
+      "type": "paragraph",
+      "text": "Amazing tools such as Maltego (see Chapter 7 for more details), made by Paterva, are an information gatherer's dream. Maltego allows a social engineer to perform many web-based and passive information gathering searches without having to use any utilities but Maltego itself."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then it will store and graph this data on the screen to be used in reporting, exporting or other purposes. This can really help in developing a profile on a company."
+    },
+    {
+      "type": "paragraph",
+      "text": "Remember, your goal as you collect data is to learn about the target company and the people within the company. Once a social engineer collects enough data, a clear picture will form in their minds as to the best way to manipulate the data from the targets. You want to profile the company as a whole and find out roughly how many employees are part of some club, a hobby, or group. Do they donate to a certain charity or do their kids go to the same school? All of this information is very helpful in developing a profile."
+    },
+    {
+      "type": "paragraph",
+      "text": "A clear profile can help the social engineer not only in developing a good pretext, but can also outline what questions to use, what are good or bad days to call or come onsite as well as many other clues that can make the job so much easier."
+    },
+    {
+      "type": "paragraph",
+      "text": "All of the methods discussed so far are mostly physical, very personal methods of information gathering. I didn't touch on the very technical side of information gathering like services such as SMTP, DNS, Netbios, and the almighty SNMP. I do cover some of the more technical aspects that Maltego can help with in Chapter 7 in more detail. These methods are worth looking into but are very much technical in nature as opposed to more \"human\" in nature."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whatever the method you utilize to gather information logically, the question that may come up is now that you know where to gather, how to gather, and even how to catalog, store, and display this info, what do you do with it?"
+    },
+    {
+      "type": "paragraph",
+      "text": "As a social engineer, after you have information you must start planning your attacks. To do that you need to start modeling an outline that will use this information. One of the best ways to start utilizing this data is to develop what is called a communication model."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Advanced Search Techniques & Physical Sifting",
+      "points": [
+        "Google Dorking operators (filetype:, site:, intitle:, inurl:) uncover indexed configuration files, spreadsheets, and private portals.",
+        "Dumpster diving remains exceptionally effective: shredded documents, travel itineraries, and internal phone sheets are routinely recovered.",
+        "Physical observation of building entry points reveals smoke-break habits, badge styles, and delivery schedules."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Communication Modeling"
+    },
+    {
+      "type": "paragraph",
+      "text": "The more elaborate our means of communication, the less we communicate."
+    },
+    {
+      "type": "paragraph",
+      "text": "—Joseph Priestley Communication is a process of transferring information from one entity to another. Communication entails interactions between at least two agents, and can be perceived as a two-way process in which there is an exchange of information and a progression of thoughts, feelings, or ideas toward a mutually accepted goal or direction."
+    },
+    {
+      "type": "paragraph",
+      "text": "This concept is very similar to the definition of social engineering, except the assumption is that those involved in the communication already have a common goal, whereas the goal of the social engineer is to use communication to create a common goal. Communication is a process whereby information is enclosed in a package and is channeled and imparted by a sender to a receiver via some medium. The receiver then decodes the message and gives the sender feedback. All forms of communication require a sender, a message, and a receiver. Understanding how communication works is essential to developing a proper communication model as a social engineer. Modeling your communication as a social engineer will help us to decide the best method of delivery, the best method for feedback, and the best message to include."
+    },
+    {
+      "type": "paragraph",
+      "text": "Communication can take many different forms. There are auditory means, such as speech, song, and tone of voice, and there are nonverbal means, such as body language, sign language, paralanguage, touch, and eye contact."
+    },
+    {
+      "type": "paragraph",
+      "text": "Regardless of the type of communication used, the message and how it is delivered will have a definite effect on the receiver."
+    },
+    {
+      "type": "paragraph",
+      "text": "Understanding the basic ground rules is essential to building a model for a target. Some rules cannot be broken, such as communication always has a sender and a receiver. Also everyone has different personal realities that are built and affected by their past experiences and their perceptions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Everyone perceives, experiences, and interprets things differently based on these personal realities. Any given event will always be perceived differently by different people because of this fact. If you have siblings, a neat exercise to prove this is to ask them their interpretation or memory of an event, especially if it is an emotional event. You will see that their interpretation of this event is very different from what you remember."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each person has both a physical and a mental personal space. You allow or disallow people to enter that space or get close to you depending on many factors. When communicating with a person in any fashion, you are trying to enter their personal space. As a social engineer communicates they are trying to bring someone else into their space and share that personal reality. Effective communication attempts to bring all participants into each other's mental location. This happens with all interactions, but because it is so common people do it without thinking about it."
+    },
+    {
+      "type": "paragraph",
+      "text": "In interpersonal communications two layers of messages are being sent: verbal and nonverbal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Communication usually contains a verbal or language portion, whether it is in spoken, written, or expressed word. It also usually has a nonverbal portion—facial expressions, body language, or some non-language message like emoticons or fonts."
+    },
+    {
+      "type": "paragraph",
+      "text": "Regardless of the amount of each type of cue (verbal or nonverbal), this communication packet is sent to the receiver and then filtered through her personal reality. She will form a concept based on her reality, then based on that will start to interpret this packet. As the receiver deciphers this message she begins to unscramble its meaning, even if that meaning is not what the sender intended. The sender will know whether his packet is received the way he intended if the receiver gives a communication packet in return to indicate her acceptance or denial of the original packet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here the packet is the form of communication: the words or letters or emails sent. When the receiver gets the message she has to decipher it. Many factors depend on how it is interpreted. Is she in a good mood, bad mood, happy, sad, angry, compassionate—all of these things as well as the other cues that alter her perception will help her to decipher that message."
+    },
+    {
+      "type": "paragraph",
+      "text": "The social engineer's goal has to be to give both the verbal and nonverbal cues the advantage to alter the target's perception so as to have the impact the social engineer desires."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some more basic rules for communication include the following:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Never take for granted that the receiver has the same reality as you. Never take for granted that the receiver will interpret the message the way it was intended. Communication is not an absolute, finite thing. Always assume as many different realities exist as there are different people involved in the communication. Knowing these rules can greatly enhance the ability for good and useful communications. This is all good and great but what does communication have to do with developing a model? Even more, what does it have to do with social engineering?"
+    },
+    {
+      "type": "heading",
+      "text": "The Communication Model and Its Roots"
+    },
+    {
+      "type": "paragraph",
+      "text": "As already established, communication basically means sending a packet of information to an intended receiver. The message may come from many sources like sight, sound, touch, smell, and words. This packet is then processed by the target and used to paint an overall picture of \"What's being said.\" This method of assessment is called the communication process. This process was originally outlined by social scientists Claude Shannon and Warren Weaver in 1947, when they developed the Shannon- Weaver model, also known as \"the mother of all models.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The Shannon-Weaver model, according to Wikipedia, \"embodies the concepts of information source, message, transmitter, signal, channel, noise, receiver, information destination, probability of error, coding, decoding, information rate, [and] channel capacity,\" among other things."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shannon and Weaver defined this model with a graphic, as shown in Figure 2-8."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a simple model, also known as the transmission model, information or content is sent in some form from a sender to a destination or receiver. This common concept of communication simply views communication as a means of sending and receiving information. The strengths of this model are its simplicity, generality, and quantifiability."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-8:",
+      "text": "The Shannon-Weaver \"mother of all models.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Shannon and Weaver structured this model based on:"
+    },
+    {
+      "type": "paragraph",
+      "text": "An information source, which produces a message A transmitter, which encodes the message into signals A channel, to which signals are adapted for transmission A receiver, which \"decodes\" (reconstructs) the message from the signal A destination, where the message arrives They argued that three levels of problems for communication existed within this theory:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The technical problem—How accurately can the message be transmitted? The semantic problem—How precisely is the meaning conveyed? The effectiveness problem—How effectively does the received meaning affect behavior? (This last point is important to remember for social engineering. The whole goal of the social engineer is to create a behavior that the social engineer wants.) Almost 15 years later, David Berlo expanded on Shannon and Weaver's linear model of communication and created the Sender-Message-Channel- Receiver (SMCR) model of communication. SMCR separated the model into clear parts, as shown in Figure 2-9."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-9:",
+      "text": "The Berlo model."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can think of communication as processes of information transmission governed by three levels of rules:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Formal properties of signs and symbols The relations between signs/expressions and their users The relationships between signs and symbols and what they represent Therefore, you can further refine the definition of communication as social interaction where at least two interacting agents share a common set of signs and a common set of rules."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2008 another researcher, D. C. Balmund, combined the research of many of his previous cohorts with his own and developed the transactional model of communication, as shown in Figure 2-10."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this model you can see that the channel and message can take on many forms, not just spoken, as represented by the picture. The message can be in written, video, or audio form and the receiver can be one person or many people. The feedback also can take on many forms."
+    },
+    {
+      "type": "paragraph",
+      "text": "Combining and analyzing this research can help a social engineer develop a solid communication model. Not only social engineers can benefit from doing this—everyone can. Learning how to develop a plan of communication can enhance the way you deal with your spouse, your kids, your employer or employees—anyone you communicate with."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 2-10:",
+      "text": "The new and improved communication model."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because the focus of this book is social engineers, you need to analyze what a social engineer can take away from all of this. After reading all this theory you may begin to wonder how this can be used. Remember, a social engineer must be a master at communication. They must be able to effectively enter into and remain in a person's personal and mental space and not offend or turn off the target. Developing, implementing, and practicing effective communication models is the key to accomplishing this goal. The next step then is developing a communication model."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Foundations of Communication Modeling",
+      "points": [
+        "Communication modeling maps the exact language, terminology, and interpersonal hierarchy of a target organization.",
+        "Aligning communication models ensures pretexts sound completely native to the target's internal culture.",
+        "Mismatching communication channels or authority levels triggers immediate cognitive suspicion in victims."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Developing a Communication Model"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now that you know about the key elements of a communication model, take a look at them from the eyes of a social engineer:"
+    },
+    {
+      "type": "labeled-item",
+      "label": "The Source:",
+      "text": "The social engineer is the source of the information or communication that is going to be relayed."
+    },
+    {
+      "type": "labeled-item",
+      "label": "The Channel:",
+      "text": "This is the method of delivery."
+    },
+    {
+      "type": "labeled-item",
+      "label": "The Message:",
+      "text": "Probably the biggest part of the message is knowing what you are going to say to the receiver(s)."
+    },
+    {
+      "type": "labeled-item",
+      "label": "The Receiver(s):",
+      "text": "This is the target."
+    },
+    {
+      "type": "labeled-item",
+      "label": "The Feedback:",
+      "text": "What do you want them to do after you effectively give them the communication? How can you use these elements effectively? The first step into the world of communication modeling is starting with your goal. Try working with a couple of the scenarios that might be part of a typical social engineering gig:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Develop a phishing email targeted against 25–50 employees and attempt to have them go during work hours to a non-business website that will be embedded with malicious code to hack into their networks. Make an onsite visit to portray a potential interviewee who has just ruined his resume by spilling coffee on it and needs to convince the front-desk person to allow a USB key to be inserted into a computer to print a copy of the resume. When developing a communication strategy you may find working on the model in reverse order to be beneficial."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Feedback:",
+      "text": "What is your desired response? The desired response is to have the majority of the employees you send this email to click on it. That is ideal; of course, you might be happy with just a handful or even one, but the goal, the desired feedback, is to have the majority of targets click on the phishing link."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Receivers:",
+      "text": "This is where your information gathering skills come in handy. You need to know all about the targets. Do they like sports? Are they predominantly male or female? Are they members of local clubs? What do they do in their off time? Do they have families? Are they older or younger? The answers to these questions can help the social engineer decide what type of message to send."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Message:",
+      "text": "If the target is predominantly 25–40-year-old males, with a few being part of a fantasy football or basketball league, your targets may click on a link about sports, women, or a sporting event. Developing the email's content is essential, but also grammar, spelling, and punctuation are very important to consider. One of the biggest tip- offs to phishing emails in the past has been the bad spelling. Getting an email that reads like this: \"Click here and enter ur pasword to verify ur account settings,\" is a dead giveaway to its being a non- legitimate email. Your email must be legit with good spelling and an appealing offer that fits the target. Even with the same goal the message will change depending on gender, age, and many other factors. The same email would probably fail if the targets were predominately female."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Channel:",
+      "text": "This answer to this element is easy, because you already know it is going to be an email."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Source:",
+      "text": "Again, this element is a no-brainer, because you, the social engineer, are the source. How believable you are depends on your skill level as a social engineer."
+    },
+    {
+      "type": "heading",
+      "text": "Scenario One: Phishing Email"
+    },
+    {
+      "type": "paragraph",
+      "text": "The targets are 45 males ranging from the age of 25 to 45. Out of the 45 targets, 24 are in the same fantasy basketball league. They all go daily to a site (www.myfantasybasketballleague.com) to register their picks. This is verified by posts on the forums."
+    },
+    {
+      "type": "paragraph",
+      "text": "The goal is to drive them to a site that is available and that you now own, www.myfantasybasketballeague.com, which is a slight misspelling. This site is a clone of the site they visit with one change—it has an embedded iframe. There will be a Login button in the center of the page that when clicked, brings them back to the real site. The delay in loading and clicking will give the code the time it needs to hack their systems."
+    },
+    {
+      "type": "paragraph",
+      "text": "How would you write the email? Here is a sample that I wrote:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hello, We have some exciting news at My Fantasy Basket Ball League. We have added some additional features that will allow you more control over your picks as well as some special features. We are working hard on offering this to all of our members but some additional service fees may apply. We are excited to say that the first 100 people to log in will get this new service for free. Click this link to be taken to the special page, click the gray LOGIN button on the page, and log in to have these features added to your account. www.myfantasybasketballeague.com Thanks, The MFBB Team This email would mostly likely get at least the 24 who are already in the league interested enough to click the link and check out the site and try these new features for free."
+    },
+    {
+      "type": "paragraph",
+      "text": "Analyze that email. First, it contains an offer that would attract the present members of that fantasy league. Many of them realize the offer is limited to only the first 100, so they would click on it soon as they get the email, which more than likely is at work. The site that the email drives them to has the malicious code and although the majority will fall victim, all the malicious social engineer needs is one victim."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also notice that the email contains good grammar and spelling, an enticing hook, and enough motivation to click quickly. It is a perfect email based off a solid communication model."
+    },
+    {
+      "type": "heading",
+      "text": "Scenario Two: USB Key"
+    },
+    {
+      "type": "paragraph",
+      "text": "The onsite scenario is a little more difficult to do because it is in person. You can only do so much to \"spoof\" your identity in person. In this scenario remember that you must have all these details in memory because you can't be pulling out and using cue cards. It is also important to remember that oftentimes we have only one chance to make an impression. If we do a bad job at it, it can ruin the rest of the gig."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Feedback:",
+      "text": "The goal with this scenario is to get the front desk receptionist to accept your USB drive that has a malicious program on it. The program will auto load and scrape her system for all information, such as usernames, passwords, email accounts, SAM files that contain all the passwords on the system, and more, copying it all to a directory on the USB drive. It also creates a reverse connection from the receptionist's machine to your servers, giving you access to her machine and hopefully the network. I am fond of using the Metasploit framework or the Social Engineering Toolkit (see Chapter 7) that ties in with Metasploit. Metasploit executes exploit code on its victims and it has a built-in handler called Meterpreter. The user can script many things like keylogging, screenshots, and recon from the victim's machines."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Receivers:",
+      "text": "Having one true target can be tricky because if your target is unreceptive to the idea, your plan is shot. You must be warm, friendly, and convincing. This must be done fast, too, because too much time will allow doubt to set in. But if you move too fast you can cause doubt and fear, killing your chances. A perfect balance must be accomplished."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Message:",
+      "text": "Because you're delivering the message in person, it must be clear and concise. The basic story is that you saw the ad in the paper for a database administrator and you called in and spoke to Debbie, the HR person. She said she was booked today but you should stop in and drop off a resume for her review and then meet her at the end of the week. While you were driving over, a squirrel ran out, causing you to slam on the brakes and causing your coffee to come out of the holder and spill in your bag, ruining your resumes and other stuff. Anyhow, you have another appointment but really need this job and wonder whether she would print you a fresh copy from your USB drive."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Channel:",
+      "text": "You are going in person using verbal, facial, and body language communication."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Source:",
+      "text": "Again, this is you as the social engineer, unless you have a good reason to have a stand in. Holding a coffee-stained folder with some wet papers in it can help sell the story. Looking dejected and not alpha-male-ish can also help sell it. Politely speaking to her and not using foul language will help her feel a liking to you and maybe even some pity. The USB key should contain a file called myresume.doc or myresume.pdf and be printable. PDFs are the most commonly used formats since most companies are running an older version of Adobe Reader that is vulnerable to many different exploits. Make sure the resume is in a format that allows for the most people to be able to open it—not some odd format."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most of the time people want to help. They want to be able to assist a person in distress if the story is believable as well as heart wrenching. For a special twist if you really lack a heart as a social engineer, you can put a spin on the story: On my way over, it was my turn today to drop my daughter off at school. When she climbed over the seat to give me a kiss goodbye she knocked over my coffee into my bag. I was already running late and closer to here than home; could you print me a fresh copy? Either way, this story usually works and will lead to the USB key being inserted into the computer and most likely a complete compromise of the receptionist's computer, which can lead to a total compromise of the company."
+    },
+    {
+      "type": "heading",
+      "text": "The Power of Communication Models"
+    },
+    {
+      "type": "paragraph",
+      "text": "Communication modeling is a powerful tool that is a must-have skill for every social engineer. The hardest part about communication modeling is to ensure your information-gathering sessions are solid."
+    },
+    {
+      "type": "paragraph",
+      "text": "In both of the earlier scenarios, not having enough a good enough plan and model will lead to failure. A good way to practice communication modeling is to write out a model for manipulating people you know well—a husband, wife, parent, child, boss, or friend—to do something you want, to take some action you desire."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set a goal, nothing malicious, such as getting someone to agree to a different vacation spot or a to go to a restaurant you love and your partner hates, or to allow you to spend some money on something you normally wouldn't ask for. Whatever it is you come up with, write out the five communication components and then see how well the communication goes when you have a written plan. You will find that with your goals clearly defined, you can better test your social engineering communication methods, and be able to achieve your goals more easily. List the following five points and fill them out one by one, connecting the dots as you go along."
+    },
+    {
+      "type": "paragraph",
+      "text": "Source Message Channel Receivers Feedback Communication modeling yields very valuable information and without it, most communication will not be successful for a social engineer. As previously mentioned, information gathering is the crux of every social engineering gig, but if you become proficient at information gathering and you are able to gather amazing amounts of data but don't know how to use it, it is a waste."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn to become a master at information gathering and then practice putting that into action with communication modeling. This is just the start, but it can literally change the way you deal with people both as a social engineer and in everyday contexts. Yet so much more goes into developing a solid message in the communication model."
+    },
+    {
+      "type": "paragraph",
+      "text": "One key aspect of learning how to communicate, how to manipulate, and how to be a social engineer is learning how to use questions, as discussed in the next chapter."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Chapter 2 Key Takeaways",
+      "points": [
+        "Never initiate contact with a target without thorough OSINT and communication modeling.",
+        "Organize and centralize intelligence data using dedicated tools (such as Dradis or BasKet) to track audit trails.",
+        "The best social engineers spend 80% of their operational time on reconnaissance and only 20% on execution."
+      ]
+    }
+  ]
+}

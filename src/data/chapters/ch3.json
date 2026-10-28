@@ -1,0 +1,709 @@
+{
+  "id": 3,
+  "partId": 2,
+  "part": "Phase II: The Psychological Attack Surface",
+  "title": "Chapter 3: Elicitation",
+  "subtitle": "Drawing People Out and Extracting Secrets in Casual Conversation",
+  "quote": {
+    "text": "The supreme art of war is to subdue the enemy without fighting.",
+    "author": "Sun Tzu (The Art of War)"
+  },
+  "pages": "Pages 79–103",
+  "readTime": "28 min read",
+  "highlights": [
+    "What is elicitation? The subtle art of guiding conversation so the target shares sensitive data voluntarily",
+    "Preloading: Priming the target's subconscious expectations before asking critical questions",
+    "Deliberate false statements: Exploiting human ego and the irresistible urge to correct mistakes",
+    "Artificial time constraints: Lowering the target's suspicion by signaling you must leave shortly"
+  ],
+  "totalBlocks": 164,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Being able to effectively draw people out is a skill that can make or break a social engineer. When people see you and talk to you they should feel at ease and want to open up."
+    },
+    {
+      "type": "paragraph",
+      "text": "Have you ever met someone and instantly felt, \"Wow I like that person\"? Why? What was it about him that made you feel that way? Was it his smile? The way he looked? The way he treated you? His body language?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Maybe he even seemed to be \"in tune\" with your thoughts and desires. The way he looked at you was non-judgmental and right away you felt at ease with him."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now imagine you can tap into that and master that ability. Don't shrug off this chapter as a simple \"how to build rapport\" lesson. This chapter is about elicitation, a powerful technique used by spies, con men, and social engineers, as well as doctors, therapists, and law enforcement, and if you want to be protected or be a great social engineer auditor then you need to master this skill. Used effectively, elicitation can produce astounding results."
+    },
+    {
+      "type": "paragraph",
+      "text": "What is elicitation? Very few aspects of social engineering are as powerful as elicitation. This is one of the reasons it is near the top of the framework. This skill alone can change the way people view you. From a social engineering standpoint, it can change the way you practice security. This chapter dissects examples of expert elicitation and delves deep into how to utilize this powerful skill in a social engineering context."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before getting in too deep, you must begin with the basics."
+    },
+    {
+      "type": "paragraph",
+      "text": "Elicitation means to bring or draw out, or to arrive at a conclusion (truth, for instance) by logic. Alternatively, it is defined as a stimulation that calls up (or draws forth) a particular class of behaviors, as in \"the elicitation of his testimony was not easy.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Read that definition again and if it doesn't give you goose bumps you may have a problem. Think about what this means. Being able to effectively use elicitation means you can fashion questions that draw people out and stimulate them to take a path of a behavior you want. As a social engineer, what does this mean? Being effective at elicitation means you can fashion your words and your questions in such a way that it will enhance your skill level to a whole new level. In terms of information gathering, expert elicitation can translate into you target wanting to answer your every request."
+    },
+    {
+      "type": "paragraph",
+      "text": "I want to take this discussion one step further because many governments educate and warn their employees against elicitation because it is used by spies all over the earth."
+    },
+    {
+      "type": "paragraph",
+      "text": "In training materials, the National Security Agency of the United States government defines elicitation as \"the subtle extraction of information during an apparently normal and innocent conversation.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "These conversations can occur anywhere that the target is—a restaurant, the gym, a daycare—anywhere. Elicitation works well because it is low risk and often very hard to detect. Most of the time, the targets don't ever know where the information leak came from. Even if a suspicion exists that there is some wrong intent, one can easily pass it off as an angry stranger being accused of wrong doing for just asking a question."
+    },
+    {
+      "type": "paragraph",
+      "text": "Elicitation works so well for several reasons:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most people have the desire to be polite, especially to strangers. Professionals want to appear well informed and intelligent. If you are praised, you will often talk more and divulge more. Most people would not lie for the sake of lying. Most people respond kindly to people who appear concerned about them. These key factors about most humans are why elicitation works so well. Getting people to talk about their accomplishments is too easy."
+    },
+    {
+      "type": "paragraph",
+      "text": "In one scenario in which I was tasked to gather intel on a company, I met my target at a local chamber of commerce function. Because it was a mixer I hung back until I saw the target approaching the bar. We got there at the same time and because the purpose of these functions is to meet and greet people and exchange business cards, my first move wasn't extreme."
+    },
+    {
+      "type": "paragraph",
+      "text": "I said, \"Escaping from the vultures?\" He replied with a chuckle, \"Yeah, this is what makes these things worth the time—open bar.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "I listened to him order, and I ordered a similar drink. I lean over with my hand out, and said, \"Paul Williams.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Larry Smith.\" I pulled out a business card I had ordered online. \"I work with a little import company as the head of purchasing.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "He said as he handed me his card, \"I am the CFO for XYZ.\" With a chuckle I responded, \"You're the guy with the bucks—that's why everyone is after you out there. What exactly do you guys do?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "He bagan to relate a few details of his company's products, and when he listed one that is well known, I said, \"Oh right, you guys make that widget; I love that thing. I read in XYZ Magazine it hit a new sales record for you guys.\" From my previous information gathering I knew he had personal interest in that device so my praise was well received."
+    },
+    {
+      "type": "paragraph",
+      "text": "He began to puff his chest out a bit. \"Did you know that device sold more in the first month that our previous and next five products combined?\""
+    },
+    {
+      "type": "activity-ref",
+      "activityId": "ch3-elicitation-simulator"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Yikes, well I can see why, because I bought five myself.\" I chuckled through the mild praise."
+    },
+    {
+      "type": "paragraph",
+      "text": "After another drink and some more time I was able to discover that they recently purchased accounting software, the name of the CSO (and the fact he was on vacation for a few days), and that my friend here was also going on vacation soon to the Bahamas with his wife."
+    },
+    {
+      "type": "paragraph",
+      "text": "This seemingly useless info is not useless at all. I have a list of details about software, people, and vacations that can help me plan an attack. But I didn't want to stop there; I went in for the kill with a question like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"I know this is a weird question, but we are a small company and my boss told me I am to research and buy a security system for the doors. We just use keys now, but he was thinking RFID or something like that. Do you know what you guys use?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "This question I thought would send up red flares and smoke signals. Instead, he said \"I have no clue; I just signed the checks for it. What I do know is I have this fancy little card...\" as he pulls out his wallet to show me his card. \"I think it is RFID, but all I know is that I wave my wallet in front of the little box and the door opens.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "We exchanged laughs and I walked away with knowledge that led to some very successful attack vectors. As you may have noticed, elicitation is similar to and linked to information gathering. This particular information- gathering session was made so much easier by a solid pretext (discussed in Chapter 3) as well good elicitation skills. Elicitation skills are what made the questions flow smoothly and what made the target feel comfortable answering my questions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Knowing that he was on vacation and what kinds of accounting software they used as well door locking security I was able to plan an onsite visit to repair a \"faulty\" RFID box and time clock. Simply telling the front desk receptionist, \"Larry called me before he left for the Bahamas and said there was a time clock by the manufacturing department that is not registering properly. It will take me a few minutes to test and analyze it.\" I was given access in a matter of seconds without ever being questioned."
+    },
+    {
+      "type": "paragraph",
+      "text": "Elicitation led me to that success because with the knowledge I was given there was no reason for the receptionist to doubt my pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "Simple, light, airy conversation is all it takes to get some of the best information out of many people. As discussed so far, clearly defining your goals to achieve maximum results is vital. Elicitation is not used merely for information gathering, but it can also be used to solidify your pretext and gain access to information. All of this depends on a clearly defined and thought-out elicitation model."
+    },
+    {
+      "type": "heading",
+      "text": "The Goals of Elicitation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reviewing the definition for elicitation can give you a clear path of what your goals are. Really, though, you can boil it down to one thing. A social engineer wants the target to take an action, whether that action be as simple as answering a question or as big as allowing access to a certain restricted area. To get the target to comply, the social engineer will ask a series of questions or hold a conversation that will motivate the target to that path."
+    },
+    {
+      "type": "paragraph",
+      "text": "Information is the key. The more information that you gather, the more successful the attack will be. Because elicitation is non-threatening it is very successful. Count how many times in a week you have meaningless little conversations with someone at a store, coffee shop, or elsewhere. The whole methodology of holding conversations is steeped in elicitation and it is used in a non-malicious way daily. That is why it is so effective."
+    },
+    {
+      "type": "paragraph",
+      "text": "In one episode of the popular British television show The Real Hustle, the hosts demonstrated the ease of many social engineering attacks. In this episode the goal was to draw a target into a game of luck that was rigged. To do so someone had a partner who acted as a complete stranger play a role in being interested and conversational with the attacker. This conversation draws in the surrounding people, which made eliciting proper responses from the target very easy. This is one method that works well."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whichever method is used, the goal is to obtain information then utilize that information to motivate a target to the path the social engineer wants him to take. Understanding this fact is important. Later chapters cover pretexting and other manipulation tactics, but you don't want to confuse elicitation with those. Realizing that elicitation is conversation is important. Sure, it may be closely linked to your pretext, body language, and eye cues, but all of those pale in comparison to your ability to engage people in conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some experts agree that mastering the art of conversation has three main steps:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Be natural. Nothing can kill a conversation quicker than seeming to be uncomfortable or unnatural in the conversation. To see this for yourself try this exercise. Have a conversation with someone about something you know a lot about. If you can record it somehow or have someone else take notice, see how you stand, your posture, and the way you assert your knowledge. All of these things will scream confidence and naturalness. Then inject yourself in a conversation you know nothing about and have the same recording or friend observing. See how all those nonverbal aspects change for you when you try to inject an intelligent thought into a conversation you know nothing about. This exercise shows you the difference in being natural and not being natural. The person(s) you are conversing with will be able to see it easily, which will kill all chances of successful elicitation. How do you seem natural in conversations? Thus we arrive at step 2. 2. Educate yourself. You must have knowledge of what it is you will be talking to your targets about. This section should come with a big fat red neon light warning, but because every book can't include one let me emphasize this part: It is imperative that you not pretend you are more than you can reasonably be believed you are. Confused? Here's an example to break it down. If you wanted to obtain the chemical composition for a top-secret product and your elicitation target is one of the chemists involved in making the product, and you decide to start talking chemistry, do not play yourself off as a world- class chemist (unless you are). He may throw something at you that will show you know nothing and then your cover is blown and so is the elicitation. A more realistic approach may be that you are a research student studying XYZ, and was told he had amazing knowledge in this area. Due to his expertise, you just wanted to ask him a question on a chemical formula you are working on and why it doesn't seem to be working out. The point is that whatever you chose to converse about and whomever with, do research, practice, and be prepared. Have enough knowledge to speak intelligently about a topic that will interest the target. 3. Don't be greedy. Of course, the goal is to get information, get answers, and be given the key to the kingdom. Yet, do not let that be the focus. That you are only there for yourself will quickly become evident and the target will lose interest. Often, giving someone something will elicit the feeling of reciprocation (discussed in Chapter 6), where he or she now feels obligated to give you something in return. Being this way in conversation is important. Make the conversation a give and take, unless you are conversing with a person who wants to dominate the conversation. If he wants to dominate, let him. But if you get a few answers, feel the conversation out and don't get greedy trying to go deeper and deeper, which can raise a red flag. Sometimes the people who are labeled as the \"best conversationalists\" in the world are those who do more listening than talking."
+    },
+    {
+      "type": "paragraph",
+      "text": "These three steps to successful elicitation can literally change the way you converse with people daily, and not just as a social engineer or a security auditor, but as an everyday person. I personally like to add one or two steps to the \"top three.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, an important aspect to elicitation is facial expressions during a conversation. Having your gaze be too intense or too relaxed can affect the way people react to your questions. If your words are calm and you have engaged the target in a conversation but your body language or facial expressions show disinterest, it can affect the mood of the person, even if she doesn't realize it."
+    },
+    {
+      "type": "paragraph",
+      "text": "This may seem odd to bring up here, but I am a fan of Cesar Milan, aka, The Dog Whisperer. I think that guy is a genius. He takes dogs that seem unruly and in a matter of minutes has both the dogs and their owners produce high-quality personality traits that will merit a very successful relationship for both. He basically teaches people how to communicate with a dog—how to ask and tell it to do things in a language it understands. One of the things he preaches that I fully believe in is that the \"spirit\" or energy of the person affects the \"spirit\" or energy of the dog. In other words, if the person approaches the dog all tense and anxious, even if the words are calm, the dog will act tense, bark more, and be more on edge."
+    },
+    {
+      "type": "paragraph",
+      "text": "Obviously, people are not the same as dogs but I truly believe that this philosophy applies. As a social engineer approaches a target her \"spirit\" or energy will affect the person's perception. The energy is portrayed through body language, facial expressions, dress, and grooming, and then the words spoken to back that up. Without even knowing it, people pick up on these things. Have you ever thought or heard someone say, \"That guy gave me the creeps\" or \"She looked like such a nice person\"?"
+    },
+    {
+      "type": "paragraph",
+      "text": "How does that work? The person's spirit or energy is relayed to your \"sensors,\" that data is correlated with past experiences, and then a judgment is formed. People do it instantaneously, many times without even knowing it. So your energy when you are going to elicit must match the role you are going to play. If your personality or mental makeup doesn't enable you to easily play a manager then don't try. Work with what you have. Personally, I have always been a people person and my strong suit is not topics like chemistry or advanced math. If I were in the situation mentioned earlier I would not try to play the role of a person who knows about those things. Instead my elicitation might be as simple as a stranger interested in starting a conversation about the weather."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whatever methods you chose to use, you can take certain steps to have the upper edge. One of these steps is called preloading."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: The Essence of Elicitation",
+      "points": [
+        "Elicitation is the subtle art of drawing out sensitive information during natural conversation without the target realizing they are being interrogated.",
+        "Effective elicitors never ask direct or intrusive questions; they stimulate the target's natural impulse to converse.",
+        "The goal is voluntary disclosure driven by comfort, rapport, and subtle psychological prompts."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Preloading"
+    },
+    {
+      "type": "paragraph",
+      "text": "You stand in line to buy your $10 movie ticket and are barraged with sensory overload of posters of upcoming movies. You stand in line to buy your $40 worth of popcorn and drinks, see more posters, and then you push your way through to get a seat. Finally, when the movie starts you are presented with a series of clips about upcoming movies. Sometimes these movies aren't even in production yet, but the announcer comes on and says, \"The funniest movie since...\" or the music starts with an ominous tone, a dense fog fills the screen, and the voiceover intones, \"You thought it was over in Teenage Killer Part 45....\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Whatever the movie is, the marketers are telling you how to feel—in other words, preloading what you should be thinking about this movie— before the preview starts. Then the short 1–3 minutes they have to show you what the movie is about is spent showing you clips to entice your desire to see the movie and to appeal to the crowd that wants the comedy, horror, or love story."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not much has been written about preloading, but it is a very serious topic. Preloading denotes that you can do just what it says—preload targets with information or ideas on how you want them to react to certain information. Preloading is often used in marketing messages; for example, in the national restaurant chain ads that show beautiful people laughing and enjoying the meal that looks so beautiful and perfect. As they say \"yummm!\" and \"ohhh!\" you can almost taste the food."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course as a social engineer you can't run a commercial for your targets so how can you use preloading?"
+    },
+    {
+      "type": "paragraph",
+      "text": "As with much in the social engineering world, you have to start from the end results and work backward. What is your goal? You might have the standard goal of elicitation to gain information from a target on a project she is working on or dates she will be in the office or on vacation. Whatever it is, you must set the goal first. Next you decide the type of questions that you want to ask, and then decide what type of information can preload a person to want to answer those questions."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, if you know that later tonight you want to go to a steak place that your coupon-loving wife doesn't really enjoy, but you are in the mood for a rib eye, you can preload to get a response that may be in your favor. Maybe earlier in the day you can say something like, \"Honey, you know what I am in the mood for? A big, juicy, grilled steak. The other day I was driving to the post office and Fred down the road had his grill out. He had just started cooking the steaks on charcoal and the smell came in the car window and it has been haunting me ever since.\" Whether this elicits a response at this exact moment is not important; what you did is plant a seed that touched every sense. You made her imagine the steaks sizzling on the grill, talked about seeing them go on, talked about smelling the smoke, and about how much you wanted one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose then you bring home the paper and as you're going through it you see an ad with a coupon for the restaurant you want to go to. You simply leave that page folded on the table. Again, maybe your wife sees it or maybe she doesn't, but chances are that because you left it with the mail, because you mentioned steak, and because she loves coupons she will see the coupon left on the table."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now later on she comes to you and says, \"What do you want for dinner tonight?\" Here is where all your preloading comes in—you mentioned the smell, sight, and desire for steak. You left an easy-to-find coupon on the table for the steak restaurant of choice and now it is dinner discussion time. You answer her with, \"Instead of making you cook and having a mess to clean up tonight, we haven't been to XYZ Steaks in a while. What if we just hit that place tonight?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Knowing she doesn't like that place all you can hope is the preloading is working. She responds, \"I saw a coupon for that place in the newspaper. It had a buy one meal get a second half off. But you know I don't like....\""
+    },
+    {
+      "type": "paragraph",
+      "text": "As she is speaking you can jump in and offer praise: \"Ha! Coupon queen strikes again. Heck, I know you don't like steak too much but I hear from Sally that they have awesome chicken meals there, too.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "A few minutes later you are on the way to steak heaven. Whereas a frontal assault stating your desire to go to XYZ would have most likely met with a resounding \"No!\" preloading helped set her mind up to accept your input and it worked."
+    },
+    {
+      "type": "paragraph",
+      "text": "One other really simplistic example before moving on: A friend walks up and says, \"I have to tell you a really funny story.\" What happens to you? You might even start smiling before the story starts and your anticipation is to hear something funny, so you look and wait for opportunities to laugh. He preloaded you and you anticipated the humor."
+    },
+    {
+      "type": "paragraph",
+      "text": "How do these principles work within the social engineering world? Preloading is a skill in itself. Being able to plant ideas or thoughts in a way that is not obvious or overbearing sometimes takes more skill than the elicitation itself. Other times, depending on the goal, preloading can be quite complex. The earlier steak scenario is a complex problem. The preload took some time and energy, where a simplistic preload might be something as simple as finding out what kind of car they drive or some other innocuous piece of information. In a very casual conversation where you \"happen\" to be in the same deli at the same time as your target you start a casual conversation with something like, \"Man, I love my Toyota. This guy in a Chevy just backed into me in the parking lot, not even a scratch.\" With any luck as you engage the target in conversation, your exclamation about your car might warm him up to the questions that you can then place about types of cars or other topics you want to gather intel on."
+    },
+    {
+      "type": "paragraph",
+      "text": "The topic of preloading makes more sense as you start to analyze how you can utilize elicitation. Social engineers have been mastering this skill for as long as social engineering has been around. Many times the social engineer realizes he has this skill way before he turns to a life of social engineering. As a youth or a young adult he finds interacting with people easy, and later finds that he gravitates toward employment that uses these skills. Maybe he is the center of his group of friends and people seem to tell him all their problems and have no problem talking to him about everything. He realizes later that these skills are what gets him through doors that might be closed otherwise."
+    },
+    {
+      "type": "paragraph",
+      "text": "When I was young I always had this talent. My parents would tell me stories of how I at five or six years old would strike up conversations with complete strangers, sometimes even walking into the kitchen of busy restaurants to ask questions about our order or inquire how things were being done. Somehow I got away with it—why? Probably because I didn't know this behavior wasn't acceptable and because I did it with confidence. As I got older, that skill (or a lack of fear) came into full effect."
+    },
+    {
+      "type": "paragraph",
+      "text": "It also seemed that people, sometimes even complete strangers, loved to tell me their problems and talk to me about things. One story that I think helps to see how I was able to utilize not only preloading but also good elicitation skills was when I was around 17 or 18 years old."
+    },
+    {
+      "type": "paragraph",
+      "text": "I was an avid surfer and would do odd jobs to support my hobby— basically anything from pizza delivery to fiberglass cutter to lifeguard. One time I ran errands for my father who owned an accounting/financial consulting company. I would deliver papers to his clients, get signatures, and bring them back. Often, many of the clients would open up and tell me all about their lives, their divorces, and their business successes and failures. Usually this started with a small session with them telling me how great my Dad was to them. At the time I never understood why people, especially adults, would open up to a 17–18 year old with the reasons their universe is breaking apart."
+    },
+    {
+      "type": "paragraph",
+      "text": "One particular client I would visit often owned an apartment complex. It was nothing huge and fancy; he just had a few properties that he owned and managed. This poor guy had real problems—family problems, health problems, and personal problems—all of which he routinely would tell me about for as long as I would sit and listen. This is when it began to hit me that I could get away with saying or doing amazing things if I just spent time listening to people. It made them feel important and like I was a good person. It didn't matter if I sat there thinking about my next great wave; what mattered was that I listened."
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally I would listen for as long as I could stand the amazing amount of tobacco smoke he put out (he smoked more than any person I ever have seen in my life). But I would sit and listen and because I was young and had no experience I would offer no advice, no solution, just an ear. The thing was that I was truly concerned; I didn't fake it. I wished I had a solution. One day he told me about how he wanted to move back out West where his daughter was and be closer to family."
+    },
+    {
+      "type": "paragraph",
+      "text": "I wanted to move on in life and get a job I thought would be cool, fun, and give me some more cash for surfboards and other things I \"needed.\" During one of my listening sessions, a crazy idea popped in my head, and he viewed me as a responsible, compassionate young man with a \"good head\" on my shoulders. The preloading took place over the months I spent sitting with him and listening. Now it was time to cash in on that. I said, \"Why don't you go back and let me run your apartment complex for you?\" The idea was so absurd, so ridiculous that looking back now I would have laughed in my face. But for weeks, months even, I had listened to his problems. I knew the man and his woes. On top of that, I never laughed at or rejected him. Now he had shared a problem with me, and here was a perfect solution, one that took care of all of his problems as well as mine. My income needs were low, and he wanted to be close to his family. We had built a relationship over the last few months and thus he \"knew\" me and trusted me."
+    },
+    {
+      "type": "paragraph",
+      "text": "After some discussion we came to an agreement and he up and moved back out West and I was a 17-year-old running a 30-unit apartment complex as the vice-landlord. I could go on and tell you much more on this story but the point is already made. (I will tell you the job went great until he asked me to try to sell his complex for him, which I did in record time, at the same time selling myself out of a job.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The point is that I developed a rapport, a trust, with someone and without trying and without malicious intent, I had a chance to preload him over months with the ideas that I was kind and compassionate and intelligent. Then when the time arose I was able to present an absurd idea, and because of the months of preloading, it was accepted."
+    },
+    {
+      "type": "paragraph",
+      "text": "It wasn't until later in life that it hit me what was going on here. There were so many factors at play that I didn't realize at the time. Preloading from a social engineering standpoint involves knowing your goal before you start. In this case, I didn't know I was going to try and land a crazy job with this guy. But preloading still worked."
+    },
+    {
+      "type": "paragraph",
+      "text": "In most social engineering cases it would much quicker, but I think the principles apply. Being as genuine as you can is essential. Because preloading involves the person's emotions and senses, give them no reason to doubt. The question you ask should match your pretext. For preloading to work you have to ask for something that matches the belief you built into them. For example, if my offer was to have me go visit my client's family and take pictures rather than manage his apartment complex, it wouldn't have matched the belief system he had of me, namely that I was a smart, business-minded, caring young man. Finally, the offer, when made, must be of benefit to the target, or at least perceived as benefit. In my case, there was lots of benefit to my client. But in social engineering the benefit can be as little as \"bragging rights\": giving the person a platform to brag a bit. Or the benefit can be much more and involve physical, monetary, or psychological benefits."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practicing elicitation and becoming proficient at it will make you a master social engineer. Logically, the next section is how to become a successful elicitor."
+    },
+    {
+      "type": "heading",
+      "text": "Becoming a Successful Elicitor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Analyzing just my own experiences I can identify some key components that led to my success from five-years-old to now:"
+    },
+    {
+      "type": "paragraph",
+      "text": "A lack of fear to talk to people and be in situations that are not considered \"normal.\" I truly do care for people, even if I don't know them. I want to and enjoy listening to people. I offer advice or help only when I have a real solution. I offer a non-judgmental ear for people to talk about their problems. These are key elements to successful elicitation. The United States Department of Homeland Security (DHS) has an internal pamphlet on elicitation it hands out to its agents that I was able to obtain and archive at www.social-engineer.org/wiki/archives/BlogPosts/ocso-elicitation-brochure.pdf."
+    },
+    {
+      "type": "paragraph",
+      "text": "This brochure contains some excellent pointers. Basically, as stated in it and in this chapter, elicitation is used because it works, is very hard to detect, and is non-threatening. The DHS pamphlet approaches elicitation from a \"how to avoid\" point of view, but the following sections take some of the scenarios and show you what can be learned."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Preloading & Subconscious Priming",
+      "points": [
+        "Preloading primes the target's cognitive frame before asking critical questions, lowering suspicion barriers.",
+        "Introducing positive associations or relatable context makes subsequent requests appear natural and expected.",
+        "Artificial time constraints ('I only have two minutes before my meeting') immediately disarm a target's wariness."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Appealing to Someone's Ego"
+    },
+    {
+      "type": "paragraph",
+      "text": "The scenario painted in the DHS brochure goes like this:"
+    },
+    {
+      "type": "labeled-item",
+      "label": "Attacker:",
+      "text": "\"You must have an important job; so and so seems to think very highly of you.\""
+    },
+    {
+      "type": "labeled-item",
+      "label": "Target:",
+      "text": "\"Thank you, that is nice of you to say, but my job isn't that important. All I do here is...\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The method of appealing to someone's ego is simplistic but effective. One caution, though: Stroking someone's ego is a powerful tool but if you overdo it or do it without sincerity it just turns people off. You don't want to come off as a crazy stalker: \"Wow, you are the most important person in the universe and you are so amazing-looking, too.\" Saying something like that might get security called on you."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using ego appeals needs to be done subtly, and if you are talking to a true narcissist avoid eye rolls, sighs, or argumentativeness when she brags of her accomplishments. Subtle ego appeals are things like, \"That research you did really changed a lot of people's viewpoints on...\" or \"I overheard Mr. Smith telling that group over there that you are one of the most keen data analysts he has.\" Don't make the approach so over the top that it is obvious."
+    },
+    {
+      "type": "paragraph",
+      "text": "Subtle flattery can coax a person into a conversation that might have never taken place, as stated in the DHS brochure, and that is exactly what you want as a social engineer."
+    },
+    {
+      "type": "heading",
+      "text": "Expressing a Mutual Interest"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider this mock scenario:"
+    },
+    {
+      "type": "labeled-item",
+      "label": "Attacker:",
+      "text": "\"Wow, you have a background in ISO 9001 compliance databases? You should see the model we built for a reporting engine to assist with that certification. I can get you a copy.\""
+    },
+    {
+      "type": "labeled-item",
+      "label": "Target:",
+      "text": "\"I would love to see that. We have been toying with the idea of adding a reporting engine to our system.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Expressing mutual interest is an important aspect of elicitation. This particular scenario is even more powerful than appealing to someone's ego because it extends the relationship beyond the initial conversation. The target agreed to further contact, to accept software from the attacker, and expressed interest in discussing plans for the company's software in the future. All of this can lead to a massive breach in security."
+    },
+    {
+      "type": "paragraph",
+      "text": "The danger in this situation is that now the attacker has full control. He controls the next steps, what information is sent, how much, and when it is released. This is a very powerful move for the social engineer. Of course, if the engagement were long-term, then having a literal piece of software that can be shared would prove even more advantageous. Sharing usable and non-malicious software would build trust, build rapport, and make the target have a sense of obligation."
+    },
+    {
+      "type": "heading",
+      "text": "Making a Deliberate False Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Delivering a false statement seems like it would backfire off the top, but it can prove to be a powerful force to be reckoned with."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Attacker:",
+      "text": "\"Everybody knows that XYZ Company produced the highest- selling software for this widget on earth.\""
+    },
+    {
+      "type": "labeled-item",
+      "label": "Target:",
+      "text": "\"Actually, that isn't true. Our company started selling a similar product in 1998 and our sales records have beaten them routinely by more than 23%.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "These statements, if used effectively, can elicit a response from the target with real facts. Most people must correct wrong statements when they hear them. It's almost as if they are challenged to prove they are correct. The desire to inform others, appear knowledgeable, and be intolerant of misstatements seems to be built into human nature. Understanding this trait can make this scenario a powerful one. You can use this method to pull out full details from the target about real facts and also to discern who in a group might have the most knowledge about a topic."
+    },
+    {
+      "type": "heading",
+      "text": "Volunteering Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DHS brochure makes a good point about a personality trait many of us have. A few mentions of it have appeared in the book already and it's covered in much more detail later on, but obligation is a strong force. As a social engineer, offering up information in a conversation almost compels the target to reply with equally useful information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Want to try this one out? Next time you are with your friends say something like, \"Did you hear about Ruth? I heard she just got laid off from work and is having serious problems finding more work.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Most of the time you will get, \"Wow, I didn't hear that. That is terrible news. I heard that Joe is getting divorced and they are going to lose the house, too.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "A sad aspect of humanity is that we tend to live the saying \"misery loves company\"—how true it is in this case. People tend to want to share similar news. Social engineers can utilize this proclivity to set the tone or mood of a conversation and build a sense of obligation."
+    },
+    {
+      "type": "heading",
+      "text": "Assuming Knowledge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another powerful manipulation tool is that of assumed knowledge. It is commonplace to assume that if someone has knowledge of a particular situation, it's acceptable to discuss it with them. An attacker can deliberately exploit this trait by presenting information as if he is in the know and then using elicitation to build a conversation around it. He then can regurgitate the information as if it were his own and continue to build the illusion that he has intimate knowledge of this topic. This scenario might be better illustrated with an example."
+    },
+    {
+      "type": "paragraph",
+      "text": "One time I was going to China to negotiate a large deal on some materials. I needed to have some intimate knowledge about my target company in the negotiations and had to find a way to get it before I met with them. We had never met face to face but I was heading to a conference in China before my negotiations started. While at the conference I happened to overhear a conversation starting about how to place yourself in a higher position when dealing with the Chinese on negotiations."
+    },
+    {
+      "type": "paragraph",
+      "text": "I knew this was my opportunity, and to make the situation even sweeter one of the people in the small group was from the company I was going to be meeting with. I quickly injected myself into the conversation and knew that if I didn't say something quick I would lose face. My knowledge was limited but they didn't need to know that. When a small pause arose I began to talk about the Guanxi theory. Guanxi is basically how two people who may not have the same social status can become connected, and then one is pressed upon to perform a favor for the other. I talked about how this connection can be used, and then concluded by tying it in with how important it is as an American to not simply take a business card and stick it in my back pocket but to review it, comment on it, then place it somewhere respectful."
+    },
+    {
+      "type": "paragraph",
+      "text": "This conversation was enough to set me up as someone who had some knowledge and deserved to stay in the circle of trust there. Now that I had established my knowledge base I sat back and listened to each person express his or her experience and personal knowledge on how to negotiate properly with large Chinese companies. I paid very close and particular attention when the gentlemen who worked for my target company spoke. As he talked I could tell the \"tips\" he was giving were closely linked to the business philosophies of his company. This knowledge was more valuable than anything I could have paid for and it led to a very successful trip."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are a couple more scenarios I feel are often used in elicitations."
+    },
+    {
+      "type": "heading",
+      "text": "Using the Effects of Alcohol"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nothing loosens lips more than the juice. This is an unfortunate but true fact. Mix any one of the preceding five scenarios with alcohol and you can magnify its effects by 10."
+    },
+    {
+      "type": "paragraph",
+      "text": "Probably the best way to describe this scenario is with a true story. In 1980 a senior scientist from Los Alamos National Laboratory traveled to a research institute in the People's Republic of China (PRC) to talk about his specialty, nuclear fusion. He had extensive knowledge of U.S. nuclear weapons information but knew the situation he was entering was dangerous and he needed to be determined to stick to his topic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yet he was constantly barraged with increasingly detailed inquiries directly related to nuclear weapons. The attackers' tactics would change and they would ask many benign questions about fusion and astrophysics, his specialty."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once they even threw a cocktail party in his honor. They gathered around and applauded his knowledge and research—each time with a toast and a drink. They began to inquire about classified matters such as the ignition conditions of deuterium and tritium, the two components in the then-new neutron bomb. He did well at fending off the constant questions, but after many toasts and a party in his honor, he decided to give an analogy. He mused to the group that if you rolled those two components into a ball and then rolled them off the table they would most likely ignite because they had such low temperature threshold levels."
+    },
+    {
+      "type": "paragraph",
+      "text": "This seemingly useless story and information most likely caused the researchers in China to discern a clear path of research on nuclear weapons. They would take this information to yet another scientist and now armed with a little more knowledge, use that knowledge to get to the next stage with him or her. After many attempts, it is very likely the Chinese scientist would possess a clear picture of what path to take."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a serious example of how using elicitation can lead to gaining a clear picture of the whole answer. In social engineering it may be the same for you. All the answers might not come from one source. You may elicit some information from one person about their whereabouts on a particular date, and then use that information to elicit more information from the next stage, and so on and so forth. Putting those nuggets of information together is often the hard part of perfecting elicitation skills. That is discussed next."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Psychological Elicitation Triggers",
+      "points": [
+        "Appealing to ego: People love feeling knowledgeable and recognized as experts; complimenting competence invites over-disclosure.",
+        "Deliberate false statements: Human beings possess an irresistible urge to correct mistakes; stating incorrect facts prompts instant correction with real data.",
+        "Volunteering information: Disclosing simulated secrets or vulnerabilities triggers the norm of reciprocation, compelling the target to share in return."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Using Intelligent Questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "As a social engineer you must realize that the goal with elicitation is not to walk up and say, \"What is the password to your servers?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The goal is getting small and seemingly useless bits of information that help build a clear picture of the answers you are seeking or the path to gaining those answers. Either way, this type of information gathering can help give the social engineer a very clear path to the target goal."
+    },
+    {
+      "type": "paragraph",
+      "text": "How do you know what type of questions to use?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following sections analyze the types of questions that exist and how a social engineer can use them."
+    },
+    {
+      "type": "heading",
+      "text": "Open-Ended Questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open-ended questions cannot be answered with yes or no. Asking, \"Pretty cold out today, huh?\" will lead to a \"Yes,\" \"Uh-uh,\" \"Yep,\" or some other similar affirmative guttural utterance, whereas asking, \"What do you think of the weather today?\" will elicit a real response: the person must answer with more than a yes or no."
+    },
+    {
+      "type": "paragraph",
+      "text": "One way a social engineer can learn about how to use open-ended questions is to analyze and study good reporters. A good reporter must use open-ended questions to continue eliciting responses from his or her interviewee."
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose I had plans to meet a friend and he canceled, and I wanted to know why. I can ask a question like, \"I was curious about what happened to our plans the other night.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"I wasn't feeling too well.\" \"Oh, I hope you are better now. What was wrong?\" This line of questioning usually gets more results than doing an all-out assault on the person and saying something like, \"What the heck, man? You ditched me the other night!\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Another aspect of open-ended questions that adds power is the use of why and how. Following up a question with how or why can lead to a much more in-depth explanation of what you were originally asking."
+    },
+    {
+      "type": "paragraph",
+      "text": "This question again is not \"yes\" or \"no\" answerable, and the person will reveal other details you may find interesting."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes open-ended questions can meet with some resistance, so using the pyramid approach might be good. The pyramid approach is where you start with narrow questions and then ask broader questions at the end of the line of questioning. If you really want to get great at this technique learn to use it with teenagers."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, many times open-ended questions such as, \"How was school today?\" will be met with an \"OK\" and nothing more, so asking a narrow question might open up the flow of information better."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"What are you doing in math this year?\" This question is very narrow and can be answered only with a very specific answer: \"Algebra II.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Ah, I always hated that. How do you like it?\" From there you can always branch out into broader questions, and after you get the target talking, getting more info generally becomes easier."
+    },
+    {
+      "type": "heading",
+      "text": "Closed-Ended Questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Obviously, closed-ended questions are the opposite of open-ended questions but are a very effective way to lead a target where you want. Closed-ended questions often cannot be answered with more than one or two possibilities."
+    },
+    {
+      "type": "paragraph",
+      "text": "In an open-ended question one might ask, \"What is your relationship with your manager?\" but a closed-ended question might be worded, \"Is your relationship with your manager good?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Detailed information is usually not the goal with closed-ended questions; rather, leading the target is the goal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Law enforcement and attorneys use this type of reasoning often. If they want to lead their target down a particular path they ask very closed questions that do not allow for freedom of answers. Something like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Do you know the defendant, Mr. Smith?\" \"Yes I do.\" \"On the night of June 14th, did you see Mr. Smith at the ABC Tavern?\" \"I did.\" \"And at what time was that?\" \"11:45pm.\" All of these questions are very closed ended and only allow for one or two types of responses."
+    },
+    {
+      "type": "heading",
+      "text": "Leading Questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Combining aspects from both open- and closed-ended questions, leading questions are open ended with a hint leading toward the answer. Something like, \"You were at the ABC Tavern with Mr. Smith on June 14th at around 11:45pm, weren't you?\" This type of question leads the target where you want but also offers him the opportunity to express his views, but very narrowly. It also preloads the target with the idea that you have knowledge of the events being asked about."
+    },
+    {
+      "type": "paragraph",
+      "text": "Leading questions often can be answered with a yes or no but are different from closed-ended questions because more information is planted in the question that when answered gives the social engineer more information to work with. Leading questions state some facts and then ask the target to agree or disagree with them."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 1932 the British psychologist Frederic C. Bartlett concluded a study on reconstructive memory. He told subjects a story and then asked them to recall the facts immediately, two weeks later, and then four weeks later. Bartlett found that subjects modified the story based on their culture and beliefs as well as personality. None were able to recall the story accurately and in its entirety. It was determined that memories are not accurate records of our past. It seems that humans try to make the memory fit into our existing representations of the world. When asked questions, many times we respond from memory based on our perceptions and what is important to us."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, asking people a leading question and manipulating their memory is possible. Elizabeth Loftus, a leading figure in the field of eyewitness testimony research, has demonstrated through the use of leading questions how distorting a person's memory of an event is easily possible. For example, if you showed a person a picture of a child's room that contained no teddy bear, and then asked her, \"Did you see a teddy bear?\" you are not implying that one was in the room, and the person is free to answer yes or no as they wish. However, asking, \"Did you see the teddy bear?\" implies that one was in the room and the person is more likely to answer \"yes,\" because the presence of a teddy bear is consistent with that person's schema of a child's room."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this research the use of leading questions can be a powerful tool in the hands of a skilled social engineer. Learning how to lead the target can also enhance a social engineer's ability to gather information."
+    },
+    {
+      "type": "heading",
+      "text": "Assumptive Questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assumptive questions are just what they sound like—where you assume that certain knowledge is already in the possession of the target. The way a social engineer can determine whether or not a target possesses the information he is after is by asking an assumptive question."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, one skill employed by law enforcement is to assume the target already has knowledge—for example, of a person—and ask something like, \"Where does Mr. Smith live?\" Depending on the answer given, the officer can determine whether the target knows the person and how much she knows about him."
+    },
+    {
+      "type": "paragraph",
+      "text": "A good point to note is that when a social engineer uses assumptive questions the whole picture should never be given to the target. Doing so gives all the power to the target and removes much of the social engineer's ability to control the environment. The social engineer never wants to use assumptive questions to accuse the target of a wrong. Doing so alienates the target and again costs the social engineer power."
+    },
+    {
+      "type": "paragraph",
+      "text": "A social engineer should use assumptive questions when he has some idea of the real facts he can use in the question. Using an assumptive question with bogus information may turn the target off and will only confirm that the target doesn't know about something that didn't happen. Back to an earlier example, if I wanted to gain information from a leading chemist and I did some research and knew enough to formulate one intelligent sentence I could make an assumptive question but it would ruin future follow up if I was not able to back up the assumption the target would make of my knowledge."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, if I were to ask, \"Because deuterium and tritium have such low temperature thresholds, how does one handle these materials to avoid ignition?\" The follow-up information might be hard to follow if I am not a nuclear physicist. This is counterproductive and not too useful. Plan your assumptive questions to have the maximum effect."
+    },
+    {
+      "type": "paragraph",
+      "text": "One adjunct that is taught to law enforcement officials that comes in very handy when using assumptive questions is to say, \"Now think carefully before you answer the next question...\" This kind of a statement preloads the target's mind with the idea that he must be truthful with his next statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "It can take months or years to master these skills. Don't get disheartened if the first few attempts are not successful, and keep trying. Don't fear, though, there are some tips to mastering this skill. I will review these in closing."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Question Architecture",
+      "points": [
+        "Open-ended questions force narrative responses and expose vocabulary, emotional state, and internal procedures.",
+        "Closed-ended questions are reserved for confirming specific operational facts and credentials.",
+        "Assumptive questions ('How often does your server backup run daily?') presuppose knowledge, making denial or deflection awkward."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Mastering Elicitation"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter has a lot of information for you to absorb, and if you are not a people person, employing the techniques covered might seem like a daunting task. Like most aspects of social engineering, elicitation has a set of principles that when applied will enhance your skill level. To help you master these principles, remember these pointers:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Too many questions can shut down the target. Peppering the target with a barrage of questions will do nothing but turn off the target. Remember, conversation is a give and take. You want to ask, but you have to give to make the target feel at ease. Too few questions will make the target feel uncomfortable. Have you ever been in a conversation that is filled with \"awkward silences\"? It isn't good is it? Don't assume that your target is a skilled and willing conversationalist. You must work at making a conversation an enjoyable experience. Ask only one question at a time. Chapter 5 covers buffer overflows on the human mind, but at this time your goal is not to overflow the target. It is to merely gather information and build a profile. To do this you can't seem too eager or non-interested. As you have probably gathered, making elicitation work right is a delicate balance. Too much, too little, too much at once, not enough—any one of them will kill your chances at success."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, these principles can help you master this amazing talent. Whether you use this method for social engineering or just learning how to interact with people, try this: Think of conversation as a funnel, where on the top is the largest, most \"neutral\" part and at the bottom is the very narrow, direct ending."
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by asking the target very neutral questions, and gather some intel using these questions. Give and take in your conversation, and then move to a few open-ended questions. If needed, use a few closed-ended questions to direct the target to where you want to go and then if the situation fits, move to highly directed questions as you reach the end of funnel. What will pour out of the \"spout\" of that funnel is a river of information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Think about it in the situation discussed in this chapter of my target at the chamber of commerce gathering. My goal was to gather intel on anything that might lead to a security breach."
+    },
+    {
+      "type": "paragraph",
+      "text": "I started off the conversation with a very neutral question. \"Escaping the vultures?\" This question broke the ice on the conversation as well as used a little humor to create a bridge that allowed us to exist on the same plane of thought. I asked a few more neutral questions and handed him my card while inquiring what he does. This segues smoothly into the open-ended questions."
+    },
+    {
+      "type": "paragraph",
+      "text": "A brief information-gathering session that occurred earlier, using carefully placed closed-ended or assumptive questions was key. After hearing about the company's recent purchase for new accounting software and network upgrades I wanted to go in for the kill. Having scoped out the building I knew it used RFID, but I wasn't sure if the target would go so far as to describe the card and show it to me."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is where the use of direct questions played a role: coming right out and asking what security the company used. By the time I used that type of question our rapport and trust factor was so high he probably would have answered any questions I asked."
+    },
+    {
+      "type": "paragraph",
+      "text": "Understanding how to communicate with people is an essential skill for an elicitor. The social engineer must be adaptive and able to match the conversation to his or her environment and situation. Quickly building even the smallest amount of trust with the target is crucial. Without that rapport, the conversation will most likely fail."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other key factors include making sure that your communication style, the questions used, and the manner in which you speak all match your pretext. Knowing how to ask questions that force a response is a key to successful elicitation, but if all that skill and all those questions do not match your pretext then the elicitation attempt will most surely fail."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter covered some of the most powerful points in this whole book —powerful in the sense that applying them can change not only your social engineering abilities but also your abilities as a communicator. Knowing how to ask the right questions in the right tense and the right manner can open so many opportunities. As a social engineer, this is what separates success from failure. First impressions are based initially on sight, but what comes out of your mouth first can make or break the deal. Mastering elicitation can almost guarantee success as a social engineer and can add serious weight to any pretext you decide to use."
+    },
+    {
+      "type": "paragraph",
+      "text": "Throughout this chapter I mentioned the power of pretexting. This is another topic that every social engineer, both malicious and professional, must master. But how can you ensure you accomplish this goal? To answer this you must learn about pretexting and understand exactly what it is, as discussed in Chapter 4."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Chapter 3 Key Takeaways",
+      "points": [
+        "Mastery of elicitation demands active listening: conversational pauses should be embraced, not rushed.",
+        "Plan elicitation dialogues with predetermined escape routes and innocent exit reasons.",
+        "In everyday security defense, recognize when casual conversations probe into non-public organizational procedures."
+      ]
+    }
+  ]
+}

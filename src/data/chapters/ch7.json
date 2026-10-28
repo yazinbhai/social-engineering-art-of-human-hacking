@@ -1,0 +1,1098 @@
+{
+  "id": 7,
+  "partId": 3,
+  "part": "Phase III: Toolkits, Physical Infiltration, & Attack Vectors",
+  "title": "Chapter 7: The Tools of the Social Engineer",
+  "subtitle": "Physical Infiltration Gear, Hidden Cameras, Software Recon, and Lock Picking",
+  "quote": {
+    "text": "Man is a tool-using animal. Without tools he is nothing, with tools he is all.",
+    "author": "Thomas Carlyle"
+  },
+  "pages": "Pages 314–358",
+  "readTime": "38 min read",
+  "highlights": [
+    "Physical entry equipment: Lock picks, bump keys, RFID cloners, and covert bypass instruments",
+    "Audio/visual surveillance: Micro-pinhole cameras, directional microphones, and disguised audio bugs",
+    "Digital toolkit: Maltego, SET (Social-Engineer Toolkit), spoofing portals, and rogue wireless access points",
+    "Phone & SMS impersonation: Spoofcard, Caller ID spoofing engines, and pretexting scripts"
+  ],
+  "totalBlocks": 257,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "When it comes to social engineering having a decent toolset can make or break the ability of the social engineer to be successful. In addition, it is not so much having the tools but also possessing the knowledge on how to use them that can bridge the gap between success and failure."
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter discusses the differences between physical tools, phone tools, and software-based tools. Note that simply possessing the most expensive or best tools will not make you a social engineer. Instead, tools can enhance your security practice the way that the right blend of spices can augment a meal—too much or too little can make the meal bland or overpowering. You do not want to look like Batman wearing a utility belt going into a social engineering gig, nor do you want to be at the target's front door without the proper toolset to gain access."
+    },
+    {
+      "type": "paragraph",
+      "text": "The social engineer's tools category has the potential to be huge, but this book isn't trying to become a manual on how to pick locks or spoof a phone number. Instead it is an attempt to give you enough information to decide what tools would augment your practice."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first section of this chapter, \"Physical Tools,\" focuses on things like lock picks, shims, and cameras. Some new and exciting tools are on the market that will make the average social engineer feel like James Bond. This chapter covers some of these tools and how to use them, and even shows some pictures of the tools. In addition, this chapter provides some information on using phone spoofing in a social engineering attack, continues with a discussion of some of the best software-based information- gathering tools on the market, then ends with a discussion about password profiling tools."
+    },
+    {
+      "type": "heading",
+      "text": "Physical Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "Physical security is comprised of the measures that companies or people take to remain secure that do not involve a computer. It often involves locks, motion cameras, window sensors, and the like. Understanding physical security and how it works is part of being a good social engineer. You don't have to be an engineer of these devices but having a clear understanding of the security mechanisms a target has in place can help you overcome obstacles that might stand in the way of a successful social engineering audit."
+    },
+    {
+      "type": "heading",
+      "text": "Lock Picks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before getting into the topic of picking locks you have to know a bit about how a lock works."
+    },
+    {
+      "type": "paragraph",
+      "text": "Figure 7-1 shows a very rough image of a simple lock."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-1:",
+      "text": "A simple view of a lock."
+    },
+    {
+      "type": "paragraph",
+      "text": "Basically the way a lock works is that it has tumblers that are manipulated by the key. The key pushes up the tumblers and upper pins, and when they line up it allows the key to turn and unlock the door, server room, cabinet, and so on."
+    },
+    {
+      "type": "paragraph",
+      "text": "A lock pick simulates the key in moving all the pins into the correct position one by one, allowing the lock to turn freely and open the door. You need two main tools to pick a lock: picks and a tension wrench."
+    },
+    {
+      "type": "paragraph",
+      "text": "Picks are long pieces of metal that curve at the end, similar to a dentist's tool. They reach inside the lock and move the pins up and down until they are in the right position."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tension wrenches are small flat metal devices that allow you to put pressure on the lock while using the pick."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rakes look like picks but are used in a \"raking\" motion over the lock in an attempt to catch all the pins. It is the quick motion of moving the rake in and out of the lock that many lock pickers find attractive because it usually makes quick work of most locks."
+    },
+    {
+      "type": "paragraph",
+      "text": "To pick a lock, follow these steps:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Insert the tension wrench into the keyhole and turn it in the same direction you would turn the key. The real skill here is knowing how much tension to add—use too much or too little, and the pins won't fall into place, thus allowing the lock to turn. Providing just the right amount of tension creates a small ledge that offsets the plug enough to catch the pin shafts. 2. Insert the pick and use it to lift the pins one by one until you feel them lock in place. You can hear a slight click when an upper pin falls into position. When you get all the pins into position the plug will rotate freely, and you will have picked the lock. The preceding is the $2 tour of lock picking and barely scratches its surface. If you want some great information on lock picking visit any of the following websites:"
+    },
+    {
+      "type": "paragraph",
+      "text": "http://toool.us/ http://home.howstuffworks.com/home-improvement/household-safety/security/lock-picking.htm http://www.lockpicking101.com/ These are just a few of the many sites devoted to lock-picking education. As a social engineer, spending time practicing picking locks is wise. Carrying a small lock-pick set with you can be a lifesaver when you're in front of a server cabinet, desk drawer, or other locked obstacle containing juicy information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lock pick sets can be as small as those shown in Figure 7-2, which are the size of a normal business card."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-2:",
+      "text": "This business card–sized lock-pick set fits easily into a wallet or purse."
+    },
+    {
+      "type": "activity-ref",
+      "activityId": "ch7-toolkit-arsenal"
+    },
+    {
+      "type": "paragraph",
+      "text": "They can also be bulkier, as shown in Figures 7-3 and 7-4."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-3:",
+      "text": "This set is about the size of a pocketknife."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-4:",
+      "text": "This lock-pick set is bulkier but contains everything you would need."
+    },
+    {
+      "type": "paragraph",
+      "text": "A good recommendation is to not let the first time you play with a lock pick be in a critical situation. Personally, I went out and bought a few Master padlocks of differing sizes. After I was able to successfully pick all of them I then bought a set of practice locks, something like those shown in Figure 7-5. These come in many different pin types. Locks contain varying pin types, which can add to the level of difficulty in picking. Having practice locks of varying pin types and sizes maximizes the effectiveness of your practice sessions."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-5:",
+      "text": "These see-through locks allow you to see how you are doing."
+    },
+    {
+      "type": "paragraph",
+      "text": "I have even seen some very nice setups at different conferences that would be excellent for learning, like a homemade lock wall. Of course, as you gather intel on your target, taking pictures or just making mental notes of the types, makes, and models of the locks that might block your path to success is a good idea. Knowing this information can help you prepare before you engage in your social engineering attempt."
+    },
+    {
+      "type": "heading",
+      "text": "Practical Usage"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lock picking in the movies and on TV is portrayed such that one just puts the lock pick in and a few seconds later the door magically opens. Sure, some people pick locks that well, but the majority of people will find success slowly, after countless times applying too much tension, getting frustrated, and then at last learning how to truly rake and pick a lock. Raking is a talent in itself. This is where you use a rake tool and gently slide the rake in and out of the lock while applying light pressure to the tension wrench. This technique works on many types of locks, enabling them to be \"picked\" using this simple method. Learning to rake efficiently teaches a social engineer a lot about how to use the tension wrench properly and what it feels like when the lock is picked."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many companies are starting to use RFID, magnetic badge cards, or other types of electronic access, which may lead one to believe that lock picks are obsolete. They are not, and neither is the skill of lock picking. It is a good skill to have that can save you in a pentest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is an example of the benefit of carrying lock picks with you: On one engagement I came upon an obstacle that could not be social engineered—a door. Pulling out a trusty pocket-sized lock pick set and using the raking method, I gained access in about 30 seconds. Many social engineers have stories like this one, where understanding a little about locks and having the right tools meant success in the end. It is too often the case that companies will spend thousands or even millions of dollars on their hardware, firewalls, IDS systems, and other protection methods, and then put them all in a room with cheap glass and a $20 lock protecting it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice is essential because picking a lock always carries the risk of being seen or caught. You must be quick about picking a lock to reduce that risk. Some places install cameras to catch people in the act, but in the end, unless the camera is manned by a live person, it will only record a person breaking in and stealing the servers."
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition, many cameras can be easily rendered useless by using simplistic methods of LED lights shined right into the lens or wearing a hat or hood to cover your face."
+    },
+    {
+      "type": "heading",
+      "text": "Picking Magnetic and Electronic Locks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Magnetic locks have become more popular because they are very inexpensive to run and provide a certain level of security because they are not a traditional lock that can be picked. Magnetic locks come in all shapes, sizes, and strengths. Magnetic locks, however, also offer a level of insecurity: If the power goes out most magnetic locks will disengage, unlocking the door. This is, of course, if the lock is not hooked up to a backup power source."
+    },
+    {
+      "type": "paragraph",
+      "text": "Johnny Long, world-renowned social engineer and hacker who created the Google Hacking Database and author of No Tech Hacking, tells a story of a how he bypassed a magnetic lock using a coat hanger and washcloth."
+    },
+    {
+      "type": "paragraph",
+      "text": "He noticed the locks were disengaged based on the motion of an employee walking toward the door. He also noticed a gap in the doors that was large enough to slide a cloth attached to a hanger through. Waving the cloth around released the lock and gave him access."
+    },
+    {
+      "type": "paragraph",
+      "text": "I recently had a chance to test out this technique. Sure enough with a little effort and testing different lengths of hanger, I gained access in under two minutes. What amazed me the most about this is that despite how much money was spent on the professional, commercial-grade lock and metal doors with bulletproof glass windows in them, with backup power sources to the locks and autolocking bolt locks if the power goes out, it was all thwarted by a hanger with a rag."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course there are higher-tech ways of picking these locks. Some have created RFID cloners, a small device that can capture then replay the RFID code unlocking the doors. There are machines to copy magnetic key cards as well."
+    },
+    {
+      "type": "heading",
+      "text": "Miscellaneous Lock-Picking Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition to tension wrenches and picks, a social engineer may want to employ some other tools, such as shove knives, bump keys, and padlock shims, to gain physical access. Some of these tools, when mastered, can make the job of physical access effortless."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shove Knives The shove knife, shown in Figure 7-6, is hailed as the quickest way to gain access to office doors or any door with a knob lock, such as server rooms or office doors. Basically this knife can slip into a position where it can release the latch without damaging the door."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-6:",
+      "text": "A typical shove knife."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bump Keys Bump keys have been around for ages, but have been getting a lot of notice in the news because they have been used in crimes. Bump keys are specially designed keys that allow the user to \"bump\" the key into the lock with light force that when done right, puts all the pins in proper alignment and allows the plug to be turned without damaging the lock. The basic technique is that you put the key inside the lock and pull it out one or two notches; then you put light tension on the key and use a screwdriver or other small object to \"bump\" the key into the lock using light force. This action forces the pins into the proper position and then allows the plug to turn. Figure 7-7 shows a bump key."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-7:",
+      "text": "A typical bump key for a door."
+    },
+    {
+      "type": "paragraph",
+      "text": "Padlock Shims A shim is a small piece of thin metal that is slid into the base of the padlock and used to release the locking mechanism. The shim is shoved in at the base of lock shaft, separating the locking mechanism from the shaft and unlocking the padlock. This is shown in Figure 7-8."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-8:",
+      "text": "How a shim works."
+    },
+    {
+      "type": "paragraph",
+      "text": "Figure 7-9 shows professional-grade shims but you can also make a pair out of an aluminum can."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some recent stories (www.youtube.com/watch?v=7INIRLe7x0Y) show how easy it is to bypass a hotel or other door with a chain lock. This particular video shows how an attacker can tie a rubber band around the lock and, using the natural tension of the rubber band, get the chain to slide right off. As well, MIT has a freely distributed guide (www.lysator.liu.se/mit-guide/MITLockGuide.pdf) on lock picking that is much more in-depth than the brief introduction included in this chapter."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-9:",
+      "text": "Professionally made shims."
+    },
+    {
+      "type": "paragraph",
+      "text": "You might be wondering whether locks that are impossible, or at least hard to pick, exist. The Bump Proof BiLock (www.wholesalelocks.com/bump-proof-bilock-ult-360.html) is just such a lock. Its two cylinders make it near-impossible to bump or pick easily."
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the problems I have seen in my career is not the lock choice but rather the security supporting the lock. Very often, a company will buy a heavy-duty lock that requires biometrics and key access to get to the server room, but right next to the door is a small, single-paned glass window. Who needs a lock pick then? A thief will break the glass and gain access without much effort."
+    },
+    {
+      "type": "paragraph",
+      "text": "The moral of the story is that a lock alone won't make you secure. Security is a mindset, not a simple piece of hardware."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not every social engineer must be an expert locksmith, but having some basic knowledge on how locks work and a bit of experience picking locks might make the difference between a social engineering success and failure."
+    },
+    {
+      "type": "paragraph",
+      "text": "This discussion just scratched the surface of the topic of the lock-picking tools a social engineer can use. One of the other toolsets that is invaluable for a social engineer is recording devices, as discussed in the next section."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Physical Infiltration & Lock Bypassing",
+      "points": [
+        "Physical security is the first line of defense: server rooms, file cabinets, and perimeter doors are useless if locks can be bypassed.",
+        "Lock picking and bump keys exploit mechanical pin-tumbler tolerances to gain covert physical entry in seconds.",
+        "Bypass tools (shims, under-door tools, latch slips) routinely circumvent locks without leaving any forensic trace."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Cameras and Recording Devices"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cameras and recording devices seem so \"peeping Tom-ish\" that many times the question arises, \"Why? Why use hidden cameras and covert recording devices in an SE gig?\" Good question. It has a simple two-part answer: for proof and protection."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's discuss the concept of proof. As already mentioned, a social engineering audit is where you are testing people. It is trying to help a company patch the human infrastructure to be more secure. Unfortunately, these same principles are used when malicious social engineers do their deeds too. Many people are reluctant to admit they can be duped unless they see the proof or one of their colleagues being duped. The embarrassment from being tricked through a simple social engineering attack or the fear of employer repercussions can cause people to say it never happened. A recording device can provide that proof, but it can also be used to train both you as an auditor and your client on what to watch for."
+    },
+    {
+      "type": "paragraph",
+      "text": "You must never use these devices with the intent of getting an employee in trouble or to embarrass him or her. However, the information you get from these devices provides a great learning tool afterward for showing the staff who fell for the social engineer's pretext and how. Having proof of a successful hack can go a long way toward educating the company and its staff on how they should react to malicious social engineering attempts—in other words, how to notice and then either avoid or mitigate these attacks."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second reason to use recording devices in an SE gig is for protection, mainly for the professional social engineers. Why? Seeing every microexpression, facial gesture, and little detail that you can use later on is impossible. Capturing this information on camera gives you something to analyze so you do get all the details needed for the attack. It can provide protection in that you have a recording of the events to prove what was and was not done, but also in that it doesn't leave everything to your memory of the situation. It also is a good educational tool for analyzing failed or successful SE attempts."
+    },
+    {
+      "type": "paragraph",
+      "text": "This principle is used in law enforcement. Police and federal agents record their traffic stops, interviews, and interrogations for protection, education, and proof to be used in court."
+    },
+    {
+      "type": "paragraph",
+      "text": "These principles also apply for audio recording. Capturing a phone call or conversation on a recording device serves all the same purposes as the ones mentioned previously for video. An important point to mention here is that recording people without their consent is illegal in many areas of the world. Make sure your ability to use recording devices is part of the social engineering contract you have signed with the company."
+    },
+    {
+      "type": "paragraph",
+      "text": "Audio recording devices come in all shapes and sizes. I own a small voice recorder that is a real working pen. This device sits nicely in my front pocket and records sound clearly up to 20 feet away. With 2 GB of internal storage I can easily record a couple hours of conversation without worry and then analyze it later on."
+    },
+    {
+      "type": "heading",
+      "text": "Cameras"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nowadays you can find cameras shaped like buttons; pens; hidden in the tips of pens; inside clocks, teddy bears, fake screw heads, smoke alarms; and basically any other device you can imagine. Locating a camera like the one shown in Figure 7-10 isn't too hard."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-10:",
+      "text": "The camera is hidden in the knot of the tie."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes, believe it or not, this tie is hiding a full-color camera that runs on a 12-volt battery and connects to a mini recording device. Wearing this tie into a social engineering audit ensures you capture everything within a 70- degree angle."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a recording device like this gives an advantage. The social engineer can focus on the pretext or the elicitation that he or she practiced beforehand without having to worry about trying to remember every detail."
+    },
+    {
+      "type": "paragraph",
+      "text": "One story I like to tell is how I used an audio recording device in an audit where I was testing a theme park that sells tickets online. This company operates a small ticket window with one woman behind it manning a computer with a Windows operating system on it. The pretext was that I bought tickets online in the hotel but couldn't print them out. To assist I printed them to PDF and emailed the document to myself. I then used a line similar to this: \"I know this is an odd request, but my daughter saw your ad at a restaurant. We went back to the hotel and bought the tickets online with the discount code and then I realized I couldn't print them out. The hotel printer was on the fritz and I didn't want to lose the tickets. So I printed them to a PDF and sent it to my email account. Could I just log in or have you log in to my email to get the document? \" Of course, the \"kids\" were waiting in the sidelines and as a dad I didn't want to disappoint. Sure enough as the employee clicked the PDF, she wasn't presented with our tickets but a malicious piece of code that was scripted to give me access to her computer and start autocollecting data. Recording the conversation, the method used, and the heart strings that were pulled helped to educate the company so this attack could not be repeated, costing it thousands or more dollars."
+    },
+    {
+      "type": "paragraph",
+      "text": "One device that is available uses a \"pay-as-you-go\" cellular card to send audio content via a cellular signal to any number programmed. Or the social engineer can call in and hear what is going on at any time. This device can save the social engineer dozens of hours in obtaining passwords or personal information that she can use in a social engineering attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\" (www.spyassociates.com). All of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-11:",
+      "text": "All of these devices capture audio and color video from a hidden camera except for the pen, which is an audio recorder."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-12:",
+      "text": "These devices also capture audio and video from hidden cameras."
+    },
+    {
+      "type": "heading",
+      "text": "Using the Tools of a Social Engineer"
+    },
+    {
+      "type": "paragraph",
+      "text": "The preceding section outlines some of the different types of recording devices out there, but the question is still how to use them. Amazing as it seems, using cameras or recording devices follows the same principles as any other tool of the social engineer, such as pretexting or elicitation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice is essential. If you don't determine the proper placement for a body-worn camera or audio recording device, you might end up capturing video of the ceiling or audio of a muffled voice. Setting up the appropriate outfit and gear you might carry and finding the right location for the camera or audio device is a good idea. Try sitting, standing, or walking and see how these movements affect the sound and video quality."
+    },
+    {
+      "type": "paragraph",
+      "text": "From a professional social engineer standpoint I must stress again the seriousness of getting the contract to outline your ability to record. Doing it without a contract can be a legal nightmare. Checking the local laws to make sure you cannot get in trouble for use of these devices is also a good idea."
+    },
+    {
+      "type": "paragraph",
+      "text": "Never would a social engineer use these devices to record people in embarrassing situations or to capture people in personal circumstances."
+    },
+    {
+      "type": "paragraph",
+      "text": "Discussion on this topic can go on and on, but hopefully this brief overview of the tools that are available and how to use them can open up the options out there to social engineers."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the next section I will give a few examples of the usage of certain tools that can be very useful to a social engineer."
+    },
+    {
+      "type": "heading",
+      "text": "Using a GPS Tracker"
+    },
+    {
+      "type": "paragraph",
+      "text": "Social engineers often want to track targets before or after they leave the office. What stops the target makes on the way to the office can tell a lot about him. Compiling and analyzing this information can help to develop a proper pretext or good questions to use to elicit the right response from the target. Knowing the start and end times for his day can also be valuable for physical red team attacks, where the goal of the team is to actually break in and recover valuable assets to show the company their physical weaknesses."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can track people in many different ways, but one way is to use a device designed to help track a target. One such device is a GPS Tracker; for example, the notable SpyHawk SuperTrak GPS Worldwide Super TrackStick USB Data Logger available from www.spyassociates.com. One type of many, these devices can range from $200–600. SpyHawk SuperTrak magnetically sticks to a vehicle and can store days' worth of data on the target. The following sections provide a walkthrough from setup to usage of this little device."
+    },
+    {
+      "type": "heading",
+      "text": "The SpyHawk SuperTrak GPS TrackStick"
+    },
+    {
+      "type": "paragraph",
+      "text": "Installing the software needed to make the device run is painless. Just clicking the software that came with the device and following the on-screen steps will install all the software needed. It installs without any problems and the setup afterwards is equally as painless. The TrackStick screen, shown in Figure 7-13, is very intuitive to use and easy to set up."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-13:",
+      "text": "TrackStick Manager employs an intuitive, simple-to-use interface."
+    },
+    {
+      "type": "paragraph",
+      "text": "As you can see, it provides options to chose log times, time zones, and more custom options."
+    },
+    {
+      "type": "heading",
+      "text": "Using the SpyHawk TrackStick"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SpyHawk SuperTrak GPS Worldwide Super TrackStick device itself is lightweight and easy to use and hide. It comes with an on/off switch but has some neat technology. When it feels movement it turns on and starts logging. When the movement stops for a period of time, it stops logging."
+    },
+    {
+      "type": "paragraph",
+      "text": "The directions say to hide the device somewhere with the powerful magnets against metal but the device pointing up or toward plastic. Losing the device on its first run is always a concern, so finding a nice secure place under the hood can ease those worries and give easy access to the sky view. Once you have access (either internal or external) to the target's car, find a secure location in a wheel well, under the hood, or in the back of the car by the trunk. Anywhere that there is metal will work. If you have internal access, popping the hood and putting it somewhere in the engine compartment can ease concerns over discovery and/or loss."
+    },
+    {
+      "type": "paragraph",
+      "text": "In my first tests, I found a place in the engine compartment to place the device. Even through the metal of the hood the device logged perfectly. Another placement idea is to wait until the target's car is unlocked and then place it in the trunk under the carpet or by the rear lights. On a personal side note, when I ran this test, the device stayed on five days collecting data, some of which you can see in the following figures. As shown in Figure 7- 14, it looks like the target likes to speed."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-14:",
+      "text": "The target likes to speed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Time, date, and duration stamps help you outline a target's movement, as shown in Figure 7-15."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-15:",
+      "text": "Tracking the target's movements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Figure 7-16 shows the icons on a Google Earth map—they show speed, times, time stopped, and more."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-16:",
+      "text": "Device output rendered in Google Earth."
+    },
+    {
+      "type": "paragraph",
+      "text": "As you can see in Figure 7-17, the software creates nice maps of the whole route."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-17:",
+      "text": "Mapping the target's route with SuperTrack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using Google Earth or Google Maps you can even get close-ups (see Figure 7-18)."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-18:",
+      "text": "Zeroing in on the target's travels."
+    },
+    {
+      "type": "heading",
+      "text": "Reviewing the GPS Tracker Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "The data collection is where a social engineer will see the most benefit. Being able to track every time the CEO of the target company stopped for coffee, what his favorite shop is, and what gym he attends can enable the social engineer to plan an attack with the highest rate of success."
+    },
+    {
+      "type": "paragraph",
+      "text": "Knowing the locations and stops can tell the attacker where he or she will have the best opportunities for cloning an RFID badge or making an impression of a key. The bonus is that you can get this information without having to stalk the target by being the creepy guy next door. The following figures show how these details can give the attacker the upper hand."
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice the detail in Figure 7-19. You can see the speed the target drove, and the time and date he stopped. If you want to see the location in more detail, click the Google Maps link. Click the Export button to export the whole data set to a clickable Google Map or Google Earth Map."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-19:",
+      "text": "The data set."
+    },
+    {
+      "type": "paragraph",
+      "text": "After you open the data set in Google Earth you can see the points he stopped, the route he took to and from his destination, and the times he stopped, as shown in Figure 7-20."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-20:",
+      "text": "Stops along the way."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to see his whole route, it's no problem—just export his whole route to one of many formats, as shown in Figure 7-21."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-21:",
+      "text": "Exporting the target's entire route."
+    },
+    {
+      "type": "paragraph",
+      "text": "Figure 7-22 shows the data exported and displayed in Google Maps. This short section could not possibly cover all the tools available to a social engineer. The keys to success are practice and research. Knowing what tools are available to social engineers can make or break the audit. That is just half the battle, though, because then as a professional social engineer, you must practice, practice, practice. Knowing how to properly use the tools will make a huge difference."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the Social Engineer Framework located at www.social-engineer.org, I will be reviewing many tools that social engineers can use to enhance their practice."
+    },
+    {
+      "type": "paragraph",
+      "text": "Physical tools are just one part of being a successful social engineer though. All the physical tools on Earth are backed up by quality and thorough information gathering as discussed in Chapter 2. The next section covers some of the most amazing information-gathering tools in the world."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-22:",
+      "text": "The target's route rendered in Google Maps."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Surveillance Gear & Tracking Technology",
+      "points": [
+        "Covert audio and video recording devices (pinhole cameras, disguised pens, badge bugs) provide critical forensic evidence during audits.",
+        "GPS trackers (such as TrackStick USB units) map target transit patterns, routine stops, and meeting locations.",
+        "Always verify legal boundaries and consent requirements before deploying audio or video surveillance equipment."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Online Information-Gathering Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "As previously discussed, information gathering is a key aspect of social engineering. Not spending enough time on this point alone can and will lead to failure for the social engineer. Nowadays many tools are available to the social engineer that can help collect, catalog, and utilize the data that is collected."
+    },
+    {
+      "type": "paragraph",
+      "text": "These tools can literally change the way a social engineer views and uses data. No longer are social engineers limited to what they can find in routine searches; these tools open every resource on the Internet to them."
+    },
+    {
+      "type": "heading",
+      "text": "Maltego"
+    },
+    {
+      "type": "paragraph",
+      "text": "Collecting and cataloging information is probably a weak point for many people. What if a tool existed that enabled you to perform dozens of searches specific to a domain, IP address, or even a person? What if it gave you the weightings of those findings, showing what was more likely to be important or not? What if this tool then had a GUI interface that showed everything in color-coded objects that you can export and utilize? On top of it all, what if a free version of this amazing tool was available?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva (www.paterva.com). Maltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best way to show the power of Maltego is to tell a story of an audit I was involved in. I was tasked with auditing a small company that had a very small web presence. The target was to get to the CEO but he was heavily guarded, paranoid, and didn't use the web much. As the owner of a printing company he was all about his business and didn't use technology to its fullest. Surely this task was going to be a difficult one."
+    },
+    {
+      "type": "paragraph",
+      "text": "I whipped out Maltego first. Using just the company's domain and pulling up all e-mail addresses linked with Whois info and the domain itself gave me a nice base of information to start searching with. I then delved deeper to see whether the CEO's email that came up was used on any other sites or URLs. I found he had written a couple reviews for a local restaurant and linked his email address publicly. He also used it in a review he did for a restaurant in a different state. Reading his review fully revealed that he had visited that restaurant when he was visiting family in that state, even naming his brother in the review. With a few more searches in Maltego I located his parents and brother in that area. A few more searches with the family name and I found a few links that spoke about using another email he had from a business he started there to discuss a problem he had had with a local church and his switch to a new one. Later on, I found a blog post linking his Facebook page with pictures of his family after they left a ball game where their favorite team played. Here is what I was able to find in less than two hours of searching using Maltego:"
+    },
+    {
+      "type": "paragraph",
+      "text": "His favorite food His favorite restaurant His kids' names and ages That he is divorced His parents' names His brother's name Where he grew up His religion His favorite sports team What his whole family looked like His past business A day later I mailed a package to the target containing information about a raffle for local businesses. The offer was that if he wins he gets a free dinner at the restaurant he listed as his favorite, and three free tickets to a Yankees game. All the business has to do is agree to have a short meeting with a sales rep to talk about a local charity. If the business agreed to that meeting its name would be entered into the raffle for a chance to win the Yankees tickets. My pretext's name was \"Joe\" and I prepared an outline for a call to the CEO. My goal was to get him to accept a PDF from me that outlined what we want and entered him in the drawing. By the time I called, he should have received my \"mailed\" package and I could easily use the line, \"Yes, he is expecting my call.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "While on the phone with \"Joe,\" the CEO accepted and opened an email containing all the raffle details as well as a maliciously encoded file, ensuring the delivery of the reverse shell, giving me access to his network."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, he got nothing on his screen and was frustrated that Adobe kept crashing. I told him, \"I'm sorry you are having problems opening the file; we will include your name in the raffle and mail out some additional info to you today.\" But before that package went into the mail and arrived I called a report meeting to discuss how the target was completely compromised."
+    },
+    {
+      "type": "paragraph",
+      "text": "The majority of this success was due to the use of one tool—Maltego. It helped collect, organize, and categorize data for the best use."
+    },
+    {
+      "type": "paragraph",
+      "text": "How did Maltego help me succeed in this gig? Think of Maltego as a relational database of information, finding links between bits of information on the Internet (referred to as entities within the application). Maltego also takes a lot of the hard work out of mining information such as email addresses, websites, IP addresses, and domain information. For example, you can search for any email address within a target domain or domains automatically with a few clicks. By simply adding the \"EMAIL\" transform on the screen then clicking in the box and typing the email I want to search for, I was given a view like what is seen in Figure 7-23."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-23:",
+      "text": "A representation of the information you can glean from Maltego."
+    },
+    {
+      "type": "heading",
+      "text": "Why Use Maltego?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Maltego automates much of the information gathering and large data correlation for the user, saving hours of Googling for information and determining how all that information correlates. Finding these data relationships is where the real power of Maltego comes into play. Although the mining is useful, discovering the relationships between the information is what will help the social engineer."
+    },
+    {
+      "type": "paragraph",
+      "text": "At www.social-engineer.org/se-resources/, I have posted a few videos outlining how to use Maltego to get the most out of it. In the earlier story Maltego contributed largely to the exercise's success, but the compromise came with another amazing tool."
+    },
+    {
+      "type": "heading",
+      "text": "SET: Social Engineer Toolkit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Social engineers spend much of their time perfecting the human aspect of their skills, yet many attack vectors call for the ability to produce emails or PDFs embedded with malicious code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both of these things can be done manually using many of the tools that exist in BackTrack, but when I was starting the www.social-engineer.org website I was talking to a good friend of mine, Dave Kennedy. Dave is the creator of a very popular tool called FastTrack that automated some of the most common attacks used in a penetration test using Python scripts and a web interface. I told Dave that I thought it would be a neat idea to develop something like FastTrack but just for social engineers—a tool that would allow a social engineer to create PDFs, emails, websites, and more with a few clicks and then focus more on the \"social\" part of social engineering."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dave thought it over and decided that he could create a few easy Python scripts that would allow the social engineer to create PDFs and send emails with malicious code embedded in them. This was the birth of the Social Engineer Toolkit (SET). At the time of writing, SET had been downloaded more than 1.5 million times, and had quickly become the standard toolkit for social engineering audits. This section walks you through some of the main points of SET and how to employ them."
+    },
+    {
+      "type": "heading",
+      "text": "Installation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Installation is simple. All you need to have installed are Python and the Metasploit framework. Both of these are installed in the BackTrack distribution and there is no setup to worry about—in BackTrack 4 even the SET tool is installed. In case it is not or you are starting from scratch, installation is simple. Navigate to the directory you want it in and run this command in a console window:"
+    },
+    {
+      "type": "paragraph",
+      "text": "svn co http://svn.secmaniac.com/social_engineering_toolkit set/"
+    },
+    {
+      "type": "paragraph",
+      "text": "After executing this command, you will have a directory called set that will contain all the SET tools."
+    },
+    {
+      "type": "heading",
+      "text": "Running SET"
+    },
+    {
+      "type": "paragraph",
+      "text": "Running SET is, again, an easy process. Simply typing ./set while in the set directory starts the initial SET menu."
+    },
+    {
+      "type": "paragraph",
+      "text": "This shows you exactly what the SET menu looks like. A comprehensive, in-depth tutorial about each menu option is available at www.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29, but the following sections explain two of the most widely used aspects of SET."
+    },
+    {
+      "type": "paragraph",
+      "text": "First up is discussion the spear phishing attack, and following that is discussion of the website cloning attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spear Phishing with SET Phishing is a term coined to describe how malicious scammers will \"cast a wide net\" using targeted emails to try to draw people to websites, open malicious files, or disclose information that can be used for later attacks. Being able to detect and mitigate these attacks is essential for survival in the Internet world today."
+    },
+    {
+      "type": "paragraph",
+      "text": "SET allows the auditor to test their clients by developing targeted emails and then logging how many employees fall for these attacks. This information can then be used in training to help employees see how to spot and avoid these traps."
+    },
+    {
+      "type": "paragraph",
+      "text": "To perform a spear phishing attack in SET, chose option 1. After pressing that number you are presented with a few options:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Perform a Mass Email Attack 2. Create a FileFormat Payload 3. Create a Social-Engineering Template The first option is where you actually launch an e-mail-based spear phishing attack. The second option is where you create a malicious PDF or other file to send in your emails. Finally, option 3 is where you can create templates for use later on."
+    },
+    {
+      "type": "paragraph",
+      "text": "Launching an attack in SET is as simple as choosing the right options in the menus then clicking Launch. For example, if I wanted to launch an e- mail attack that would send a victim a malicious PDF disguised as a tech report, I would chose option 1, Perform a Mass Email Attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "Next, I would choose an attack vector (option 6) that was present in many versions of Adobe Acrobat Reader: Adobe util.printf() Buffer Overflow."
+    },
+    {
+      "type": "paragraph",
+      "text": "The next few choices set up the technical side of the attack. Using Metasploit to receive the reverse shell, or connection back from the victim's computer, and the port to come back on to avoid IDS or other systems, choose option 2, Windows Meterpreter Reverse_TCP."
+    },
+    {
+      "type": "paragraph",
+      "text": "Select port 443 so the traffic looks as if it is SSL traffic. The SET makes the malicious PDF and sets up the listener."
+    },
+    {
+      "type": "paragraph",
+      "text": "After doing so, SET asks you if you want to change the name of the PDF to something more devious like TechnicalSupport.pdf and then asks you to fill in the email information for both sending and receiving. Finally, SET sends out a professional-looking email that will try to trick the user into opening the attached PDF. A sample of what the victim receives is shown in Figure 7-24."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-24:",
+      "text": "An innocuous email with a simple attachment."
+    },
+    {
+      "type": "paragraph",
+      "text": "After the e-mail is sent, SET sets up the listener and waits for the target to open the file. Once the target clicks the PDF, the listener responds by handling the incoming malicious code and giving the attacker access to the victim's computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Surprisingly (or perhaps not, depending on your outlook), all of this was done in maybe six or seven mouse clicks, and it leaves the auditor with the freedom to focus on the actual social engineering aspect of these attacks."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a devastating attack because it exploits a client-side piece of software, and many times there is no indication onscreen that anything bad happened."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is just one of the many attacks that can be launched using SET."
+    },
+    {
+      "type": "paragraph",
+      "text": "Web Attack Vector SET also allows the auditor to clone any website and host it locally. The power of this type of attack is that it allows the social engineer to trick users into visiting the site under the pretense of being a developer making changes, or even using the trick of adding or deleting one letter in the URL but pointing people to the new site that is cloned."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once at the cloned website, many different parts of this attack can be launched—information gathering, credential harvesting, and exploiting are just a few."
+    },
+    {
+      "type": "paragraph",
+      "text": "To run this attack in SET you would choose option 2, Website Attack Vectors, from the main menu. Upon choosing option 2, you are presented with a few options:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. The Java Applet Attack Method 2. The Metasploit Browser Exploit Method 3. Credential Harvester Attack Method 4. Tabnabbing Attack Method 5. Man Left in the Middle Attack Method 6. Return to the previous menu A particularly evil attack vector is option 1, a Java Applet Attack. Basically, the Java Applet Attack presents the user with a Java security warning saying that the website has been signed by ABC Company and asks the user to approve the warning."
+    },
+    {
+      "type": "paragraph",
+      "text": "To perform this attack chose option 1, and then option 2, Site Cloner. Upon choosing Site Cloner, you will be asked which website you want to clone. Here, you can chose anything you want—the client's website, a vendor they use, or a government website—the choice is yours. As you might imagine, though, choosing a site that makes sense to the target is essential."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this exercise, imagine you cloned Gmail. You would be presented with the following on the screen:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SET supports both HTTP and HTTPS Example: http://www.thisisafakesite.com Enter the url to clone: http://www.gmail.com [*] Cloning the website: http://www.gmail.com [*] This could take a little bit... [*] Injecting Java Applet attack into the newly cloned website. [*] Filename obfuscation complete. Payload name is: DAUPMWIAHh7v.exe [*] Malicious java applet website prepped for deployment"
+    },
+    {
+      "type": "paragraph",
+      "text": "Once you are done with this, SET will ask you what type of connection you want it to create between you and the victim. To use a technology discussed in this book, choose the Metasploit reverse shell called Meterpreter."
+    },
+    {
+      "type": "paragraph",
+      "text": "SET gives you the option to encode your payload with different encoders. This is to help you avoid getting caught by antivirus systems."
+    },
+    {
+      "type": "paragraph",
+      "text": "Next, SET launches its own built-in web server, hosts the site, and sets up a listener to catch your victim browsing the website."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now it is up to the social engineer to either craft an email or a phone call to draw the target to the URL. In the end, the user would see what is shown in Figure 7-25."
+    },
+    {
+      "type": "paragraph",
+      "text": "The end result is the victim is presented with a Java Applet stating the site has been signed by Microsoft and that the user needs to allow the security certification to be run in order to access the site."
+    },
+    {
+      "type": "paragraph",
+      "text": "As soon as the user allows the security certification, the attacker is presented with a prompt to their computer."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-25:",
+      "text": "Who wouldn't trust a digitally signed applet from Microsoft?"
+    },
+    {
+      "type": "heading",
+      "text": "Other Features of SET"
+    },
+    {
+      "type": "paragraph",
+      "text": "SET was developed by social engineers with social engineers in mind, so the toolset that it gives the user is based around the common attacks needed by those in the auditing business."
+    },
+    {
+      "type": "paragraph",
+      "text": "SET is constantly growing and expanding. In recent months, for instance, SET has become capable of handling other attacks besides website cloning and spear phishing; it also houses an infectious media generator. An infectious media generator is where the user can create a DVD, CD, or USB key encoded with a malicious file that can be dropped or left at the target's office building. When it is inserted into a computer it will execute that malicious payload and cause the victim's machine to be compromised."
+    },
+    {
+      "type": "paragraph",
+      "text": "SET can also create a simple payload and proper listener for it. If the social engineer just wants to have an EXE that is a reverse shell that will connect back to his servers, he can carry this in a USB key for use on an audit. If he finds himself in front of a machine to which he wants remote access, he can put in the USB key and drop the payload file on the computer then click it. This will give him a quick connection back to his machines."
+    },
+    {
+      "type": "paragraph",
+      "text": "A newer attack vector is the Teensy HID attack vector. Teensy devices are tiny programmable circuit boards that can be embedded into things like keyboards, mice, or other electronic devices that get plugged into computers."
+    },
+    {
+      "type": "paragraph",
+      "text": "SET produces the programming needed to tell these tiny boards what to do when they are plugged in; commands like giving reverse shells or setting up listening ports are common."
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the newest features of SET is a web interface to the tool. This means that a web server will start automatically to host the SET on a webpage for easier use. Figure 7-26 shows what this web interface looks like."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-26:",
+      "text": "The new web interface of the Social Engineer Toolkit."
+    },
+    {
+      "type": "paragraph",
+      "text": "SET is a powerful tool made to help a social engineer auditor test the weaknesses that usually exist in a company. The SET tool developer is always open to suggestions and help in creating new parts of the tool to continue growing it to become a more popular toolset. Again, www.social-engineer.org has a full explanation of every menu option for review if you want to delve deeper into this amazing tool. Continue to check both www.social-engineer.org www.secmaniac.com for updates to the Social Engineer Toolkit."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Digital OSINT & The Social-Engineer Toolkit",
+      "points": [
+        "Maltego transforms fragmented data into graphical relationship maps linking domain names, IP addresses, email addresses, and employee profiles.",
+        "The Social-Engineer Toolkit (SET) automates phishing websites, Java applet payloads, and USB attack vectors.",
+        "Web cloning utilities replicate login portals in seconds, making visual domain inspection critical for users."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Telephone-Based Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the oldest tools in the book for social engineers is the telephone. Nowadays, with cell phones, VoIP, and homemade phone servers, the options of how a social engineer can utilize the phone have grown considerably."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because people are inundated with telemarketing calls, sales pitches, and advertisements, a social engineer needs to be skilled to use the phone successfully in an audit. Despite these limitations, using the phone as a social engineering tool can lead to total compromise of a company in a very short period of time."
+    },
+    {
+      "type": "paragraph",
+      "text": "In an era where everyone has a cell phone and people carry on personal and deep conversations on the bus, subway, or in any public place, the phone can be used in many ways. Eavesdropping or calling a target on their cell phone allows for additional vectors that were not available in days past. With the increased numbers of smart phones and computer-like phones on the market more and more people are storing passwords, personal data, and private information on their phones. This opens up the ability for the social engineer to be able to access the target and their data in many different situations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Also, being connected 24/7 makes people more ready to give out information quickly if the caller passes a certain set of \"criteria\" that makes him believable. For instance, if the caller ID on the cell phone indicates that the person is calling from corporate headquarters, many people would give over information with no verification. Both the iPhone and Android smart phones have applications that can be used to spoof your caller ID number to any number you want. Apps like SpoofApp (www.spoofapp.com) allow the social engineer to make calls that look as if they originate from anywhere on earth for a relatively low cost per call. All of this goes to building credibility of your pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the phone for social engineering can be broken down into two different arenas: the technology behind it and planning out what you say."
+    },
+    {
+      "type": "heading",
+      "text": "Caller ID Spoofing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Caller ID has become a commonplace technology in both business and home use. Especially now with cell phones replacing many of the land- based phone lines people use, caller ID is part of daily life. Being aware of this fact and how to use this to your advantage is a must for a successful social engineer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Caller ID spoofing basically is changing the information that appears on the target's caller ID display. In other words, though you are placing the call from one number, a different number appears on the target's caller ID."
+    },
+    {
+      "type": "paragraph",
+      "text": "One way to leverage this information is to spoof the number you found in a dumpster dive of a vendor used by your target. If the social engineer finds out that they use ABC Tech for computer support, the social engineer can find their number, and spoof that when a call is placed to set up an afternoon appointment. Using caller ID spoofing, you can \"originate\" calls from the following places:"
+    },
+    {
+      "type": "paragraph",
+      "text": "A remote office Inside the office A partner organization A utility/service company (telephone, water, Internet, exterminator, and so on) A superior A delivery company So how do you spoof? The following sections discuss some of the methods and equipment available a social engineer can use to spoof numbers."
+    },
+    {
+      "type": "heading",
+      "text": "SpoofCard"
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard (www.spoofcard.com/). Using one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some new features of the SpoofCard offer you the ability to record the phone conversation and mask your voice to be male or female. These features maximize the ability to hide who is calling and trick the target into divulging information the social engineer seeks."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the plus side, SpoofCard is simple to use, it needs no extra hardware or software other than your phone, and it has proven service with thousands of customers. The only real negative to SpoofCard is the cost involved to purchase it."
+    },
+    {
+      "type": "heading",
+      "text": "SpoofApp"
+    },
+    {
+      "type": "paragraph",
+      "text": "With so many people using smart phones like the iPhone, Android, or the Blackberry there has been an influx of apps created to assist in caller ID spoofing. SpoofApp uses SpoofCards (see the preceding section) but bundles the features into a package on your cell phone."
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of having to call a toll free number you simply enter the number you want to call into the application, then enter the number you want to display, and SpoofApp connects you to the target displaying the information you requested to the target. All of this is as simple as a click of a button."
+    },
+    {
+      "type": "heading",
+      "text": "Asterisk"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have a spare computer and a VoIP service you can also use an Asterisk server to spoof caller IDs. You can find some information about this method at www.social-engineer.org/wiki/archives/CallerIDspoofing/CallerID-SpoofingWithAsterisk.html. An Asterisk server is very similar to how SpoofCard works, with the exception of the server used to spoof the ID. In this case, you own the server. This is attractive because it allows for more freedom and there is no fear of being cut off or minutes running out."
+    },
+    {
+      "type": "paragraph",
+      "text": "The positive aspects of Asterisk are that it is free, it's easy to use and flexible after setup, and you alone control it. Minuses include that an extra computer or VM is needed, Linux knowledge is required, and you need a current VoIP service provider."
+    },
+    {
+      "type": "paragraph",
+      "text": "The great part about this option is that all the information about the caller and the person called resides with the social engineer. Personal and account data are not in the hands of a third party."
+    },
+    {
+      "type": "heading",
+      "text": "Using Scripts"
+    },
+    {
+      "type": "paragraph",
+      "text": "The telephone is a favorite tool of the social engineer. It offers anonymity as well as the ability to practice on numerous targets by changing just slight parts of the pretext."
+    },
+    {
+      "type": "paragraph",
+      "text": "One aspect of using the phone in social engineering that you must consider is the use of scripts. Scripting can be an essential part in ensuring that all the needed elements are covered and touched on; however, a script should not be a word-for-word speech to be given. Nothing irritates the target more than to be presented with a person who sounds like he is reading a script."
+    },
+    {
+      "type": "paragraph",
+      "text": "After you write a script you should practice it over and over so you sound real, genuine, and believable,"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is where your information-gathering sessions will become vital. The better the information the social engineer gathers the clearer the script will become. I find it useful to read a few facts on the hobbies and interests of the target so I can use that to build rapport."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once you have all the information laid out it can be helpful to then outline a plan of attack. In the case discussed previously—the CEO of the printing company—I had to develop an outline that would allow me to utilize the key parts of my pitch, high points I wanted to hit, as well as notes to myself like, \"speak clearly,\" \"don't forget to push the charity,\" \"slow down,\" and so on, which kept me focused during the call."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a script or outline versus a fully written out manuscript will keep you fluid and natural and allow creative freedom when presented with things you didn't plan for."
+    },
+    {
+      "type": "paragraph",
+      "text": "The telephone is still a deadly tool for the social engineer and when used with the principles mentioned so far in this book, it can lead a social engineer down the path of success."
+    },
+    {
+      "type": "heading",
+      "text": "Password Profilers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another set of tools that bear mentioning help you profile targets and the passwords they may use. After you have all the information on a target you can gather, your next is to develop a profile. A profile is where you plan out a few attack vectors you feel will work and also where you can start to build a list of potential passwords to try in brute force attacks. From a tool perspective, having a list of possible passwords can assist in expediting a hack if you are presented with that option. This section covers a couple profilers that are available."
+    },
+    {
+      "type": "paragraph",
+      "text": "Password profiling tools can take hours or even days off the work that you need to do."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each year the number of people falling prey to simple attacks increases, despite the many warnings that are issued. The number of people who list all sorts of information about themselves, their families, and their lives on the Internet is amazing. Combining a profile built from their social media usage, what is found elsewhere on the web, and using the tools discussed subsequently, a social engineer can outline a person's whole life."
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the reasons this works so well is the way that many people chose their passwords. It has been proven that many people will use the same password over and over again. What is worse is that many people choose passwords that can be easily guessed with little to no skill."
+    },
+    {
+      "type": "paragraph",
+      "text": "Recently, BitDefender, an Internet security firm, performed a study that proved this fact. BitDefender analyzed the password usage of more than 250,000 users. The results were amazing: 75% of the 250,000 used the same passwords for email as well as all social media accounts. This should be especially scary considering the recent story of how 171 million Facebook users had their personal information released on a torrent. The full story can be found at www.securityweek.com/study-reveals-75-percent-individuals-use-same-password-social-networking-and-email."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2009 a hacker by the nickname of Tonu performed a very interesting bit of research. With no malicious intent he obtained a recently dropped URL of a popular social media site. He spoofed the page, then for a brief period of time logged the attempts of people trying to log in."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can view the results at www.social-engineer.org/wiki/archives/BlogPosts/MenAndWomenPasswords.html."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some of this data will shock even the most seasoned security professionals. Out of 734,000 people, 30,000 used their first name as a password and almost 14,500 used their last name. Although those numbers are shocking what was found next was mind blowing—the top eight most commonly used passwords are outlined in the following table."
+    },
+    {
+      "type": "paragraph",
+      "text": "Password Gender Number of Users"
+    },
+    {
+      "type": "paragraph",
+      "text": "123456 M 17601 password M 4545"
+    },
+    {
+      "type": "paragraph",
+      "text": "12345 M 3480"
+    },
+    {
+      "type": "paragraph",
+      "text": "1234 M 2911"
+    },
+    {
+      "type": "paragraph",
+      "text": "123 M 2492"
+    },
+    {
+      "type": "paragraph",
+      "text": "123456789 M 2225"
+    },
+    {
+      "type": "paragraph",
+      "text": "123456 F 1885 qwerty M 1883"
+    },
+    {
+      "type": "paragraph",
+      "text": "17,601 males used the password 123456? Staggering statistics."
+    },
+    {
+      "type": "paragraph",
+      "text": "If this isn't shocking enough, Tonu posted statistics that more than 66% of the users on that list used passwords that were six to eight characters long. With the information that most people have simple passwords, using a popular password-cracking tool, like Cain and Abel shown in Figure 7-27, to crack a simple password is not unreasonable for a social engineer to do."
+    },
+    {
+      "type": "paragraph",
+      "text": "You will notice that the Time Left box says 3.03909 days. To most hackers, three days is a short time to wait to be given clear access to the servers. Is three days really that long to wait for the administrator password?"
+    },
+    {
+      "type": "paragraph",
+      "text": "To make this information really hit home, look at Figure 7-28, which shows the difference made if the same user were to use a 14–16 character password containing upper and lower case as well as non-alphanumeric characters."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-27:",
+      "text": "Only three days to crack a simple password."
+    },
+    {
+      "type": "labeled-item",
+      "label": "Figure 7-28:",
+      "text": "The Time Left box has increased to trillions of years."
+    },
+    {
+      "type": "paragraph",
+      "text": "Does more than 5 trillion years seem a little long to wait? By just increasing the characters to 14 and using some non-basic characters (that is, *, &, $, %, and ^) the odds of a hacker obtaining the password through brute force become next to impossible."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because many users don't use this level of complexity, identifying the weakness in many users' passwords is not difficult. Certain tools (a couple of which are described in the next section) help profile potential passwords a user may have chosen."
+    },
+    {
+      "type": "heading",
+      "text": "Common User Password Profiler (CUPP)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Profiling a person is one of the main aspects of a successful social engineering audit. As previously discussed, Tonu's research shows that out of 734,000 people, more than 228,000 of them used only six characters in their passwords. More than 17,000 of those chose to use the password of \"123456\" and close to 4,600 chose the word \"password\" as their password."
+    },
+    {
+      "type": "paragraph",
+      "text": "Common User Password Profiler (CUPP) is a tool that was created to make password profiling an easy task."
+    },
+    {
+      "type": "paragraph",
+      "text": "Murgis Kurgan, also known as j0rgan, created this amazing little tool. It runs as a script in the leading penetration testing distribution, BackTrack, or you can download it from www.social-engineer.org/cupps.tar.gz."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common form of authentication is the combination of a username and a password or passphrase. If both match values stored within a locally stored table, the user is authenticated for a connection. Password strength is a measure of the difficulty involved in guessing or breaking the password through cryptographic techniques or library-based automated testing of alternate values."
+    },
+    {
+      "type": "paragraph",
+      "text": "A weak password might be very short or only use alphanumeric characters, making decryption simple. A weak password can also be one that is easily guessed by someone profiling the user, such as a birthday, nickname, address, name of a pet or relative, or a common word such as God, love, money, or password."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because most users have weak passwords that can be easy to guess, CUPP is a perfect tool for profiling. It can be used for legal penetration tests or forensic crime investigations."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following is a copy/paste from a session using CUPP in BackTrack 4:"
+    },
+    {
+      "type": "paragraph",
+      "text": "root@bt4:/pentest/passwords/cupp# ./cupp.py -i [+] Insert the information about the victim to make a dictionary [low cases!] [+] If you don't know all the info, just hit enter when asked! ;) > Name: John > Surname: Smith > Nickname: Johnny > Birthdate (DDMMYYYY; i.e. 04111985): 03031965 > Wife's(husband's) name: Sally > Wife's(husband's) nickname: Sals > Wife's(husband's) birthdate (DDMMYYYY; i.e. 04111985): 05011966 > Child's name: Roger > Child's nickname: Roggie > Child's birthdate (DDMMYYYY; i.e. 04111985): 05042004 > Pet's name: Max > Company name: ABC Paper > Do you want to add some key words about the victim? Y/[N]: Y > Please enter the words, separated by comma. [i.e. hacker, juice, black]: christian,polish,sales person > Do you want to add special chars at the end of words? Y/[N]: N > Do you want to add some random numbers at the end of words? Y/[N]n > Leet mode? (i.e. leet = 1337) Y/[N]: Y [+] Now making a dictionary... [+] Sorting list and removing duplicates... [+] Saving dictionary to John.txt, counting 13672 words. [+] Now load your pistolero with John.txt and shoot! Good luck!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice at the end that a dictionary file of 13,672 passwords using the information provided was created. The power of this type of tool is that it can take a lot of the guesswork out of the password-guessing aspect of social engineering."
+    },
+    {
+      "type": "heading",
+      "text": "CeWL"
+    },
+    {
+      "type": "paragraph",
+      "text": "As described by its authors, CeWL is a Ruby application that spiders a given URL to a specified depth, optionally following external links, and returns a list of words that can then be used for password crackers such as John the Ripper. For more information about CeWL see their website at www.digininja.org/projects/cewl.php. Take a look at a session using CeWL in BackTrack4:"
+    },
+    {
+      "type": "paragraph",
+      "text": "root@bt:/pentest/passwords/cewl# ruby cewl.rb --help cewl 3.0 Robin Wood (dninja@gmail.com) (www.digininja.org) Usage: cewl [OPTION] ... URL --help, -h: show help --depth x, -d x: depth to spider to, default 2 --min_word_length, -m: minimum word length, default 3 --offsite, -o: let the spider visit other sites --write, -w file: write the output to the file --ua, -u user- agent: useragent to send --no-words, -n: don't output the wordlist --meta, -a file: include meta data, optional output file --email, -e file: include email addresses, optional output file --meta-temp-dir directory: the temporary directory,default /tmp -v: verbose URL: The site to spider. root@bt:/pentest/passwords/cewl# ./cewl.rb -d 1 -w pass.txt http://www.targetcompany.com/about.php root@bt:/pentest/passwords/cewl# cat passwords.txt |wc -l 430 root@bt:/pentest/passwords/cewl#"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using CeWL against a target company, this session generated 430 potential passwords to try from just one page on their web presence."
+    },
+    {
+      "type": "paragraph",
+      "text": "CUPP and CeWL are just two tools at your disposal to help profile and generate lists of potential passwords. An interesting exercise is to run one of these tools using your own information and see if any passwords you use are in the lists generated. It can be very sobering and make you want to take password security very seriously."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tools are an important aspect of social engineering, but they do not make the social engineer. A tool alone is useless, but the knowledge of how to leverage and utilize that tool is invaluable."
+    },
+    {
+      "type": "paragraph",
+      "text": "If one overwhelming theme in this chapter resounds, it is that practice makes perfect. Whether you are using the phone, software-based tools, the web, or other spy gadgets, practicing how to utilize them is essential to success. For example, when using the phone for social engineering, you can use spoofing technologies or even voice-changing technologies, and while having all this great technology is amazing, if you make a call and sound too scripted, nervous and jittery, or unprepared and unknowledgeable, then all hope for social engineering success is lost and most likely any credibility, too. This principle goes back to being very well versed in pretexting. How would the person you are trying to impersonate talk? What would he say? How would he say it? What knowledge would he possess? What information would he ask for?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Whether the social engineer uses a software tool, hardware tool, or both, taking the time to learn the ins and outs of each tool and each feature can make or break the success of the audit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tools can take substantial time off audits and they can also fill in any deficiency gaps an auditor may have. This dynamic becomes apparent as you analyze the case studies in Chapter 8."
+    },
+    {
+      "type": "important-points",
+      "title": "Important Points: Telephony Spoofing & Chapter Takeaways",
+      "points": [
+        "Caller ID spoofing (via services or Asterisk VoIP PBX) allows attackers to mimic corporate help desks or executive phone numbers with ease.",
+        "Password profiling tools (CUPP, CeWL) generate custom targeted wordlists based on company culture, target pets, hobbies, and scraped website keywords.",
+        "Tools amplify skills, but the social engineer's interpersonal agility remains the deciding factor in every audit."
+      ]
+    }
+  ]
+}
