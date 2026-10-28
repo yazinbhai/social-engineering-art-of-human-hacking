@@ -24,7 +24,7 @@ This application delivers a modern, high-fidelity digital reading experience and
 
 ## 🚀 Live Demo & Deployment
 
-- **Live Web App**: [Social Engineering Interactive Portal](https://social-engineering-master-edition.netlify.app)
+- **Live Web App**: [Social Engineering Interactive Portal](http://adorable-druid-894ea4.netlify.app)
 - **GitHub Repository**: [yazinbhai/social-engineering-art-of-human-hacking](https://github.com/yazinbhai/social-engineering-art-of-human-hacking)
 
 ---
