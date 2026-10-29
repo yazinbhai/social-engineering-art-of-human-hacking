@@ -115,7 +115,7 @@
     },
     {
       "type": "paragraph",
-      "text": "In 2003 the Computer Security Institute did a survey along with the FBI and found that 77% of the companies interviewed stated a disgruntled employee as the source of a major security breach. Vontu, the data loss prevention section of Symantec (http://go.symantec.com/vontu/), says that 1 out of every 500 emails contains confidential data. Some of the highlights of that report, quoted from http://financialservices.house.gov/media/pdf/062403ja.pdf, are as follows:"
+      "text": "In 2003 the Computer Security Institute did a survey along with the FBI and found that 77% of the companies interviewed stated a disgruntled employee as the source of a major security breach. Vontu, the data loss prevention section of Symantec http://go.symantec.com/vontu/, says that 1 out of every 500 emails contains confidential data. Some of the highlights of that report, quoted from http://financialservices.house.gov/media/pdf/062403ja.pdf, are as follows:"
     },
     {
       "type": "paragraph",
@@ -197,7 +197,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Many people have spent their lives researching and proving what can and does influence people. Influence is a powerful tool with many facets to it. To this end, Chapter  6 discusses the fundamentals of persuasion. The principles engaged in Chapter 6 will start you on the road toward becoming a master of persuasion."
+      "text": "Many people have spent their lives researching and proving what can and does influence people. Influence is a powerful tool with many facets to it. To this end, Chapter 6 discusses the fundamentals of persuasion. The principles engaged in Chapter 6 will start you on the road toward becoming a master of persuasion."
     },
     {
       "type": "paragraph",
@@ -315,7 +315,7 @@
     },
     {
       "type": "paragraph",
-      "text": "These social engineers and many more like them seem to have natural talent or a lack of fear that enables them to try things that most of us would never consider attempting. Unfortunately in the world today, malicious hackers are continually improving their skills at manipulating people and malicious social engineering attacks are increasing. DarkReading posted an article (www.darkreading.com/database_security/security/attacks/showArticle.jhtml?articleID=226200272) that cites that data breaches have reached between $1 and $53 million per breach. Citing research by the Ponemon Institute DarkReading states, \"Ponemon found that Web-borne attacks, malicious code, and malicious insiders are the most costly types of attacks, making up more than 90 percent of all cybercrime costs per organization per year: A Web-based attack costs $143,209; malicious code, $124,083; and malicious insiders, $100,300.\" Malicious insiders being listed on the top three suggests that businesses need to be more aware of the threats posed by malicious social engineering, even from employees."
+      "text": "These social engineers and many more like them seem to have natural talent or a lack of fear that enables them to try things that most of us would never consider attempting. Unfortunately in the world today, malicious hackers are continually improving their skills at manipulating people and malicious social engineering attacks are increasing. DarkReading posted an article www.darkreading.com/database_security/security/attacks/showArticle.jhtml?articleID=226200272 that cites that data breaches have reached between $1 and $53 million per breach. Citing research by the Ponemon Institute DarkReading states, \"Ponemon found that Web-borne attacks, malicious code, and malicious insiders are the most costly types of attacks, making up more than 90 percent of all cybercrime costs per organization per year: A Web-based attack costs $143,209; malicious code, $124,083; and malicious insiders, $100,300.\" Malicious insiders being listed on the top three suggests that businesses need to be more aware of the threats posed by malicious social engineering, even from employees."
     },
     {
       "type": "paragraph",
@@ -440,7 +440,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Many times this data is sold to competitors (as happened in this story from a Morgan Stanley employee: www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-MorganStanley.html). Other times employee theft is in time or other resources; in some cases a disgruntled employee can cause major damage."
+      "text": "Many times this data is sold to competitors (as happened in this story from a Morgan Stanley employee: www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-MorganStanley.html. Other times employee theft is in time or other resources; in some cases a disgruntled employee can cause major damage."
     },
     {
       "type": "paragraph",
@@ -668,7 +668,7 @@
     {
       "type": "section-summary",
       "title": "Section Summary: Chapter 1 Master Synthesis & Framework in Practice",
-      "summary": "The Social Engineering Framework (social-engineer.org) formalizes human security testing into a repeatable, scientific discipline. Comprehensive enterprise defense requires moving away from punitive corporate cultures toward transparent educational models where identity verification is institutionalized and celebrated.",
+      "summary": "The Social Engineering Framework social-engineer.org formalizes human security testing into a repeatable, scientific discipline. Comprehensive enterprise defense requires moving away from punitive corporate cultures toward transparent educational models where identity verification is institutionalized and celebrated.",
       "points": [
         "The SE Framework standardizes human security auditing into repeatable, scientific phases from reconnaissance to reporting.",
         "Social engineering attacks target human nature rather than silicon or code, making technical firewalls alone insufficient.",

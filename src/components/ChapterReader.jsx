@@ -22,7 +22,7 @@ function renderTextWithLinks(text) {
   if (!text || typeof text !== 'string') return text;
 
   // Regex matches URLs starting with http://, https://, www., or social-engineer.org
-  const urlRegex = /((?:https?:\/\/|www\.|(?:[a-zA-Z0-9-]+\.)*social-engineer\.org)[^\s"\'<>\(\)]+)/g;
+  const urlRegex = /((?:https?:\/\/|www\.|(?:[a-zA-Z0-9-]+\.)*social-engineer\.org)[^\s"\'<>\(\)\[\]]*)/g;
   const parts = [];
   let lastIndex = 0;
   let match;
@@ -32,17 +32,24 @@ function renderTextWithLinks(text) {
     const matchIndex = match.index;
 
     if (matchIndex > lastIndex) {
-      parts.push(text.substring(lastIndex, matchIndex));
+      let prefix = text.substring(lastIndex, matchIndex);
+      // Remove any opening bracket immediately preceding the URL
+      prefix = prefix.replace(/([(\[{<])\s*$/, '');
+      if (prefix) {
+        parts.push(prefix);
+      }
     }
 
-    // Separate trailing punctuation attached to URLs (. , ; : ! ? ) ] )
+    // Separate trailing punctuation attached to URLs (. , ; : ! ? ) ] } >)
     let cleanUrl = rawUrl;
     let trailingPunct = '';
-    const punctMatch = cleanUrl.match(/([.,;:!?\)\]]+)$/);
+    const punctMatch = cleanUrl.match(/([.,;:!?\)\]\}\>]+)$/);
     if (punctMatch) {
       trailingPunct = punctMatch[1];
       cleanUrl = cleanUrl.substring(0, cleanUrl.length - trailingPunct.length);
     }
+    // Remove closing brackets from trailing punctuation so they don't render after the link
+    trailingPunct = trailingPunct.replace(/[)\]}>]/g, '');
 
     const href = cleanUrl.startsWith('http://') || cleanUrl.startsWith('https://')
       ? cleanUrl
@@ -68,6 +75,10 @@ function renderTextWithLinks(text) {
     }
 
     lastIndex = matchIndex + rawUrl.length;
+    // If the next character immediately after lastIndex is a closing bracket, skip it
+    if (lastIndex < text.length && /^[)\]}>]/.test(text.substring(lastIndex))) {
+      lastIndex += 1;
+    }
   }
 
   if (lastIndex < text.length) {

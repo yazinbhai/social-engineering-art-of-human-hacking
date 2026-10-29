@@ -1317,7 +1317,7 @@
     },
     {
       "type": "paragraph",
-      "text": "I have been on this for like fun for around a  year or so.  Still in school. 16. Just something to do. You ever go to evilzone?"
+      "text": "I have been on this for like fun for around a year or so. Still in school. 16. Just something to do. You ever go to evilzone?"
     },
     {
       "type": "paragraph",
@@ -1329,7 +1329,7 @@
     },
     {
       "type": "paragraph",
-      "text": "It's written in a  language called PureBasic,  but it's kinda not ready for release yet, it's only for my own use. But maybe I can share it anyway, I could upload the code somewhere and let you compile it. That is if you can find some"
+      "text": "It's written in a language called PureBasic, but it's kinda not ready for release yet, it's only for my own use. But maybe I can share it anyway, I could upload the code somewhere and let you compile it. That is if you can find some"
     },
     {
       "type": "paragraph",
@@ -1337,11 +1337,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Thats cool.  you can put it in that pastebin site from irc.  That lets you anon post I have not done purebasic before. just python and perl"
+      "text": "Thats cool. you can put it in that pastebin site from irc. That lets you anon post I have not done purebasic before. just python and perl"
     },
     {
       "type": "paragraph",
-      "text": "Let me see,  I'll look for that pastebin site and upload it,  just give me some minutes, I'll be around."
+      "text": "Let me see, I'll look for that pastebin site and upload it, just give me some minutes, I'll be around."
     },
     {
       "type": "paragraph",
@@ -1349,11 +1349,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Handle,  for what?  I don't chat on irc much or anything like that,  but I  could give you an email you could reah me on."
+      "text": "Handle, for what? I don't chat on irc much or anything like that, but I could give you an email you could reah me on."
     },
     {
       "type": "paragraph",
-      "text": "Thats cool.  I mean handle like for irc and boardz and the such.  heay e-mail works too."
+      "text": "Thats cool. I mean handle like for irc and boardz and the such. heay e-mail works too."
     },
     {
       "type": "paragraph",
@@ -1373,7 +1373,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Cool! let me know when you did the pastebin http://pastebin.ca/1273205 btw...  that is kinda very in the  \"alpha\"  stage,  the GUI is not really finished. but it can be configured through some viariables."
+      "text": "Cool! let me know when you did the pastebin http://pastebin.ca/1273205 btw... that is kinda very in the \"alpha\" stage, the GUI is not really finished. but it can be configured through some viariables."
     },
     {
       "type": "paragraph",
@@ -1381,7 +1381,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Yeah,  please do.  If you run this program for some hours you'll find a  lot servers, I even tried to make some code to detect servers that has no security and even some that has a  bug which can let you log in even if it has a password. These servers will show up in the result (the \"found tab\") as \"insecure\". But sometimes it does a mistake and says some are insecure which are not, but that's not many, it's just to test them."
+      "text": "Yeah, please do. If you run this program for some hours you'll find a lot servers, I even tried to make some code to detect servers that has no security and even some that has a bug which can let you log in even if it has a password. These servers will show up in the result (the \"found tab\") as \"insecure\". But sometimes it does a mistake and says some are insecure which are not, but that's not many, it's just to test them."
     },
     {
       "type": "paragraph",
@@ -1401,27 +1401,27 @@
     },
     {
       "type": "paragraph",
-      "text": "Olol, k, soI wrry sorry.  Ok,  I will dl that and have a  look.  Thats cool.  Did you write the backdoor from rapid share too? or did you get that from someplace?"
+      "text": "Olol, k, soI wrry sorry. Ok, I will dl that and have a look. Thats cool. Did you write the backdoor from rapid share too? or did you get that from someplace?"
     },
     {
       "type": "paragraph",
-      "text": "I try to write most of my tools myself,  this way I  learn.  So yes,  I wrote it myself,  but it was not finished,  I was just wanna see if I  could run a server, but it didn't doo anything yet, hehe."
+      "text": "I try to write most of my tools myself, this way I learn. So yes, I wrote it myself, but it was not finished, I was just wanna see if I could run a server, but it didn't doo anything yet, hehe."
     },
     {
       "type": "paragraph",
-      "text": "I see. I sort of gave up, but I thought I would come back and try some more.I figure there has to be some stuff around but I don't have a botnet of myown to use,  this guy named Zoot54  tried to sell me one,  and some people vouched for him, but I did not trust him at all. And I don't know how to write my own tools at all other then some perl and python which wont work for most windows hosts like this so I have been tryingthe metasploit but getting the firewall error. Do you have plans for this? Like something cool to do? or just moveon to the next?"
+      "text": "I see. I sort of gave up, but I thought I would come back and try some more.I figure there has to be some stuff around but I don't have a botnet of myown to use, this guy named Zoot54 tried to sell me one, and some people vouched for him, but I did not trust him at all. And I don't know how to write my own tools at all other then some perl and python which wont work for most windows hosts like this so I have been tryingthe metasploit but getting the firewall error. Do you have plans for this? Like something cool to do? or just moveon to the next?"
     },
     {
       "type": "paragraph",
-      "text": "Perl and python is a good start btw, I haven't been using them myself, but when you know some languages you can easily learn more  :P Maybe you should give"
+      "text": "Perl and python is a good start btw, I haven't been using them myself, but when you know some languages you can easily learn more :P Maybe you should give"
     },
     {
       "type": "paragraph",
-      "text": "PureBasic a try, it's really easy actually. Hehe, a bot-net would be cool, I was thinking about making one,  but it's kinda hard to make it spread,  at least on"
+      "text": "PureBasic a try, it's really easy actually. Hehe, a bot-net would be cool, I was thinking about making one, but it's kinda hard to make it spread, at least on"
     },
     {
       "type": "paragraph",
-      "text": "Vista.  But nah,  I can't give up this server just yet,  I have to try some more, there has to be a way to get more priviliges ;D thast cool. You can have the server as I have had it for a while and don't know what to do next. let me know what you are doing if you would so I can learn some more though.  That would be cool.  Do you have a  myspace or facebook or anything? Or just use the e-mail?"
+      "text": "Vista. But nah, I can't give up this server just yet, I have to try some more, there has to be a way to get more priviliges ;D thast cool. You can have the server as I have had it for a while and don't know what to do next. let me know what you are doing if you would so I can learn some more though. That would be cool. Do you have a myspace or facebook or anything? Or just use the e-mail?"
     },
     {
       "type": "paragraph",
@@ -1433,11 +1433,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Yeah,  I just used ThightVNC or whatever and made it not disconnect other users. I'm not a shell fan really, hehe :S"
+      "text": "Yeah, I just used ThightVNC or whatever and made it not disconnect other users. I'm not a shell fan really, hehe :S"
     },
     {
       "type": "paragraph",
-      "text": "Cool.  When I  get a  shell a  lot of times I  makes mistake tand dissconnect on accident"
+      "text": "Cool. When I get a shell a lot of times I makes mistake tand dissconnect on accident"
     },
     {
       "type": "paragraph",
@@ -1449,7 +1449,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Yeah,  I did the same thing.  Even did a  speed test of the internet connection, hehe.They seem to have faster upload speed than download speed, weird... But handy for a DoD attack maybe."
+      "text": "Yeah, I did the same thing. Even did a speed test of the internet connection, hehe.They seem to have faster upload speed than download speed, weird... But handy for a DoD attack maybe."
     },
     {
       "type": "paragraph",
@@ -1461,7 +1461,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Haven't found any other systems.  But I  would sure like to access all these network computers they have... damn many, it's some kind of university. Hehe, I printed out \"hello world\" previous today."
+      "text": "Haven't found any other systems. But I would sure like to access all these network computers they have... damn many, it's some kind of university. Hehe, I printed out \"hello world\" previous today."
     },
     {
       "type": "paragraph",
@@ -1469,11 +1469,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Haha,  they probably woold,  but what silly idiots runds a  VNC server without a password?! I printed to some of the printers, I hope somebody saw it."
+      "text": "Haha, they probably woold, but what silly idiots runds a VNC server without a password?! I printed to some of the printers, I hope somebody saw it."
     },
     {
       "type": "paragraph",
-      "text": "Haha thats is true,  i bet som..  well they cant run it with out admin privs right? So it cant be just some user that did it, someone with admin would have to do it or else our backdoors should work on it and they are not going at all. Or do you think some one just changed the config?"
+      "text": "Haha thats is true, i bet som.. well they cant run it with out admin privs right? So it cant be just some user that did it, someone with admin would have to do it or else our backdoors should work on it and they are not going at all. Or do you think some one just changed the config?"
     },
     {
       "type": "paragraph",
@@ -1493,11 +1493,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Thats what I  hope.  I bought a  book on the ethical hacker and think that they have some good programs in there.  I don't know what the age is to take the test, but if I do take it that might be a good start to do this work. And there are some good tools in there like the metasploit. You should take a look at it if you have not yet."
+      "text": "Thats what I hope. I bought a book on the ethical hacker and think that they have some good programs in there. I don't know what the age is to take the test, but if I do take it that might be a good start to do this work. And there are some good tools in there like the metasploit. You should take a look at it if you have not yet."
     },
     {
       "type": "paragraph",
-      "text": "Yeah,  thanks,  I should check that out  :)  But I'm getting a  little tired now btw, hehe. Can't sit here chatting in bloody notepad all day, hehehehe. So cya later man, cool meeting you, very fun."
+      "text": "Yeah, thanks, I should check that out :) But I'm getting a little tired now btw, hehe. Can't sit here chatting in bloody notepad all day, hehehehe. So cya later man, cool meeting you, very fun."
     },
     {
       "type": "paragraph",

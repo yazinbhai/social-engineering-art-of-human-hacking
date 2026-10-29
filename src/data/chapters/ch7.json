@@ -220,7 +220,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Some recent stories (www.youtube.com/watch?v=7INIRLe7x0Y) show how easy it is to bypass a hotel or other door with a chain lock. This particular video shows how an attacker can tie a rubber band around the lock and, using the natural tension of the rubber band, get the chain to slide right off. As well, MIT has a freely distributed guide (www.lysator.liu.se/mit-guide/MITLockGuide.pdf) on lock picking that is much more in-depth than the brief introduction included in this chapter."
+      "text": "Some recent stories www.youtube.com/watch?v=7INIRLe7x0Y show how easy it is to bypass a hotel or other door with a chain lock. This particular video shows how an attacker can tie a rubber band around the lock and, using the natural tension of the rubber band, get the chain to slide right off. As well, MIT has a freely distributed guide www.lysator.liu.se/mit-guide/MITLockGuide.pdf on lock picking that is much more in-depth than the brief introduction included in this chapter."
     },
     {
       "type": "labeled-item",
@@ -229,7 +229,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You might be wondering whether locks that are impossible, or at least hard to pick, exist. The Bump Proof BiLock (www.wholesalelocks.com/bump-proof-bilock-ult-360.html) is just such a lock. Its two cylinders make it near-impossible to bump or pick easily."
+      "text": "You might be wondering whether locks that are impossible, or at least hard to pick, exist. The Bump Proof BiLock www.wholesalelocks.com/bump-proof-bilock-ult-360.html is just such a lock. Its two cylinders make it near-impossible to bump or pick easily."
     },
     {
       "type": "paragraph",
@@ -320,7 +320,7 @@
     },
     {
       "type": "paragraph",
-      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\" (www.spyassociates.com). All of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
+      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\" www.spyassociates.com. All of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
     },
     {
       "type": "labeled-item",
@@ -534,7 +534,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva (www.paterva.com). Maltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
+      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva www.paterva.com. Maltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
     },
     {
       "type": "paragraph",
@@ -808,7 +808,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Also, being connected 24/7 makes people more ready to give out information quickly if the caller passes a certain set of \"criteria\" that makes him believable. For instance, if the caller ID on the cell phone indicates that the person is calling from corporate headquarters, many people would give over information with no verification. Both the iPhone and Android smart phones have applications that can be used to spoof your caller ID number to any number you want. Apps like SpoofApp (www.spoofapp.com) allow the social engineer to make calls that look as if they originate from anywhere on earth for a relatively low cost per call. All of this goes to building credibility of your pretext."
+      "text": "Also, being connected 24/7 makes people more ready to give out information quickly if the caller passes a certain set of \"criteria\" that makes him believable. For instance, if the caller ID on the cell phone indicates that the person is calling from corporate headquarters, many people would give over information with no verification. Both the iPhone and Android smart phones have applications that can be used to spoof your caller ID number to any number you want. Apps like SpoofApp www.spoofapp.com allow the social engineer to make calls that look as if they originate from anywhere on earth for a relatively low cost per call. All of this goes to building credibility of your pretext."
     },
     {
       "type": "paragraph",
@@ -840,7 +840,7 @@
     },
     {
       "type": "paragraph",
-      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard (www.spoofcard.com/). Using one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
+      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard www.spoofcard.com/. Using one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
     },
     {
       "type": "paragraph",
@@ -1058,7 +1058,7 @@
     },
     {
       "type": "paragraph",
-      "text": "root@bt:/pentest/passwords/cewl# ruby cewl.rb --help cewl 3.0 Robin Wood (dninja@gmail.com) (www.digininja.org) Usage: cewl [OPTION] ... URL --help, -h: show help --depth x, -d x: depth to spider to, default 2 --min_word_length, -m: minimum word length, default 3 --offsite, -o: let the spider visit other sites --write, -w file: write the output to the file --ua, -u user- agent: useragent to send --no-words, -n: don't output the wordlist --meta, -a file: include meta data, optional output file --email, -e file: include email addresses, optional output file --meta-temp-dir directory: the temporary directory,default /tmp -v: verbose URL: The site to spider. root@bt:/pentest/passwords/cewl# ./cewl.rb -d 1 -w pass.txt http://www.targetcompany.com/about.php root@bt:/pentest/passwords/cewl# cat passwords.txt |wc -l 430 root@bt:/pentest/passwords/cewl#"
+      "text": "root@bt:/pentest/passwords/cewl# ruby cewl.rb --help cewl 3.0 Robin Wood (dninja@gmail.com) www.digininja.org Usage: cewl [OPTION] ... URL --help, -h: show help --depth x, -d x: depth to spider to, default 2 --min_word_length, -m: minimum word length, default 3 --offsite, -o: let the spider visit other sites --write, -w file: write the output to the file --ua, -u user- agent: useragent to send --no-words, -n: don't output the wordlist --meta, -a file: include meta data, optional output file --email, -e file: include email addresses, optional output file --meta-temp-dir directory: the temporary directory,default /tmp -v: verbose URL: The site to spider. root@bt:/pentest/passwords/cewl# ./cewl.rb -d 1 -w pass.txt http://www.targetcompany.com/about.php root@bt:/pentest/passwords/cewl# cat passwords.txt |wc -l 430 root@bt:/pentest/passwords/cewl#"
     },
     {
       "type": "paragraph",

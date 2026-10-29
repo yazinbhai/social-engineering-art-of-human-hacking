@@ -64,7 +64,7 @@
     },
     {
       "type": "paragraph",
-      "text": "I once interviewed radio icon Tom Mischke on this topic for a social engineering podcast I am a part of (hosted at www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers/). Radio hosts must be proficient at pretexting because they constantly have to release only the information they want to the public. Tom was so proficient at this that many listeners felt as if they \"knew\" him as a friend. He would get invitations to weddings, anniversaries, and even births. How was Tom able to accomplish this amazing kind of pretext?"
+      "text": "I once interviewed radio icon Tom Mischke on this topic for a social engineering podcast I am a part of (hosted at www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers/. Radio hosts must be proficient at pretexting because they constantly have to release only the information they want to the public. Tom was so proficient at this that many listeners felt as if they \"knew\" him as a friend. He would get invitations to weddings, anniversaries, and even births. How was Tom able to accomplish this amazing kind of pretext?"
     },
     {
       "type": "paragraph",
@@ -234,7 +234,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Using the phone to solidify your pretext is one of the quickest methods inside your target's door. The phone allows the social engineer to \"spoof,\" or fake, almost anything. Take into consideration this example: If I wanted to call you and pretend I was in a bustling office to add to the pretext I was trying to use, I could simply grab the audio track from Thriving Office (www.thrivingoffice.com/). This site offers a track called \"Busy\" and another called \"Very Busy.\" From the creators: \"This valuable CD, which is filled with the sounds people expect to hear from an established company, provides instant credibility. It's simple, effective, and guaranteed!\""
+      "text": "Using the phone to solidify your pretext is one of the quickest methods inside your target's door. The phone allows the social engineer to \"spoof,\" or fake, almost anything. Take into consideration this example: If I wanted to call you and pretend I was in a bustling office to add to the pretext I was trying to use, I could simply grab the audio track from Thriving Office www.thrivingoffice.com/. This site offers a track called \"Busy\" and another called \"Very Busy.\" From the creators: \"This valuable CD, which is filled with the sounds people expect to hear from an established company, provides instant credibility. It's simple, effective, and guaranteed!\""
     },
     {
       "type": "paragraph",
@@ -242,7 +242,7 @@
     },
     {
       "type": "paragraph",
-      "text": "In addition, spoofing caller ID information is relatively simple. Services like SpoofCard (www.spoofcard.com) or using homegrown solutions, allows a social engineer to tell the target you are calling from a corporate headquarters, the White House, or the local bank. With these services you can spoof the number to be coming from anywhere in the world."
+      "text": "In addition, spoofing caller ID information is relatively simple. Services like SpoofCard www.spoofcard.com or using homegrown solutions, allows a social engineer to tell the target you are calling from a corporate headquarters, the White House, or the local bank. With these services you can spoof the number to be coming from anywhere in the world."
     },
     {
       "type": "paragraph",
@@ -396,7 +396,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Stanley Mark Rifkin is credited with one of the biggest bank heists in American history (see a great article about him at www.social-engineer.org/wiki/archives/Hackers/hackers-Mark-Rifkin-Social-Engineer-furtherInfo.htm). Rifkin was a computer geek who ran a computer consulting business out of his small apartment. One of his clients was a company that serviced the computers at Security Pacific Bank. The 55-floor Security Pacific National Bank headquarters in Los Angeles looked like a granite-and-glass fortress. Dark-suited guards roamed the lobby and hidden cameras photographed customers as they made deposits and withdrawals."
+      "text": "Stanley Mark Rifkin is credited with one of the biggest bank heists in American history (see a great article about him at www.social-engineer.org/wiki/archives/Hackers/hackers-Mark-Rifkin-Social-Engineer-furtherInfo.htm. Rifkin was a computer geek who ran a computer consulting business out of his small apartment. One of his clients was a company that serviced the computers at Security Pacific Bank. The 55-floor Security Pacific National Bank headquarters in Los Angeles looked like a granite-and-glass fortress. Dark-suited guards roamed the lobby and hidden cameras photographed customers as they made deposits and withdrawals."
     },
     {
       "type": "paragraph",
@@ -448,7 +448,7 @@
     },
     {
       "type": "paragraph",
-      "text": "In 2006 Newsweek published a very interesting article (www.social-engineer.org/resources/book/HP_pretext.htm). Basically, HP's chairwoman, Patricia Dunn, hired a team of security specialists who hired a team of private investigators who used pretexting to obtain phone records. These hired professionals actually got in and played the roles of HP board members and parts of the press. All of this was done to uncover a supposed information leak within the ranks at HP."
+      "text": "In 2006 Newsweek published a very interesting article www.social-engineer.org/resources/book/HP_pretext.htm. Basically, HP's chairwoman, Patricia Dunn, hired a team of security specialists who hired a team of private investigators who used pretexting to obtain phone records. These hired professionals actually got in and played the roles of HP board members and parts of the press. All of this was done to uncover a supposed information leak within the ranks at HP."
     },
     {
       "type": "paragraph",
@@ -460,7 +460,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The HP case specifically also sheds another spotlight on the questionable tactics used by security consultants to obtain personal information. HP acknowledged in an internal e-mail sent from its outside counsel to Perkins that it got the paper trail it needed to link the director-leaker to CNET through a controversial practice called \"pretexting\"; Newsweek obtained a copy of that e-mail. That practice, according to the Federal Trade Commission, involves using \"false pretenses\" to get another individual's personal nonpublic information: telephone records, bank and credit-card account numbers, Social Security numbers and the like. Typically—say in the case of a phone company—pretexters call up and falsely represent themselves as the customer; since companies rarely require passwords, a pretexter may need no more than a home address, account number, and heartfelt plea to get the details of an account. According to the Federal Trade Commission's Web site, pretexters sell the information to individuals who can range from otherwise legitimate private investigators, financial lenders, potential litigants, and suspicious spouses to those who might attempt to steal assets or fraudulently obtain credit. Pretexting, the FTC site states, \"is against the law.\" The FTC and several state attorneys general have brought enforcement actions against pretexters for allegedly violating federal and state laws on fraud, misrepresentation, and unfair competition. One of HP's directors is Larry Babbio, the president of Verizon, which has filed various actions against pretexters. (If you're interested in exploring it, the Telephone Records and Privacy Protection Act of 2006 can be found at http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=109_cong_bills&docid=f:h4709enr.txt.pdf.)"
+      "text": "The HP case specifically also sheds another spotlight on the questionable tactics used by security consultants to obtain personal information. HP acknowledged in an internal e-mail sent from its outside counsel to Perkins that it got the paper trail it needed to link the director-leaker to CNET through a controversial practice called \"pretexting\"; Newsweek obtained a copy of that e-mail. That practice, according to the Federal Trade Commission, involves using \"false pretenses\" to get another individual's personal nonpublic information: telephone records, bank and credit-card account numbers, Social Security numbers and the like. Typically—say in the case of a phone company—pretexters call up and falsely represent themselves as the customer; since companies rarely require passwords, a pretexter may need no more than a home address, account number, and heartfelt plea to get the details of an account. According to the Federal Trade Commission's Web site, pretexters sell the information to individuals who can range from otherwise legitimate private investigators, financial lenders, potential litigants, and suspicious spouses to those who might attempt to steal assets or fraudulently obtain credit. Pretexting, the FTC site states, \"is against the law.\" The FTC and several state attorneys general have brought enforcement actions against pretexters for allegedly violating federal and state laws on fraud, misrepresentation, and unfair competition. One of HP's directors is Larry Babbio, the president of Verizon, which has filed various actions against pretexters. (If you're interested in exploring it, the Telephone Records and Privacy Protection Act of 2006 can be found at http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=109_cong_bills&docid=f:h4709enr.txt.pdf."
     },
     {
       "type": "paragraph",
@@ -472,11 +472,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Page 32 of a confidential document from Hewlett-Packard to its lawyer and internal legal staff (www.social-engineer.org/resources/book/20061004hewlett6.pdf) lists a communication from Tom Perkins to the HP board members that offers a little more insight about what pretexts were used. A few tactics used were:"
+      "text": "Page 32 of a confidential document from Hewlett-Packard to its lawyer and internal legal staff www.social-engineer.org/resources/book/20061004hewlett6.pdf lists a communication from Tom Perkins to the HP board members that offers a little more insight about what pretexts were used. A few tactics used were:"
     },
     {
       "type": "paragraph",
-      "text": "They represented themselves as the carrier company to obtain the records of calls illegally. The identities of the ones being investigated were used and spoofed to obtain their personal call records. Online accounts with carriers were generated using illegally obtained names, Social Security numbers, and other information to access their call records. On September 11, 2006, the United States House of Representatives Committee on Energy and Commerce sent Ms. Dunn a letter (see a copy of this letter at www.social-engineer.org/resources/book/20061004hewlett6.pdf) requesting the information she had obtained. They listed in their requests the obtained information as the following:"
+      "text": "They represented themselves as the carrier company to obtain the records of calls illegally. The identities of the ones being investigated were used and spoofed to obtain their personal call records. Online accounts with carriers were generated using illegally obtained names, Social Security numbers, and other information to access their call records. On September 11, 2006, the United States House of Representatives Committee on Energy and Commerce sent Ms. Dunn a letter (see a copy of this letter at www.social-engineer.org/resources/book/20061004hewlett6.pdf requesting the information she had obtained. They listed in their requests the obtained information as the following:"
     },
     {
       "type": "paragraph",
@@ -506,7 +506,7 @@
     },
     {
       "type": "paragraph",
-      "text": "In 2005 Private Investigator Magazine was granted an interview with Joel Winston, Associate Director of the Federal Trade Commission (FTC), Division of Financial Practices. His office is in charge of regulating and monitoring the use of pretexting (see a copy of this valuable article at www.social-engineer.org/resources/book/ftc_article.htm)."
+      "text": "In 2005 Private Investigator Magazine was granted an interview with Joel Winston, Associate Director of the Federal Trade Commission (FTC), Division of Financial Practices. His office is in charge of regulating and monitoring the use of pretexting (see a copy of this valuable article at www.social-engineer.org/resources/book/ftc_article.htm."
     },
     {
       "type": "paragraph",
