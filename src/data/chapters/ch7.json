@@ -248,8 +248,9 @@
       "text": "This discussion just scratched the surface of the topic of the lock-picking tools a social engineer can use. One of the other toolsets that is invaluable for a social engineer is recording devices, as discussed in the next section."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Physical Infiltration & Lock Bypassing",
+      "type": "section-summary",
+      "title": "Section Summary: Physical Infiltration & Lock Bypassing",
+      "summary": "Physical security represents the fundamental perimeter of enterprise defense. Lock picking, bump keys, and bypass tools (such as latch shims and under-door tools) exploit mechanical tolerances to defeat physical access controls within seconds without leaving forensic evidence.",
       "points": [
         "Physical security is the first line of defense: server rooms, file cabinets, and perimeter doors are useless if locks can be bypassed.",
         "Lock picking and bump keys exploit mechanical pin-tumbler tolerances to gain covert physical entry in seconds.",
@@ -502,8 +503,9 @@
       "text": "The target's route rendered in Google Maps."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Surveillance Gear & Tracking Technology",
+      "type": "section-summary",
+      "title": "Section Summary: Surveillance Gear & Tracking Technology",
+      "summary": "Covert surveillance equipment—including disguised pinhole cameras, micro-audio recorders, and GPS tracking hardware—provides critical evidentiary support during physical and technical audits. Deploying surveillance tech must always adhere strictly to jurisdictional privacy statutes.",
       "points": [
         "Covert audio and video recording devices (pinhole cameras, disguised pens, badge bugs) provide critical forensic evidence during audits.",
         "GPS trackers (such as TrackStick USB units) map target transit patterns, routine stops, and meeting locations.",
@@ -779,8 +781,9 @@
       "text": "SET is a powerful tool made to help a social engineer auditor test the weaknesses that usually exist in a company. The SET tool developer is always open to suggestions and help in creating new parts of the tool to continue growing it to become a more popular toolset. Again, www.social-engineer.org has a full explanation of every menu option for review if you want to delve deeper into this amazing tool. Continue to check both www.social-engineer.org www.secmaniac.com for updates to the Social Engineer Toolkit."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Digital OSINT & The Social-Engineer Toolkit",
+      "type": "section-summary",
+      "title": "Section Summary: Digital OSINT & The Social-Engineer Toolkit",
+      "summary": "Software suites such as Maltego graphically map complex relational entities, while the Social-Engineer Toolkit (SET) automates spear-phishing campaigns, credential harvester clones, and multi-stage payload delivery, accelerating penetration audits through automation.",
       "points": [
         "Maltego transforms fragmented data into graphical relationship maps linking domain names, IP addresses, email addresses, and employee profiles.",
         "The Social-Engineer Toolkit (SET) automates phishing websites, Java applet payloads, and USB attack vectors.",
@@ -1086,8 +1089,9 @@
       "text": "Tools can take substantial time off audits and they can also fill in any deficiency gaps an auditor may have. This dynamic becomes apparent as you analyze the case studies in Chapter 8."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Telephony Spoofing & Chapter Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Telephony Spoofing & Chapter 7 Master Takeaways",
+      "summary": "Caller ID spoofing and VoIP PBX automation enable attackers to convincingly masquerade as internal help desks or senior leadership. While software and hardware tools amplify operational efficiency, interpersonal skill and conversational agility remain the ultimate drivers of social engineering success.",
       "points": [
         "Caller ID spoofing (via services or Asterisk VoIP PBX) allows attackers to mimic corporate help desks or executive phone numbers with ease.",
         "Password profiling tools (CUPP, CeWL) generate custom targeted wordlists based on company culture, target pets, hobbies, and scraped website keywords.",

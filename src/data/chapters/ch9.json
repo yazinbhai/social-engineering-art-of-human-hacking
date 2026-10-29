@@ -155,8 +155,9 @@
       "text": "Calling security awareness a \"program\" indicates that it is something ongoing. A program means you schedule time to continually educate yourself. After you obtain all this useful information, then you can use it to develop a program that will help you to stay secure."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Cultivating a Security Awareness Culture",
+      "type": "section-summary",
+      "title": "Section Summary: Cultivating a Security Awareness Culture",
+      "summary": "Annual compliance check-the-box training fails because it promotes passive awareness rather than dynamic, active habits. Organizations must cultivate an empowered culture where respectful identity verification and questioning unfamiliar personnel are celebrated behaviors across all levels.",
       "points": [
         "Traditional once-a-year compliance security training is largely ineffective and creates dangerous complacency.",
         "Organizations must foster a culture where questioning unfamiliar individuals and verifying identities is rewarded rather than punished.",
@@ -320,8 +321,9 @@
       "text": "1. Ask for the person's employee ID number and name. Do not answer any questions until you have this information. 2. After getting the identifying information, ask for the project ID number related to the project he or she is managing that requires this information. 3. If the information in steps 1 and 2 is successfully obtained, comply. If it's not, ask the person to have his or her manager send an email to your manager requesting authorization and terminate the call. A simple script like this can help employees know what to say and do in circumstances that can try their security consciousness."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Information Valuation & Verification Scripts",
+      "type": "section-summary",
+      "title": "Section Summary: Information Valuation & Verification Scripts",
+      "summary": "Personnel must understand that seemingly innocuous pieces of data—such as phone directories, internal organizational charts, and software version numbers—provide vital reconnaissance for multi-stage attacks. Mandatory out-of-band verification procedures eliminate the risk of telephone spoofing.",
       "points": [
         "Employees must understand that seemingly innocuous data (organizational charts, phone lists, software versions) has immense value to attackers.",
         "Implement out-of-band callback procedures: never verify an identity using phone numbers or links provided by an incoming caller.",
@@ -479,8 +481,9 @@
       "text": "One of the biggest mistakes companies make when seeking auditors to help them is not giving them enough time to perform the job. They figure that a few phone calls or one site visit can all be accomplished in one day. Although that may be true, what about information gathering, planning, and scoping out the targets? These things take time. Time is important but it is also a double-edged sword —allow enough time for the auditor to do a good job, but not so much time that it becomes a cost problem. Manage, but do not micro- manage. These are just a few of the areas to consider when choosing the right auditor for your company. In the end you must feel comfortable and good that the social engineering team will have your best interests at heart, will do their best to remain professional, and stay within the guidelines."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Conducting Meaningful Social Engineering Audits",
+      "type": "section-summary",
+      "title": "Section Summary: Conducting Meaningful Social Engineering Audits",
+      "summary": "Security audits must remain strictly constructive and educational, designed to identify defensive process gaps rather than penalize or shame employees. Clear rules of engagement, authorized executive sponsorship, and actionable remediation reports ensure that audits produce lasting resilience.",
       "points": [
         "Social engineering penetration tests should be educational and constructive, never designed to embarrass or penalize employees.",
         "Clearly define rules of engagement, scope boundaries, and emergency contact procedures before running an audit.",
@@ -740,8 +743,9 @@
       "text": "I hope that applying the principles in this book enhances your ability to read and communicate more effectively with people around you. Using them in many aspects of your life, not just security, can prove to be a life- altering exercise. Social engineering is truly an art form. Enjoy."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Prevention & Mitigation Master Directives",
+      "type": "section-summary",
+      "title": "Section Summary: Chapter 9 Master Directives & Defense Architecture",
+      "summary": "Security is not a finished state or software product, but a continuous human educational discipline. Combining technical defense-in-depth with critical thinking, independent callback channels, and institutional support transforms employees from the weakest link into the organization's strongest defensive firewall.",
       "points": [
         "Security is not a final product; it is an active, ongoing educational process.",
         "Maintain situational awareness, verify through independent channels, and never allow social pressure or urgency to bypass verification.",

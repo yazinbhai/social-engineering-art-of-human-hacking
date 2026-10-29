@@ -271,8 +271,9 @@
       "text": "When he was fielding DMV calls, I would have made sure I forwarded the number only when I was in the \"office.\" I would have set up an office area with some background office noises and had the proper supplies to take down all the information I needed to avoid the risk of a waitress or friend blowing my cover. Although a disposable cell phone is a good idea for tracing purposes, another technique is to have that number forward to a Google Voice or Skype number. I tend not to trust cell signals, and nothing could have ruined the gig faster than having the call drop or having a weak, static- filled signal. Besides these items one can't improve much in this hack. Eric did a superb job at making sure it was done right by using many of the talents and skills in the framework to accomplish his goal."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Mitnick Case Study 1 — The DMV Infiltration",
+      "type": "section-summary",
+      "title": "Section Summary: Mitnick Case Study 1 - The DMV Infiltration",
+      "summary": "Kevin Mitnick gained unauthorized access to law enforcement DMV databases without touching a computer, relying entirely on telephony pretexting, bureaucratic knowledge, and an unlisted phone number anchor. This demonstrates how perceived authority and familiarity with internal protocols easily defeat manual administrative controls.",
       "points": [
         "Kevin Mitnick breached law enforcement vehicle databases without a computer, relying entirely on telephony pretexting and internal acronyms.",
         "Securing an unlisted phone number provided the crucial anchor of credibility needed to command internal operator assistance.",
@@ -452,8 +453,9 @@
       "text": "This particular attack as relayed in Mitnick's The Art of Deception shows how vulnerable systems that rely on people truly are."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Mitnick Case Study 2 — The Social Security Admin Hack",
+      "type": "section-summary",
+      "title": "Section Summary: Mitnick Case Study 2 - The Social Security Admin Hack",
+      "summary": "By studying publicly accessible internal operations manuals, Mitnick impersonated an authorized field agent to extract sensitive records from SSA database operators. The case underlines that database security is entirely dependent on the vigilance of the human operators empowered to query it.",
       "points": [
         "Exploited open-source SSA procedure manuals publicly available online to learn internal verification protocols.",
         "Used caller ID spoofing and technical jargon to impersonate a field agent needing an immediate database lookup.",
@@ -741,8 +743,9 @@
       "text": "This audit took about a week's worth of time to investigate, gather, and organize information for, practice, and then launch. One week and this company's secrets could have been owned by its competitors or by the highest bidder. Read the story a few times and try to understand the subtle methods used and the way the conversations flowed. Picking up on the voice, tone, and conversation pace is difficult in written form, but try to imagine yourself in this conversation and decide how you would handle it."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Hadnagy Case Study 1 — The Overconfident CEO",
+      "type": "section-summary",
+      "title": "Section Summary: Hadnagy Case Study 1 - The Overconfident CEO",
+      "summary": "An executive's absolute conviction in their corporate security posture created dangerous complacency. Armed with targeted OSINT regarding the CEO's personal philanthropy and upcoming speaking itinerary, Hadnagy executed a targeted spear-phishing pretext that resulted in executive credential capture.",
       "points": [
         "Overconfident executives who believe they are 'unhackable' are often the easiest targets due to relaxed personal security habits.",
         "Targeted OSINT uncovered the CEO's personal hobbies, favorite charities, and upcoming travel plans.",
@@ -930,8 +933,9 @@
       "text": "Once compromised, the software that stores all the credit card information for each guest was wide open to an attacker. The ability to collect that data with very little effort could have left the park open to massive loss, lawsuits, and embarrassment."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Hadnagy Case Study 2 — The Theme Park Infiltration",
+      "type": "section-summary",
+      "title": "Section Summary: Hadnagy Case Study 2 - The Theme Park Infiltration",
+      "summary": "Using replicated badges and commercial uniforms sourced from public catalogs, auditors tailgated into restricted corporate headquarters by carrying cumbersome packages. Employees routinely held high-security doors open out of everyday courtesy, bypassing electronic badge scanners.",
       "points": [
         "Recreated employee badges and uniforms using publicly available photos and corporate supplier catalogs.",
         "Tailgated into restricted executive corridors by carrying heavy boxes, prompting employees to hold doors open out of politeness.",
@@ -1584,11 +1588,12 @@
       "text": "Security through education is the mantra of this book. Only when you are aware of the dangers that exist, only when you know how the \"criminal\" thinks, and only when you are ready to look that evil in the eye and embrace it can you truly protect yourself. To that end, the final chapter of this book discusses how to prevent and mitigate social engineering attacks."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Chapter 8 Case Study Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Chapter 8 Case Study Key Takeaways",
+      "summary": "Forensic post-mortems prove that major enterprise breaches exploit simple human helpfulness and authority rather than sophisticated zero-day exploits. Dissecting real-world cases equips security professionals to identify attack footprints and fortify organizational defenses.",
       "points": [
         "Case studies prove that the most catastrophic breaches utilize simple, low-tech human manipulation rather than zero-day software exploits.",
-        "Every real-world attack sequence follows the identical framework: Reconnaissance &rarr; Pretexting &rarr; Elicitation &rarr; Execution.",
+        "Every real-world attack sequence follows the identical framework: Reconnaissance → Pretexting → Elicitation → Execution.",
         "Dissecting historical case studies allows defenders to recognize identical attack patterns before unauthorized access occurs."
       ]
     }

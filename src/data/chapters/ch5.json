@@ -255,8 +255,9 @@
       "text": "I want to reiterate this point: finding and using someone's dominant sense is not an exact science. A social engineer should use it as a tool in the arsenal and not rely on it as something magical or scientific. Certain psychological aspects of human nature are based on proven science and can be relied upon. As a matter of fact, some of these aspects are so impressive that they can make you seem like a mind reader. Some of them have been a topic of serious debate and some accepted by psychologists, law enforcement, and social engineers for years. The next section of this chapter discusses these, starting with microexpressions."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Sensory Modes of Thinking",
+      "type": "section-summary",
+      "title": "Section Summary: Sensory Modes of Thinking",
+      "summary": "Humans perceive and process experiences through primary representational modalities: Visual, Auditory, and Kinesthetic. Identifying a subject's sensory predicate allows the social engineer to adapt their language, speech rate, and descriptive imagery to align seamlessly with the target's cognitive processing style.",
       "points": [
         "Humans process reality through three primary modalities: Visual (sight), Auditory (sound), and Kinesthetic (feeling).",
         "Recognizing a target's dominant sensory predicate (e.g., 'I see what you mean' vs. 'I hear you' vs. 'I feel that') allows matching communication models.",
@@ -941,8 +942,9 @@
       "text": "This section just scratched the surface of microexpressions; the work of many professionals in the field has filled volumes. Seek out training, become proficient in reading and using microexpressions, and you will see an increase in your communication abilities with others. In addition, this proficiency will enhance your ability to have success in your audits."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Microexpressions & Deception Detection",
+      "type": "section-summary",
+      "title": "Section Summary: Microexpressions & Deception Detection",
+      "summary": "Dr. Paul Ekman's research revealed seven universal facial microexpressions that manifest involuntarily in a fraction of a second. Because they reflect autonomic emotional reactions prior to conscious filtering, recognizing microexpressions provides critical insight into a target's concealed hesitation, anxiety, or deceit.",
       "points": [
         "Dr. Paul Ekman identified seven universal facial microexpressions that flash across the face in 1/25th of a second: Anger, Disgust, Contempt, Fear, Surprise, Sadness, and Happiness.",
         "Microexpressions are involuntary autonomic responses that reveal true underlying emotion before cognitive suppression occurs.",
@@ -1183,8 +1185,9 @@
       "text": "NLP is a powerful topic, and, much like microexpressions, this section only scratched the surface. Once you start to master the techniques in NLP and the ability to read facial expressions, a next logical step is using these tools when interacting with a target. Next, this chapter analyzes the same tactics professional interrogators use."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Eye Accessing Cues & NLP Principles",
+      "type": "section-summary",
+      "title": "Section Summary: Eye Accessing Cues & NLP Principles",
+      "summary": "Neurolinguistic Programming maps subconscious eye accessing cues to cognitive recall and imagination across visual, auditory, and kinesthetic channels. Accurately reading these cues requires establishing an individual baseline and paying close attention to tonal pitch and linguistic framing.",
       "points": [
         "Eye accessing cues map cognitive processing: looking up-left/right typically correlates with visual construction or recall; horizontal relates to auditory; down relates to kinesthetic.",
         "Calibrate each individual's baseline before evaluating eye movements or microexpressions.",
@@ -1784,8 +1787,9 @@
       "text": "For years rapport has only been talked about when it comes to salespeople, negotiators, and the like. Rapport isn't just for salespeople; it is a tool that anyone can use, especially the social engineer. If you are wondering how to build rapport instantly, then read on."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Professional Interrogation Tactics",
+      "type": "section-summary",
+      "title": "Section Summary: Professional Interrogation Tactics",
+      "summary": "Constructive interrogation replaces overt aggression with empathetic theme development and conversational anchoring. Offering a face-saving justification allows a compromised subject to overcome denial and disclose operational facts without feeling completely defeated.",
       "points": [
         "Effective interrogation relies on positive confrontation and theme development rather than aggression.",
         "Offer the target an honorable out or face-saving justification to overcome denial and secure compliance.",
@@ -2129,8 +2133,9 @@
       "text": "The next section reveals some of the most mind-blowing information in this book."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Instant Rapport Architecture",
+      "type": "section-summary",
+      "title": "Section Summary: Instant Rapport Architecture",
+      "summary": "Rapport is built through active listening, genuine empathy, and subtle mirroring of breathing, vocal cadence, and physical posture. Calibrated pacing and leading allows the practitioner to establish unconscious trust, which can be verified through subtle behavioral prompts.",
       "points": [
         "Rapport is built through genuine curiosity, empathetic listening, and matching the target's breathing and vocal cadence.",
         "Mirroring body language must be subtle and lagged by several seconds to avoid being perceived as mocking.",
@@ -2365,8 +2370,9 @@
       "text": "This chapter covered some of the deepest and most amazing psychology principles in social engineering. This chapter alone can change your life, as well as your ability as a social engineer. Understanding how people think, why they think a certain way, and how to change their thoughts is a powerful aspect to being a social engineer. Next on the docket: how to influence your target."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Human Buffer Overflow & Chapter Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: The Human Buffer Overflow & Chapter Takeaways",
+      "summary": "The Human Buffer Overflow occurs when sensory overload, pattern interrupts, and conversational ambiguity temporarily exhaust a subject's conscious processing capacity. In this state of cognitive suspension, embedded suggestions execute with minimal critical evaluation.",
       "points": [
         "The Human Buffer Overflow: Flooding cognitive bandwidth with rapid, ambiguous, or sensory inputs temporarily suspends critical faculty.",
         "Embedded commands slipped into conversational pauses or stress relief moments execute subconsciously.",

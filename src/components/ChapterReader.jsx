@@ -14,7 +14,8 @@ import {
   AlertTriangle, 
   ShieldCheck, 
   Quote,
-  ExternalLink
+  ExternalLink,
+  FileText
 } from 'lucide-react';
 
 function renderTextWithLinks(text) {
@@ -242,7 +243,7 @@ export default function ChapterReader({
             );
           }
 
-          if (block.type === 'important-points') {
+          if (block.type === 'section-summary' || block.type === 'important-points') {
             return (
               <div 
                 key={idx} 
@@ -250,20 +251,41 @@ export default function ChapterReader({
               >
                 <div className="flex items-center gap-3 mb-4 pb-3 border-b border-emerald-500/20">
                   <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 shrink-0">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                    <FileText className="w-4 h-4 text-emerald-400" />
                   </div>
                   <h3 className="font-heading font-bold text-sm sm:text-base text-emerald-300 tracking-wide font-mono flex items-center gap-2">
-                    <span>{block.title || 'Important Points'}</span>
+                    <span>{block.title || 'Section Summary'}</span>
                   </h3>
                 </div>
-                <ul className="space-y-3 mt-2">
-                  {block.points?.map((pt, pIdx) => (
-                    <li key={pIdx} className="text-xs sm:text-sm text-slate-300 flex items-start gap-3 leading-relaxed">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0 shadow-xs shadow-emerald-400/50" />
-                      <span className="flex-1">{renderTextWithLinks(pt)}</span>
-                    </li>
-                  ))}
-                </ul>
+
+                {block.summary && (
+                  <div className="p-4 sm:p-4.5 rounded-xl bg-slate-950/80 border border-emerald-500/25 mb-4 shadow-inner">
+                    <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 font-mono mb-2">
+                      <BookOpen className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Summary</span>
+                    </div>
+                    <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-normal">
+                      {renderTextWithLinks(block.summary)}
+                    </p>
+                  </div>
+                )}
+
+                {block.points && block.points.length > 0 && (
+                  <div>
+                    <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 font-mono mb-2.5">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Key Takeaways</span>
+                    </div>
+                    <ul className="space-y-2.5">
+                      {block.points.map((pt, pIdx) => (
+                        <li key={pIdx} className="text-xs sm:text-sm text-slate-300 flex items-start gap-3 leading-relaxed">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0 shadow-xs shadow-emerald-400/50" />
+                          <span className="flex-1">{renderTextWithLinks(pt)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             );
           }

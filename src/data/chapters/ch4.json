@@ -79,8 +79,9 @@
       "text": "So that you can see how you can utilize this skill, the following section covers the principles of pretexting then shows how you can apply them to actually planning a solid pretext."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: What Is Pretexting?",
+      "type": "section-summary",
+      "title": "Section Summary: What Is Pretexting?",
+      "summary": "Pretexting is the deliberate invention of an alternative scenario, identity, and narrative context to persuade a target to surrender data or physical access. Far beyond superficial deception, effective pretexting requires the operator to mentally embody the persona, backed by credible documentation, terminology, and realistic attire.",
       "points": [
         "Pretexting is the act of inventing an alternative scenario, identity, and context to persuade a target to release information or grant access.",
         "Pretexting is not superficial acting; true pretexters mentally embody the role until it is indistinguishable from reality.",
@@ -372,8 +373,9 @@
       "text": "You might be asking, \"Okay, so you listed all these principles, but now what?\" How can a social engineer build a well-researched, believable, spontaneous-sounding, simple pretext that can work either on the phone or in person and get the desired results? Read on."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Principles of Pretext Planning",
+      "type": "section-summary",
+      "title": "Section Summary: The Principles of Pretext Planning",
+      "summary": "Pretext planning demands deep background research and adherence to the principle of simplicity. Complex, convoluted backstories introduce multiple failure points, whereas simple, logical pretexts that appear routine from the victim's everyday perspective succeed with minimal friction.",
       "points": [
         "Research depth directly correlates with pretext success: understand the target's internal acronyms, vendors, and management hierarchy.",
         "Keep pretexts as simple as possible: intricate, convoluted lies introduce unnecessary points of failure.",
@@ -489,8 +491,9 @@
       "text": "The danger with malicious pretexting is the threat of identity theft, which makes it a very valid part of a social engineer pentest. Testing, checking, and verifying that your client's employees will not fall for the methods used by malicious social engineers can go a long way in safeguarding you from a successful pretexter."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Case Analyses & Operational Lessons",
+      "type": "section-summary",
+      "title": "Section Summary: Case Analyses & Operational Lessons",
+      "summary": "Historical exploits—such as Stanley Mark Rifkin's audacious wire transfer heist and corporate espionage scandals—illustrate how authority, confidence, and conversational tempo consistently bypass rigid administrative protocols. Voice inflection and situational poise outweigh technical jargon every time.",
       "points": [
         "Stanley Mark Rifkin executed one of the largest wire-transfer heists by combining social engineering, observation of security codes, and an authoritative pretext.",
         "The HP scandal demonstrated the grave legal and corporate consequences of unauthorized pretexting to obtain private telephone records.",
@@ -586,8 +589,9 @@
       "text": "In addition to extensively covering pretexting and providing real-world examples of pretexting in action, this chapter also continually brushed up against the psychological principles that affect different aspects of pretexting. The logical next stop on the framework covers just that—the mental skills that professional social engineers use that make them seem like mind control masters and that give each social engineer a huge leg up in success."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Chapter 4 Key Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Chapter 4 Pretexting Key Takeaways & Legal Boundaries",
+      "summary": "Security audits must operate strictly within legal rules of engagement to avoid civil and criminal liability. Operators must never claim technical knowledge they cannot sustain under cross-examination and must always maintain plausible exit strategies if an operational pretext is challenged.",
       "points": [
         "Always establish strict rules of engagement (ROE) to keep security penetration tests legal and ethical.",
         "Never pretend to know more than you can realistically defend if challenged by a subject matter expert.",

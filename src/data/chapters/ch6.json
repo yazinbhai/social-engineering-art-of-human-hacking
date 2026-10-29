@@ -219,8 +219,9 @@
       "text": "These five fundamentals are key to understanding influence and persuasion. Being able to create an environment where a target wants to do what you are requesting is the goal of persuasion, and these five fundamentals will help you create that environment. The next section examines how social engineers use these fundamentals."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Fundamentals of Influence",
+      "type": "section-summary",
+      "title": "Section Summary: Fundamentals of Influence",
+      "summary": "Influence is the discipline of aligning a target's internal motivation with the operator's objective so that compliance feels voluntary and natural. It requires clear intentionality, uninterrupted rapport, and high emotional intelligence, distinguishing persuasion from coercive manipulation.",
       "points": [
         "Influence is the art of getting someone else to want to do what you want them to do.",
         "Clear goals, continuous rapport, emotional self-awareness, and cognitive flexibility are prerequisite to persuasive success.",
@@ -1117,8 +1118,9 @@
       "text": "Imagine you could alter what you think to the extent that gaining these skills could be easier. Imagine now, too, if you could alter the thinking of your targets so what they experience is exactly what you want them to experience. Literally altering the reality of those you interact with, including yourself, is the next topic, and it will just blow you away."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Weapons of Influence",
+      "type": "section-summary",
+      "title": "Section Summary: The Weapons of Influence",
+      "summary": "Robert Cialdini's foundational psychological levers—Reciprocation, Commitment and Consistency, Social Proof, Authority, Liking, and Scarcity—serve as universal shortcuts in human decision-making. Social engineers harness these automatic responses to elicit compliance with minimal cognitive friction.",
       "points": [
         "Reciprocation: Providing even a token favor generates an irresistible psychological obligation to repay.",
         "Commitment and Consistency: Once a target agrees to a minor initial request, they strive to maintain consistency by agreeing to larger demands.",
@@ -1719,8 +1721,9 @@
       "text": "Framing and influence are key parts of social engineering, although another skill is often associated with the \"dark corners\" of social engineering. The book's introduction mentioned peering into these corners; the following section presents the information that will alter the way you look at influence."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Cognitive Framing",
+      "type": "section-summary",
+      "title": "Section Summary: Cognitive Framing",
+      "summary": "Framing dictates how information is perceived by establishing the mental context through which a situation is evaluated. By aligning conversational frames with the target's core values and professional identity, operators guide decisions smoothly while rendering contradictory evidence irrelevant.",
       "points": [
         "Framing controls the perceived reality of an interaction: the frame dictates what is important and what is ignored.",
         "Frame alignment strategies (bridging, amplification, extension, and transformation) harmonize the attacker's agenda with the target's values.",
@@ -2547,8 +2550,9 @@
       "text": "Social engineers also use many physical tools, some of which might look like they were taken out of a page of a James Bond movie, and they are discussed in the next chapter."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Chapter 6 Key Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Chapter 6 Key Takeaways & Defense Against Manipulation",
+      "summary": "Persuasive mastery balances ethical boundaries against the psychological vulnerabilities of human cognition. Recognizing influence triggers, manufactured urgency, and artificial reciprocity provides the strongest defense against social engineering attacks.",
       "points": [
         "Manipulative tactics leverage fear, urgency, ego, or greed to override analytical reasoning.",
         "Positive manipulation focuses on highlighting mutual benefit and disconnecting personal ego from difficult interactions.",

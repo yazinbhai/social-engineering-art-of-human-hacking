@@ -191,8 +191,9 @@
       "text": "Whatever methods you chose to use, you can take certain steps to have the upper edge. One of these steps is called preloading."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Essence of Elicitation",
+      "type": "section-summary",
+      "title": "Section Summary: The Essence of Elicitation",
+      "summary": "Elicitation is the sophisticated tradecraft of drawing out confidential information during natural, fluid conversation without the target ever suspecting an interrogation. Skilled elicitors avoid direct questions, instead stimulating the subject's innate conversational instincts through rapport, empathy, and active listening.",
       "points": [
         "Elicitation is the subtle art of drawing out sensitive information during natural conversation without the target realizing they are being interrogated.",
         "Effective elicitors never ask direct or intrusive questions; they stimulate the target's natural impulse to converse.",
@@ -320,8 +321,9 @@
       "text": "This brochure contains some excellent pointers. Basically, as stated in it and in this chapter, elicitation is used because it works, is very hard to detect, and is non-threatening. The DHS pamphlet approaches elicitation from a \"how to avoid\" point of view, but the following sections take some of the scenarios and show you what can be learned."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Preloading & Subconscious Priming",
+      "type": "section-summary",
+      "title": "Section Summary: Preloading & Subconscious Priming",
+      "summary": "Preloading primes a target's cognitive expectations before sensitive inquiries are made, disarming defensiveness through relatable context and positive emotional associations. Injecting artificial time constraints further lowers suspicion by signaling that the interaction will be brief and non-threatening.",
       "points": [
         "Preloading primes the target's cognitive frame before asking critical questions, lowering suspicion barriers.",
         "Introducing positive associations or relatable context makes subsequent requests appear natural and expected.",
@@ -479,8 +481,9 @@
       "text": "This is a serious example of how using elicitation can lead to gaining a clear picture of the whole answer. In social engineering it may be the same for you. All the answers might not come from one source. You may elicit some information from one person about their whereabouts on a particular date, and then use that information to elicit more information from the next stage, and so on and so forth. Putting those nuggets of information together is often the hard part of perfecting elicitation skills. That is discussed next."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Psychological Elicitation Triggers",
+      "type": "section-summary",
+      "title": "Section Summary: Psychological Elicitation Triggers",
+      "summary": "Elicitation leverages powerful human tendencies: the urge to correct deliberate false statements, the desire for ego validation and professional acknowledgment, and the reciprocal impulse to share confidential details when the speaker volunteers a simulated secret.",
       "points": [
         "Appealing to ego: People love feeling knowledgeable and recognized as experts; complimenting competence invites over-disclosure.",
         "Deliberate false statements: Human beings possess an irresistible urge to correct mistakes; stating incorrect facts prompts instant correction with real data.",
@@ -632,8 +635,9 @@
       "text": "It can take months or years to master these skills. Don't get disheartened if the first few attempts are not successful, and keep trying. Don't fear, though, there are some tips to mastering this skill. I will review these in closing."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Question Architecture",
+      "type": "section-summary",
+      "title": "Section Summary: Question Architecture",
+      "summary": "Mastering elicitation requires orchestrating open-ended inquiries that prompt expansive narrative answers, closed questions for rapid factual confirmation, and assumptive questions that presume operational knowledge, leaving the subject with no comfortable reason to withhold information.",
       "points": [
         "Open-ended questions force narrative responses and expose vocabulary, emotional state, and internal procedures.",
         "Closed-ended questions are reserved for confirming specific operational facts and credentials.",
@@ -697,8 +701,9 @@
       "text": "Throughout this chapter I mentioned the power of pretexting. This is another topic that every social engineer, both malicious and professional, must master. But how can you ensure you accomplish this goal? To answer this you must learn about pretexting and understand exactly what it is, as discussed in Chapter 4."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Chapter 3 Key Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Chapter 3 Elicitation Master Directives",
+      "summary": "Elite elicitation relies on strategic conversational silence, active listening, and predetermined exit scenarios. Defensively, organizations must train staff to recognize subtle conversational steering when external inquiries probe into internal, non-public workflows.",
       "points": [
         "Mastery of elicitation demands active listening: conversational pauses should be embraced, not rushed.",
         "Plan elicitation dialogues with predetermined escape routes and innocent exit reasons.",

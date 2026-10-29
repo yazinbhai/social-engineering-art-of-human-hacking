@@ -311,12 +311,13 @@
       "text": "The point is not only about how small data can still lead to a breach, but also how you collect this data. The sources that you can use to collect data are important to understand and test until you are proficient with each method and each source of collection. There are many different types of sources for collecting data. A good social engineer must be prepared to spend some time learning the strengths and weaknesses of each as well as the best way to utilize each source. Thus the topic of the next section."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Law of Intelligence",
+      "type": "section-summary",
+      "title": "Section Summary: Gathering Information & Intelligence Organization",
+      "summary": "Information gathering is the foundational pillar of every social engineering audit. By utilizing centralized intelligence organizers like BasKet and Dradis, security auditors structure fragmented data into actionable patterns, adopting an adversarial mindset that evaluates every employee and system as an interconnected attack surface.",
       "points": [
         "The First Law of Intelligence: No piece of data is irrelevant or useless; disconnected fragments synthesize into decisive attack vectors.",
         "Pre-engagement reconnaissance determines the entire success rate of a social engineering audit.",
-        "Target profiling must encompass corporate hierarchies, employee hobbies, vendor relationships, and communication vernacular."
+        "Centralized organizers (BasKet, Dradis) ensure intelligence trails are rigorously documented and cross-referenced."
       ]
     },
     {
@@ -612,12 +613,13 @@
       "text": "As a social engineer, after you have information you must start planning your attacks. To do that you need to start modeling an outline that will use this information. One of the best ways to start utilizing this data is to develop what is called a communication model."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Advanced Search Techniques & Physical Sifting",
+      "type": "section-summary",
+      "title": "Section Summary: Sources for Information Gathering (OSINT & Physical Reconnaissance)",
+      "summary": "Comprehensive reconnaissance combines digital OSINT (search engine queries, Whois lookups, job boards, social media footprints, and corporate annual filings) with physical surveillance and dumpster diving. Public servers, employee blogs, and discarded records routinely surrender sensitive internal network topology and security credentials.",
       "points": [
-        "Google Dorking operators (filetype:, site:, intitle:, inurl:) uncover indexed configuration files, spreadsheets, and private portals.",
-        "Dumpster diving remains exceptionally effective: shredded documents, travel itineraries, and internal phone sheets are routinely recovered.",
-        "Physical observation of building entry points reveals smoke-break habits, badge styles, and delivery schedules."
+        "Public job boards and social media inadvertently disclose internal technology stacks, firewall models, and security challenge answers.",
+        "Advanced Google Dorking operators uncover exposed database backups, spreadsheets, and unindexed internal portals.",
+        "Physical dumpster diving remains exceptionally effective: shredded documents, travel itineraries, and internal phone sheets are routinely recovered."
       ]
     },
     {
@@ -756,8 +758,9 @@
       "text": "Because the focus of this book is social engineers, you need to analyze what a social engineer can take away from all of this. After reading all this theory you may begin to wonder how this can be used. Remember, a social engineer must be a master at communication. They must be able to effectively enter into and remain in a person's personal and mental space and not offend or turn off the target. Developing, implementing, and practicing effective communication models is the key to accomplishing this goal. The next step then is developing a communication model."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Foundations of Communication Modeling",
+      "type": "section-summary",
+      "title": "Section Summary: Communication Modeling Principles",
+      "summary": "Communication modeling decodes the internal language, jargon, authority relationships, and psychological baselines of an organization. By analyzing communication channels and emotional receptivity, auditors can craft interactions that appear completely native and prevent triggering internal suspicion.",
       "points": [
         "Communication modeling maps the exact language, terminology, and interpersonal hierarchy of a target organization.",
         "Aligning communication models ensures pretexts sound completely native to the target's internal culture.",
@@ -920,12 +923,13 @@
       "text": "One key aspect of learning how to communicate, how to manipulate, and how to be a social engineer is learning how to use questions, as discussed in the next chapter."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Chapter 2 Key Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Developing Communication Models & Field Scenarios",
+      "summary": "Applying communication models to tailored scenarios—such as spear-phishing emails and targeted USB drops—proves that emotional relevance and internal alignment produce significantly higher compliance rates. Mastering communication modeling enables auditors to test human defenses realistically and guide remediation.",
       "points": [
-        "Never initiate contact with a target without thorough OSINT and communication modeling.",
-        "Organize and centralize intelligence data using dedicated tools (such as Dradis or BasKet) to track audit trails.",
-        "The best social engineers spend 80% of their operational time on reconnaissance and only 20% on execution."
+        "Tailored phishing emails built on accurate communication models achieve significantly higher click-through rates than generic spam.",
+        "Physical USB drops succeed when labels mimic internal company initiatives (e.g., 'Q3 Executive Bonuses' or 'Staff Restructuring').",
+        "Information gathering is an iterative cycle: initial reconnaissance enables targeted elicitation, which yields deeper intel."
       ]
     }
   ]

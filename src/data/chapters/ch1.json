@@ -56,8 +56,9 @@
       "text": "The old hacker adage, \"knowledge is power\" does apply here. The more knowledge and understanding one has of the dangers and threats of social engineering each consumer and business can have and the more each attack scenario is dissected, the easier it will be to protect from, mitigate, and stop these attacks. That is where the power of all this knowledge will come in."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The World of Social Engineering",
+      "type": "section-summary",
+      "title": "Section Summary: The World of Social Engineering",
+      "summary": "Social engineering targets the human element rather than technical perimeters because people are the most accessible vulnerability in modern infrastructure. As software defenses harden, attackers optimize for return on investment by exploiting human trust, curiosity, and helpfulness. The only sustainable enterprise mitigation is proactive, education-based defense rather than static technological firewalls.",
       "points": [
         "Social engineering is neither inherently good nor evil; it is a tool utilized daily across marketing, parenting, security, and criminal operations.",
         "Security through education is the only sustainable defense—firewalls and encryption are rendered useless if an employee voluntarily surrenders credentials.",
@@ -129,12 +130,13 @@
       "text": "This book is most effective used as a handbook or guide through the world of social attacks, social manipulation, and social engineering."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Framework Methodology & Educational Approach",
+      "type": "section-summary",
+      "title": "Section Summary: Why This Book Is So Valuable",
+      "summary": "Unlike conventional security literature that merely recounts high-profile exploits, this text introduces the world's first formal, scientific framework for social engineering. By dissecting human vulnerability through psychology, non-verbal observation, and tactical tradecraft, it equips penetration testers and security professionals to audit and protect the human perimeter systematically.",
       "points": [
-        "The book employs a 'Tell and Show' methodology: establishing psychological principles first, followed by forensic analysis of real-world attacks.",
-        "Security is not a part-time job or a set of static tools; understanding how an attacker thinks is mandatory to anticipating breaches.",
-        "Real security compromises often stem from mundane oversights—such as sensitive defense documents recovered directly from unsecured trash dumpsters."
+        "Provides the world's first formal, unified framework for analyzing social engineering attacks scientifically.",
+        "Dissects exploits from the perspective of the attacker, revealing exact motivations and psychological triggers.",
+        "Focuses on actionable methods for testing and fortifying the corporate human infrastructure."
       ]
     },
     {
@@ -238,12 +240,13 @@
       "text": "The best place to start is with the basics, by answering one fundamental question: \"What is social engineering?\""
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Nine-Stage Attack Architecture",
+      "type": "section-summary",
+      "title": "Section Summary: Framework Methodology & Educational Approach",
+      "summary": "Security audits must follow a structured 'Tell and Show' methodology that bridges psychological theory with real-world forensic execution. True security resilience requires adopting an adversarial mindset to anticipate human exploits before they manifest, recognizing that the most damaging compromises often originate from mundane oversights such as unsecured dumpster waste.",
       "points": [
-        "Information gathering is the immutable foundation of all social engineering audits: an attacker is only as good as the reconnaissance they collect.",
-        "Pretexting requires embodying a complete persona—matching energy, cadence, appearance, and physical baseline to avoid suspicion.",
-        "Human psychological vulnerabilities (buffer overflows, microexpression cues, and rapport) operate analogously to software vulnerabilities."
+        "The book employs a 'Tell and Show' methodology: establishing psychological principles first, followed by forensic analysis of real-world attacks.",
+        "Security is not a part-time job or a set of static tools; understanding how an attacker thinks is mandatory to anticipating breaches.",
+        "Real security compromises often stem from mundane oversights—such as sensitive defense documents recovered directly from unsecured trash dumpsters."
       ]
     },
     {
@@ -341,12 +344,13 @@
       "text": "A team of security enthusiasts and I have scoured the Internet collecting stories that show many different aspects of social engineering. These stories can help answer a vital question—\"how is social engineering used in society over time?\"—and see where social engineering's place is and how it is used maliciously."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Defining Social Engineering",
+      "type": "section-summary",
+      "title": "Section Summary: The Nine-Stage Attack Architecture",
+      "summary": "Professional social engineering comprises an interconnected attack lifecycle spanning intelligence gathering, pretexting, psychological profiling, elicitation, and physical tradecraft. Success hinges entirely on the depth of upfront reconnaissance, where every small detail feeds directly into believable personas that bypass technical defenses.",
       "points": [
-        "Core Definition: Any act that influences a person to take an action that may or may not be in their best interest.",
-        "Social engineering occurs along a spectrum ranging from benign therapeutic guidance to predatory financial fraud.",
-        "Mastering social engineering is akin to cooking: it is the synergistic blend of elicitation, manipulation, observation, and pretexting."
+        "Information gathering is the immutable foundation of all social engineering audits: an attacker is only as good as the reconnaissance they collect.",
+        "Pretexting requires embodying a complete persona—matching energy, cadence, appearance, and physical baseline to avoid suspicion.",
+        "Human psychological vulnerabilities (buffer overflows, microexpression cues, and rapport) operate analogously to software vulnerabilities."
       ]
     },
     {
@@ -483,12 +487,13 @@
       "text": "The three-year social engineering sting operation netted 59 arrests and prevented over $70 million in bank fraud. This is just one example of how social engineering skills can be used for good."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Real-World Scams, Scarcity & The Internal Threat",
+      "type": "section-summary",
+      "title": "Section Summary: Defining Social Engineering",
+      "summary": "Social engineering is defined as any act that influences a person to take an action that may or may not be in their best interest. It exists across a broad spectrum of human interaction, from benign parenting and corporate marketing to predatory cyber espionage, functioning as an integrated craft that synthesizes observation, rapport, and persuasion.",
       "points": [
-        "Advance fee frauds (such as 419 scams) exploit a potent psychological trifecta: greed, consistency, and artificial obligation.",
-        "Scarcity manipulation forces compliance by creating perceived shortages of essential resources or opportunities.",
-        "Disgruntled employees represent one of the single most destructive cyber threats, inflicting over $15B in losses annually because they bypass external perimeter defenses."
+        "Core Definition: Any act that influences a person to take an action that may or may not be in their best interest.",
+        "Social engineering occurs along a spectrum ranging from benign therapeutic guidance to predatory financial fraud.",
+        "Mastering social engineering is akin to cooking: it is the synergistic blend of elicitation, manipulation, observation, and pretexting."
       ]
     },
     {
@@ -549,12 +554,13 @@
       "text": "In every situation, knowing what elements will work is the hard part, but then learning how to utilize those elements is where the skill comes in. This was the basis for thought behind developing the social engineering framework. This framework has revolutionized the way social engineering is dissected, as discussed in the next section."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Different Types of Social Engineers",
+      "type": "section-summary",
+      "title": "Section Summary: Real-World Scams, Scarcity & The Internal Threat",
+      "summary": "Criminal social engineers rely heavily on urgency, scarcity, and manufactured obligation to short-circuit critical thinking, as demonstrated in advance-fee 419 schemes. Simultaneously, internal organizational threats—especially disgruntled employees—cause billions in damages because they possess legitimate credentials and bypass external firewalls entirely.",
       "points": [
-        "Hackers turn to human vulnerabilities when software and network defenses become too hardened to exploit directly.",
-        "Professional penetration testers utilize identical tradecraft to black-hat attackers, but strictly within legal contracts and non-destructive parameters.",
-        "Spies, recruiters, and identity thieves leverage identity fabrication and credibility anchors to elicit high-value intelligence without raising alarms."
+        "Advance fee frauds (such as 419 scams) exploit a potent psychological trifecta: greed, consistency, and artificial obligation.",
+        "Scarcity manipulation forces compliance by creating perceived shortages of essential resources or opportunities.",
+        "Disgruntled employees represent one of the single most destructive cyber threats, inflicting over $15B in losses annually because they bypass external perimeter defenses."
       ]
     },
     {
@@ -626,12 +632,13 @@
       "text": "Being able to read people's body language, facial expressions, and vocal tones can also enhance your ability to be an effective communicator. Understanding how to protect yourself and your loved ones will only make you more valuable and more aware of the world around you."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: The Social Engineering Framework in Practice",
+      "type": "section-summary",
+      "title": "Section Summary: The Different Types of Social Engineers",
+      "summary": "Human security audits distinguish between ethical penetration testers, who operate within strict legal rules of engagement, and malicious black-hats, corporate spies, and identity thieves who exploit any available vulnerability. Each archetype leverages identity fabrication, pretext personas, and psychological leverage to accomplish their objectives.",
       "points": [
-        "The SE Framework (social-engineer.org/framework) standardizes human security auditing into repeatable, scientific phases.",
-        "An audit plan must map reconnaissance directly to elicitation scripts, pretext personas, and psychological influence vectors.",
-        "Consistent documentation during engagements ensures findings translate directly into defensive enterprise policy hardening."
+        "Hackers turn to human vulnerabilities when software and network defenses become too hardened to exploit directly.",
+        "Professional penetration testers utilize identical tradecraft to black-hat attackers, but strictly within legal contracts and non-destructive parameters.",
+        "Spies, recruiters, and identity thieves leverage identity fabrication and credibility anchors to elicit high-value intelligence without raising alarms."
       ]
     },
     {
@@ -659,11 +666,12 @@
       "text": "Regardless, keep practicing and make sure to do extra research on topics for which you need clarity. Now let's start cooking. Your \"recipe\" starts in the next chapter with the first ingredient, information gathering."
     },
     {
-      "type": "important-points",
-      "title": "Important Points: Chapter 1 Key Takeaways",
+      "type": "section-summary",
+      "title": "Section Summary: Chapter 1 Master Synthesis & Framework in Practice",
+      "summary": "The Social Engineering Framework (social-engineer.org) formalizes human security testing into a repeatable, scientific discipline. Comprehensive enterprise defense requires moving away from punitive corporate cultures toward transparent educational models where identity verification is institutionalized and celebrated.",
       "points": [
+        "The SE Framework standardizes human security auditing into repeatable, scientific phases from reconnaissance to reporting.",
         "Social engineering attacks target human nature rather than silicon or code, making technical firewalls alone insufficient.",
-        "Effective defense requires shifting from punitive policies to institutional education where verifying identities is celebrated.",
         "Always remember Sun Tzu's timeless axiom: knowing yourself and knowing your adversary guarantees protection across a hundred battles."
       ]
     }
