@@ -89,7 +89,7 @@
     },
     {
       "type": "paragraph",
-      "text": "http://toool.us/ http://home.howstuffworks.com/home-improvement/household-safety/security/lock-picking.htm http://www.lockpicking101.com/ These are just a few of the many sites devoted to lock-picking education. As a social engineer, spending time practicing picking locks is wise. Carrying a small lock-pick set with you can be a lifesaver when you're in front of a server cabinet, desk drawer, or other locked obstacle containing juicy information."
+      "text": "http://toool.us/\n\nhttp://home.howstuffworks.com/home-improvement/household-safety/security/lock-picking.htm\n\nhttp://www.lockpicking101.com/\n\nThese are just a few of the many sites devoted to lock-picking education. As a social engineer, spending time practicing picking locks is wise. Carrying a small lock-pick set with you can be a lifesaver when you're in front of a server cabinet, desk drawer, or other locked obstacle containing juicy information."
     },
     {
       "type": "paragraph",
@@ -220,7 +220,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Some recent stories www.youtube.com/watch?v=7INIRLe7x0Y show how easy it is to bypass a hotel or other door with a chain lock. This particular video shows how an attacker can tie a rubber band around the lock and, using the natural tension of the rubber band, get the chain to slide right off. As well, MIT has a freely distributed guide www.lysator.liu.se/mit-guide/MITLockGuide.pdf on lock picking that is much more in-depth than the brief introduction included in this chapter."
+      "text": "Some recent stories\n\nwww.youtube.com/watch?v=7INIRLe7x0Y\n\nshow how easy it is to bypass a hotel or other door with a chain lock. This particular video shows how an attacker can tie a rubber band around the lock and, using the natural tension of the rubber band, get the chain to slide right off. As well, MIT has a freely distributed guide\n\nwww.lysator.liu.se/mit-guide/MITLockGuide.pdf\n\non lock picking that is much more in-depth than the brief introduction included in this chapter."
     },
     {
       "type": "labeled-item",
@@ -229,7 +229,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You might be wondering whether locks that are impossible, or at least hard to pick, exist. The Bump Proof BiLock www.wholesalelocks.com/bump-proof-bilock-ult-360.html is just such a lock. Its two cylinders make it near-impossible to bump or pick easily."
+      "text": "You might be wondering whether locks that are impossible, or at least hard to pick, exist. The Bump Proof BiLock\n\nwww.wholesalelocks.com/bump-proof-bilock-ult-360.html\n\nis just such a lock. Its two cylinders make it near-impossible to bump or pick easily."
     },
     {
       "type": "paragraph",
@@ -320,7 +320,7 @@
     },
     {
       "type": "paragraph",
-      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\" www.spyassociates.com. All of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
+      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\"\n\nwww.spyassociates.com.\n\nAll of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
     },
     {
       "type": "labeled-item",
@@ -370,7 +370,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You can track people in many different ways, but one way is to use a device designed to help track a target. One such device is a GPS Tracker; for example, the notable SpyHawk SuperTrak GPS Worldwide Super TrackStick USB Data Logger available from www.spyassociates.com. One type of many, these devices can range from $200–600. SpyHawk SuperTrak magnetically sticks to a vehicle and can store days' worth of data on the target. The following sections provide a walkthrough from setup to usage of this little device."
+      "text": "You can track people in many different ways, but one way is to use a device designed to help track a target. One such device is a GPS Tracker; for example, the notable SpyHawk SuperTrak GPS Worldwide Super TrackStick USB Data Logger available from\n\nwww.spyassociates.com.\n\nOne type of many, these devices can range from $200–600. SpyHawk SuperTrak magnetically sticks to a vehicle and can store days' worth of data on the target. The following sections provide a walkthrough from setup to usage of this little device."
     },
     {
       "type": "heading",
@@ -491,7 +491,7 @@
     },
     {
       "type": "paragraph",
-      "text": "On the Social Engineer Framework located at www.social-engineer.org, I will be reviewing many tools that social engineers can use to enhance their practice."
+      "text": "On the Social Engineer Framework located at\n\nwww.social-engineer.org,\n\nI will be reviewing many tools that social engineers can use to enhance their practice."
     },
     {
       "type": "paragraph",
@@ -534,7 +534,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva www.paterva.com. Maltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
+      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva\n\nwww.paterva.com.\n\nMaltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
     },
     {
       "type": "paragraph",
@@ -579,7 +579,7 @@
     },
     {
       "type": "paragraph",
-      "text": "At www.social-engineer.org/se-resources/, I have posted a few videos outlining how to use Maltego to get the most out of it. In the earlier story Maltego contributed largely to the exercise's success, but the compromise came with another amazing tool."
+      "text": "At\n\nwww.social-engineer.org/se-resources/,\n\nI have posted a few videos outlining how to use Maltego to get the most out of it. In the earlier story Maltego contributed largely to the exercise's success, but the compromise came with another amazing tool."
     },
     {
       "type": "heading",
@@ -591,7 +591,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Both of these things can be done manually using many of the tools that exist in BackTrack, but when I was starting the www.social-engineer.org website I was talking to a good friend of mine, Dave Kennedy. Dave is the creator of a very popular tool called FastTrack that automated some of the most common attacks used in a penetration test using Python scripts and a web interface. I told Dave that I thought it would be a neat idea to develop something like FastTrack but just for social engineers—a tool that would allow a social engineer to create PDFs, emails, websites, and more with a few clicks and then focus more on the \"social\" part of social engineering."
+      "text": "Both of these things can be done manually using many of the tools that exist in BackTrack, but when I was starting the\n\nwww.social-engineer.org\n\nwebsite I was talking to a good friend of mine, Dave Kennedy. Dave is the creator of a very popular tool called FastTrack that automated some of the most common attacks used in a penetration test using Python scripts and a web interface. I told Dave that I thought it would be a neat idea to develop something like FastTrack but just for social engineers—a tool that would allow a social engineer to create PDFs, emails, websites, and more with a few clicks and then focus more on the \"social\" part of social engineering."
     },
     {
       "type": "paragraph",
@@ -607,7 +607,7 @@
     },
     {
       "type": "paragraph",
-      "text": "svn co http://svn.secmaniac.com/social_engineering_toolkit set/"
+      "text": "svn co\n\nhttp://svn.secmaniac.com/social_engineering_toolkit\n\nset/"
     },
     {
       "type": "paragraph",
@@ -623,7 +623,7 @@
     },
     {
       "type": "paragraph",
-      "text": "This shows you exactly what the SET menu looks like. A comprehensive, in-depth tutorial about each menu option is available at www.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29, but the following sections explain two of the most widely used aspects of SET."
+      "text": "This shows you exactly what the SET menu looks like. A comprehensive, in-depth tutorial about each menu option is available at\n\nwww.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29,\n\nbut the following sections explain two of the most widely used aspects of SET."
     },
     {
       "type": "paragraph",
@@ -712,7 +712,7 @@
     },
     {
       "type": "paragraph",
-      "text": "SET supports both HTTP and HTTPS Example: http://www.thisisafakesite.com Enter the url to clone: http://www.gmail.com [*] Cloning the website: http://www.gmail.com [*] This could take a little bit... [*] Injecting Java Applet attack into the newly cloned website. [*] Filename obfuscation complete. Payload name is: DAUPMWIAHh7v.exe [*] Malicious java applet website prepped for deployment"
+      "text": "SET supports both HTTP and HTTPS Example:\n\nhttp://www.thisisafakesite.com\n\nEnter the url to clone:\n\nhttp://www.gmail.com\n\n[*] Cloning the website:\n\nhttp://www.gmail.com\n\n[*] This could take a little bit... [*] Injecting Java Applet attack into the newly cloned website. [*] Filename obfuscation complete. Payload name is: DAUPMWIAHh7v.exe [*] Malicious java applet website prepped for deployment"
     },
     {
       "type": "paragraph",
@@ -778,7 +778,7 @@
     },
     {
       "type": "paragraph",
-      "text": "SET is a powerful tool made to help a social engineer auditor test the weaknesses that usually exist in a company. The SET tool developer is always open to suggestions and help in creating new parts of the tool to continue growing it to become a more popular toolset. Again, www.social-engineer.org has a full explanation of every menu option for review if you want to delve deeper into this amazing tool. Continue to check both www.social-engineer.org www.secmaniac.com for updates to the Social Engineer Toolkit."
+      "text": "SET is a powerful tool made to help a social engineer auditor test the weaknesses that usually exist in a company. The SET tool developer is always open to suggestions and help in creating new parts of the tool to continue growing it to become a more popular toolset. Again,\n\nwww.social-engineer.org\n\nhas a full explanation of every menu option for review if you want to delve deeper into this amazing tool. Continue to check both\n\nwww.social-engineer.org\n\nwww.secmaniac.com\n\nfor updates to the Social Engineer Toolkit."
     },
     {
       "type": "section-summary",
@@ -808,7 +808,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Also, being connected 24/7 makes people more ready to give out information quickly if the caller passes a certain set of \"criteria\" that makes him believable. For instance, if the caller ID on the cell phone indicates that the person is calling from corporate headquarters, many people would give over information with no verification. Both the iPhone and Android smart phones have applications that can be used to spoof your caller ID number to any number you want. Apps like SpoofApp www.spoofapp.com allow the social engineer to make calls that look as if they originate from anywhere on earth for a relatively low cost per call. All of this goes to building credibility of your pretext."
+      "text": "Also, being connected 24/7 makes people more ready to give out information quickly if the caller passes a certain set of \"criteria\" that makes him believable. For instance, if the caller ID on the cell phone indicates that the person is calling from corporate headquarters, many people would give over information with no verification. Both the iPhone and Android smart phones have applications that can be used to spoof your caller ID number to any number you want. Apps like SpoofApp\n\nwww.spoofapp.com\n\nallow the social engineer to make calls that look as if they originate from anywhere on earth for a relatively low cost per call. All of this goes to building credibility of your pretext."
     },
     {
       "type": "paragraph",
@@ -840,7 +840,7 @@
     },
     {
       "type": "paragraph",
-      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard www.spoofcard.com/. Using one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
+      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard\n\nwww.spoofcard.com/.\n\nUsing one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
     },
     {
       "type": "paragraph",
@@ -868,7 +868,7 @@
     },
     {
       "type": "paragraph",
-      "text": "If you have a spare computer and a VoIP service you can also use an Asterisk server to spoof caller IDs. You can find some information about this method at www.social-engineer.org/wiki/archives/CallerIDspoofing/CallerID-SpoofingWithAsterisk.html. An Asterisk server is very similar to how SpoofCard works, with the exception of the server used to spoof the ID. In this case, you own the server. This is attractive because it allows for more freedom and there is no fear of being cut off or minutes running out."
+      "text": "If you have a spare computer and a VoIP service you can also use an Asterisk server to spoof caller IDs. You can find some information about this method at\n\nwww.social-engineer.org/wiki/archives/CallerIDspoofing/CallerID-SpoofingWithAsterisk.html.\n\nAn Asterisk server is very similar to how SpoofCard works, with the exception of the server used to spoof the ID. In this case, you own the server. This is attractive because it allows for more freedom and there is no fear of being cut off or minutes running out."
     },
     {
       "type": "paragraph",
@@ -932,7 +932,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Recently, BitDefender, an Internet security firm, performed a study that proved this fact. BitDefender analyzed the password usage of more than 250,000 users. The results were amazing: 75% of the 250,000 used the same passwords for email as well as all social media accounts. This should be especially scary considering the recent story of how 171 million Facebook users had their personal information released on a torrent. The full story can be found at www.securityweek.com/study-reveals-75-percent-individuals-use-same-password-social-networking-and-email."
+      "text": "Recently, BitDefender, an Internet security firm, performed a study that proved this fact. BitDefender analyzed the password usage of more than 250,000 users. The results were amazing: 75% of the 250,000 used the same passwords for email as well as all social media accounts. This should be especially scary considering the recent story of how 171 million Facebook users had their personal information released on a torrent. The full story can be found at\n\nwww.securityweek.com/study-reveals-75-percent-individuals-use-same-password-social-networking-and-email."
     },
     {
       "type": "paragraph",
@@ -940,7 +940,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You can view the results at www.social-engineer.org/wiki/archives/BlogPosts/MenAndWomenPasswords.html."
+      "text": "You can view the results at\n\nwww.social-engineer.org/wiki/archives/BlogPosts/MenAndWomenPasswords.html."
     },
     {
       "type": "paragraph",
@@ -1022,7 +1022,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Murgis Kurgan, also known as j0rgan, created this amazing little tool. It runs as a script in the leading penetration testing distribution, BackTrack, or you can download it from www.social-engineer.org/cupps.tar.gz."
+      "text": "Murgis Kurgan, also known as j0rgan, created this amazing little tool. It runs as a script in the leading penetration testing distribution, BackTrack, or you can download it from\n\nwww.social-engineer.org/cupps.tar.gz."
     },
     {
       "type": "paragraph",
@@ -1054,11 +1054,11 @@
     },
     {
       "type": "paragraph",
-      "text": "As described by its authors, CeWL is a Ruby application that spiders a given URL to a specified depth, optionally following external links, and returns a list of words that can then be used for password crackers such as John the Ripper. For more information about CeWL see their website at www.digininja.org/projects/cewl.php. Take a look at a session using CeWL in BackTrack4:"
+      "text": "As described by its authors, CeWL is a Ruby application that spiders a given URL to a specified depth, optionally following external links, and returns a list of words that can then be used for password crackers such as John the Ripper. For more information about CeWL see their website at\n\nwww.digininja.org/projects/cewl.php.\n\nTake a look at a session using CeWL in BackTrack4:"
     },
     {
       "type": "paragraph",
-      "text": "root@bt:/pentest/passwords/cewl# ruby cewl.rb --help cewl 3.0 Robin Wood (dninja@gmail.com) www.digininja.org Usage: cewl [OPTION] ... URL --help, -h: show help --depth x, -d x: depth to spider to, default 2 --min_word_length, -m: minimum word length, default 3 --offsite, -o: let the spider visit other sites --write, -w file: write the output to the file --ua, -u user- agent: useragent to send --no-words, -n: don't output the wordlist --meta, -a file: include meta data, optional output file --email, -e file: include email addresses, optional output file --meta-temp-dir directory: the temporary directory,default /tmp -v: verbose URL: The site to spider. root@bt:/pentest/passwords/cewl# ./cewl.rb -d 1 -w pass.txt http://www.targetcompany.com/about.php root@bt:/pentest/passwords/cewl# cat passwords.txt |wc -l 430 root@bt:/pentest/passwords/cewl#"
+      "text": "root@bt:/pentest/passwords/cewl# ruby cewl.rb --help cewl 3.0 Robin Wood (dninja@gmail.com)\n\nwww.digininja.org\n\nUsage: cewl [OPTION] ... URL --help, -h: show help --depth x, -d x: depth to spider to, default 2 --min_word_length, -m: minimum word length, default 3 --offsite, -o: let the spider visit other sites --write, -w file: write the output to the file --ua, -u user- agent: useragent to send --no-words, -n: don't output the wordlist --meta, -a file: include meta data, optional output file --email, -e file: include email addresses, optional output file --meta-temp-dir directory: the temporary directory,default /tmp -v: verbose URL: The site to spider. root@bt:/pentest/passwords/cewl# ./cewl.rb -d 1 -w pass.txt\n\nhttp://www.targetcompany.com/about.php\n\nroot@bt:/pentest/passwords/cewl# cat passwords.txt |wc -l 430 root@bt:/pentest/passwords/cewl#"
     },
     {
       "type": "paragraph",

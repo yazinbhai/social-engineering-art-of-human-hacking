@@ -56,18 +56,19 @@ function renderTextWithLinks(text) {
       : `http://${cleanUrl}`;
 
     parts.push(
-      <a
-        key={`${matchIndex}-${cleanUrl}`}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 underline underline-offset-4 decoration-emerald-500/40 hover:decoration-emerald-400 font-mono text-xs sm:text-sm font-semibold transition-all break-all mx-1 px-1.5 py-0.5 rounded bg-emerald-950/40 border border-emerald-500/25 hover:border-emerald-500/60 shadow-xs hover:bg-emerald-950/70"
-        onClick={(e) => e.stopPropagation()}
-        title={`Visit external link: ${cleanUrl}`}
-      >
-        <span>{cleanUrl}</span>
-        <ExternalLink className="w-3 h-3 shrink-0 opacity-80" />
-      </a>
+      <span key={`link-block-${matchIndex}`} className="block my-2.5">
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 underline underline-offset-4 decoration-emerald-500/40 hover:decoration-emerald-400 font-mono text-xs sm:text-sm font-semibold transition-all break-all px-2.5 py-1 rounded-lg bg-emerald-950/60 border border-emerald-500/30 hover:border-emerald-500/70 shadow-xs hover:bg-emerald-900/60"
+          onClick={(e) => e.stopPropagation()}
+          title={`Visit external link: ${cleanUrl}`}
+        >
+          <span>{cleanUrl}</span>
+          <ExternalLink className="w-3.5 h-3.5 shrink-0 opacity-80" />
+        </a>
+      </span>
     );
 
     if (trailingPunct) {
@@ -223,7 +224,7 @@ export default function ChapterReader({
           if (block.type === 'labeled-item') {
             return (
               <div key={idx} className="my-3.5 pl-3.5 border-l-2 border-emerald-500/40 py-0.5 bg-slate-900/20 rounded-r-lg">
-                <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base">
+                <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base whitespace-pre-line">
                   <strong className="text-emerald-400 font-bold mr-2 tracking-wide font-mono text-xs sm:text-sm">
                     {block.label}
                   </strong>
@@ -238,7 +239,7 @@ export default function ChapterReader({
             if (labelMatch && labelMatch[1].length < 30) {
               return (
                 <div key={idx} className="my-3.5 pl-3.5 border-l-2 border-emerald-500/40 py-0.5 bg-slate-900/20 rounded-r-lg">
-                  <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base">
+                  <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base whitespace-pre-line">
                     <strong className="text-emerald-400 font-bold mr-2 tracking-wide font-mono text-xs sm:text-sm">
                       {labelMatch[1]}
                     </strong>
@@ -248,7 +249,7 @@ export default function ChapterReader({
               );
             }
             return (
-              <p key={idx} className="text-slate-300 leading-relaxed font-normal my-3.5">
+              <p key={idx} className="text-slate-300 leading-relaxed font-normal my-3.5 whitespace-pre-line">
                 {renderTextWithLinks(block.text)}
               </p>
             );
