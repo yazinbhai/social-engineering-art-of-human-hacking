@@ -56,12 +56,12 @@ function renderTextWithLinks(text) {
       : `http://${cleanUrl}`;
 
     parts.push(
-      <span key={`link-block-${matchIndex}`} className="block my-2.5">
+      <span key={`link-block-${matchIndex}`} className="flex justify-center my-3.5 text-center w-full">
         <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 underline underline-offset-4 decoration-emerald-500/40 hover:decoration-emerald-400 font-mono text-xs sm:text-sm font-semibold transition-all break-all px-2.5 py-1 rounded-lg bg-emerald-950/60 border border-emerald-500/30 hover:border-emerald-500/70 shadow-xs hover:bg-emerald-900/60"
+          className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 underline underline-offset-4 decoration-emerald-500/40 hover:decoration-emerald-400 font-mono text-xs sm:text-sm font-semibold transition-all break-all px-3 py-1.5 rounded-lg bg-emerald-950/60 border border-emerald-500/30 hover:border-emerald-500/70 shadow-xs hover:bg-emerald-900/60"
           onClick={(e) => e.stopPropagation()}
           title={`Visit external link: ${cleanUrl}`}
         >
