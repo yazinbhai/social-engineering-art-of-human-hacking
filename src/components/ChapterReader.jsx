@@ -42,14 +42,12 @@ function renderTextWithLinks(text) {
 
     // Separate trailing punctuation attached to URLs (. , ; : ! ? ) ] } >)
     let cleanUrl = rawUrl;
-    let trailingPunct = '';
     const punctMatch = cleanUrl.match(/([.,;:!?\)\]\}\>]+)$/);
     if (punctMatch) {
-      trailingPunct = punctMatch[1];
-      cleanUrl = cleanUrl.substring(0, cleanUrl.length - trailingPunct.length);
+      cleanUrl = cleanUrl.substring(0, cleanUrl.length - punctMatch[1].length);
     }
-    // Remove closing brackets from trailing punctuation so they don't render after the link
-    trailingPunct = trailingPunct.replace(/[)\]}>]/g, '');
+    // Clean any remaining trailing punctuation/brackets from URL
+    cleanUrl = cleanUrl.replace(/[/,.;:!?\)\]\}\>]+$/, '');
 
     const href = cleanUrl.startsWith('http://') || cleanUrl.startsWith('https://')
       ? cleanUrl
@@ -71,19 +69,21 @@ function renderTextWithLinks(text) {
       </span>
     );
 
-    if (trailingPunct) {
-      parts.push(trailingPunct);
-    }
+    // IMPORTANT: Never push trailing punctuation like '.' or ',' after a block link.
+    // It causes stray dots/commas to appear on the bottom-left corner underneath the centered link.
 
     lastIndex = matchIndex + rawUrl.length;
-    // If the next character immediately after lastIndex is a closing bracket, skip it
-    if (lastIndex < text.length && /^[)\]}>]/.test(text.substring(lastIndex))) {
+    // If the next character immediately after lastIndex is a closing bracket or stray punctuation, skip it
+    while (lastIndex < text.length && /^[)\]}>,.;:!?]/.test(text.substring(lastIndex))) {
       lastIndex += 1;
     }
   }
 
   if (lastIndex < text.length) {
-    parts.push(text.substring(lastIndex));
+    let remainder = text.substring(lastIndex);
+    // Strip any leading orphan punctuation followed by whitespace
+    remainder = remainder.replace(/^[\s\r\n]*[,.;:!?]+[\s\r\n]*/, '\n\n');
+    parts.push(remainder);
   }
 
   return parts.length > 0 ? parts : text;

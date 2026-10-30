@@ -89,7 +89,7 @@
     },
     {
       "type": "paragraph",
-      "text": "http://toool.us/\n\nhttp://home.howstuffworks.com/home-improvement/household-safety/security/lock-picking.htm\n\nhttp://www.lockpicking101.com/\n\nThese are just a few of the many sites devoted to lock-picking education. As a social engineer, spending time practicing picking locks is wise. Carrying a small lock-pick set with you can be a lifesaver when you're in front of a server cabinet, desk drawer, or other locked obstacle containing juicy information."
+      "text": "http://toool.us\n\nhttp://home.howstuffworks.com/home-improvement/household-safety/security/lock-picking.htm\n\nhttp://www.lockpicking101.com\n\nThese are just a few of the many sites devoted to lock-picking education. As a social engineer, spending time practicing picking locks is wise. Carrying a small lock-pick set with you can be a lifesaver when you're in front of a server cabinet, desk drawer, or other locked obstacle containing juicy information."
     },
     {
       "type": "paragraph",
@@ -320,7 +320,7 @@
     },
     {
       "type": "paragraph",
-      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\"\n\nwww.spyassociates.com.\n\nAll of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
+      "text": "One can spend literally dozens of hours (and I could write dozens of pages) talking about all the neat and cool cameras out there. Figures 7-11 and 7-12 show a few pictures from a popular law enforcement provider of \"spy equipment\"\n\nwww.spyassociates.com\n\nAll of these pictures are hidden cameras or audio recording devices, believe it or not. You can use each of these devices to covertly record a target for later inspection."
     },
     {
       "type": "labeled-item",
@@ -370,7 +370,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You can track people in many different ways, but one way is to use a device designed to help track a target. One such device is a GPS Tracker; for example, the notable SpyHawk SuperTrak GPS Worldwide Super TrackStick USB Data Logger available from\n\nwww.spyassociates.com.\n\nOne type of many, these devices can range from $200–600. SpyHawk SuperTrak magnetically sticks to a vehicle and can store days' worth of data on the target. The following sections provide a walkthrough from setup to usage of this little device."
+      "text": "You can track people in many different ways, but one way is to use a device designed to help track a target. One such device is a GPS Tracker; for example, the notable SpyHawk SuperTrak GPS Worldwide Super TrackStick USB Data Logger available from\n\nwww.spyassociates.com\n\nOne type of many, these devices can range from $200–600. SpyHawk SuperTrak magnetically sticks to a vehicle and can store days' worth of data on the target. The following sections provide a walkthrough from setup to usage of this little device."
     },
     {
       "type": "heading",
@@ -491,7 +491,7 @@
     },
     {
       "type": "paragraph",
-      "text": "On the Social Engineer Framework located at\n\nwww.social-engineer.org,\n\nI will be reviewing many tools that social engineers can use to enhance their practice."
+      "text": "On the Social Engineer Framework located at\n\nwww.social-engineer.org\n\nI will be reviewing many tools that social engineers can use to enhance their practice."
     },
     {
       "type": "paragraph",
@@ -534,7 +534,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva\n\nwww.paterva.com.\n\nMaltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
+      "text": "Enter Maltego. Maltego is a social engineer's dream tool. This amazing tool is made by the guys at Paterva\n\nwww.paterva.com\n\nMaltego has a community edition available for free download from their website, which is also included in every edition of BackTrack4. If you want to remove the limitations of the free edition—like the number of transforms you can run and saving data—spending around $600 will get you a full license."
     },
     {
       "type": "paragraph",
@@ -579,7 +579,7 @@
     },
     {
       "type": "paragraph",
-      "text": "At\n\nwww.social-engineer.org/se-resources/,\n\nI have posted a few videos outlining how to use Maltego to get the most out of it. In the earlier story Maltego contributed largely to the exercise's success, but the compromise came with another amazing tool."
+      "text": "At\n\nwww.social-engineer.org/se-resources\n\nI have posted a few videos outlining how to use Maltego to get the most out of it. In the earlier story Maltego contributed largely to the exercise's success, but the compromise came with another amazing tool."
     },
     {
       "type": "heading",
@@ -623,7 +623,7 @@
     },
     {
       "type": "paragraph",
-      "text": "This shows you exactly what the SET menu looks like. A comprehensive, in-depth tutorial about each menu option is available at\n\nwww.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29,\n\nbut the following sections explain two of the most widely used aspects of SET."
+      "text": "This shows you exactly what the SET menu looks like. A comprehensive, in-depth tutorial about each menu option is available at\n\nwww.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29\n\nbut the following sections explain two of the most widely used aspects of SET."
     },
     {
       "type": "paragraph",
@@ -840,7 +840,7 @@
     },
     {
       "type": "paragraph",
-      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard\n\nwww.spoofcard.com/.\n\nUsing one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
+      "text": "One of the most popular methods of caller ID spoofing is by using a SpoofCard\n\nwww.spoofcard.com\n\nUsing one of these cards, you call up the 800 number given to you on the card, enter your PIN, the number you want the caller ID to display, and then the number you want to call."
     },
     {
       "type": "paragraph",
@@ -868,7 +868,7 @@
     },
     {
       "type": "paragraph",
-      "text": "If you have a spare computer and a VoIP service you can also use an Asterisk server to spoof caller IDs. You can find some information about this method at\n\nwww.social-engineer.org/wiki/archives/CallerIDspoofing/CallerID-SpoofingWithAsterisk.html.\n\nAn Asterisk server is very similar to how SpoofCard works, with the exception of the server used to spoof the ID. In this case, you own the server. This is attractive because it allows for more freedom and there is no fear of being cut off or minutes running out."
+      "text": "If you have a spare computer and a VoIP service you can also use an Asterisk server to spoof caller IDs. You can find some information about this method at\n\nwww.social-engineer.org/wiki/archives/CallerIDspoofing/CallerID-SpoofingWithAsterisk.html\n\nAn Asterisk server is very similar to how SpoofCard works, with the exception of the server used to spoof the ID. In this case, you own the server. This is attractive because it allows for more freedom and there is no fear of being cut off or minutes running out."
     },
     {
       "type": "paragraph",
@@ -932,7 +932,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Recently, BitDefender, an Internet security firm, performed a study that proved this fact. BitDefender analyzed the password usage of more than 250,000 users. The results were amazing: 75% of the 250,000 used the same passwords for email as well as all social media accounts. This should be especially scary considering the recent story of how 171 million Facebook users had their personal information released on a torrent. The full story can be found at\n\nwww.securityweek.com/study-reveals-75-percent-individuals-use-same-password-social-networking-and-email."
+      "text": "Recently, BitDefender, an Internet security firm, performed a study that proved this fact. BitDefender analyzed the password usage of more than 250,000 users. The results were amazing: 75% of the 250,000 used the same passwords for email as well as all social media accounts. This should be especially scary considering the recent story of how 171 million Facebook users had their personal information released on a torrent. The full story can be found at\n\nwww.securityweek.com/study-reveals-75-percent-individuals-use-same-password-social-networking-and-email"
     },
     {
       "type": "paragraph",
@@ -940,7 +940,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You can view the results at\n\nwww.social-engineer.org/wiki/archives/BlogPosts/MenAndWomenPasswords.html."
+      "text": "You can view the results at\n\nwww.social-engineer.org/wiki/archives/BlogPosts/MenAndWomenPasswords.html"
     },
     {
       "type": "paragraph",
@@ -1022,7 +1022,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Murgis Kurgan, also known as j0rgan, created this amazing little tool. It runs as a script in the leading penetration testing distribution, BackTrack, or you can download it from\n\nwww.social-engineer.org/cupps.tar.gz."
+      "text": "Murgis Kurgan, also known as j0rgan, created this amazing little tool. It runs as a script in the leading penetration testing distribution, BackTrack, or you can download it from\n\nwww.social-engineer.org/cupps.tar.gz"
     },
     {
       "type": "paragraph",
@@ -1054,7 +1054,7 @@
     },
     {
       "type": "paragraph",
-      "text": "As described by its authors, CeWL is a Ruby application that spiders a given URL to a specified depth, optionally following external links, and returns a list of words that can then be used for password crackers such as John the Ripper. For more information about CeWL see their website at\n\nwww.digininja.org/projects/cewl.php.\n\nTake a look at a session using CeWL in BackTrack4:"
+      "text": "As described by its authors, CeWL is a Ruby application that spiders a given URL to a specified depth, optionally following external links, and returns a list of words that can then be used for password crackers such as John the Ripper. For more information about CeWL see their website at\n\nwww.digininja.org/projects/cewl.php\n\nTake a look at a session using CeWL in BackTrack4:"
     },
     {
       "type": "paragraph",
