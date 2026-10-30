@@ -208,7 +208,7 @@ export default function ChapterReader({
       )}
 
       {/* Chapter Content Stream (No Executive Summary section as per requirements) */}
-      <div className="space-y-6 my-8 text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+      <div className="space-y-12 my-8 text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
         {chapter.content?.map((block, idx) => {
           if (block.type === 'heading') {
             return (
@@ -223,7 +223,7 @@ export default function ChapterReader({
 
           if (block.type === 'labeled-item') {
             return (
-              <div key={idx} className="my-3.5 pl-3.5 border-l-2 border-emerald-500/40 py-0.5 bg-slate-900/20 rounded-r-lg">
+              <div key={idx} className="my-7 pl-3.5 border-l-2 border-emerald-500/40 py-0.5 bg-slate-900/20 rounded-r-lg">
                 <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base whitespace-pre-line">
                   <strong className="text-emerald-400 font-bold mr-2 tracking-wide font-mono text-xs sm:text-sm">
                     {block.label}
@@ -238,7 +238,7 @@ export default function ChapterReader({
             const labelMatch = block.text.match(/^([A-Z][A-Za-z0-9 ,/\-\–—]{1,35}:)\s*(.*)/);
             if (labelMatch && labelMatch[1].length < 30) {
               return (
-                <div key={idx} className="my-3.5 pl-3.5 border-l-2 border-emerald-500/40 py-0.5 bg-slate-900/20 rounded-r-lg">
+                <div key={idx} className="my-7 pl-3.5 border-l-2 border-emerald-500/40 py-0.5 bg-slate-900/20 rounded-r-lg">
                   <p className="text-slate-300 leading-relaxed font-normal text-sm sm:text-base whitespace-pre-line">
                     <strong className="text-emerald-400 font-bold mr-2 tracking-wide font-mono text-xs sm:text-sm">
                       {labelMatch[1]}
@@ -249,7 +249,7 @@ export default function ChapterReader({
               );
             }
             return (
-              <p key={idx} className="text-slate-300 leading-relaxed font-normal my-3.5 whitespace-pre-line">
+              <p key={idx} className="text-slate-300 leading-relaxed font-normal my-7 whitespace-pre-line">
                 {renderTextWithLinks(block.text)}
               </p>
             );
